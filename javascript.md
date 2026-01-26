@@ -145,6 +145,12 @@ Function declarations are hoisted with their implementation, while function expr
 
 **Answer:**
 
+Scope determines where a variable or function can be accessed in your code.
+
+In simple terms:
+
+Scope answers the question — “Can I use this variable here?”
+
 Global scope: Accessible everywhere
 
 Function scope: Accessible only inside the function
@@ -229,17 +235,12 @@ Closures enable state persistence, data encapsulation, and functional patterns w
 
 **Answer:**
 
-Data privacy / encapsulation
-
-Event handlers
-
-Callbacks and async operations
-
-Function factories
-
-Memoization
-
-State management
+- Data privacy / encapsulation
+- Event handlers
+- Callbacks and async operations
+- Function factories
+- Memoization
+- State management
 
 ### Q. How closures help in data hiding?
 
@@ -1595,7 +1596,7 @@ Advantages:
 
 ### Q. What is ES6?
 
-**Answer**
+**Answer:**
 
 ES6 (ECMAScript 2015) is a major update to JavaScript that introduced modern syntax and features to write cleaner, more maintainable, and scalable code.
 
@@ -1619,7 +1620,7 @@ const greet = () => `Hello ${name}`;
 
 ### Q. let / const vs var
 
-**Answer**
+**Answer:**
 
 let and const are block-scoped, while var is function-scoped.
 
@@ -1645,7 +1646,7 @@ console.log(x); // ❌ ReferenceError
 
 ### Q. Arrow Functions
 
-**Answer**
+**Answer:**
 
 Arrow functions are a shorter syntax for writing functions and they do not have their own this.
 
@@ -1666,7 +1667,7 @@ Arrow functions cannot be used as constructors.
 
 ### Q. Destructuring
 
-**Answer**
+**Answer:**
 
 Destructuring allows extracting values from arrays or objects into variables.
 
@@ -1684,7 +1685,7 @@ Why it’s useful
 
 ### Q. Spread vs Rest Operator
 
-**Answer**
+**Answer:**
 
 Both use ... but serve different purposes.
 
@@ -1709,7 +1710,7 @@ function sum(...nums) {
 
 ### Q. Modules (import / export)
 
-**Answer**
+**Answer:**
 
 Modules allow splitting code into reusable files.
 
@@ -1730,7 +1731,7 @@ import { add } from "./math.js";
 
 ### Q. Default Parameters
 
-**Answer**
+**Answer:**
 
 Default parameters provide fallback values for function arguments.
 
@@ -1749,7 +1750,7 @@ Why useful
 
 ### Q. Optional Chaining (?.)
 
-**Answer**
+**Answer:**
 
 Optional chaining safely accesses nested object properties without throwing errors.
 
@@ -1765,7 +1766,7 @@ If any part is null or undefined, it returns undefined instead of crashing.
 
 ### Q. Nullish Coalescing (??)
 
-**Answer**
+**Answer:**
 
 Returns the right-hand value only if the left-hand value is null or undefined.
 
@@ -1784,7 +1785,7 @@ Difference from ||
 
 ### Q. Classes in JavaScript
 
-**Answer**
+**Answer:**
 
 Classes are syntactic sugar over JavaScript’s prototype-based inheritance.
 
@@ -1808,7 +1809,7 @@ Important
 
 ### Q. CommonJS vs ES Modules
 
-**Answer**
+**Answer:**
 
 They are two different module systems in JavaScript.
 
@@ -1829,7 +1830,7 @@ import fs from "fs";
 
 ### Q. Symbol Data Type
 
-**Answer**
+**Answer:**
 
 A Symbol is a unique and immutable primitive used as object keys.
 
@@ -1847,7 +1848,7 @@ Why useful
 
 ### Q. BigInt
 
-**Answer**
+**Answer:**
 
 BigInt is used to represent numbers larger than Number.MAX_SAFE_INTEGER.
 
@@ -1863,7 +1864,7 @@ Interview Tip
 
 ### Q. What is Object.entries()?
 
-**Answer**
+**Answer:**
 
 Returns an array of [key, value] pairs from an object.
 
@@ -1881,7 +1882,7 @@ Use Case
 
 ### Q. What is Object.values()?
 
-**Answer**
+**Answer:**
 
 Returns an array of all values of an object.
 
@@ -1901,7 +1902,7 @@ Common Use
 
 ### Q. What is try...catch?
 
-**Answer**
+**Answer:**
 
 try...catch is used to handle runtime errors gracefully without crashing the application.
 
@@ -1923,7 +1924,7 @@ try {
 
 ### Q. What is finally?
 
-**Answer**
+**Answer:**
 
 finally is a block that always executes, whether an error occurs or not.
 
@@ -1952,7 +1953,7 @@ Common Use
 
 ### Q. Custom Errors
 
-**Answer**
+**Answer:**
 
 Custom errors allow developers to create meaningful, application-specific errors.
 
@@ -1980,7 +1981,7 @@ Why Important
 
 ### Q. Difference Between Runtime and Syntax Errors
 
-**Answer**
+**Answer:**
 
 Syntax errors occur during parsing, while runtime errors occur during execution.
 
@@ -2004,7 +2005,7 @@ console.log(a); // ReferenceError
 
 ### Q. Error Handling in Promises
 
-**Answer**
+**Answer:**
 
 Errors in promises are handled using .catch().
 
@@ -2023,7 +2024,7 @@ fetch(url)
 
 ### Q. Global Error Handling
 
-**Answer**
+**Answer:**
 
 Global error handling captures uncaught errors at the application level.
 
@@ -2050,7 +2051,7 @@ Why Needed
 
 ### Q. What is throw?
 
-**Answer**
+**Answer:**
 
 throw is used to manually generate an error.
 
@@ -2069,7 +2070,7 @@ if (!user) {
 
 ### Q. How to Handle Async Errors?
 
-**Answer**
+**Answer:**
 
 Async errors are handled using try...catch with async/await or .catch() with promises.
 
@@ -2092,7 +2093,7 @@ try...catch only works with await, not raw promises.
 
 ### Q. What is a Stack Trace?
 
-**Answer**
+**Answer:**
 
 A stack trace shows the sequence of function calls that led to an error.
 
@@ -2119,7 +2120,7 @@ Shows call order → a → b
 
 ### Q. Best Practices for Error Handling
 
-**Answer**
+**Answer:**
 
 - Use try...catch only where necessary
 - Create custom error classes
