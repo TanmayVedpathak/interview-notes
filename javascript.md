@@ -590,6 +590,277 @@ var u = new User("Tanmay");
 
 ## Arrays & Array Methods
 
+### What is an Array in JavaScript?
+
+**Answer:**
+
+An Array in JavaScript is an ordered, zero-indexed collection of values that can store multiple elements (of any type) in a single variable.
+
+```js
+const arr = [1, 2, 3];
+```
+
+Arrays in JS are:
+
+- Dynamic (size can change)
+- Can store mixed data types
+- Prototype-based objects
+
+Array Methods (Categorized for Easy Interview Recall)
+
+1️⃣ Mutating Methods (Modify Original Array)
+
+🔹 push()
+
+Adds element at the end.
+
+```js
+arr.push(4);
+```
+
+🔹 pop()
+
+Removes last element.
+
+```js
+arr.pop();
+```
+
+🔹 unshift()
+
+Adds element at beginning.
+
+```js
+arr.unshift(0);
+```
+
+🔹 shift()
+
+Removes first element.
+
+```js
+arr.shift();
+```
+
+🔹 splice()
+
+Add/remove elements at specific index.
+
+```js
+arr.splice(1, 2); // remove 2 items from index 1
+```
+
+```js
+arr.splice(2, 0, "Lemon", "Kiwi");
+```
+
+- The first parameter (2) defines the position where new elements should be added (spliced in)
+- The second parameter (0) defines how many elements should be removed
+- The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added
+
+🔹 sort()
+
+Sorts array (mutates original).
+
+```js
+arr.sort((a, b) => a - b);
+```
+
+🔹 reverse()
+
+Reverses array.
+
+```js
+arr.reverse();
+```
+
+2️⃣ Non-Mutating Methods (Return New Array)
+
+🔹 map()
+
+Transforms each element.
+
+```js
+arr.map(x => x \* 2);
+```
+
+📌 Returns new array.
+
+🔹 filter()
+
+Filters elements based on condition.
+
+```js
+arr.filter((x) => x > 2);
+```
+
+🔹 reduce()
+
+Reduces array to single value.
+
+```js
+arr.reduce((acc, curr) => acc + curr, 0);
+```
+
+📌 Very important in interviews.
+
+🔹 slice()
+
+Extracts part of array.
+
+```js
+arr.slice(1, 3);
+```
+
+🔹 concat()
+
+Merges arrays.
+
+```js
+arr.concat([5, 6]);
+```
+
+🔹 flat()
+
+Flattens nested arrays.
+
+```js
+[1, [2, 3]].flat();
+```
+
+3️⃣ Searching Methods
+
+🔹 includes()
+
+Checks if value exists.
+
+```js
+arr.includes(3);
+```
+
+🔹 indexOf()
+
+Returns first index.
+
+```js
+arr.indexOf(2);
+```
+
+🔹 lastIndexOf()
+
+Returns last index.
+
+🔹 find()
+
+Returns first matching element.
+
+```js
+arr.find((x) => x > 2);
+```
+
+🔹 findIndex()
+
+Returns index of matching element.
+
+4️⃣ Iteration Methods
+
+🔹 forEach()
+
+Loops through array.
+
+```js
+arr.forEach((x) => console.log(x));
+```
+
+❌ Does not return new array.
+
+🔹 some()
+
+Returns true if at least one matches.
+
+```js
+arr.some((x) => x > 5);
+```
+
+🔹 every()
+
+Returns true if all match.
+
+```js
+arr.every((x) => x > 0);
+```
+
+5️⃣ Conversion Methods
+
+🔹 join()
+
+Converts array to string.
+
+```js
+arr.join("-");
+```
+
+🔹 toString()
+
+Converts to string.
+
+🔹 Array.from()
+
+Creates array from iterable.
+
+```js
+Array.from("hello");
+```
+
+🔹 Array.isArray()
+
+Checks if value is array.
+
+```js
+Array.isArray(arr);
+```
+
+6️⃣ New Modern Methods
+
+🔹 at()
+
+Access element by index (supports negative).
+
+```js
+arr.at(-1);
+```
+
+🔹 flatMap()
+
+Map + flatten.
+
+```js
+arr.flatMap((x) => [x * 2]);
+```
+
+Important Interview Comparison
+
+| Method | Mutates? | Returns New? |
+| ------ | -------- | ------------ |
+| push   | ✅       | ❌           |
+| map    | ❌       | ✅           |
+| filter | ❌       | ✅           |
+| reduce | ❌       | ✅           |
+| splice | ✅       | ❌           |
+| slice  | ❌       | ✅           |
+
+Common Interview Questions
+
+- Difference between map() and forEach()
+- Difference between slice() and splice()
+- Implement reduce()
+- How to remove duplicates?
+- How to flatten array?
+
+One-Line Interview Summary
+
+“An array in JavaScript is a dynamic, ordered collection of values that provides powerful built-in methods for iteration, transformation, searching, and mutation.”
+
 ### Difference between `map`, `filter`, and `reduce`
 
 **Answer:**
