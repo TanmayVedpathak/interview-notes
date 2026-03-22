@@ -2432,16 +2432,221 @@ What happens if promise rejection is not handled?
 
 ## Performance & Optimization
 
-Q. How to improve JS performance?
-Q. What is debouncing?
-Q. What is throttling?
-Q. Difference between debounce and throttle
-Q. Memory leaks in JS
-Q. How closures cause memory leaks?
-Q. Lazy loading
-Q. Code splitting
-Q. Minification & tree shaking
-Q. Web Workers
+### Q. How to Improve JavaScript Performance?
+
+**Answer:**
+
+JavaScript performance can be improved by optimizing execution, reducing re-renders, minimizing bundle size, and efficient memory usage.
+
+🔹 Key Techniques
+
+- Avoid unnecessary DOM manipulation
+- Use debounce/throttle
+- Optimize loops and algorithms
+- Use code splitting & lazy loading
+- Cache results (memoization)
+- Use Web Workers for heavy tasks
+- Minify and tree-shake code
+
+🔥 One-liner
+
+“I improve JS performance by reducing unnecessary work, optimizing rendering, and minimizing bundle size.”
+
+### Q. What is Debouncing?
+
+**Answer:**
+
+Debouncing ensures a function is executed only after a delay once the user stops triggering it.
+
+🔹 Example (Search Input)
+
+```js
+function debounce(fn, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+```
+
+🔹 Use Cases
+
+- Search input
+- Auto-save
+- Resize events
+
+### Q. What is Throttling?
+
+**Answer:**
+
+Throttling ensures a function is executed at most once in a specified time interval.
+
+🔹 Example
+
+```js
+function throttle(fn, limit) {
+  let inThrottle;
+  return function (...args) {
+    if (!inThrottle) {
+      fn(...args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+```
+
+🔹 Use Cases
+
+- Scroll events
+- Mouse movement
+- Button clicks
+
+### Q. Difference: Debounce vs Throttle
+
+| Feature   | Debounce     | Throttle          |
+| --------- | ------------ | ----------------- |
+| Execution | After delay  | At intervals      |
+| Trigger   | Stops events | Continuous events |
+| Use case  | Search input | Scroll/resize     |
+
+🔥 Interview Line
+
+“Debounce waits for inactivity, while throttle limits execution frequency.”
+
+### Q. Memory Leaks in JavaScript
+
+**Answer:**
+
+A memory leak occurs when memory is not released even after it’s no longer needed.
+
+🔹 Common Causes
+
+- Unremoved event listeners
+- Timers not cleared
+- Closures holding references
+- Detached DOM nodes
+
+### Q. How Closures Cause Memory Leaks?
+
+**Answer:**
+
+Closures retain references to variables from outer scope, preventing garbage collection.
+
+🔹 Example
+
+```js
+function outer() {
+  let largeData = new Array(1000000);
+
+  return function inner() {
+    console.log("Using data");
+  };
+}
+
+const fn = outer();
+```
+
+👉 largeData stays in memory because closure holds it.
+
+### Q. Lazy Loading
+
+**Answer:**
+
+Lazy loading delays loading of resources until they are needed.
+
+🔹 Example (React)
+
+```jsx
+const Component = React.lazy(() => import("./Component"));
+```
+
+🔹 Use Cases
+
+- Images
+- Routes
+- Components
+
+### Q. Code Splitting
+
+**Answer:**
+
+Code splitting breaks the bundle into smaller chunks that are loaded on demand.
+
+🔹 Example
+
+```jsx
+import("./Dashboard");
+```
+
+🔹 Benefits
+
+- Faster initial load
+- Better performance
+
+### Q. Minification & Tree Shaking
+
+🔹 Minification
+
+Removes unnecessary code (spaces, comments).
+
+```js
+// Before
+function add(a, b) {
+  return a + b;
+}
+
+// After
+function add(a, b) {
+  return a + b;
+}
+```
+
+🔹 Tree Shaking
+
+Removes unused code from bundle.
+
+```js
+import { add } from "lib"; // only add is included
+```
+
+### Q. Web Workers
+
+**Answer:**
+
+Web Workers allow running JavaScript in a background thread, separate from the main UI thread.
+
+🔹 Why Needed
+
+JS is single-threaded → heavy tasks block UI
+
+Web Workers:
+
+- Run tasks in background
+- Keep UI responsive
+
+🔹 Example
+
+```js
+const worker = new Worker("worker.js");
+
+worker.postMessage("start");
+
+worker.onmessage = (e) => {
+  console.log(e.data);
+};
+```
+
+🔹 Use Cases
+
+- Image processing
+- Large calculations
+- Data parsing
+
+🔥 Final Interview Summary (Power Answer)
+
+“JavaScript performance can be improved using techniques like debouncing, throttling, lazy loading, code splitting, and Web Workers, while avoiding memory leaks and optimizing bundle size using minification and tree shaking.”
 
 ## Security (Frontend Focus)
 
