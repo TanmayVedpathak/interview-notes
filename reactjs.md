@@ -402,7 +402,7 @@ Interview line:
 
 **Answer:**
 
-- State change (setState, useState)
+- State change (`setState`, `useState`)
 - Props change from parent
 - Parent re-render
 - Context value change
@@ -423,9 +423,9 @@ One-liner:
 
 Common techniques:
 
-- React.memo() → memoize components
-- useCallback() → memoize functions
-- useMemo() → memoize values
+- `React.memo()` → memoize components
+- `useCallback()` → memoize functions
+- `useMemo()` → memoize values
 - Avoid inline functions in JSX
 - Keep state minimal
 
@@ -439,11 +439,11 @@ Interview phrase:
 
 “Memoization helps React skip unnecessary renders.”
 
-### Q. What is key in React and why is it important?
+### Q. What is `key` in React and why is it important?
 
 **Answer:**
 
-A key is a unique identifier used when rendering lists to help React track elements efficiently.
+A `key` is a unique identifier used when rendering lists to help React track elements efficiently.
 
 ```jsx
 {
@@ -479,7 +479,7 @@ Interview tip:
 
 “Non-unique keys break React’s diffing algorithm.”
 
-### Q. Can we use index as a key?
+### Q. Can we use index as a `key`?
 
 **Answer:**
 
@@ -497,7 +497,7 @@ When it’s okay:
 
 Interview answer:
 
-“Index as a key should be a last resort.”
+“Index as a `key` should be a last resort.”
 
 ### Q. What is conditional rendering?
 
@@ -525,7 +525,7 @@ Interview line:
 
 **Answer:**
 
-Using the map() method.
+Using the `map()` method.
 
 ```jsx
 {
@@ -595,7 +595,7 @@ Interview phrase:
 
 “Lazy loading improves performance by splitting code.”
 
-## Hooks (Very Important ⭐)
+## Hooks
 
 ### Q. What are hooks?
 
@@ -605,9 +605,9 @@ Hooks are functions that let you use state and other React features inside funct
 
 Examples:
 
-- useState → state
-- useEffect → side effects
-- useContext → context
+- `useState` → state
+- `useEffect` → side effects
+- `useContext` → context
 
 Interview one-liner:
 
@@ -652,11 +652,11 @@ Interview tip:
 
 “Rules ensure hooks run in the same order every render.”
 
-### Q. What is useState?
+### Q. What is `useState`?
 
 **Answer:**
 
-useState lets you add state to a functional component.
+`useState` lets you add state to a functional component.
 
 ```jsx
 const [count, setCount] = useState(0);
@@ -666,7 +666,7 @@ const [count, setCount] = useState(0);
 - Returns state updater function
 - Triggers re-render
 
-### Q. How does useState work internally?
+### Q. How does `useState` work internally?
 
 **Answer:**
 
@@ -680,12 +680,11 @@ Key idea:
 
 “Hooks rely on call order, not names.”
 
-### Q. What is useEffect?
+### Q. What is `useEffect`?
 
 **Answer:**
 
-Answer:
-useEffect handles side effects in functional components.
+`useEffect` handles side effects in functional components.
 
 Examples:
 
@@ -702,9 +701,9 @@ useEffect(() => {
 
 Interview line:
 
-“useEffect replaces lifecycle methods in functional components.”
+“`useEffect` replaces lifecycle methods in functional components.”
 
-### Q. Explain useEffect dependency array
+### Q. Explain `useEffect` dependency array
 
 **Answer:**
 
@@ -719,7 +718,7 @@ Important:
 - Missing dependencies → bugs
 - ESLint helps enforce correctness
 
-### Q. Explain in detail useEffect, useLayoutEffect, and useInsertionEffect
+### Q. Explain in detail `useEffect`, `useLayoutEffect`, and `useInsertionEffect`
 
 **Answer:**
 
@@ -734,7 +733,7 @@ All three are side-effect hooks, but they run at different times in React’s re
 
 The difference between these hooks is WHEN they run.
 
-#### 1️⃣ useEffect (most common)
+#### 1️⃣ `useEffect` (most common)
 
 📌 When does it run?
 
@@ -750,7 +749,7 @@ The difference between these hooks is WHEN they run.
 
 ```jsx
 useEffect(() => {
-  fetchata();
+  fetchData();
 }, []);
 ```
 
@@ -764,7 +763,7 @@ useEffect(() => {
 
 If it updates layout → user may see a flicker
 
-##### 2️⃣ useLayoutEffect
+##### 2️⃣ `useLayoutEffect`
 
 📌 When does it run?
 
@@ -797,7 +796,7 @@ useLayoutEffect(() => {
 - Blocks painting
 - Can hurt performance if overused
 
-#### 3️⃣ useInsertionEffect (advanced / rare)
+#### 3️⃣ `useInsertionEffect` (advanced / rare)
 
 📌 When does it run?
 
@@ -805,15 +804,15 @@ useLayoutEffect(() => {
 
 Order:
 
-useInsertionEffect
+`useInsertionEffect`
 
 → DOM updates
 
-→ useLayoutEffect
+→ `useLayoutEffect`
 
 → Paint
 
-→ useEffect
+→ `useEffect`
 
 🧩 Why it exists
 
@@ -876,7 +875,7 @@ useEffect
 
 🎯 When to use what?
 
-90% of the time → useEffect
+90% of the time → `useEffect`
 
 Need DOM measurements / no flicker → useLayoutEffect
 
@@ -884,19 +883,19 @@ Building CSS-in-JS library → useInsertionEffect
 
 ⭐ Interview One-Line Answers
 
-useEffect
+`useEffect`
 
 Runs after paint and is used for non-blocking side effects.
 
-useLayoutEffect
+`useLayoutEffect`
 
 Runs before paint and is used for synchronous DOM measurements.
 
-useInsertionEffect
+`useInsertionEffect`
 
 Runs before DOM mutations and is used to inject styles safely.
 
-### Q. Difference between useEffect, useLayoutEffect, and useInsertionEffect
+### Q. Difference between `useEffect`, `useLayoutEffect`, and `useInsertionEffect`
 
 **Answer:**
 
@@ -926,11 +925,11 @@ useEffect(() => {
 }, []);
 ```
 
-### Q. What is useRef?
+### Q. What is `useRef`?
 
 **Answer:**
 
-useRef creates a mutable reference that persists across renders without causing re-render.
+`useRef` creates a mutable reference that persists across renders without causing re-render.
 
 ```jsx
 const inputRef = useRef(null);
@@ -942,7 +941,7 @@ Uses:
 - Store previous values
 - Timers & intervals
 
-### Q. Difference between useRef and useState
+### Q. Difference between `useRef` and `useState`
 
 **Answer:**
 
@@ -956,11 +955,11 @@ Interview one-liner:
 
 “useRef stores values without affecting rendering.”
 
-### Q. What is useMemo?
+### Q. What is `useMemo`?
 
 **Answer:**
 
-useMemo memoizes expensive calculations.
+`useMemo` memoizes expensive calculations.
 
 ```jsx
 const value = useMemo(() => heavyCalc(a), [a]);
@@ -969,7 +968,7 @@ const value = useMemo(() => heavyCalc(a), [a]);
 - Improves performance
 - Avoids recomputation
 
-### Q. When should you use useMemo?
+### Q. When should you use `useMemo`?
 
 **Answer:**
 
@@ -984,13 +983,13 @@ Use it when:
 
 Interview tip:
 
-“useMemo is an optimization, not a default.”
+“`useMemo` is an optimization, not a default.”
 
-### Q. What is useCallback?
+### Q. What is `useCallback`?
 
 **Answer:**
 
-useCallback memoizes functions.
+`useCallback` memoizes functions.
 
 ```jsx
 const handleClick = useCallback(() => {
@@ -1003,7 +1002,7 @@ Why needed:
 - Prevents unnecessary re-renders
 - Useful with React.memo
 
-### Q. Difference between useCallback and useMemo
+### Q. Difference between `useCallback` and `useMemo`
 
 **Answer:**
 
@@ -1015,13 +1014,13 @@ Why needed:
 
 Interview line:
 
-“useCallback is useMemo for functions.”
+“`useCallback` is `useMemo` for functions.”
 
-### Q. What is useContext?
+### Q. What is `useContext`?
 
 **Answer:**
 
-useContext lets components consume context directly, without passing props.
+`useContext` lets components consume context directly, without passing props.
 
 ```jsx
 const theme = useContext(ThemeContext);
@@ -1047,7 +1046,7 @@ Problems:
 
 Solution:
 
-- useContext
+- `useContext`
 - Global state hooks
 
 Interview line:
@@ -1088,13 +1087,13 @@ Interview conclusion:
 
 “Custom hooks are the modern way to share logic.”
 
-### What is useReducer ?
+### What is `useReducer`?
 
 **Answer:**
 
-useReducer is a React hook used for managing complex state logic using a reducer function and dispatching actions — similar to how Redux works.
+`useReducer` is a React hook used for managing complex state logic using a reducer function and dispatching actions — similar to how Redux works.
 
-Why useReducer Exists
+Why `useReducer` Exists
 
 When:
 
@@ -1103,7 +1102,7 @@ When:
 - Many state transitions exist
 - Logic becomes messy with multiple useState
 
-👉 useReducer provides a structured, predictable state flow.
+👉 `useReducer` provides a structured, predictable state flow.
 
 Basic Syntax
 
@@ -1185,9 +1184,9 @@ function reducer(state, action) {
 />;
 ```
 
-👉 Cleaner than multiple useState.
+👉 Cleaner than multiple `useState`.
 
-### useReducer vs useState
+### `useReducer` vs `useState`
 
 **Answer:**
 
@@ -1200,9 +1199,9 @@ function reducer(state, action) {
 
 📌 Interview Line
 
-“useReducer is preferred when state logic becomes complex or depends heavily on previous state.”
+“`useReducer` is preferred when state logic becomes complex or depends heavily on previous state.”
 
-### When Should You Use useReducer?
+### When Should You Use `useReducer`?
 
 **Answer:**
 
@@ -1554,9 +1553,9 @@ Interview conclusion:
 The store is an object that:
 
 - Holds the entire app state
-- Allows state access via getState()
-- Updates state via dispatch()
-- Registers listeners via subscribe()
+- Allows state access via `getState()`
+- Updates state via `dispatch()`
+- Registers listeners via `subscribe()`
 
 One store per app.
 
@@ -1564,7 +1563,7 @@ Interview one-liner:
 
 “The Redux store holds the complete application state and manages updates through actions and reducers.”
 
-### Q. Whar are actions?
+### Q. What are actions?
 
 **Answer:**
 
@@ -1611,7 +1610,7 @@ Interview one-liner:
 
 **Answer:**
 
-dispatch() is used to send an action to the Redux store.
+`dispatch()` is used to send an action to the Redux store.
 
 Flow:
 UI → dispatch(action) → reducer → store update
@@ -1760,19 +1759,19 @@ Prevents re-calculating values and re-rendering components unnecessarily.
 
 In React:
 
-- React.memo → memoize components
-- useMemo → memoize values
-- useCallback → memoize functions
+- `React.memo` → memoize components
+- `useMemo` → memoize values
+- `useCallback` → memoize functions
 
 One-liner:
 
 “Memoization avoids repeating expensive calculations by caching results.”
 
-### Q. What is React.memo?
+### Q. What is `React.memo`?
 
 **Answer:**
 
-React.memo is a higher-order component that prevents re-rendering if props have not changed.
+`React.memo` is a higher-order component that prevents re-rendering if props have not changed.
 
 ```jsx
 const MyComponent = React.memo(Component);
@@ -1807,10 +1806,10 @@ Effect:
 class MyComponent extends React.PureComponent {}
 ```
 
-React.memo vs PureComponent:
+`React.memo` vs PureComponent:
 
 - PureComponent → class components
-- React.memo → functional components
+- `React.memo` → functional components
 
 One-liner:
 
@@ -1829,8 +1828,8 @@ Why it matters:
 
 How:
 
-- Dynamic import()
-- React.lazy
+- Dynamic `import()`
+- `React.lazy`
 
 One-liner:
 
@@ -1984,18 +1983,18 @@ React lifecycle has three main phases 👇
 
 1️⃣ Mounting (component is created)
 
-- constructor()
-- render()
-- componentDidMount()
+- `constructor()`
+- `render()`
+- `componentDidMount()`
 
 2️⃣ Updating (state/props change)
 
-- render()
-- componentDidUpdate()
+- `render()`
+- `componentDidUpdate()`
 
 3️⃣ Unmounting (component removed)
 
-- componentWillUnmount()
+- `componentWillUnmount()`
 
 Interview one-liner:
 
@@ -2005,7 +2004,7 @@ Interview one-liner:
 
 **Answer:**
 
-componentDidMount() runs once after the component is rendered to the DOM.
+`componentDidMount()` runs once after the component is rendered to the DOM.
 
 Common use cases:
 
@@ -2122,15 +2121,155 @@ Key takeaway (say this):
 
 “Error boundaries handle rendering errors, while try–catch handles synchronous code errors.”
 
-### 🔥 Common Interview Follow-ups (be ready)
+### Q. Why are Error Boundaries only class components?
 
-❓ Why are error boundaries only class components?
+**Answer:**
 
-❓ Can one error boundary catch errors in itself? (No)
+Error boundaries are only class components because they rely on lifecycle methods like componentDidCatch and getDerivedStateFromError, which are not available in function components.
 
-❓ Where should error boundaries be placed? (Around risky components)
+🔹 Explanation
 
-❓ Do error boundaries catch errors in event handlers? (No)
+React introduced error boundaries before hooks existed.
+
+Class components support:
+
+```js
+static getDerivedStateFromError(error)
+componentDidCatch(error, info)
+```
+
+Function components:
+
+- Don’t have lifecycle methods
+- Hooks don’t provide direct error boundary capability (yet)
+
+🔥 Interview Line
+
+“Error boundaries depend on lifecycle methods, which is why they are implemented only in class components.”
+
+### Q. Can one error boundary catch errors in itself?
+
+**Answer:**
+
+❌ Short Answer
+
+No.
+
+🔹 Explanation
+
+Error boundaries cannot catch errors within themselves.
+
+They only catch errors in:
+
+- Child components
+- Their subtree
+
+🔹 Example
+
+```js
+<ErrorBoundary>
+  <Child />
+</ErrorBoundary>
+```
+
+✅ Catches errors in Child
+
+❌ Cannot catch its own errors
+
+🔥 Interview Line
+
+“Error boundaries only catch errors in their children, not in themselves.”
+
+### Q. Where should error boundaries be placed?
+
+**Answer:**
+
+Error boundaries should be placed around critical parts of the UI to prevent the entire app from crashing.
+
+🔹 Best Practices
+
+- Wrap route-level components
+- Wrap independent UI sections
+- Avoid wrapping entire app
+
+🔹 Example
+
+```js
+<App>
+  <ErrorBoundary>
+    <Navbar />
+  </ErrorBoundary>
+
+  <ErrorBoundary>
+    <Routes />
+  </ErrorBoundary>
+</App>
+```
+
+🔥 Strategy
+
+| Placement       | Purpose             |
+| --------------- | ------------------- |
+| Global          | Catch major crashes |
+| Component-level | Isolate failures    |
+
+🔥 Interview Line
+
+“Error boundaries should be placed strategically to isolate failures and prevent full app crashes.”
+
+### Q. Do error boundaries catch errors in event handlers?
+
+**Answer:**
+
+❌ Short Answer
+
+No.
+
+🔹 Explanation
+
+Error boundaries only catch errors during:
+
+- Rendering
+- Lifecycle methods
+- Constructors
+
+They do NOT catch:
+
+- Event handlers
+- Async code (setTimeout, promises)
+- Server-side errors
+
+🔹 Example
+
+```jsx
+<button
+  onClick={() => {
+    throw new Error("Error");
+  }}
+>
+  Click
+</button>
+```
+
+❌ Not caught by Error Boundary
+
+🔹 How to Handle Instead
+
+```js
+try {
+  // logic
+} catch (e) {
+  // handle error
+}
+```
+
+🔥 Interview Line
+
+“Error boundaries do not catch errors in event handlers; those must be handled manually using try-catch.”
+
+🔥 Final Summary (Strong Answer)
+
+“Error boundaries are class components that catch rendering errors in their child components using lifecycle methods. They cannot catch errors in themselves or in event handlers, so they should be placed strategically around critical UI sections.”
 
 ### ⭐ 30-Second Interview Summary
 
@@ -2261,11 +2400,11 @@ Interview one-liner:
 
 “Protected routes use conditional rendering to restrict access based on authentication.”
 
-### Q. What is useNavigate?
+### Q. What is `useNavigate`?
 
 **Answer:**
 
-useNavigate is a hook used for programmatic navigation.
+`useNavigate` is a hook used for programmatic navigation.
 
 Example:
 
@@ -2282,9 +2421,9 @@ Common use cases:
 
 Interview one-liner:
 
-“useNavigate allows navigation programmatically instead of using links.”
+“`useNavigate` allows navigation programmatically instead of using links.”
 
-### Q. Difference between Link and NavLink
+### Q. Difference between `Link` and `NavLink`
 
 | Feature              | Link         | NavLink         |
 | -------------------- | ------------ | --------------- |
@@ -2301,15 +2440,15 @@ Example:
 
 Interview one-liner:
 
-“NavLink provides active route styling, while Link is used for simple navigation.”
+“`NavLink` provides active route styling, while `Link` is used for simple navigation.”
 
-### Q. Difference between Navigate and useNavigate
+### Q. Difference between `Navigate` and `useNavigate`
 
 Short Answer
 
-Navigate → component-based navigation
+`Navigate` → component-based navigation
 
-useNavigate → programmatic navigation (hook)
+`useNavigate` → programmatic navigation (hook)
 
 Explanation
 
@@ -2342,7 +2481,7 @@ const navigate = useNavigate();
 
 📌 Interview Tip
 
-Use Navigate when rendering conditionally, useNavigate when reacting to events.
+Use `Navigate` when rendering conditionally, `useNavigate` when reacting to events.
 
 ### Q. How Routing Works in an SPA
 
@@ -2482,17 +2621,17 @@ React Router uses it to implement client-side routing in SPAs.
 
 It’s part of modern browsers (HTML5) and provides methods like:
 
-- history.pushState()
-- history.replaceState()
-- popstate event
-- history.back()
-- history.forward()
+- `history.pushState()`
+- `history.replaceState()`
+- `popstate` event
+- `history.back()`
+- `history.forward()`
 
 It allows changing the URL without refreshing the page.
 
 Key Methods Explained
 
-1️⃣ pushState()
+1️⃣ `pushState()`
 
 Adds a new entry to browser history.
 
@@ -2504,7 +2643,7 @@ history.pushState({ page: 1 }, "", "/dashboard");
 
 ✅ Does NOT reload page
 
-2️⃣ replaceState()
+2️⃣ `replaceState()`
 
 Replaces the current history entry.
 
@@ -2514,7 +2653,7 @@ history.replaceState({}, "", "/login");
 
 Used when you don’t want the user to go back.
 
-3️⃣ popstate Event
+3️⃣ `popstate` Event
 
 Triggered when:
 
@@ -2532,8 +2671,8 @@ React Router (from React Router) internally uses the History API.
 
 Flow in SPA:
 
-1. User clicks <Link to="/dashboard" />
-2. React Router calls history.pushState()
+1. User clicks `<Link to="/dashboard" />`
+2. React Router calls `history.pushState()`
 3. URL changes
 4. No page reload
 5. Router matches new route
@@ -2541,8 +2680,9 @@ Flow in SPA:
 
 ```
 Click → pushState → URL change → Component render → No reload
-Example in React
 ```
+
+Example in React
 
 ```jsx
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -2703,7 +2843,7 @@ Interview summary line:
 
 **Answer:**
 
-Suspense lets you wait for async operations (like lazy-loaded components or data) and show a fallback UI.
+`Suspense` lets you wait for async operations (like lazy-loaded components or data) and show a fallback UI.
 
 ```jsx
 <Suspense fallback={<Loader />}>
@@ -2718,7 +2858,7 @@ Used for:
 
 Interview one-liner:
 
-“Suspense improves UX by handling loading states declaratively.”
+“`Suspense` improves UX by handling loading states declaratively.”
 
 ### Q. What are portals?
 
@@ -2740,11 +2880,11 @@ Interview one-liner:
 
 “Portals render components outside the DOM hierarchy without breaking React’s event system.”
 
-### Q. What is forwardRef?
+### Q. What is `forwardRef`?
 
 **Answer:**
 
-forwardRef allows a parent component to pass a ref to a child component.
+`forwardRef` allows a parent component to pass a ref to a child component.
 
 Why needed:
 
@@ -2756,7 +2896,7 @@ const Input = React.forwardRef((props, ref) => <input ref={ref} />);
 
 Interview one-liner:
 
-“forwardRef allows refs to be forwarded to child components.”
+“`forwardRef` allows refs to be forwarded to child components.”
 
 ### Q. What is controlled re-render?
 
@@ -3136,8 +3276,8 @@ I optimize React apps by reducing unnecessary re-renders, improving bundle size,
 
 🔹 Key Techniques
 
-- Use React.memo, useMemo, useCallback
-- Code splitting (React.lazy)
+- Use `React.memo`, `useMemo`, `useCallback`
+- Code splitting (`React.lazy`)
 - Avoid unnecessary state updates
 - Virtualize large lists (e.g., react-window)
 - Optimize API calls (debounce, cache)
@@ -3155,7 +3295,7 @@ I handle API failures using proper error handling, fallback UI, and retry strate
 
 🔹 Approach
 
-- try/catch or .catch()
+- `try/catch` or `.catch()`
 - Show user-friendly error message
 - Retry logic (exponential backoff)
 - Use global error handling (interceptors)
@@ -3249,7 +3389,7 @@ src/
 
 **Answer:**
 
-Environment variables are used for configuration and managed using .env files.
+Environment variables are used for configuration and managed using `.env` files.
 
 🔹 Example
 

@@ -8,11 +8,11 @@
 
 JavaScript is a high-level, dynamically typed scripting language used for web development. While it was traditionally interpreted, modern JavaScript engines use Just-In-Time compilation, making it both interpreted and compiled at runtime for better performance.
 
-### Q. Difference between var, let, and const
+### Q. Difference between `var`, `let`, and `const`
 
 **Answer:**
 
-var is function-scoped and hoisted with initialization, while let and const are block-scoped, hoisted into the Temporal Dead Zone, and safer to use. const prevents reassignment.
+`var` is function-scoped and hoisted with initialization, while `let` and `const` are block-scoped, hoisted into the Temporal Dead Zone, and safer to use. const prevents reassignment.
 
 ### Q. What is the Temporal Dead Zone?
 
@@ -32,11 +32,11 @@ Primitive data types store immutable values and are compared by value, while non
 
 Mutable values can be changed after creation, while immutable values cannot; any modification to an immutable value creates a new instance.
 
-### Q. Difference between == and ===
+### Q. Difference between `==` and `===`
 
 **Answer:**
 
-== checks equality after type coercion, whereas === checks equality without type coercion by comparing both value and type.
+`==` checks equality after type coercion, whereas `===` checks equality without type coercion by comparing both value and type.
 
 ### Q. What is type coercion?
 
@@ -48,13 +48,13 @@ Type coercion is JavaScript’s automatic or manual conversion of values between
 
 **Answer:**
 
-NaN is a special numeric value representing an invalid mathematical result, and the correct way to check for it is Number.isNaN().
+`NaN` is a special numeric value representing an invalid mathematical result, and the correct way to check for it is `Number.isNaN()`.
 
 ### Q. Difference between null and undefined
 
 **Answer:**
 
-undefined means a variable has been declared but not assigned a value, while null is an explicitly assigned value representing intentional absence.
+`undefined` means a variable has been declared but not assigned a value, while `null` is an explicitly assigned value representing intentional absence.
 
 ### Q. What is hoisting?
 
@@ -68,11 +68,11 @@ Hoisting is JavaScript’s behavior of moving declarations to the top of their s
 
 Strict mode is a JavaScript feature that enforces stricter syntax and runtime checks, preventing common bugs and making code more secure and predictable.
 
-### Q. What is the difference between alert, prompt, and confirm?
+### Q. What is the difference between `alert`, `prompt`, and `confirm`?
 
 **Answer:**
 
-alert shows a message, prompt collects user input, and confirm asks for user confirmation, all using blocking browser dialogs.
+`alert` shows a message, `prompt` collects user input, and `confirm` asks for user confirmation, all using blocking browser dialogs.
 
 ### Q. What are template literals?
 
@@ -80,34 +80,34 @@ alert shows a message, prompt collects user input, and confirm asks for user con
 
 Template literals are ES6 string literals enclosed in backticks (`) that support string interpolation (${}), multi-line strings, and expression embedding.
 
-### Q. What is the typeof operator?
+### Q. What is the `typeof` operator?
 
 **Answer:**
 
-typeof is a unary operator that returns a string indicating the data type of a value (e.g., "string", "number", "undefined", "object", "function").
+`typeof` is a unary operator that returns a string indicating the data type of a value (e.g., "string", "number", "undefined", "object", "function").
 
 ### Q. What are falsy values in JavaScript?
 
 **Answer:**
 
 Values that evaluate to false in a Boolean context:
-false, 0, -0, 0n, "", null, undefined, NaN.
+`false`, `0`, `-0`, `0n`, `""`, `null`, `undefined`, `NaN`.
 
-### Q. Difference between isNaN() and Number.isNaN()
-
-**Answer:**
-
-isNaN() performs type coercion before checking.
-
-Number.isNaN() checks without type coercion and is more reliable.
-
-### Q. Explain parseInt() vs Number()
+### Q. Difference between `isNaN()` and `Number.isNaN()`
 
 **Answer:**
 
-parseInt() parses a string up to the first non-numeric character and can take a radix.
+`isNaN()` performs type coercion before checking.
 
-Number() converts the entire value to a number and returns NaN if conversion fails.
+`Number.isNaN()` checks without type coercion and is more reliable.
+
+### Q. Explain `parseInt()` vs `Number()`
+
+**Answer:**
+
+`parseInt()` parses a string up to the first non-numeric character and can take a radix.
+
+`Number()` converts the entire value to a number and returns NaN if conversion fails.
 
 ## Functions & Scope
 
@@ -141,7 +141,7 @@ Arrow functions do not have arguments.
 
 Function declarations are hoisted with their implementation, while function expressions are not hoisted as functions.
 
-### Q. What is scope (global, function, block)?
+### Q. What is scope (`global`, `function`, `block`)?
 
 **Answer:**
 
@@ -155,7 +155,7 @@ Global scope: Accessible everywhere
 
 Function scope: Accessible only inside the function
 
-Block scope: Accessible only within {} using let and const
+Block scope: Accessible only within `{}` using `let` and `const`
 
 ### Q. What is lexical scope?
 
@@ -205,11 +205,11 @@ Currying is the process of transforming a function with multiple arguments into 
 
 JavaScript does not support traditional function overloading; it is achieved by checking arguments length or types at runtime.
 
-### Q. What is the arguments object?
+### Q. What is the `arguments` object?
 
 **Answer:**
 
-arguments is an array-like object available in normal functions that contains all passed arguments.
+`arguments` is an array-like object available in normal functions that contains all passed arguments.
 
 ### Q. What is rest parameter (...args)?
 
@@ -376,11 +376,11 @@ class User {
 }
 ```
 
-### What is this keyword?
+### What is `this` keyword?
 
 **Answer:**
 
-this refers to the object that is currently calling the function.
+`this` refers to the object that is currently calling the function.
 
 Explanation (depends on how function is called):
 
@@ -399,13 +399,13 @@ var obj = {
 };
 ```
 
-### How does this work in arrow functions?
+### How does `this` work in arrow functions?
 
 **Answer:**
 
-Arrow functions do not have their own this.
+Arrow functions do not have their own `this`.
 
-They inherit this from their lexical scope.
+They inherit `this` from their lexical scope.
 
 Example:
 
@@ -438,7 +438,7 @@ Explanation:
 - Every JavaScript object has a hidden reference to another object (prototype)
 - If a property is not found, JS looks up the prototype chain
 
-### Prototype vs **proto**
+### `Prototype` vs `**proto**`
 
 **Answer:**
 
@@ -472,7 +472,7 @@ var parent = { role: "admin" };
 var child = Object.create(parent);
 ```
 
-### Classical vs Prototypal inheritance
+### `Classical` vs `Prototypal` inheritance
 
 **Answer:**
 
@@ -483,7 +483,7 @@ var child = Object.create(parent);
 | Rigid hierarchy   | Flexible           |
 | Requires classes  | No classes needed  |
 
-### What is Object.create()?
+### What is `Object.create()`?
 
 **Answer:**
 
@@ -498,7 +498,7 @@ Use case:
 
 When you want pure inheritance without constructor functions.
 
-### What is hasOwnProperty()?
+### What is `hasOwnProperty()`?
 
 **Answer:**
 
@@ -512,7 +512,7 @@ Why important:
 
 Avoid accessing prototype properties unintentionally.
 
-### Difference between Object.freeze() and Object.seal()
+### Difference between `Object.freeze()` and `Object.seal()`
 
 **Answer:**
 
@@ -567,11 +567,11 @@ Object → Prototype → Prototype → null
 
 If property not found → search continues up the chain.
 
-### What is new keyword?
+### What is `new` keyword?
 
 **Answer:**
 
-new creates an instance from a constructor function.
+`new` creates an instance from a constructor function.
 
 What happens internally:
 
@@ -610,7 +610,7 @@ Array Methods (Categorized for Easy Interview Recall)
 
 1️⃣ Mutating Methods (Modify Original Array)
 
-🔹 push()
+🔹 `push()`
 
 Adds element at the end.
 
@@ -618,7 +618,7 @@ Adds element at the end.
 arr.push(4);
 ```
 
-🔹 pop()
+🔹 `pop()`
 
 Removes last element.
 
@@ -626,7 +626,7 @@ Removes last element.
 arr.pop();
 ```
 
-🔹 unshift()
+🔹 `unshift()`
 
 Adds element at beginning.
 
@@ -634,7 +634,7 @@ Adds element at beginning.
 arr.unshift(0);
 ```
 
-🔹 shift()
+🔹 `shift()`
 
 Removes first element.
 
@@ -642,7 +642,7 @@ Removes first element.
 arr.shift();
 ```
 
-🔹 splice()
+🔹 `splice()`
 
 Add/remove elements at specific index.
 
@@ -658,7 +658,7 @@ arr.splice(2, 0, "Lemon", "Kiwi");
 - The second parameter (0) defines how many elements should be removed
 - The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added
 
-🔹 sort()
+🔹 `sort()`
 
 Sorts array (mutates original).
 
@@ -666,7 +666,7 @@ Sorts array (mutates original).
 arr.sort((a, b) => a - b);
 ```
 
-🔹 reverse()
+🔹 `reverse()`
 
 Reverses array.
 
@@ -676,7 +676,7 @@ arr.reverse();
 
 2️⃣ Non-Mutating Methods (Return New Array)
 
-🔹 map()
+🔹 `map()`
 
 Transforms each element.
 
@@ -686,7 +686,7 @@ arr.map(x => x \* 2);
 
 📌 Returns new array.
 
-🔹 filter()
+🔹 `filter()`
 
 Filters elements based on condition.
 
@@ -694,7 +694,7 @@ Filters elements based on condition.
 arr.filter((x) => x > 2);
 ```
 
-🔹 reduce()
+🔹 r`educe()`
 
 Reduces array to single value.
 
@@ -704,7 +704,7 @@ arr.reduce((acc, curr) => acc + curr, 0);
 
 📌 Very important in interviews.
 
-🔹 slice()
+🔹 `slice()`
 
 Extracts part of array.
 
@@ -712,7 +712,7 @@ Extracts part of array.
 arr.slice(1, 3);
 ```
 
-🔹 concat()
+🔹 `concat()`
 
 Merges arrays.
 
@@ -720,7 +720,7 @@ Merges arrays.
 arr.concat([5, 6]);
 ```
 
-🔹 flat()
+🔹 `flat()`
 
 Flattens nested arrays.
 
@@ -730,7 +730,7 @@ Flattens nested arrays.
 
 3️⃣ Searching Methods
 
-🔹 includes()
+🔹 `includes()`
 
 Checks if value exists.
 
@@ -738,7 +738,7 @@ Checks if value exists.
 arr.includes(3);
 ```
 
-🔹 indexOf()
+🔹 `indexOf()`
 
 Returns first index.
 
@@ -746,11 +746,11 @@ Returns first index.
 arr.indexOf(2);
 ```
 
-🔹 lastIndexOf()
+🔹 `lastIndexOf()`
 
 Returns last index.
 
-🔹 find()
+🔹 `find()`
 
 Returns first matching element.
 
@@ -758,13 +758,13 @@ Returns first matching element.
 arr.find((x) => x > 2);
 ```
 
-🔹 findIndex()
+🔹 `findIndex()`
 
 Returns index of matching element.
 
 4️⃣ Iteration Methods
 
-🔹 forEach()
+🔹 `forEach()`
 
 Loops through array.
 
@@ -774,7 +774,7 @@ arr.forEach((x) => console.log(x));
 
 ❌ Does not return new array.
 
-🔹 some()
+🔹 `some()`
 
 Returns true if at least one matches.
 
@@ -782,7 +782,7 @@ Returns true if at least one matches.
 arr.some((x) => x > 5);
 ```
 
-🔹 every()
+🔹 `every()`
 
 Returns true if all match.
 
@@ -792,7 +792,7 @@ arr.every((x) => x > 0);
 
 5️⃣ Conversion Methods
 
-🔹 join()
+🔹 `join()`
 
 Converts array to string.
 
@@ -800,11 +800,11 @@ Converts array to string.
 arr.join("-");
 ```
 
-🔹 toString()
+🔹 `toString()`
 
 Converts to string.
 
-🔹 Array.from()
+🔹 `Array.from()`
 
 Creates array from iterable.
 
@@ -812,7 +812,7 @@ Creates array from iterable.
 Array.from("hello");
 ```
 
-🔹 Array.isArray()
+🔹 `Array.isArray()`
 
 Checks if value is array.
 
@@ -822,7 +822,7 @@ Array.isArray(arr);
 
 6️⃣ New Modern Methods
 
-🔹 at()
+🔹 `at()`
 
 Access element by index (supports negative).
 
@@ -830,7 +830,7 @@ Access element by index (supports negative).
 arr.at(-1);
 ```
 
-🔹 flatMap()
+🔹 `flatMap()`
 
 Map + flatten.
 
@@ -877,7 +877,7 @@ arr.filter((x) => x > 10);
 arr.reduce((sum, x) => sum + x, 0);
 ```
 
-### Difference between forEach and map
+### Difference between `forEach` and `map`
 
 **Answer:**
 
@@ -892,11 +892,11 @@ arr.forEach((x) => console.log(x));
 var doubled = arr.map((x) => x * 2);
 ```
 
-### What does reduce() do?
+### What does `reduce()` do?
 
 **Answer:**
 
-reduce() executes a reducer function on each element and returns a single accumulated value.
+`reduce()` executes a reducer function on each element and returns a single accumulated value.
 
 ```js
 var sum = [1, 2, 3].reduce((acc, val) => acc + val, 0);
@@ -913,20 +913,20 @@ Common use cases:
 
 **Answer:**
 
-Using flat()
+Using `flat()`
 
 ```js
 var arr = [1, [2, [3]]];
 arr.flat(2);
 ```
 
-Using reduce()
+Using `reduce()`
 
 ```js
 arr.reduce((acc, val) => acc.concat(val), []);
 ```
 
-### Difference between slice and splice
+### Difference between `slice` and `splice`
 
 **Answer:**
 
@@ -941,7 +941,7 @@ arr.slice(1, 3);
 arr.splice(1, 2);
 ```
 
-### Difference between find and filter
+### Difference between `find` and `filter`
 
 **Answer:**
 
@@ -956,19 +956,19 @@ arr.find((x) => x > 10);
 arr.filter((x) => x > 10);
 ```
 
-### What is some() and every()?
+### What is `some()` and `every()`?
 
 **Answer:**
 
-- some() → returns true if at least one element matches
-- every() → returns true if all elements match
+- `some()` → returns true if at least one element matches
+- `every()` → returns true if all elements match
 
 ```js
 arr.some((x) => x > 5);
 arr.every((x) => x > 0);
 ```
 
-### Difference between push, pop, shift, unshift
+### Difference between `push`, `pop`, `shift`, `unshift`
 
 **Answer:**
 
@@ -1016,7 +1016,7 @@ String sort
 users.sort((a, b) => a.name.localeCompare(b.name));
 ```
 
-### What is Array.from()?
+### What is `Array.from()`?
 
 **Answer:**
 
@@ -1030,11 +1030,11 @@ Array.from("hello");
 Array.from(new Set([1, 2, 2]));
 ```
 
-### What is flatMap()?
+### What is `flatMap()`?
 
 **Answer:**
 
-flatMap() maps and flattens one level deep in a single operation.
+`flatMap()` maps and flattens one level deep in a single operation.
 
 ```js
 arr.flatMap((x) => [x, x * 2]);
@@ -1060,9 +1060,10 @@ Array.isArray(value);
 
 **Answer:**
 
+Using spread operator
+
 ```js
-    Using spread operator
-    var merged = [...arr1, ...arr2];
+var merged = [...arr1, ...arr2];
 ```
 
 Using concat
@@ -1113,7 +1114,7 @@ str.substring(4, 10); // "Script"
 str.substr(4, 6); // "Script"
 ```
 
-⚠️ substr() is deprecated and should be avoided.
+⚠️ `substr()` is deprecated and should be avoided.
 
 ### Q. How to reverse a string?
 
@@ -1179,11 +1180,11 @@ var str = "hello";
 str[0] = "H"; // No effect
 ```
 
-### Q. What is split()?
+### Q. What is `split()`?
 
 **Answer:**
 
-split() converts a string into an array using a separator.
+`split()` converts a string into an array using a separator.
 
 ```js
 "hello world".split(" ");
@@ -1308,7 +1309,7 @@ A Promise can be in one of three states:
 
 Once settled (fulfilled/rejected), state cannot change.
 
-### Q. Difference between then() and async/await
+### Q. Difference between `then()` and `async/await`
 
 **Answer:**
 
@@ -1327,13 +1328,13 @@ async function getData() {
 }
 ```
 
-### Q. How does async/await work internally?
+### Q. How does `async/await` work internally?
 
 **Answer:**
 
 - async function always returns a Promise
 - await pauses execution until Promise resolves
-- Internally, it is syntactic sugar over .then()
+- Internally, it is syntactic sugar over `.then()`
 
 ```js
 async function test() {
@@ -1349,11 +1350,11 @@ function test() {
 }
 ```
 
-### Q. What is Promise.all()?
+### Q. What is `Promise.all()`?
 
 **Answer:**
 
-Promise.all() executes multiple promises in parallel and:
+`Promise.all()` executes multiple promises in parallel and:
 
 - Resolves when all promises resolve
 - Rejects if any one promise rejects
@@ -1364,7 +1365,7 @@ Promise.all([p1, p2, p3])
   .catch((err) => console.log(err));
 ```
 
-### Q. Difference between Promise.all, allSettled, race, any
+### Q. Difference between `Promise.all`, `allSettled`, `race`, `any`
 
 **Answer:**
 
@@ -1401,7 +1402,7 @@ Execution order:
 
 Call Stack → Microtasks → Macrotasks
 
-### Q. What is setTimeout?
+### Q. What is `setTimeout`?
 
 **Answer:**
 
@@ -1415,7 +1416,7 @@ setTimeout(() => {
 
 Delay is not guaranteed exact due to event loop.
 
-### Q. What is setInterval?
+### Q. What is `setInterval`?
 
 **Answer:**
 
@@ -1464,7 +1465,7 @@ async function fetchData() {
 
 **Answer:**
 
-- Control jumps to nearest .catch()
+- Control jumps to nearest `.catch()`
 - In async/await, it throws an error
 - If unhandled → Unhandled Promise Rejection
 
@@ -1472,7 +1473,7 @@ async function fetchData() {
 promise.catch((err) => console.log(err));
 ```
 
-## Execution Context & Internals ⭐
+## Execution Context & Internals
 
 ### Q. What is execution context?
 
@@ -1843,11 +1844,11 @@ div.innerText = "Hello";
 document.body.appendChild(div);
 ```
 
-### Q. What is requestAnimationFrame()?
+### Q. What is `requestAnimationFrame()`?
 
 **Answer:**
 
-requestAnimationFrame() schedules a function to run before the next repaint.
+`requestAnimationFrame()` schedules a function to run before the next repaint.
 
 ```js
 function animate() {
@@ -1875,7 +1876,7 @@ Explanation
 
 Before ES6, JavaScript had limitations in variable scoping, modularity, and readability. ES6 solved these by adding features like:
 
-- let and const
+- `let` and `const`
 - Arrow functions
 - Classes
 - Modules
@@ -1958,7 +1959,7 @@ Why it’s useful
 
 **Answer:**
 
-Both use ... but serve different purposes.
+Both use `...` but serve different purposes.
 
 Spread (...)
 
@@ -2121,7 +2122,7 @@ Why useful
 
 **Answer:**
 
-BigInt is used to represent numbers larger than Number.MAX_SAFE_INTEGER.
+`BigInt` is used to represent numbers larger than Number.MAX_SAFE_INTEGER.
 
 Example
 
@@ -2131,9 +2132,9 @@ const big = 12345678901234567890n;
 
 Interview Tip
 
-- Cannot mix BigInt and Number directly
+- Cannot mix `BigInt` and `Number` directly
 
-### Q. What is Object.entries()?
+### Q. What is `Object.entries()`?
 
 **Answer:**
 
@@ -2151,7 +2152,7 @@ Use Case
 
 - Iterating objects easily
 
-### Q. What is Object.values()?
+### Q. What is `Object.values()`?
 
 **Answer:**
 
@@ -2171,11 +2172,11 @@ Common Use
 
 ## Error Handling
 
-### Q. What is try...catch?
+### Q. What is `try...catch`?
 
 **Answer:**
 
-try...catch is used to handle runtime errors gracefully without crashing the application.
+`try...catch` is used to handle runtime errors gracefully without crashing the application.
 
 Explanation
 
@@ -2193,11 +2194,11 @@ try {
 }
 ```
 
-### Q. What is finally?
+### Q. What is `finally`?
 
 **Answer:**
 
-finally is a block that always executes, whether an error occurs or not.
+`finally` is a block that always executes, whether an error occurs or not.
 
 Explanation
 
@@ -2278,11 +2279,11 @@ console.log(a); // ReferenceError
 
 **Answer:**
 
-Errors in promises are handled using .catch().
+Errors in promises are handled using `.catch()`.
 
 Explanation
 
-- Any rejection in the chain flows to .catch()
+- Any rejection in the chain flows to `.catch()`
 - Prevents unhandled promise rejections
 
 Example
@@ -2320,11 +2321,11 @@ Why Needed
 - Centralized logging
 - Monitoring production errors
 
-### Q. What is throw?
+### Q. What is `throw`?
 
 **Answer:**
 
-throw is used to manually generate an error.
+`throw` is used to manually generate an error.
 
 Explanation
 
@@ -2343,7 +2344,7 @@ if (!user) {
 
 **Answer:**
 
-Async errors are handled using try...catch with async/await or .catch() with promises.
+Async errors are handled using `try...catch` with a`sync/await` or `.catch()` with promises.
 
 Example (async/await)
 
@@ -2420,15 +2421,222 @@ showMessage("Something went wrong");
 
 ### 🔥 Common Interview Follow-ups
 
-Be ready to answer:
+### Q. Can try...catch catch async errors?
 
-Can try...catch catch async errors? ❌ (without await)
+**Answer:**
 
-Difference between Error and TypeError
+🔹 Short Answer
 
-How error handling differs in frontend vs backend
+👉 Yes, but only with await
 
-What happens if promise rejection is not handled?
+👉 ❌ No, if using plain promises without await
+
+🔹 Explanation
+
+✅ Works with async/await
+
+```js
+async function fetchData() {
+  try {
+    const res = await fetch("api-url");
+    const data = await res.json();
+  } catch (error) {
+    console.log("Error caught:", error);
+  }
+}
+```
+
+✔ `await` makes async code behave like synchronous → `try...catch` works
+
+❌ Does NOT catch without await
+
+```js
+try {
+  fetch("api-url")
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+} catch (error) {
+  console.log("Won't catch!");
+}
+```
+
+❌ Error inside .then() is NOT caught
+
+✅ Correct way (Promises)
+
+```js
+fetch("api-url")
+  .then((res) => res.json())
+  .catch((err) => console.log(err));
+```
+
+🔹 Key Insight
+
+`try...catch` only works for:
+
+- synchronous code
+- awaited async code
+
+🔥 Interview Line
+
+`try...catch` can catch async errors only when using `await`; otherwise, you must use `.catch()` for promises.
+
+### Q. Difference between Error and TypeError
+
+**Answer:**
+
+🔹 Error
+
+✅ Definition
+
+Base class for all errors
+
+🔹 Example
+
+```js
+throw new Error("Something went wrong");
+```
+
+🔹 TypeError
+
+✅ Definition
+
+Occurs when a value is not of expected type
+
+🔹 Example
+
+```js
+let num = null;
+num.toString(); // ❌ TypeError
+```
+
+🔹 Key Differences
+
+| Feature     | Error         | TypeError     |
+| ----------- | ------------- | ------------- |
+| Type        | Generic       | Specific      |
+| Use Case    | Custom errors | Type mismatch |
+| Inheritance | Base class    | Extends Error |
+
+🔹 Real Insight
+
+TypeError is more specific and descriptive
+
+🔥 Interview Line
+
+Error is a generic base class, while TypeError is a specific error thrown when operations are performed on incompatible types.
+
+### Q. How error handling differs in frontend vs backend
+
+**Answer:**
+
+🔹 Frontend (Client-side)
+
+✅ Goals
+
+- Show user-friendly messages
+- Prevent app crash
+- Handle UI gracefully
+
+🔹 Examples
+
+- Toast messages
+- Retry buttons
+- Fallback UI
+
+🔹 Tools
+
+- `try...catch`
+- `.catch()`
+- React Error Boundaries
+
+🔹 Backend (Server-side)
+
+✅ Goals
+
+- Maintain server stability
+- Log errors
+- Send proper HTTP responses
+
+🔹 Examples
+
+- Logging (Winston, Morgan)
+- HTTP status codes (500, 404)
+- Error middleware
+
+🔹 Key Differences
+
+| Feature      | Frontend        | Backend             |
+| ------------ | --------------- | ------------------- |
+| Focus        | UX              | Stability & logging |
+| Error Output | UI messages     | Logs + API response |
+| Impact       | User experience | System reliability  |
+
+🔥 Interview Line
+
+Frontend focuses on user experience and graceful UI handling, while backend focuses on stability, logging, and correct API responses.
+
+### Q. What happens if promise rejection is not handled?
+
+**Answer:**
+
+🔹 Result
+
+👉 Unhandled Promise Rejection
+
+🔹 Behavior
+
+In Browser:
+
+- Shows warning in console
+- May not crash app immediately
+
+In Node.js:
+
+- Can terminate process (in strict modes)
+- Emits unhandledRejection event
+
+🔹 Example
+
+```js
+Promise.reject("Error!");
+```
+
+❌ No `.catch()` → unhandled rejection
+
+🔹 Risks
+
+- Silent failures ❌
+- Debugging difficulty ❌
+- App instability ❌
+
+🔹 Best Practice
+
+```js
+promise.then((data) => {}).catch((err) => console.error(err));
+```
+
+OR
+
+```js
+try {
+  await promise;
+} catch (err) {
+  console.error(err);
+}
+```
+
+🔹 Global Handling (Node.js)
+
+```js
+process.on("unhandledRejection", (err) => {
+  console.log("Unhandled:", err);
+});
+```
+
+🔥 Interview Line
+
+Unhandled promise rejections can lead to silent failures or crashes, so they should always be handled using .catch() or try...catch.
 
 ## Performance & Optimization
 
