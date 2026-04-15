@@ -804,7 +804,7 @@ useLayoutEffect(() => {
 
 Order:
 
-`useInsertionEffect`
+→ `useInsertionEffect`
 
 → DOM updates
 
@@ -816,7 +816,8 @@ Order:
 
 🧩 Why it exists
 
-- Created mainly for:
+Created mainly for:
+
 - CSS-in-JS libraries
 - Injecting styles before elements appear
 
@@ -3470,152 +3471,3 @@ I use logging, monitoring tools, and error tracking to debug production issues.
 ### Q. React query
 
 **Answer:**
-
-## Design Pattern
-
-### Layout Components
-
-**Answer:**
-
-📌 Definition
-
-Layout components are reusable UI components responsible for structuring and organizing the overall layout of an application. They define where content appears rather than what the content is.
-
-🧠 Key Idea
-
-Layout components control structure (positioning, spacing, alignment), not business logic or data.
-
-🏗️ Common Types of Layout Components
-
-1. Container / Wrapper
-
-- Centers content and applies max width
-- Adds padding/margin
-
-```jsx
-const Container = ({ children }) => <div className="max-w-7xl mx-auto px-4">{children}</div>;
-```
-
-2. Grid Layout
-
-- Used for 2D layouts (rows + columns)
-
-```html
-<div className="grid grid-cols-3 gap-4">
-  <div>Item 1</div>
-  <div>Item 2</div>
-  <div>Item 3</div>
-</div>
-```
-
-3. Flex Layout
-
-- Used for 1D layouts (row or column)
-
-```html
-<div className="flex justify-between items-center">
-  <div>Left</div>
-  <div>Right</div>
-</div>
-```
-
-4. Page Layout
-
-- Defines full page structure (header, footer, sidebar)
-
-```jsx
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
-  );
-};
-```
-
-5. Sidebar Layout
-
-- Used in dashboards or admin panels
-
-```jsx
-<div className="flex">
-  <Sidebar />
-  <main className="flex-1">Content</main>
-</div>
-```
-
-6. Stack / Spacer Components
-
-- Used for consistent spacing
-
-```jsx
-const Stack = ({ children }) => <div className="flex flex-col gap-4">{children}</div>;
-```
-
-⚙️ How Layout Components Work
-
-1. Wrap content
-2. Apply CSS (Flexbox, Grid, spacing)
-3. Ensure consistency across pages
-4. Promote reusability
-
-📦 Real-World Example (React App Structure)
-
-```jsx
-<App>
-  <Layout>
-    <HomePage />
-  </Layout>
-</App>
-```
-
-```jsx
-const Layout = ({ children }) => (
-  <div className="min-h-screen flex flex-col">
-    <Header />
-    <div className="flex flex-1">
-      <Sidebar />
-      <main className="flex-1 p-4">{children}</main>
-    </div>
-    <Footer />
-  </div>
-);
-```
-
-🎯 Key Principles
-
-- Separation of Concerns
-
-  Layout ≠ Business logic
-
-- Reusability
-
-  Same layout across multiple pages
-
-- Consistency
-
-  Uniform spacing, alignment
-
-- Responsiveness
-
-  Works across screen sizes
-
-⚠️ Common Mistakes
-
-- Mixing layout + business logic
-- Hardcoding spacing instead of reusable components
-- Not making layouts responsive
-- Deep nesting → hard to maintain
-
-💡 Best Practices
-
-- Use utility-first CSS (Tailwind) or design systems
-- Create generic layout components (Container, Grid, Stack)
-- Keep layouts dumb (presentational)
-- Use props for flexibility
-
-```jsx
-const Container = ({ children, className = "" }) => <div className={`max-w-7xl mx-auto ${className}`}>{children}</div>;
-```
