@@ -1,0 +1,300 @@
+[
+  {
+    "id": "basic-001",
+    "topic": "basic",
+    "subTopic": "Web Fundamentals",
+    "difficulty": "Intermediate",
+    "question": "Full mental model of how a web page load",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "1️⃣ Big Picture: What happens when you open a website?"
+      },
+      {
+        "type": "paragraph",
+        "text": "When you type a website URL in the browser, multiple systems work together to locate the server and deliver the page."
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "https://example.com"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your browser does not magically know where the website is hosted. A chain of infrastructure components resolve and deliver the content."
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "Browser → DNS → CDN → Dispatcher → Web Server → App → Database"
+      },
+
+      {
+        "type": "h4",
+        "text": "2️⃣ DNS (Domain Name System) – The Phonebook of the Internet"
+      },
+      {
+        "type": "paragraph",
+        "text": "DNS converts human-readable domain names into IP addresses."
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "example.com → 93.184.216.34"
+      },
+      {
+        "type": "bold",
+        "text": "Steps"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": ["Browser checks cache", "OS cache", "ISP DNS", "Root DNS → TLD → Authoritative DNS", "IP address returned"]
+      },
+      {
+        "type": "info",
+        "text": "DNS does not host content. It only resolves domain names to server locations (often a CDN)."
+      },
+
+      {
+        "type": "h4",
+        "text": "3️⃣ CDN (Content Delivery Network)"
+      },
+      {
+        "type": "paragraph",
+        "text": "A CDN is a global network of servers that cache website content and deliver it from the closest geographical location."
+      },
+      {
+        "type": "bold",
+        "text": "Popular CDNs"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Cloudflare", "Akamai", "AWS CloudFront"]
+      },
+      {
+        "type": "bold",
+        "text": "Why CDN is critical"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "Without CDN:\nUser in India → Server in US → Slow"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "With CDN:\nUser in India → Mumbai edge server → Fast"
+      },
+
+      {
+        "type": "bold",
+        "text": "What CDN caches"
+      },
+      {
+        "type": "table",
+        "columns": ["Cached by CDN", "Not Cached"],
+        "data": [
+          ["Images", "Personalized data"],
+          ["CSS", "Logged-in dashboards"],
+          ["JS", "Payment APIs"],
+          ["HTML (sometimes)", "WebSockets"]
+        ]
+      },
+
+      {
+        "type": "h4",
+        "text": "4️⃣ Publisher – Who publishes the website?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The publisher is the entity responsible for building, deploying, and managing the website."
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["News site → Media company", "E-commerce → Amazon or Flipkart", "Corporate website → Company itself"]
+      },
+      {
+        "type": "bold",
+        "text": "Publisher responsibilities"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Write application code", "Build assets", "Upload files to servers", "Configure CDN", "Define caching rules", "Deploy site to production"]
+      },
+
+      {
+        "type": "h4",
+        "text": "5️⃣ Dispatcher (Enterprise Layer)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Dispatcher is a reverse proxy and caching layer placed between the CDN and the application servers."
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "CDN ↔ Dispatcher ↔ Web Server ↔ Application"
+      },
+      {
+        "type": "bold",
+        "text": "Dispatcher responsibilities"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": ["Cache HTML pages", "Filter allowed URLs", "Block malicious requests", "Route traffic to correct backend", "Protect application servers"]
+      },
+      {
+        "type": "bold",
+        "text": "Dispatcher vs CDN"
+      },
+      {
+        "type": "table",
+        "columns": ["CDN", "Dispatcher"],
+        "data": [
+          ["Global", "Inside infrastructure"],
+          ["Edge-level caching", "Near origin"],
+          ["Public network", "Private layer"],
+          ["Faster delivery", "More controlled filtering"]
+        ]
+      },
+
+      {
+        "type": "h4",
+        "text": "6️⃣ Web Server"
+      },
+      {
+        "type": "paragraph",
+        "text": "The web server receives HTTP requests and serves static assets or forwards dynamic requests to application servers."
+      },
+      {
+        "type": "bold",
+        "text": "Common Web Servers"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Apache", "Nginx"]
+      },
+      {
+        "type": "code",
+        "language": "http",
+        "code": "GET /index.html"
+      },
+      {
+        "type": "paragraph",
+        "text": "Static files are served directly, while dynamic requests are forwarded to the application server."
+      },
+
+      {
+        "type": "h4",
+        "text": "7️⃣ Application Server"
+      },
+      {
+        "type": "paragraph",
+        "text": "Application servers run the business logic of the system."
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Node.js (Express, Nest)", "Java (Spring)", ".NET", "PHP (Laravel)"]
+      },
+      {
+        "type": "bold",
+        "text": "Responsibilities"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Authentication checks", "API calls", "Database queries", "Rendering HTML or JSON responses"]
+      },
+      {
+        "type": "h4",
+        "text": "8️⃣ Database & APIs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Data is fetched from multiple sources."
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["SQL databases (MySQL, PostgreSQL)", "NoSQL databases (MongoDB)", "External APIs", "Cache layers such as Redis"]
+      },
+
+      {
+        "type": "h4",
+        "text": "9️⃣ Caching – The Secret Sauce"
+      },
+      {
+        "type": "bold",
+        "text": "Types of caching"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": ["Browser Cache", "CDN Cache", "Dispatcher Cache", "Application Cache", "Database Cache"]
+      },
+      {
+        "type": "code",
+        "language": "http",
+        "code": "Cache-Control: max-age=31536000"
+      },
+      {
+        "type": "bold",
+        "text": "Cache invalidation strategies"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Cache purge", "Versioned URLs", "TTL expiry", "Webhook based purge"]
+      },
+      {
+        "type": "info",
+        "text": "Caching is easy. Cache invalidation is one of the hardest problems in computer science."
+      },
+
+      {
+        "type": "h4",
+        "text": "🔟 How a Web Page Goes Live"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": ["Developer writes code", "Code pushed to Git", "CI pipeline builds assets", "Files uploaded to server or CMS", "Dispatcher cache cleared", "CDN cache purged", "DNS points to CDN", "Users see the new page"]
+      },
+
+      {
+        "type": "h4",
+        "text": "1️⃣1️⃣ Real World Request Flow"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "User Browser\n↓\nDNS\n↓\nCDN (cached? yes → return)\n↓ no\nDispatcher (cached? yes → return)\n↓ no\nWeb Server\n↓\nApplication Server\n↓\nDatabase / APIs\n↑\nResponse cached on way back"
+      },
+
+      {
+        "type": "h4",
+        "text": "1️⃣2️⃣ Why This Matters"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": ["Helps debug slow websites", "Useful in system design interviews", "Helps design scalable applications", "Improves architectural understanding"]
+      }
+    ]
+  }
+]

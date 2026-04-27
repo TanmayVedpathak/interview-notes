@@ -1,0 +1,8285 @@
+[
+  {
+    "id": "js-001",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is JavaScript? Is it interpreted or compiled?What is JavaScript? Is it interpreted or compiled?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JavaScript is a high-level, dynamically typed scripting language used for web development. While it was traditionally interpreted, modern JavaScript engines use Just-In-Time compilation, making it both interpreted and compiled at runtime for better performance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-002",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "Difference between var, let, and const",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "var"
+          },
+          {
+            "type": "text",
+            "value": " is function-scoped and hoisted with initialization, while "
+          },
+          {
+            "type": "badge",
+            "value": "let"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "const"
+          },
+          {
+            "type": "text",
+            "value": " are block-scoped, hoisted into the Temporal Dead Zone, and safer to use. const prevents reassignment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-003",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is the Temporal Dead Zone?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The Temporal Dead Zone is the phase during execution where let and const variables are hoisted but not yet initialized, and accessing them results in a ReferenceError."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-004",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What are primitive and non-primitive data types?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Primitive data types store immutable values and are compared by value, while non-primitive data types store references to mutable objects and are compared by reference."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-005",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "Difference between mutable and immutable",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Mutable values can be changed after creation, while immutable values cannot; any modification to an immutable value creates a new instance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-006",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "Difference between == and ===",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "=="
+          },
+          {
+            "type": "text",
+            "value": " checks equality after type coercion, whereas "
+          },
+          {
+            "type": "badge",
+            "value": "==="
+          },
+          {
+            "type": "text",
+            "value": " checks equality without type coercion by comparing both value and type."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-007",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is type coercion?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Type coercion is JavaScript’s automatic or manual conversion of values between data types during operations and comparisons."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-008",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is NaN? How do you check if a value is NaN?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "NaN"
+          },
+          {
+            "type": "text",
+            "value": " is a special numeric value representing an invalid mathematical result, and the correct way to check for it is "
+          },
+          {
+            "type": "badge",
+            "value": "Number.isNaN()"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-009",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "Difference between null and undefined",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "undefined"
+          },
+          {
+            "type": "text",
+            "value": " means a variable has been declared but not assigned a value, while "
+          },
+          {
+            "type": "badge",
+            "value": "null"
+          },
+          {
+            "type": "text",
+            "value": " is an explicitly assigned value representing intentional absence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-010",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is hoisting?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Hoisting is JavaScript’s behavior of moving declarations to the top of their scope during compilation, allowing variables and functions to be accessed before their declaration in code."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-011",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is strict mode (\"use strict\")?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Strict mode is a JavaScript feature that enforces stricter syntax and runtime checks, preventing common bugs and making code more secure and predictable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-012",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is the difference between `alert`, `prompt`, and `confirm`?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "alert"
+          },
+          {
+            "type": "text",
+            "value": " shows a message, "
+          },
+          {
+            "type": "badge",
+            "value": "prompt"
+          },
+          {
+            "type": "text",
+            "value": " collects user input, and "
+          },
+          {
+            "type": "badge",
+            "value": "confirm"
+          },
+          {
+            "type": "text",
+            "value": " asks for user confirmation, all using blocking browser dialogs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-013",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What are template literals?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Template literals are ES6 string literals enclosed in backticks (`) that support string interpolation (${}), multi-line strings, and expression embedding."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-014",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What is the `typeof` operator?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "typeof"
+          },
+          {
+            "type": "text",
+            "value": " is a unary operator that returns a string indicating the data type of a value (e.g., \"string\", \"number\", \"undefined\", \"object\", \"function\")."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-015",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "What are falsy values in JavaScript?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Values that evaluate to false in a Boolean context:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "false"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "0"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "-0"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "0n"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "\"\""
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "null"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "undefined"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "NaN"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-016",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "Difference between `isNaN()` and `Number.isNaN()`",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "isNaN()"
+          },
+          {
+            "type": "text",
+            "value": " performs type coercion before checking."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "Number.isNaN()"
+          },
+          {
+            "type": "text",
+            "value": " checks without type coercion and is more reliable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-017",
+    "topic": "JAVASCRIPT",
+    "subTopic": "JavaScript Basics",
+    "difficulty": "Beginner",
+    "question": "Explain `parseInt()` vs `Number()`",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "parseInt()"
+          },
+          {
+            "type": "text",
+            "value": " parses a string up to the first non-numeric character and can take a radix."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "Number()"
+          },
+          {
+            "type": "text",
+            "value": " converts the entire value to a number and returns NaN if conversion fails."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-018",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is a function declaration vs function expression?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Function declaration defines a named function and is fully hoisted."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Function expression assigns a function to a variable and is not hoisted as a function."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-019",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is an arrow function?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "An arrow function is a concise ES6 function syntax that does not have its own this, arguments, or prototype."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-020",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "Difference between arrow function and normal function",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions have lexical this; normal functions have dynamic this."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions cannot be used as constructors."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions do not have arguments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-021",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is function hoisting?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Function declarations are hoisted with their implementation, while function expressions are not hoisted as functions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-022",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is scope (`global`, `function`, `block`)?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Scope determines where a variable or function can be accessed in your code."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "In simple terms:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Scope answers the question — “Can I use this variable here?”"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Global scope: Accessible everywhere"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Function scope: Accessible only inside the function"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Block scope: Accessible only within "
+          },
+          {
+            "type": "badge",
+            "value": "{}"
+          },
+          {
+            "type": "text",
+            "value": " using "
+          },
+          {
+            "type": "badge",
+            "value": "let"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "const"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-023",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is lexical scope?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Lexical scope means a function can access variables from its parent scope where it was defined, not where it is called."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-024",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What are default parameters?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Default parameters allow function parameters to have default values if no argument or undefined is passed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-025",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is a callback function?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A callback function is a function passed as an argument to another function and executed later."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-026",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is a higher-order function?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A higher-order function is a function that accepts another function as an argument or returns a function."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-027",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is IIFE?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "An IIFE is a function that executes immediately after it is defined, commonly used to create private scope."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-028",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is recursion?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Recursion is a technique where a function calls itself until a base condition is met."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-029",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is currying?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Currying is the process of transforming a function with multiple arguments into a sequence of functions each taking one argument."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-030",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is function overloading in JS?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JavaScript does not support traditional function overloading; it is achieved by checking arguments length or types at runtime."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-031",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is the `arguments` object?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "arguments"
+          },
+          {
+            "type": "text",
+            "value": " is an array-like object available in normal functions that contains all passed arguments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-032",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "What is rest parameter (...args)?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The rest parameter collects remaining function arguments into a real array, replacing the need for arguments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-033",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "What is a closure?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A closure is a function that remembers and can access variables from its lexical scope even after the outer function has finished execution."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-034",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Why are closures useful?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Closures enable state persistence, data encapsulation, and functional patterns without using global variables."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-035",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Real-world use cases of closures",
+    "answer": [
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Data privacy / encapsulation"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Event handlers"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Callbacks and async operations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Function factories"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Memoization"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "State management"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-036",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "How closures help in data hiding?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Closures allow variables to remain private inside a function scope, accessible only through controlled inner functions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-037",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Closure vs scope",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Scope: Where variables are defined and accessible"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Closure: A function + its preserved lexical scope after execution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-038",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Example of closure in async code",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function fetchData(id) {\r\n  setTimeout(function () {\r\n    console.log(id);\r\n  }, 1000);\r\n}\r\nfetchData(10);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-039",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Memory implications of closures",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Closures retain references to outer variables, preventing garbage collection as long as the closure exists."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-040",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Can closures cause memory leaks?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Yes — if closures unnecessarily retain large objects or DOM references, memory leaks can occur."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-041",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Difference between closure and lexical scope",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Lexical scope: Scope determined at write time"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Closure: Runtime behavior that preserves lexical scope"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-042",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Closures",
+    "difficulty": "Beginner",
+    "question": "Write a closure example",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function counter() {\r\n  let count = 0;\r\n  return function () {\r\n    count++;\r\n    return count;\r\n  };\r\n}\r\nconst increment = counter();\r\nincrement(); // 1\r\nincrement(); // 2\r"
+      }
+    ]
+  },
+  {
+    "id": "js-043",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is an object in JavaScript?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "An object in JavaScript is a collection of key–value pairs used to store related data and behavior."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Keys are strings (or symbols)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Values can be any data type, including functions (methods)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Objects represent real-world entities"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var user = {\r\n  name: \"Tanmay\",\r\n  age: 25,\r\n  greet: function () {\r\n    return \"Hello\";\r\n  },\r\n};\r"
+      }
+    ]
+  },
+  {
+    "id": "js-044",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "Different ways to create objects",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Object literal (most common)"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var obj = { a: 1 };\r"
+      },
+      {
+        "type": "bold",
+        "text": "Using new Object()"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var obj = new Object();\r\nobj.a = 1;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Constructor function"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function User(name) {\r\n  this.name = name;\r\n}\r\nvar u1 = new User(\"Tanmay\");\r"
+      },
+      {
+        "type": "bold",
+        "text": "Object.create()"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var proto = { greet: \"hi\" };\r\nvar obj = Object.create(proto);\r"
+      },
+      {
+        "type": "bold",
+        "text": "ES6 Class (syntactic sugar)"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "class User {\r\n  constructor(name) {\r\n    this.name = name;\r\n  }\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-045",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is this keyword?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "this"
+          },
+          {
+            "type": "text",
+            "value": " refers to the object that is currently calling the function."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation (depends on how function is called):"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Method call → object"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Function call → window (non-strict) / undefined (strict)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Constructor → newly created object"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var obj = {\r\n  name: \"JS\",\r\n  getName: function () {\r\n    return this.name;\r\n  },\r\n};\r"
+      }
+    ]
+  },
+  {
+    "id": "js-046",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "How does `this` work in arrow functions?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions do not have their own "
+          },
+          {
+            "type": "badge",
+            "value": "this"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "They inherit "
+          },
+          {
+            "type": "badge",
+            "value": "this"
+          },
+          {
+            "type": "text",
+            "value": " from their lexical scope."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var obj = {\r\n  name: \"JS\",\r\n  arrow: () => this.name,\r\n  normal: function () {\r\n    return this.name;\r\n  },\r\n};\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 arrow() → undefined"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 normal() → \"JS\""
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Key point for interview:"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions are best for callbacks, not object methods."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-047",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is prototype?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Prototype is an object from which other objects inherit properties."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Every JavaScript object has a hidden reference to another object (prototype)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "If a property is not found, JS looks up the prototype chain"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-048",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "Prototype vs proto",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Prototype", "__proto__"],
+        "data": [
+          ["Exists on constructor", "Exists on instance"],
+          ["Used to define shared methods", "Points to constructor’s prototype"],
+          ["Func.prototype", "obj.__proto__"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function User() {}\r\nvar u = new User();\r\nUser.prototype === u.proto // true\r"
+      }
+    ]
+  },
+  {
+    "id": "js-049",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is prototypal inheritance?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Prototypal inheritance is a mechanism where objects inherit directly from other objects."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Instead of classes, JavaScript uses objects inheriting from objects."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var parent = { role: \"admin\" };\r\nvar child = Object.create(parent);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-050",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "Classical vs Prototypal inheritance",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Classical", "Prototypal"],
+        "data": [
+          ["Class-based", "Object-based"],
+          ["Used in Java, C++", "Used in JavaScript"],
+          ["Rigid hierarchy", "Flexible"],
+          ["Requires classes", "No classes needed"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-051",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is Object.create()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Creates a new object with the specified object as its prototype."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var parent = { greet: \"hi\" };\r\nvar child = Object.create(parent);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use case:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "When you want pure inheritance without constructor functions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-052",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is hasOwnProperty()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Checks if a property belongs directly to the object, not inherited."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "obj.hasOwnProperty(\"name\");\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why important:"
+          }
+        ]
+      },
+      {
+        "type": "warn",
+        "content": [
+          {
+            "type": "text",
+            "value": "Avoid accessing prototype properties unintentionally."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-053",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "Difference between Object.freeze() and Object.seal()",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "freeze", "seal"],
+        "data": [
+          ["Add property", "❌", "❌"],
+          ["Delete property", "❌", "❌"],
+          ["Modify value", "❌", "✅"],
+          ["Fully immutable", "✅", "❌"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-054",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "How to clone an object?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Shallow copy"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var copy = Object.assign({}, obj);\r\n// OR\r\nvar copy = { ...obj };\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Deep copy"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "var deep = JSON.parse(JSON.stringify(obj));\r"
+      },
+      {
+        "type": "warn",
+        "content": [
+          {
+            "type": "text",
+            "value": "⚠️ JSON method fails for functions, dates, undefined."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-055",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "Shallow copy vs Deep copy",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Shallow", "Deep"],
+        "data": [
+          ["Copies reference", "Copies value"],
+          ["Nested objects shared", "Fully independent"],
+          ["Faster", "Slower"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-056",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "How does inheritance work in JavaScript?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Inheritance works via prototype chain lookup."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Flow:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Object → Prototype → Prototype → null\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "If property not found → search continues up the chain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-057",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Objects & Prototypes",
+    "difficulty": "Beginner",
+    "question": "What is new keyword?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "new"
+          },
+          {
+            "type": "text",
+            "value": " creates an instance from a constructor function."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "What happens internally:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Creates empty object"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Sets prototype"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Binds this"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Returns object"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function User(name) {\r\n  this.name = name;\r\n}\r\nvar u = new User(\"Tanmay\");\r"
+      }
+    ]
+  },
+  {
+    "id": "js-058",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "What is an Array in JavaScript?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "An Array in JavaScript is an ordered, zero-indexed collection of values that can store multiple elements (of any type) in a single variable."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const arr = [1, 2, 3];\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrays in JS are:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Dynamic (size can change)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Can store mixed data types"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prototype-based objects"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Array Methods (Categorized for Easy Interview Recall)"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "1️⃣ Mutating Methods (Modify Original Array)"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "push()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Adds element at the end."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.push(4);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "pop()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Removes last element."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.pop();\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "unshift()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Adds element at beginning."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.unshift(0);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "shift()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Removes first element."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.shift();\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "splice()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Add/remove elements at specific index."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.splice(1, 2); // remove 2 items from index 1\r"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.splice(2, 0, \"Lemon\", \"Kiwi\");\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "The first parameter (2) defines the position where new elements should be added (spliced in)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "The second parameter (0) defines how many elements should be removed"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "The rest of the parameters (\"Lemon\" , \"Kiwi\") define the new elements to be added"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "sort()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Sorts array (mutates original)."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.sort((a, b) => a - b);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "reverse()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Reverses array."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.reverse();\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "2️⃣ Non-Mutating Methods (Return New Array)"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "map()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Transforms each element."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.map(x => x \\* 2);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "📌 Returns new array."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "filter()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Filters elements based on condition."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.filter((x) => x > 2);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "reduce()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Reduces array to single value."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.reduce((acc, curr) => acc + curr, 0);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "📌 Very important in interviews."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "slice()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Extracts part of array."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.slice(1, 3);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "concat()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Merges arrays."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.concat([5, 6]);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "flat()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Flattens nested arrays."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "[1, [2, 3]].flat();\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "3️⃣ Searching Methods"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "includes()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Checks if value exists."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.includes(3);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "indexOf()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns first index."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.indexOf(2);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "lastIndexOf()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns last index."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "find()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns first matching element."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.find((x) => x > 2);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "findIndex()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns index of matching element."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "4️⃣ Iteration Methods"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "forEach()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Loops through array."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.forEach((x) => console.log(x));\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "❌ Does not return new array."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "some()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns true if at least one matches."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.some((x) => x > 5);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "every()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns true if all match."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.every((x) => x > 0);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "5️⃣ Conversion Methods"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "paragraph",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "join()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Converts array to string."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.join(\"-\");\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "paragraph",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "toString()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Converts to string."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "Array.from()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Creates array from iterable."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Array.from(\"hello\");\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "Array.isArray()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Checks if value is array."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Array.isArray(arr);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "6️⃣ New Modern Methods"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "at()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Access element by index (supports negative)."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.at(-1);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 "
+          },
+          {
+            "type": "badge",
+            "value": "flatMap()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Map + flatten."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.flatMap((x) => [x * 2]);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Important Interview Comparison"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Method", "Mutates?", "Returns New?"],
+        "data": [
+          ["push", "✅", "❌"],
+          ["map", "❌", "✅"],
+          ["filter", "❌", "✅"],
+          ["reduce", "❌", "✅"],
+          ["splice", "✅", "❌"],
+          ["slice", "❌", "✅"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "One-Line Interview Summary"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "“An array in JavaScript is a dynamic, ordered collection of values that provides powerful built-in methods for iteration, transformation, searching, and mutation.”"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-059",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "Difference between map, filter, and reduce",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Method", "Purpose", "Returns"],
+        "data": [
+          ["map()", "Transform each element", "New array"],
+          ["filter()", "Select elements based on condition", "New array"],
+          ["reduce()", "Reduce array to a single value", "Any value"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.map((x) => x * 2);\r\narr.filter((x) => x > 10);\r\narr.reduce((sum, x) => sum + x, 0);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-060",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "Difference between forEach and map",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["forEach", "map"],
+        "data": [
+          ["Used for side effects", "Used for transformation"],
+          ["Does not return anything", "Returns a new array"],
+          ["Cannot be chained", "Can be chained"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.forEach((x) => console.log(x));\r\nvar doubled = arr.map((x) => x * 2);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-061",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "What does reduce() do?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "reduce()"
+          },
+          {
+            "type": "text",
+            "value": " executes a reducer function on each element and returns a single accumulated value."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var sum = [1, 2, 3].reduce((acc, val) => acc + val, 0);\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Common use cases:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Sum / product"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Grouping data"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Flatten arrays"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Creating objects from arrays"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-062",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "How to flatten an array?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using "
+          },
+          {
+            "type": "badge",
+            "value": "flat()"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var arr = [1, [2, [3]]];\r\narr.flat(2);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using "
+          },
+          {
+            "type": "badge",
+            "value": "reduce()"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.reduce((acc, val) => acc.concat(val), []);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-063",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "Difference between slice and splice",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["slice", "splice"],
+        "data": [
+          ["Non-mutating", "Mutates original array"],
+          ["Extracts elements", "Adds / removes elements"],
+          ["Returns new array", "Returns removed elements"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.slice(1, 3);\r\narr.splice(1, 2);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-064",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "Difference between find and filter",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["find", "filter"],
+        "data": [
+          ["Returns first match", "Returns all matches"],
+          ["Returns single value", "Returns array"],
+          ["Stops once found", "Iterates entire array"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.find((x) => x > 10);\r\narr.filter((x) => x > 10);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-065",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "What is some() and every()?",
+    "answer": [
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "some()"
+            },
+            {
+              "type": "text",
+              "value": " → returns true if at least one element matches"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "every()"
+            },
+            {
+              "type": "text",
+              "value": " → returns true if all elements match"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.some((x) => x > 5);\r\narr.every((x) => x > 0);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-066",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "Difference between push, pop, shift, unshift",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Method", "Action", "Position"],
+        "data": [
+          ["push", "Add", "End"],
+          ["pop", "Remove", "End"],
+          ["unshift", "Add", "Start"],
+          ["shift", "Remove", "Start"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.push(4);\r\narr.pop();\r\narr.unshift(1);\r\narr.shift();\r"
+      }
+    ]
+  },
+  {
+    "id": "js-067",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "How to remove duplicates from an array?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using Set"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var unique = [...new Set(arr)];\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using filter"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.filter((v, i, a) => a.indexOf(v) === i);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-068",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "How to sort array of objects?",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "users.sort((a, b) => a.age - b.age);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "String sort"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "users.sort((a, b) => a.name.localeCompare(b.name));\r"
+      }
+    ]
+  },
+  {
+    "id": "js-069",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "What is Array.from()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Creates a new array from:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Array-like objects"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Iterables (Set, Map, string)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Array.from(\"hello\");\r\nArray.from(new Set([1, 2, 2]));\r"
+      }
+    ]
+  },
+  {
+    "id": "js-070",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "What is flatMap()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "flatMap()"
+          },
+          {
+            "type": "text",
+            "value": " maps and flattens one level deep in a single operation."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.flatMap((x) => [x, x * 2]);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Equivalent to:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "arr.map().flat(1);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-071",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "How to check if value is an array?",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Array.isArray(value);\r"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "✔ Recommended over typeof"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-072",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "How to merge arrays?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using spread operator"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var merged = [...arr1, ...arr2];\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using concat"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var merged = arr1.concat(arr2);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-073",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Arrays & Array Methods",
+    "difficulty": "Beginner",
+    "question": "What is array destructuring?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Array destructuring allows extracting values into variables."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var [a, b] = [1, 2];\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Skipping values"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var [, , third] = [1, 2, 3];\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Default values"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var [a = 10] = [];\r"
+      }
+    ]
+  },
+  {
+    "id": "js-074",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "Difference between slice, substring, and substr",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Method", "Parameters", "Supports negative index", "Description"],
+        "data": [
+          ["slice(start, end)", "start, end", "✅ Yes", "Extracts part of a string"],
+          ["substring(start, end)", "start, end", "❌ No", "Negative values treated as `0`"],
+          ["substr(start, length)", "start, length", "✅ Yes", "Extracts based on length (deprecated)"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var str = \"JavaScript\";\r\nstr.slice(4, 10); // \"Script\"\r\nstr.substring(4, 10); // \"Script\"\r\nstr.substr(4, 6); // \"Script\"\r"
+      },
+      {
+        "type": "warn",
+        "content": [
+          {
+            "type": "text",
+            "value": "⚠️ "
+          },
+          {
+            "type": "badge",
+            "value": "substr()"
+          },
+          {
+            "type": "text",
+            "value": " is deprecated and should be avoided."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-075",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "How to reverse a string?",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var reversed = str.split(\"\").reverse().join(\"\");\r"
+      }
+    ]
+  },
+  {
+    "id": "js-076",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "How to check palindrome?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A palindrome reads the same forward and backward."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function isPalindrome(str) {\r\n  var cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, \"\");\r\n  return cleaned === cleaned.split(\"\").reverse().join(\"\");\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-077",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "How to count occurrences of characters?",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function countChars(str) {\r\n  var count = {};\r\n  for (var char of str) {\r\n    count[char] = (count[char] || 0) + 1;\r\n  }\r\n  return count;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-078",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "Difference between replace and replaceAll",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "str.replace(\"a\", \"b\");\r\nstr.replaceAll(\"a\", \"b\");\r"
+      },
+      {
+        "type": "table",
+        "columns": ["replace", "replaceAll"],
+        "data": [
+          ["Replaces first match", "Replaces all matches"],
+          ["Supports regex", "Supports string & regex"],
+          ["Older method", "ES2021"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-079",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "What is string immutability?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Strings in JavaScript are immutable, meaning:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "They cannot be changed once created"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Any operation returns a new string"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var str = \"hello\";\r\nstr[0] = \"H\"; // No effect\r"
+      }
+    ]
+  },
+  {
+    "id": "js-080",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "What is split()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "split()"
+          },
+          {
+            "type": "text",
+            "value": " converts a string into an array using a separator."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "\"hello world\".split(\" \");\r"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "\"abc\".split(\"\");\r"
+      }
+    ]
+  },
+  {
+    "id": "js-081",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "Template literals vs string concatenation",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Template Literals", "Concatenation"],
+        "data": [
+          ["Uses backticks  `", "Uses +"],
+          ["Supports interpolation", "No interpolation"],
+          ["Supports multi-line", "Single-line only"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "`Hello ${name}`;\r\n\"Hello \" + name;\r"
+      }
+    ]
+  },
+  {
+    "id": "js-082",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "How to capitalize first letter?",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function capitalize(str) {\r\n  return str.charAt(0).toUpperCase() + str.slice(1);\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-083",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Strings",
+    "difficulty": "Beginner",
+    "question": "How to remove spaces from string?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Remove all spaces"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "str.replace(/\\s+/g, \"\");\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Trim start and end"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "str.trim();\r"
+      }
+    ]
+  },
+  {
+    "id": "js-084",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is asynchronous JavaScript?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Asynchronous JavaScript allows execution of long-running tasks (like API calls, timers, file operations) without blocking the main thread."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "JavaScript is single-threaded"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Async operations are handled using:"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [[{ "type": "text", "value": "Callbacks" }], [{ "type": "text", "value": "Promises" }], [{ "type": "text", "value": "async/await" }]]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "setTimeout(() => {\r\n  console.log(\"Async\");\r\n}, 1000);\r\nconsole.log(\"Sync\");\r"
+      }
+    ]
+  },
+  {
+    "id": "js-085",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is callback hell?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Callback hell occurs when multiple nested callbacks make code:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Hard to read"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Hard to debug"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Hard to maintain"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "login(user, () => {\r\n  getProfile(() => {\r\n    getPosts(() => {\r\n      getComments(() => {\r\n        // callback hell\r\n      });\r\n    });\r\n  });\r\n});\r"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Solution: Promises and async/await."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-086",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What are Promises?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A Promise represents a value that will be available now, later, or never."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var promise = new Promise((resolve, reject) => {\r\n  resolve(\"Success\");\r\n});\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Used to handle asynchronous operations in a cleaner way."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-087",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "Promise states",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A Promise can be in one of three states:"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["State", "Description"],
+        "data": [
+          ["Pending", "Initial state"],
+          ["Fulfilled", "Operation completed successfully"],
+          ["Rejected", "Operation failed"]
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Once settled (fulfilled/rejected), state cannot change."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-088",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "Difference between then() and async/await",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["then()", "async/await"],
+        "data": [
+          ["Chain-based", "Synchronous-looking"],
+          ["Callback-style", "Cleaner & readable"],
+          ["Harder error handling", "Easy `try/catch`"],
+          ["Older syntax", "Modern ES2017"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "promise.then((res) => console.log(res));\r\nasync function getData() {\r\n  var res = await promise;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-089",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "How does async/await work internally?",
+    "answer": [
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "async function always returns a Promise"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "await pauses execution until Promise resolves"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Internally, it is syntactic sugar over "
+            },
+            {
+              "type": "badge",
+              "value": ".then()"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "async function test() {\r\n  return \"Hello\";\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Equivalent to:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function test() {\r\n  return Promise.resolve(\"Hello\");\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-090",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is Promise.all()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "Promise.all()"
+          },
+          {
+            "type": "text",
+            "value": " executes multiple promises in parallel and:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Resolves when all promises resolve"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Rejects if any one promise rejects"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Promise.all([p1, p2, p3])\r\n  .then((results) => console.log(results))\r\n  .catch((err) => console.log(err));\r"
+      }
+    ]
+  },
+  {
+    "id": "js-091",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "Difference between Promise.all, allSettled, race, any",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Method", "Resolves when", "Rejects when"],
+        "data": [
+          ["Promise.all", "All promises resolve", "Any promise rejects"],
+          ["Promise.allSettled", "All promises settle", "Never"],
+          ["Promise.race", "First promise settles", "First promise rejects"],
+          ["Promise.any", "First promise resolves", "All promises reject"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-092",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is event loop?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The Event Loop continuously checks:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Call stack"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Microtask queue"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Macrotask queue"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "It ensures non-blocking execution by pushing async callbacks to the stack when it’s empty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-093",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "Microtask queue vs Macrotask queue",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Microtask Queue", "Macrotask Queue"],
+        "data": [
+          ["Higher priority", "Lower priority"],
+          ["Promise callbacks", "setTimeout, setInterval"],
+          ["then, catch, finally", "DOM events"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Execution order:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Call Stack → Microtasks → Macrotasks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-094",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is setTimeout?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Executes a function after a specified delay (minimum time)."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "setTimeout(() => {\r\n  console.log(\"Executed later\");\r\n}, 1000);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Delay is not guaranteed exact due to event loop."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-095",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is setInterval?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Executes a function repeatedly at fixed intervals."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var id = setInterval(() => {\r\n  console.log(\"Repeats\");\r\n}, 1000);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-096",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "How to cancel a promise?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Promises cannot be cancelled natively."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Workarounds:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Use flags"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use AbortController"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Ignore promise result"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const controller = new AbortController();\r\ncontroller.abort();\r"
+      }
+    ]
+  },
+  {
+    "id": "js-097",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "Error handling in async/await",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use try...catch blocks."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "async function fetchData() {\r\n  try {\r\n    var res = await fetch(url);\r\n  } catch (error) {\r\n    console.log(error);\r\n  }\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-098",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Asynchronous JavaScript",
+    "difficulty": "Beginner",
+    "question": "What happens when a promise rejects?",
+    "answer": [
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Control jumps to nearest "
+            },
+            {
+              "type": "badge",
+              "value": ".catch()"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "In async/await, it throws an error"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "If unhandled → Unhandled Promise Rejection"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "promise.catch((err) => console.log(err));\r"
+      }
+    ]
+  },
+  {
+    "id": "js-099",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "What is execution context?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "An Execution Context is the environment where JavaScript code is evaluated and executed."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "It contains:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Variable Environment (variables, functions)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Scope chain"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Value of "
+            },
+            {
+              "type": "badge",
+              "value": "this"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Types of Execution Context:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Global Execution Context (GEC)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Function Execution Context (FEC)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Eval Execution Context (rare)"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-100",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "Phases of execution context",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Execution context is created in two phases:"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "1. Memory Creation Phase (Hoisting Phase)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Memory allocated for variables & functions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Variables initialized as "
+            },
+            {
+              "type": "badge",
+              "value": "undefined"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Functions stored with full definition"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "2. Execution Phase"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Code executed line by line"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Variables assigned actual values"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Functions invoked"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "console.log(a); // undefined\r\nvar a = 10;\r"
+      }
+    ]
+  },
+  {
+    "id": "js-101",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "What is call stack?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The Call Stack is a data structure that keeps track of function execution order."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Uses LIFO (Last In, First Out)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Each function call creates a new execution context"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Removed once execution finishes"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function a() {\r\n  b();\r\n}\r\nfunction b() {\r\n  console.log(\"Hello\");\r\n}\r\na();\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Call Stack Flow:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Global → a() → b() → pop → pop"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-102",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "What is memory heap?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The Memory Heap is a region of memory used for dynamic memory allocation."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Stores objects, arrays, functions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Unstructured memory"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Managed by garbage collector"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var obj = { name: \"JS\" };\r"
+      }
+    ]
+  },
+  {
+    "id": "js-103",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "What is event loop?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The Event Loop monitors:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Call Stack"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Microtask Queue"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Macrotask Queue"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Its job is to push async callbacks to the call stack when it is empty."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Execution order:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Call Stack → Microtasks → Macrotasks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-104",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "How does JavaScript handle single-threading?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JavaScript is single-threaded, meaning:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "One call stack"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "One task executed at a time"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Non-blocking behavior is achieved using:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Web APIs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Callback queue"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Promises"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Event Loop"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "setTimeout(() => console.log(\"Async\"), 0);\r\nconsole.log(\"Sync\");\r"
+      }
+    ]
+  },
+  {
+    "id": "js-105",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "What is Temporal Dead Zone (TDZ)?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "TDZ is the time between:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Variable declaration"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Variable initialization"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Applies to let and const."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "console.log(a); // ReferenceError\r\nlet a = 10;\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Variables exist but cannot be accessed before initialization."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-106",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "What is garbage collection?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Garbage collection is the process of automatically freeing memory that is no longer used."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JavaScript uses Mark-and-Sweep algorithm:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Marks reachable objects"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": ""
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var obj = { name: \"JS\" };\r\nobj = null; // eligible for GC\r"
+      }
+    ]
+  },
+  {
+    "id": "js-107",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "How does JavaScript handle async operations?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Steps:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Async task sent to Web APIs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Callback registered"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Promise resolved/rejected"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Callback added to task queue"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Event loop moves it to call stack"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "fetch(url).then((res) => console.log(res));\r"
+      }
+    ]
+  },
+  {
+    "id": "js-108",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Execution Context & Internals",
+    "difficulty": "Beginner",
+    "question": "Difference between stack and heap",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Stack", "Heap"],
+        "data": [
+          ["Stores execution context", "Stores objects & references"],
+          ["Fast access", "Slower access"],
+          ["Size limited", "Large memory"],
+          ["Automatic memory", "Dynamic allocation"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-109",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is DOM?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "DOM (Document Object Model) is a tree-like representation of an HTML document that allows JavaScript to:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Read"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Modify"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Add"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Delete elements dynamically"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Each HTML element becomes a node in the DOM tree."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-110",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "How to select elements in DOM?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Common DOM selectors"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "document.getElementById(\"id\");\ndocument.getElementsByClassName(\"class\");\ndocument.getElementsByTagName(\"div\");\ndocument.querySelector(\".class\");\ndocument.querySelectorAll(\".class\");"
+      },
+      {
+        "type": "info",
+        "text": "querySelector returns the first matching element, while querySelectorAll returns all matching elements."
+      }
+    ]
+  },
+  {
+    "id": "js-111",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "Difference between innerHTML and innerText",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["innerHTML", "innerText"],
+        "data": [
+          ["Parses HTML", "Treats content as text"],
+          ["Faster but unsafe", "Safer"],
+          ["Can cause XSS", "No HTML execution"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "el.innerHTML = \"<b>Hello</b>\";\r\nel.innerText = \"<b>Hello</b>\";\r"
+      }
+    ]
+  },
+  {
+    "id": "js-112",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is event bubbling?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Event bubbling means the event starts from the target element and propagates upward to parent elements."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Order:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Target → Parent → Document"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Default behavior for most events."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-113",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is event capturing?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Event capturing (trickling) means the event travels from root to target element."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Order:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Document → Parent → Target"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Enabled using:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "element.addEventListener(\"click\", handler, true);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-114",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "Event delegation",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Event delegation is a technique where a single event listener is added to a parent instead of multiple child elements."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "parent.addEventListener(\"click\", function (e) {\r\n  if (e.target.matches(\".child\")) {\r\n    console.log(\"Clicked child\");\r\n  }\r\n});\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Benefits:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Better performance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Handles dynamically added elements"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-115",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "Difference between addEventListener and onclick",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["addEventListener", "onclick"],
+        "data": [
+          ["Multiple handlers allowed", "Only one handler"],
+          ["Supports capture/bubble", "No capture"],
+          ["Preferred modern approach", "Older approach"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-116",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is preventDefault()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Stops the browser’s default behavior."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "form.addEventListener(\"submit\", (e) => {\r\n  e.preventDefault();\r\n});\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example: Prevent form submission, link navigation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-117",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is stopPropagation()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Stops the event from bubbling or capturing further."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "button.addEventListener(\"click\", (e) => {\r\n  e.stopPropagation();\r\n});\r"
+      }
+    ]
+  },
+  {
+    "id": "js-118",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is dataset?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "dataset provides access to data- attributes\\*."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div data-user-id=\"101\"></div>\r"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "el.dataset.userId; // \"101\"\r"
+      }
+    ]
+  },
+  {
+    "id": "js-119",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is localStorage vs sessionStorage?",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["localStorage", "sessionStorage"],
+        "data": [
+          ["Persistent", "Clears on tab close"],
+          ["5–10 MB", "5–10 MB"],
+          ["Shared across tabs", "Tab-specific"],
+          ["String only", "String only"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-120",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What are cookies?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Cookies are small pieces of data stored in the browser and sent with every HTTP request."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Size limit ~4KB"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for authentication, tracking"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Can have expiry"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "document.cookie = \"user=Tanmay\";\r"
+      }
+    ]
+  },
+  {
+    "id": "js-121",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "How to manipulate styles in JS?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Inline styles"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "el.style.color = \"red\";\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using class"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "el.classList.add(\"active\");\r\nel.classList.remove(\"active\");\r"
+      }
+    ]
+  },
+  {
+    "id": "js-122",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "How to create elements dynamically?",
+    "answer": [
+      {
+        "type": "code",
+        "language": "js",
+        "code": "var div = document.createElement(\"div\");\r\ndiv.innerText = \"Hello\";\r\ndocument.body.appendChild(div);\r"
+      }
+    ]
+  },
+  {
+    "id": "js-123",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
+    "question": "What is requestAnimationFrame()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "requestAnimationFrame()"
+          },
+          {
+            "type": "text",
+            "value": " schedules a function to run before the next repaint."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function animate() {\r\n  // animation logic\r\n  requestAnimationFrame(animate);\r\n}\r\nrequestAnimationFrame(animate);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Advantages:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Smooth animations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better performance than setTimeout"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Syncs with screen refresh rate"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-124",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "What is ES6?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "ES6 (ECMAScript 2015) is a major update to JavaScript that introduced modern syntax and features to write cleaner, more maintainable, and scalable code."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Before ES6, JavaScript had limitations in variable scoping, modularity, and readability. ES6 solved these by adding features like:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "let"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "type": "badge",
+              "value": "const"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Arrow functions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Classes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Modules"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Destructuring"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Spread / Rest operators"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const name = \"Tanmay\";\r\nconst greet = () => `Hello ${name}`;\r"
+      }
+    ]
+  },
+  {
+    "id": "js-125",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "let / const vs var",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "let and const are block-scoped, while var is function-scoped."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "var", "let", "const"],
+        "data": [
+          ["Scope", "Function", "Block", "Block"],
+          ["Re-declare", "✅ Yes", "❌ No", "❌ No"],
+          ["Re-assign", "✅ Yes", "✅ Yes", "❌ No"],
+          ["Hoisting", "Yes (undefined)", "Yes (TDZ)", "Yes (TDZ)"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "var can cause bugs due to scope leakage"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "let is used when value changes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "const is preferred by default for safety"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "if (true) {\r\n  let x = 10;\r\n}\r\nconsole.log(x); // ❌ ReferenceError\r"
+      }
+    ]
+  },
+  {
+    "id": "js-126",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Arrow Functions",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions are a shorter syntax for writing functions and they do not have their own this."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "this is inherited from the surrounding scope"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Ideal for callbacks and functional programming"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const add = (a, b) => a + b;\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "❗ Important Interview Point"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Arrow functions cannot be used as constructors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-127",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Destructuring",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Destructuring allows extracting values from arrays or objects into variables."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const user = { name: \"Amit\", age: 25 };\r\nconst { name, age } = user;\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why it’s useful"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Cleaner code"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Avoid repetitive access (user.name)"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-128",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Spread vs Rest Operator",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Both use "
+          },
+          {
+            "type": "badge",
+            "value": "..."
+          },
+          {
+            "type": "text",
+            "value": " but serve different purposes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Spread (...)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Used to expand elements."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const arr1 = [1, 2];\r\nconst arr2 = [...arr1, 3];\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Rest (...)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Used to collect multiple values."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function sum(...nums) {\r\n  return nums.reduce((a, b) => a + b);\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-129",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Modules (import / export)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Modules allow splitting code into reusable files."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Each file is its own scope"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improves maintainability and performance"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "// math.js\r\nexport const add = (a, b) => a + b;\r\n// main.js\r\nimport { add } from \"./math.js\";\r"
+      }
+    ]
+  },
+  {
+    "id": "js-130",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Default Parameters",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Default parameters provide fallback values for function arguments."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function greet(name = \"Guest\") {\r\n  return `Hello ${name}`;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why useful"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Avoids manual checks"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cleaner function logic"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-131",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Optional Chaining (?.)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Optional chaining safely accesses nested object properties without throwing errors."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "user?.address?.city;\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "If any part is null or undefined, it returns undefined instead of crashing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-132",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Nullish Coalescing (??)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns the right-hand value only if the left-hand value is null or undefined."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const value = input ?? \"default\";\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Difference from ||"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "0 || 10; // 10 ❌\r\n0 ?? 10; // 0 ✅\r"
+      }
+    ]
+  },
+  {
+    "id": "js-133",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Classes in JavaScript",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Classes are syntactic sugar over JavaScript’s prototype-based inheritance."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "class Person {\r\n  constructor(name) {\r\n    this.name = name;\r\n  }\r\n  greet() {\r\n    return `Hello ${this.name}`;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Important"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Under the hood, JS still uses prototypes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Classes improve readability"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-134",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "CommonJS vs ES Modules",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "They are two different module systems in JavaScript."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "CommonJS", "ES Modules"],
+        "data": [
+          ["Syntax", "`require()`", "`import`"],
+          ["Export", "`module.exports`", "`export`"],
+          ["Loading", "Synchronous", "Asynchronous"],
+          ["Used in", "Node.js", "Browser + Node"]
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "// CommonJS\r\nconst fs = require(\"fs\");\r\n// ES Module\r\nimport fs from \"fs\";\r"
+      }
+    ]
+  },
+  {
+    "id": "js-135",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "Symbol Data Type",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A Symbol is a unique and immutable primitive used as object keys."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const id = Symbol(\"id\");\r\nconst user = { [id]: 101 };\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why useful"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Avoids property name collisions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used in libraries and meta-programming"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-136",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "BigInt",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "BigInt"
+          },
+          {
+            "type": "text",
+            "value": " is used to represent numbers larger than Number.MAX_SAFE_INTEGER."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const big = 12345678901234567890n;\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Interview Tip"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Cannot mix "
+            },
+            {
+              "type": "badge",
+              "value": "BigInt"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "type": "badge",
+              "value": "Number"
+            },
+            {
+              "type": "text",
+              "value": " directly"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-137",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "What is Object.entries()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns an array of [key, value] pairs from an object."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const obj = { a: 1, b: 2 };\r\nObject.entries(obj);\r\n// [[\"a\",1], [\"b\",2]]\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use Case"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Iterating objects easily"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-138",
+    "topic": "JAVASCRIPT",
+    "subTopic": "ES6+ Features",
+    "difficulty": "Beginner",
+    "question": "What is Object.values()?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Returns an array of all values of an object."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Object.values({ a: 1, b: 2 });\r\n// [1, 2]\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Common Use"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Calculations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Transforming object data"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-139",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "What is try...catch?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "try...catch"
+          },
+          {
+            "type": "text",
+            "value": " is used to handle runtime errors gracefully without crashing the application."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Code that might fail is placed inside try"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "If an error occurs, control moves to catch"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prevents app from breaking"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "try {\r\n  const data = JSON.parse(\"{invalid}\");\r\n} catch (error) {\r\n  console.error(\"Parsing failed\");\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-140",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "What is finally?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "finally"
+          },
+          {
+            "type": "text",
+            "value": " is a block that always executes, whether an error occurs or not."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Used for cleanup operations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Runs after try and catch"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "try {\r\n  console.log(\"Try\");\r\n} catch (e) {\r\n  console.log(\"Catch\");\r\n} finally {\r\n  console.log(\"Always runs\");\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Common Use"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Closing resources"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Stopping loaders"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Logging"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-141",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Custom Errors",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Custom errors allow developers to create meaningful, application-specific errors."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JavaScript provides the Error class which can be extended."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "class ValidationError extends Error {\r\n  constructor(message) {\r\n    super(message);\r\n    this.name = \"ValidationError\";\r\n  }\r\n}\r\nthrow new ValidationError(\"Invalid input\");\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why Important"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Better debugging"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cleaner error handling logic"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-142",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Difference Between Runtime and Syntax Errors",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Syntax errors occur during parsing, while runtime errors occur during execution."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Comparison"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Syntax Error", "Runtime Error"],
+        "data": [
+          ["When", "Before execution", "During execution"],
+          ["Detected by", "JS engine", "While running"],
+          ["Recoverable", "❌ No", "✅ Yes"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "// Syntax Error\r\nif (true { }\r\n// Runtime Error\r\nconsole.log(a); // ReferenceError\r"
+      }
+    ]
+  },
+  {
+    "id": "js-143",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Error Handling in Promises",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Errors in promises are handled using "
+          },
+          {
+            "type": "badge",
+            "value": ".catch()"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Any rejection in the chain flows to "
+            },
+            {
+              "type": "badge",
+              "value": ".catch()"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prevents unhandled promise rejections"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "fetch(url)\r\n  .then((res) => res.json())\r\n  .catch((err) => console.error(err));\r"
+      }
+    ]
+  },
+  {
+    "id": "js-144",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Global Error Handling",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Global error handling captures uncaught errors at the application level."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Browser Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "window.onerror = function (message, source, line, col, error) {\r\n  console.error(\"Global Error:\", message);\r\n};\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Promise Errors"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "window.addEventListener(\"unhandledrejection\", (event) => {\r\n  console.error(event.reason);\r\n});\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why Needed"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Centralized logging"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Monitoring production errors"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-145",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "What is throw?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "throw"
+          },
+          {
+            "type": "text",
+            "value": " is used to manually generate an error."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Can throw built-in or custom errors"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Immediately stops execution"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "if (!user) {\r\n  throw new Error(\"User not found\");\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-146",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "How to Handle Async Errors?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Async errors are handled using "
+          },
+          {
+            "type": "badge",
+            "value": "try...catch"
+          },
+          {
+            "type": "text",
+            "value": " with a"
+          },
+          {
+            "type": "badge",
+            "value": "sync/await"
+          },
+          {
+            "type": "text",
+            "value": " or "
+          },
+          {
+            "type": "badge",
+            "value": ".catch()"
+          },
+          {
+            "type": "text",
+            "value": " with promises."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example (async/await)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "async function fetchData() {\r\n  try {\r\n    const res = await fetch(url);\r\n    const data = await res.json();\r\n  } catch (error) {\r\n    console.error(error);\r\n  }\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Important Interview Point"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "try...catch only works with await, not raw promises."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-147",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "What is a Stack Trace?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A stack trace shows the sequence of function calls that led to an error."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Helps locate where the error originated"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Printed automatically when an error occurs"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function a() {\r\n  b();\r\n}\r\nfunction b() {\r\n  throw new Error(\"Oops\");\r\n}\r\na();\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Output"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Shows call order → a → b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-148",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Best Practices for Error Handling",
+    "answer": [
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Use try...catch only where necessary"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Create custom error classes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Never swallow errors silently"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Log errors with context"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Handle promise rejections"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use global error handlers"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Show user-friendly messages"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Bad Practice ❌"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "try {\r\n  riskyCode();\r\n} catch (e) {}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Good Practice ✅"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "catch (e) {\r\nlogError(e);\r\nshowMessage(\"Something went wrong\");\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "js-150",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Can try...catch catch async errors?",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Short Answer"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Yes, but only with await"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 ❌ No, if using plain promises without await"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Explanation"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "✅ Works with async/await"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "async function fetchData() {\r\n  try {\r\n    const res = await fetch(\"api-url\");\r\n    const data = await res.json();\r\n  } catch (error) {\r\n    console.log(\"Error caught:\", error);\r\n  }\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "✔ "
+          },
+          {
+            "type": "badge",
+            "value": "await"
+          },
+          {
+            "type": "text",
+            "value": " makes async code behave like synchronous → "
+          },
+          {
+            "type": "badge",
+            "value": "try...catch"
+          },
+          {
+            "type": "text",
+            "value": " works"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "❌ Does NOT catch without await"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "try {\r\n  fetch(\"api-url\")\r\n    .then((res) => res.json())\r\n    .then((data) => console.log(data));\r\n} catch (error) {\r\n  console.log(\"Won't catch!\");\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "❌ Error inside .then() is NOT caught"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "✅ Correct way (Promises)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "fetch(\"api-url\")\r\n  .then((res) => res.json())\r\n  .catch((err) => console.log(err));\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Key Insight"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "try...catch"
+          },
+          {
+            "type": "text",
+            "value": " only works for:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "synchronous code"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "awaited async code"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "try...catch"
+          },
+          {
+            "type": "text",
+            "value": " can catch async errors only when using "
+          },
+          {
+            "type": "badge",
+            "value": "await"
+          },
+          {
+            "type": "text",
+            "value": "; otherwise, you must use "
+          },
+          {
+            "type": "badge",
+            "value": ".catch()"
+          },
+          {
+            "type": "text",
+            "value": " for promises."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-151",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "Difference between Error and TypeError",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Error"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Base class for all errors"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "throw new Error(\"Something went wrong\");\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 TypeError"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Occurs when a value is not of expected type"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "let num = null;\r\nnum.toString(); // ❌ TypeError\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Key Differences"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Error", "TypeError"],
+        "data": [
+          ["Type", "Generic", "Specific"],
+          ["Use Case", "Custom errors", "Type mismatch"],
+          ["Inheritance", "Base class", "Extends Error"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Real Insight"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "TypeError is more specific and descriptive"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Error is a generic base class, while TypeError is a specific error thrown when operations are performed on incompatible types."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-152",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "How error handling differs in frontend vs backend",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Frontend (Client-side)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "✅ Goals"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Show user-friendly messages"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prevent app crash"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Handle UI gracefully"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Examples"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Toast messages"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Retry buttons"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Fallback UI"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Tools"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "try...catch"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": ".catch()"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React Error Boundaries"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Backend (Server-side)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "✅ Goals"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Maintain server stability"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Log errors"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Send proper HTTP responses"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Examples"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Logging (Winston, Morgan)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "HTTP status codes (500, 404)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Error middleware"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Key Differences"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Frontend", "Backend"],
+        "data": [
+          ["Focus", "UX", "Stability & logging"],
+          ["Error Output", "UI messages", "Logs + API response"],
+          ["Impact", "User experience", "System reliability"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Frontend focuses on user experience and graceful UI handling, while backend focuses on stability, logging, and correct API responses."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-153",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Error Handling",
+    "difficulty": "Beginner",
+    "question": "What happens if promise rejection is not handled?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Result"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Unhandled Promise Rejection"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Behavior"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "In Browser:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Shows warning in console"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "May not crash app immediately"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "In Node.js:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Can terminate process (in strict modes)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Emits unhandledRejection event"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "Promise.reject(\"Error!\");\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "❌ No "
+          },
+          {
+            "type": "badge",
+            "value": ".catch()"
+          },
+          {
+            "type": "text",
+            "value": " → unhandled rejection"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Risks"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Silent failures ❌"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Debugging difficulty ❌"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "App instability ❌"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Best Practice"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "promise.then((data) => {}).catch((err) => console.error(err));\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "OR"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "try {\r\n  await promise;\r\n} catch (err) {\r\n  console.error(err);\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Global Handling (Node.js)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "process.on(\"unhandledRejection\", (err) => {\r\n  console.log(\"Unhandled:\", err);\r\n});\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Unhandled promise rejections can lead to silent failures or crashes, so they should always be handled using .catch() or try...catch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-154",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "How to Improve JavaScript Performance?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JavaScript performance can be improved by optimizing execution, reducing re-renders, minimizing bundle size, and efficient memory usage."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Key Techniques"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Avoid unnecessary DOM manipulation"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use debounce/throttle"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Optimize loops and algorithms"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use code splitting & lazy loading"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cache results (memoization)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use Web Workers for heavy tasks"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Minify and tree-shake code"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 One-liner"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "“I improve JS performance by reducing unnecessary work, optimizing rendering, and minimizing bundle size.”"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-155",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "What is Debouncing?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Debouncing ensures a function is executed only after a delay once the user stops triggering it."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example (Search Input)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function debounce(fn, delay) {\r\n  let timer;\r\n  return function (...args) {\r\n    clearTimeout(timer);\r\n    timer = setTimeout(() => fn(...args), delay);\r\n  };\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Use Cases"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Search input"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Auto-save"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Resize events"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-156",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "What is Throttling?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Throttling ensures a function is executed at most once in a specified time interval."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function throttle(fn, limit) {\r\n  let inThrottle;\r\n  return function (...args) {\r\n    if (!inThrottle) {\r\n      fn(...args);\r\n      inThrottle = true;\r\n      setTimeout(() => (inThrottle = false), limit);\r\n    }\r\n  };\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Use Cases"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Scroll events"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Mouse movement"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Button clicks"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-157",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Difference: Debounce vs Throttle",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "Debounce", "Throttle"],
+        "data": [
+          ["Execution", "After delay", "At intervals"],
+          ["Trigger", "Stops events", "Continuous events"],
+          ["Use case", "Search input", "Scroll/resize"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Debounce waits for inactivity, while throttle limits execution frequency."
+      }
+    ]
+  },
+  {
+    "id": "js-158",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Memory Leaks in JavaScript",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A memory leak occurs when memory is not released even after it’s no longer needed."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Common Causes"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Unremoved event listeners"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Timers not cleared"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Closures holding references"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Detached DOM nodes"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-159",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "How Closures Cause Memory Leaks?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Closures retain references to variables from outer scope, preventing garbage collection."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function outer() {\r\n  let largeData = new Array(1000000);\r\n  return function inner() {\r\n    console.log(\"Using data\");\r\n  };\r\n}\r\nconst fn = outer();\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 largeData stays in memory because closure holds it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-160",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Lazy Loading",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Lazy loading delays loading of resources until they are needed."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example (React)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const Component = React.lazy(() => import(\"./Component\"));\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Use Cases"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Images"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Routes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Components"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-161",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Code Splitting",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Code splitting breaks the bundle into smaller chunks that are loaded on demand."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import(\"./Dashboard\");\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Benefits"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Faster initial load"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better performance"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-162",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Minification & Tree Shaking",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Minification"
+      },
+      {
+        "type": "paragraph",
+        "text": "Removes unnecessary code such as spaces and comments to reduce file size."
+      },
+      {
+        "type": "bold",
+        "text": "Before"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "function add(a, b) {\n  return a + b;\n}"
+      },
+      {
+        "type": "bold",
+        "text": "After"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "function add(a,b){return a+b;}"
+      },
+
+      {
+        "type": "bold",
+        "text": "Tree Shaking"
+      },
+      {
+        "type": "paragraph",
+        "text": "Removes unused code from the final bundle to optimize performance."
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "import { add } from \"lib\"; // only add is included"
+      }
+    ]
+  },
+  {
+    "id": "js-163",
+    "topic": "JAVASCRIPT",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Web Workers",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Web Workers allow running JavaScript in a background thread, separate from the main UI thread."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Why Needed"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "JS is single-threaded → heavy tasks block UI"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Web Workers:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Run tasks in background"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Keep UI responsive"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const worker = new Worker(\"worker.js\");\r\nworker.postMessage(\"start\");\r\nworker.onmessage = (e) => {\r\n  console.log(e.data);\r\n};\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔹 Use Cases"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Image processing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Large calculations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Data parsing"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Final Interview Summary (Power Answer)"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "“JavaScript performance can be improved using techniques like debouncing, throttling, lazy loading, code splitting, and Web Workers, while avoiding memory leaks and optimizing bundle size using minification and tree shaking.”"
+          }
+        ]
+      }
+    ]
+  }
+]
