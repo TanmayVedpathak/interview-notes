@@ -763,7 +763,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 How It Works"
+            "value": "How It Works"
           }
         ]
       },
@@ -802,7 +802,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -820,7 +820,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Benefits"
+            "value": "Benefits"
           }
         ]
       },
@@ -853,7 +853,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Drawbacks"
+            "value": "Drawbacks"
           }
         ]
       },
@@ -916,7 +916,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Flow"
+            "value": "Flow"
           }
         ]
       },
@@ -930,7 +930,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Used In"
+            "value": "Used In"
           }
         ]
       },
@@ -963,7 +963,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Pros"
+            "value": "Pros"
           }
         ]
       },
@@ -990,7 +990,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Cons"
+            "value": "Cons"
           }
         ]
       },
@@ -1041,7 +1041,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Flow"
+            "value": "Flow"
           }
         ]
       },
@@ -1055,7 +1055,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example Framework"
+            "value": "Example Framework"
           }
         ]
       },
@@ -1082,7 +1082,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Pros"
+            "value": "Pros"
           }
         ]
       },
@@ -1115,7 +1115,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Cons"
+            "value": "Cons"
           }
         ]
       },
@@ -1160,7 +1160,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Flow"
+            "value": "Flow"
           }
         ]
       },
@@ -1174,7 +1174,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -1192,7 +1192,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Pros"
+            "value": "Pros"
           }
         ]
       },
@@ -1225,7 +1225,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Cons"
+            "value": "Cons"
           }
         ]
       },
@@ -1270,7 +1270,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Flow"
+            "value": "Flow"
           }
         ]
       },
@@ -1284,7 +1284,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example (Next.js)"
+            "value": "Example (Next.js)"
           }
         ]
       },
@@ -1298,7 +1298,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Pros"
+            "value": "Pros"
           }
         ]
       },
@@ -2680,7 +2680,6 @@
         "type": "paragraph",
         "text": "The difference between these hooks is WHEN they run."
       },
-
       {
         "type": "bold",
         "text": "1️⃣ useEffect (most common)"
@@ -2844,7 +2843,6 @@
         "style": "unordered",
         "items": ["Render", "useInsertionEffect", "DOM update", "useLayoutEffect", "Paint (screen shown)", "useEffect"]
       },
-
       {
         "type": "bold",
         "text": "🆚 Comparison Table (Interview Gold ⭐)"
@@ -2860,7 +2858,6 @@
           ["Common use", "Yes", "Sometimes", "Rare"]
         ]
       },
-
       {
         "type": "bold",
         "text": "🎯 When to use what?"
@@ -2870,7 +2867,6 @@
         "style": "unordered",
         "items": ["90% of the time → useEffect", "Need DOM measurements / no flicker → useLayoutEffect", "Building CSS-in-JS library → useInsertionEffect"]
       },
-
       {
         "type": "bold",
         "text": "⭐ Interview One-Line Answers"
@@ -2902,7 +2898,7 @@
     ]
   },
   {
-    "id": "react-041",
+    "id": "react-038",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2938,7 +2934,7 @@
     ]
   },
   {
-    "id": "react-042",
+    "id": "react-039",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2948,8 +2944,28 @@
         "type": "table",
         "columns": ["Class Lifecycle", "Hook Equivalent"],
         "data": [
-          ["componentDidMount", "`useEffect(() => {}, [])`"],
-          ["componentDidUpdate", "`useEffect(() => {}, [deps])`"],
+          [
+            "componentDidMount",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "useEffect(() => {}, [])"
+                }
+              ]
+            }
+          ],
+          [
+            "componentDidUpdate",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "useEffect(() => {}, [deps])"
+                }
+              ]
+            }
+          ],
           ["componentWillUnmount", "cleanup function"]
         ]
       },
@@ -2961,7 +2977,7 @@
     ]
   },
   {
-    "id": "react-043",
+    "id": "react-040",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3021,7 +3037,7 @@
     ]
   },
   {
-    "id": "react-044",
+    "id": "react-041",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3057,7 +3073,7 @@
     ]
   },
   {
-    "id": "react-045",
+    "id": "react-042",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3102,7 +3118,7 @@
     ]
   },
   {
-    "id": "react-046",
+    "id": "react-043",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3185,7 +3201,7 @@
     ]
   },
   {
-    "id": "react-047",
+    "id": "react-044",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3239,7 +3255,7 @@
     ]
   },
   {
-    "id": "react-048",
+    "id": "react-045",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3291,7 +3307,7 @@
     ]
   },
   {
-    "id": "react-049",
+    "id": "react-046",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3351,7 +3367,7 @@
     ]
   },
   {
-    "id": "react-050",
+    "id": "react-047",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3450,7 +3466,7 @@
     ]
   },
   {
-    "id": "react-051",
+    "id": "react-048",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3506,7 +3522,7 @@
     ]
   },
   {
-    "id": "react-052",
+    "id": "react-049",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3572,7 +3588,7 @@
     ]
   },
   {
-    "id": "react-053",
+    "id": "react-050",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3759,7 +3775,7 @@
     ]
   },
   {
-    "id": "react-054",
+    "id": "react-051",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3804,7 +3820,7 @@
     ]
   },
   {
-    "id": "react-055",
+    "id": "react-052",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3924,7 +3940,7 @@
     ]
   },
   {
-    "id": "react-057",
+    "id": "react-053",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -3998,7 +4014,7 @@
     ]
   },
   {
-    "id": "react-058",
+    "id": "react-054",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4072,7 +4088,7 @@
     ]
   },
   {
-    "id": "react-059",
+    "id": "react-055",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4109,7 +4125,7 @@
     ]
   },
   {
-    "id": "react-060",
+    "id": "react-056",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4177,7 +4193,7 @@
     ]
   },
   {
-    "id": "react-061",
+    "id": "react-057",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4246,7 +4262,7 @@
     ]
   },
   {
-    "id": "react-062",
+    "id": "react-058",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4344,7 +4360,7 @@
     ]
   },
   {
-    "id": "react-063",
+    "id": "react-059",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4390,7 +4406,7 @@
     ]
   },
   {
-    "id": "react-064",
+    "id": "react-060",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4522,7 +4538,7 @@
     ]
   },
   {
-    "id": "react-065",
+    "id": "react-061",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4594,7 +4610,7 @@
     ]
   },
   {
-    "id": "react-066",
+    "id": "react-062",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4687,7 +4703,7 @@
     ]
   },
   {
-    "id": "react-067",
+    "id": "react-063",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4795,7 +4811,7 @@
     ]
   },
   {
-    "id": "react-068",
+    "id": "react-064",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4809,21 +4825,54 @@
         "type": "list",
         "style": "ordered",
         "items": [
-          [{ "type": "text", "value": "Performance issues" }],
+          [
+            {
+              "type": "text",
+              "value": "Performance issues"
+            }
+          ],
           {
             "type": "list",
             "style": "unordered",
-            "items": [[{ "type": "text", "value": "Any context change re-renders all consumers" }]]
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Any context change re-renders all consumers"
+                }
+              ]
+            ]
           },
-
-          [{ "type": "text", "value": "Not designed for complex logic" }],
+          [
+            {
+              "type": "text",
+              "value": "Not designed for complex logic"
+            }
+          ],
           {
             "type": "list",
             "style": "unordered",
-            "items": [[{ "type": "text", "value": "No middleware" }], [{ "type": "text", "value": "No async handling pattern" }]]
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "No middleware"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "No async handling pattern"
+                }
+              ]
+            ]
           },
-
-          [{ "type": "text", "value": "Harder to debug" }],
+          [
+            {
+              "type": "text",
+              "value": "Harder to debug"
+            }
+          ],
           {
             "type": "list",
             "style": "unordered",
@@ -4836,8 +4885,12 @@
               ]
             ]
           },
-
-          [{ "type": "text", "value": "Scalability issues" }],
+          [
+            {
+              "type": "text",
+              "value": "Scalability issues"
+            }
+          ],
           {
             "type": "list",
             "style": "unordered",
@@ -4852,7 +4905,6 @@
           }
         ]
       },
-
       {
         "type": "bold",
         "text": "Interview Tip"
@@ -4861,7 +4913,6 @@
         "type": "info",
         "text": "Context API is not a replacement for Redux."
       },
-
       {
         "type": "bold",
         "text": "One-liner"
@@ -4873,7 +4924,7 @@
     ]
   },
   {
-    "id": "react-069",
+    "id": "react-065",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4927,7 +4978,7 @@
     ]
   },
   {
-    "id": "react-070",
+    "id": "react-066",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4941,9 +4992,24 @@
         "type": "list",
         "style": "ordered",
         "items": [
-          [{ "type": "text", "value": "Single source of truth → Entire state is stored in one store" }],
-          [{ "type": "text", "value": "State is read-only → State can only be changed by dispatching actions" }],
-          [{ "type": "text", "value": "Changes via pure functions → Reducers are pure functions that return new state" }]
+          [
+            {
+              "type": "text",
+              "value": "Single source of truth → Entire state is stored in one store"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "State is read-only → State can only be changed by dispatching actions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Changes via pure functions → Reducers are pure functions that return new state"
+            }
+          ]
         ]
       },
       {
@@ -4962,7 +5028,7 @@
     ]
   },
   {
-    "id": "react-071",
+    "id": "react-067",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5001,7 +5067,7 @@
     ]
   },
   {
-    "id": "react-072",
+    "id": "react-068",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5088,7 +5154,7 @@
     ]
   },
   {
-    "id": "react-073",
+    "id": "react-069",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5156,7 +5222,7 @@
     ]
   },
   {
-    "id": "react-074",
+    "id": "react-070",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5248,7 +5314,7 @@
     ]
   },
   {
-    "id": "react-075",
+    "id": "react-071",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5306,7 +5372,7 @@
     ]
   },
   {
-    "id": "react-076",
+    "id": "react-072",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5399,7 +5465,7 @@
     ]
   },
   {
-    "id": "react-077",
+    "id": "react-073",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5467,7 +5533,7 @@
     ]
   },
   {
-    "id": "react-078",
+    "id": "react-074",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5563,7 +5629,7 @@
     ]
   },
   {
-    "id": "react-079",
+    "id": "react-075",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5656,7 +5722,7 @@
     ]
   },
   {
-    "id": "react-080",
+    "id": "react-076",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5728,7 +5794,7 @@
     ]
   },
   {
-    "id": "react-082",
+    "id": "react-077",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -5824,7 +5890,7 @@
     ]
   },
   {
-    "id": "react-083",
+    "id": "react-078",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -5923,7 +5989,7 @@
     ]
   },
   {
-    "id": "react-084",
+    "id": "react-079",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6028,7 +6094,7 @@
     ]
   },
   {
-    "id": "react-085",
+    "id": "react-080",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6125,7 +6191,7 @@
     ]
   },
   {
-    "id": "react-086",
+    "id": "react-081",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6219,7 +6285,7 @@
     ]
   },
   {
-    "id": "react-087",
+    "id": "react-082",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6320,7 +6386,7 @@
     ]
   },
   {
-    "id": "react-088",
+    "id": "react-083",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6429,7 +6495,7 @@
     ]
   },
   {
-    "id": "react-089",
+    "id": "react-084",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6504,7 +6570,7 @@
     ]
   },
   {
-    "id": "react-090",
+    "id": "react-085",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6615,7 +6681,7 @@
     ]
   },
   {
-    "id": "react-091",
+    "id": "react-086",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6705,7 +6771,7 @@
     ]
   },
   {
-    "id": "react-093",
+    "id": "react-087",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -6789,7 +6855,7 @@
     ]
   },
   {
-    "id": "react-094",
+    "id": "react-088",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -6906,7 +6972,7 @@
     ]
   },
   {
-    "id": "react-095",
+    "id": "react-089",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7008,7 +7074,7 @@
     ]
   },
   {
-    "id": "react-096",
+    "id": "react-090",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7119,7 +7185,7 @@
     ]
   },
   {
-    "id": "react-097",
+    "id": "react-091",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7178,7 +7244,7 @@
     ]
   },
   {
-    "id": "react-098",
+    "id": "react-092",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7268,7 +7334,7 @@
     ]
   },
   {
-    "id": "react-099",
+    "id": "react-093",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7306,7 +7372,7 @@
     ]
   },
   {
-    "id": "react-100",
+    "id": "react-094",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7326,7 +7392,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Explanation"
+            "value": "Explanation"
           }
         ]
       },
@@ -7401,7 +7467,7 @@
     ]
   },
   {
-    "id": "react-101",
+    "id": "react-095",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7430,7 +7496,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Explanation"
+            "value": "Explanation"
           }
         ]
       },
@@ -7475,7 +7541,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7523,7 +7589,7 @@
     ]
   },
   {
-    "id": "react-102",
+    "id": "react-096",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7543,7 +7609,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Best Practices"
+            "value": "Best Practices"
           }
         ]
       },
@@ -7576,7 +7642,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7623,7 +7689,7 @@
     ]
   },
   {
-    "id": "react-103",
+    "id": "react-097",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7652,7 +7718,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Explanation"
+            "value": "Explanation"
           }
         ]
       },
@@ -7727,7 +7793,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7750,7 +7816,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 How to Handle Instead"
+            "value": "How to Handle Instead"
           }
         ]
       },
@@ -7798,7 +7864,7 @@
     ]
   },
   {
-    "id": "react-105",
+    "id": "react-098",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -7867,7 +7933,7 @@
     ]
   },
   {
-    "id": "react-106",
+    "id": "react-099",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -7932,7 +7998,7 @@
     ]
   },
   {
-    "id": "react-107",
+    "id": "react-100",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8024,7 +8090,7 @@
     ]
   },
   {
-    "id": "react-108",
+    "id": "react-101",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8103,7 +8169,7 @@
     ]
   },
   {
-    "id": "react-109",
+    "id": "react-102",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8210,7 +8276,7 @@
     ]
   },
   {
-    "id": "react-110",
+    "id": "react-103",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8305,7 +8371,7 @@
     ]
   },
   {
-    "id": "react-201",
+    "id": "react-104",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8341,7 +8407,7 @@
     ]
   },
   {
-    "id": "react-202",
+    "id": "react-105",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8453,7 +8519,7 @@
     ]
   },
   {
-    "id": "react-203",
+    "id": "react-106",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8505,7 +8571,7 @@
     ]
   },
   {
-    "id": "react-204",
+    "id": "react-107",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8548,7 +8614,7 @@
     ]
   },
   {
-    "id": "react-205",
+    "id": "react-108",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Intermediate",
@@ -8597,7 +8663,7 @@
     ]
   },
   {
-    "id": "react-206",
+    "id": "react-109",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Intermediate",
@@ -8649,7 +8715,7 @@
     ]
   },
   {
-    "id": "react-117",
+    "id": "react-110",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -9114,7 +9180,25 @@
         "type": "table",
         "columns": ["Feature", "History API", "Hash Router"],
         "data": [
-          ["URL format", "`/about`", "`/#/about`"],
+          [
+            "URL format",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "/about"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "/#/about"
+                }
+              ]
+            }
+          ],
           ["SEO friendly", "✅ Yes", "❌ Less"],
           ["Server config needed", "✅ Yes", "❌ No"],
           ["Used by", "BrowserRouter", "HashRouter"]
@@ -9141,7 +9225,7 @@
     ]
   },
   {
-    "id": "react-119",
+    "id": "react-111",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9222,7 +9306,7 @@
     ]
   },
   {
-    "id": "react-120",
+    "id": "react-112",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9318,7 +9402,7 @@
     ]
   },
   {
-    "id": "react-121",
+    "id": "react-113",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9408,7 +9492,7 @@
     ]
   },
   {
-    "id": "react-122",
+    "id": "react-114",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9498,7 +9582,7 @@
     ]
   },
   {
-    "id": "react-123",
+    "id": "react-115",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9536,7 +9620,7 @@
     ]
   },
   {
-    "id": "react-124",
+    "id": "react-116",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9616,7 +9700,7 @@
     ]
   },
   {
-    "id": "react-125",
+    "id": "react-117",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9703,7 +9787,7 @@
     ]
   },
   {
-    "id": "react-126",
+    "id": "react-118",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9774,7 +9858,7 @@
     ]
   },
   {
-    "id": "react-127",
+    "id": "react-119",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9861,7 +9945,7 @@
     ]
   },
   {
-    "id": "react-128",
+    "id": "react-120",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9942,7 +10026,7 @@
     ]
   },
   {
-    "id": "react-129",
+    "id": "react-121",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10038,7 +10122,7 @@
     ]
   },
   {
-    "id": "react-130",
+    "id": "react-122",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10128,7 +10212,7 @@
     ]
   },
   {
-    "id": "react-131",
+    "id": "react-123",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10653,7 +10737,7 @@
     ]
   },
   {
-    "id": "react-132",
+    "id": "react-124",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10832,7 +10916,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Short Interview Answer"
+            "value": "Short Interview Answer"
           }
         ]
       },
@@ -10981,7 +11065,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 SEO Optimization"
+            "value": "SEO Optimization"
           }
         ]
       },
@@ -11008,7 +11092,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Social Sharing"
+            "value": "Social Sharing"
           }
         ]
       },
@@ -11022,7 +11106,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Dynamic Titles"
+            "value": "Dynamic Titles"
           }
         ]
       },
@@ -11187,7 +11271,7 @@
     ]
   },
   {
-    "id": "react-134",
+    "id": "react-125",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11207,7 +11291,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Key Techniques"
+            "value": "Key Techniques"
           }
         ]
       },
@@ -11302,7 +11386,7 @@
     ]
   },
   {
-    "id": "react-135",
+    "id": "react-126",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11322,7 +11406,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Approach"
+            "value": "Approach"
           }
         ]
       },
@@ -11369,7 +11453,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -11381,7 +11465,7 @@
     ]
   },
   {
-    "id": "react-136",
+    "id": "react-127",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11401,7 +11485,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Flow"
+            "value": "Flow"
           }
         ]
       },
@@ -11440,7 +11524,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Tools"
+            "value": "Tools"
           }
         ]
       },
@@ -11465,7 +11549,7 @@
     ]
   },
   {
-    "id": "react-137",
+    "id": "react-128",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11485,7 +11569,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -11499,7 +11583,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Best Practice"
+            "value": "Best Practice"
           }
         ]
       },
@@ -11524,7 +11608,7 @@
     ]
   },
   {
-    "id": "react-138",
+    "id": "react-129",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11544,7 +11628,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Techniques"
+            "value": "Techniques"
           }
         ]
       },
@@ -11581,7 +11665,7 @@
     ]
   },
   {
-    "id": "react-139",
+    "id": "react-130",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11601,7 +11685,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example Structure"
+            "value": "Example Structure"
           }
         ]
       },
@@ -11615,7 +11699,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Best Practices"
+            "value": "Best Practices"
           }
         ]
       },
@@ -11646,7 +11730,7 @@
     ]
   },
   {
-    "id": "react-140",
+    "id": "react-131",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11674,7 +11758,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -11693,7 +11777,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Best Practices"
+            "value": "Best Practices"
           }
         ]
       },
@@ -11718,7 +11802,7 @@
     ]
   },
   {
-    "id": "react-141",
+    "id": "react-132",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11738,7 +11822,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Steps"
+            "value": "Steps"
           }
         ]
       },
@@ -11752,7 +11836,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Platforms"
+            "value": "Platforms"
           }
         ]
       },
@@ -11783,7 +11867,7 @@
     ]
   },
   {
-    "id": "react-142",
+    "id": "react-133",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11803,7 +11887,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Approaches"
+            "value": "Approaches"
           }
         ]
       },
@@ -11839,7 +11923,7 @@
     ]
   },
   {
-    "id": "react-143",
+    "id": "react-134",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11849,7 +11933,6 @@
         "type": "paragraph",
         "text": "I use logging, monitoring tools, and error tracking to debug production issues."
       },
-
       {
         "type": "bold",
         "text": "Tools"
@@ -11858,16 +11941,38 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          [{ "type": "text", "value": "Console logs (controlled)" }],
-          [{ "type": "text", "value": "Error tracking:" }],
+          [
+            {
+              "type": "text",
+              "value": "Console logs (controlled)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Error tracking:"
+            }
+          ],
           {
             "type": "list",
             "style": "unordered",
-            "items": [[{ "type": "text", "value": "Sentry" }], [{ "type": "text", "value": "LogRocket" }]]
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Sentry"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "LogRocket"
+                }
+              ]
+            ]
           }
         ]
       },
-
       {
         "type": "bold",
         "text": "Techniques"
@@ -11875,9 +11980,27 @@
       {
         "type": "list",
         "style": "unordered",
-        "items": [[{ "type": "text", "value": "Source maps" }], [{ "type": "text", "value": "Network inspection" }], [{ "type": "text", "value": "Reproduce issues locally" }]]
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Source maps"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Network inspection"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reproduce issues locally"
+            }
+          ]
+        ]
       },
-
       {
         "type": "bold",
         "text": "Final Interview Summary"

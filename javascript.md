@@ -610,7 +610,7 @@ Array Methods (Categorized for Easy Interview Recall)
 
 1️⃣ Mutating Methods (Modify Original Array)
 
-🔹 `push()`
+`push()`
 
 Adds element at the end.
 
@@ -618,7 +618,7 @@ Adds element at the end.
 arr.push(4);
 ```
 
-🔹 `pop()`
+`pop()`
 
 Removes last element.
 
@@ -626,7 +626,7 @@ Removes last element.
 arr.pop();
 ```
 
-🔹 `unshift()`
+`unshift()`
 
 Adds element at beginning.
 
@@ -634,7 +634,7 @@ Adds element at beginning.
 arr.unshift(0);
 ```
 
-🔹 `shift()`
+`shift()`
 
 Removes first element.
 
@@ -642,7 +642,7 @@ Removes first element.
 arr.shift();
 ```
 
-🔹 `splice()`
+`splice()`
 
 Add/remove elements at specific index.
 
@@ -658,7 +658,7 @@ arr.splice(2, 0, "Lemon", "Kiwi");
 - The second parameter (0) defines how many elements should be removed
 - The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added
 
-🔹 `sort()`
+`sort()`
 
 Sorts array (mutates original).
 
@@ -666,7 +666,7 @@ Sorts array (mutates original).
 arr.sort((a, b) => a - b);
 ```
 
-🔹 `reverse()`
+`reverse()`
 
 Reverses array.
 
@@ -676,7 +676,7 @@ arr.reverse();
 
 2️⃣ Non-Mutating Methods (Return New Array)
 
-🔹 `map()`
+`map()`
 
 Transforms each element.
 
@@ -686,7 +686,7 @@ arr.map(x => x \* 2);
 
 📌 Returns new array.
 
-🔹 `filter()`
+`filter()`
 
 Filters elements based on condition.
 
@@ -694,7 +694,7 @@ Filters elements based on condition.
 arr.filter((x) => x > 2);
 ```
 
-🔹 r`educe()`
+`reduce()`
 
 Reduces array to single value.
 
@@ -704,7 +704,7 @@ arr.reduce((acc, curr) => acc + curr, 0);
 
 📌 Very important in interviews.
 
-🔹 `slice()`
+`slice()`
 
 Extracts part of array.
 
@@ -712,7 +712,7 @@ Extracts part of array.
 arr.slice(1, 3);
 ```
 
-🔹 `concat()`
+`concat()`
 
 Merges arrays.
 
@@ -720,7 +720,7 @@ Merges arrays.
 arr.concat([5, 6]);
 ```
 
-🔹 `flat()`
+`flat()`
 
 Flattens nested arrays.
 
@@ -730,7 +730,7 @@ Flattens nested arrays.
 
 3️⃣ Searching Methods
 
-🔹 `includes()`
+`includes()`
 
 Checks if value exists.
 
@@ -738,7 +738,7 @@ Checks if value exists.
 arr.includes(3);
 ```
 
-🔹 `indexOf()`
+`indexOf()`
 
 Returns first index.
 
@@ -746,11 +746,11 @@ Returns first index.
 arr.indexOf(2);
 ```
 
-🔹 `lastIndexOf()`
+`lastIndexOf()`
 
 Returns last index.
 
-🔹 `find()`
+`find()`
 
 Returns first matching element.
 
@@ -758,13 +758,13 @@ Returns first matching element.
 arr.find((x) => x > 2);
 ```
 
-🔹 `findIndex()`
+`findIndex()`
 
 Returns index of matching element.
 
 4️⃣ Iteration Methods
 
-🔹 `forEach()`
+`forEach()`
 
 Loops through array.
 
@@ -774,7 +774,7 @@ arr.forEach((x) => console.log(x));
 
 ❌ Does not return new array.
 
-🔹 `some()`
+`some()`
 
 Returns true if at least one matches.
 
@@ -782,7 +782,7 @@ Returns true if at least one matches.
 arr.some((x) => x > 5);
 ```
 
-🔹 `every()`
+`every()`
 
 Returns true if all match.
 
@@ -792,7 +792,7 @@ arr.every((x) => x > 0);
 
 5️⃣ Conversion Methods
 
-🔹 `join()`
+`join()`
 
 Converts array to string.
 
@@ -800,11 +800,11 @@ Converts array to string.
 arr.join("-");
 ```
 
-🔹 `toString()`
+`toString()`
 
 Converts to string.
 
-🔹 `Array.from()`
+`Array.from()`
 
 Creates array from iterable.
 
@@ -812,7 +812,7 @@ Creates array from iterable.
 Array.from("hello");
 ```
 
-🔹 `Array.isArray()`
+`Array.isArray()`
 
 Checks if value is array.
 
@@ -822,7 +822,7 @@ Array.isArray(arr);
 
 6️⃣ New Modern Methods
 
-🔹 `at()`
+`at()`
 
 Access element by index (supports negative).
 
@@ -830,7 +830,7 @@ Access element by index (supports negative).
 arr.at(-1);
 ```
 
-🔹 `flatMap()`
+`flatMap()`
 
 Map + flatten.
 
@@ -1695,6 +1695,100 @@ el.innerHTML = "<b>Hello</b>";
 el.innerText = "<b>Hello</b>";
 ```
 
+### Q. Difference between event.target and event.currentTarget
+
+**Answer:**
+
+1. `event.target`
+
+Definition
+
+Refers to the actual element that triggered the event
+
+Example
+
+```html
+<div onclick="handleClick(event)">
+  <button>Click Me</button>
+</div>
+```
+
+```js
+function handleClick(e) {
+  console.log(e.target);
+}
+```
+
+👉 If you click the button, `event.target` = button
+
+Key Point
+
+- Always points to the deepest (origin) element
+
+2. `event.currentTarget`
+
+Definition
+
+Refers to the element on which the event listener is attached
+
+Example
+
+```js
+function handleClick(e) {
+  console.log(e.currentTarget);
+}
+```
+
+👉 If listener is on div, then
+
+event.currentTarget = div
+
+🔥 Key Differences
+
+| Feature                  | `event.target`               | `event.currentTarget`  |
+| ------------------------ | ---------------------------- | ---------------------- |
+| Meaning                  | Element that triggered event | Element with listener  |
+| Changes during bubbling? | ❌ No                        | ✅ Yes                 |
+| Use case                 | Identify clicked element     | Handle event on parent |
+
+Example with Both
+
+```js
+document.querySelector("div").addEventListener("click", (e) => {
+  console.log("target:", e.target);
+  console.log("currentTarget:", e.currentTarget);
+});
+```
+
+👉 Clicking button inside div:
+
+```
+target → button
+currentTarget → div
+```
+
+Real Use Case
+
+✅ Event Delegation
+
+```js
+document.querySelector("ul").addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    console.log("Item clicked:", e.target.textContent);
+  }
+});
+```
+
+🚀 Final Summary
+
+- target → where event originated
+- currentTarget → where handler is attached
+- Important for event delegation
+
+🔥 Interview Line
+
+event.target is the element that triggered the event, while event.currentTarget is the element where the event listener is attached.
+
 ### Q. What is event bubbling?
 
 **Answer:**
@@ -2425,13 +2519,13 @@ showMessage("Something went wrong");
 
 **Answer:**
 
-🔹 Short Answer
+Short Answer
 
 👉 Yes, but only with await
 
 👉 ❌ No, if using plain promises without await
 
-🔹 Explanation
+Explanation
 
 ✅ Works with async/await
 
@@ -2470,7 +2564,7 @@ fetch("api-url")
   .catch((err) => console.log(err));
 ```
 
-🔹 Key Insight
+Key Insight
 
 `try...catch` only works for:
 
@@ -2485,32 +2579,32 @@ fetch("api-url")
 
 **Answer:**
 
-🔹 Error
+Error
 
 ✅ Definition
 
 Base class for all errors
 
-🔹 Example
+Example
 
 ```js
 throw new Error("Something went wrong");
 ```
 
-🔹 TypeError
+TypeError
 
 ✅ Definition
 
 Occurs when a value is not of expected type
 
-🔹 Example
+Example
 
 ```js
 let num = null;
 num.toString(); // ❌ TypeError
 ```
 
-🔹 Key Differences
+Key Differences
 
 | Feature     | Error         | TypeError     |
 | ----------- | ------------- | ------------- |
@@ -2518,7 +2612,7 @@ num.toString(); // ❌ TypeError
 | Use Case    | Custom errors | Type mismatch |
 | Inheritance | Base class    | Extends Error |
 
-🔹 Real Insight
+Real Insight
 
 TypeError is more specific and descriptive
 
@@ -2530,7 +2624,7 @@ Error is a generic base class, while TypeError is a specific error thrown when o
 
 **Answer:**
 
-🔹 Frontend (Client-side)
+Frontend (Client-side)
 
 ✅ Goals
 
@@ -2538,19 +2632,19 @@ Error is a generic base class, while TypeError is a specific error thrown when o
 - Prevent app crash
 - Handle UI gracefully
 
-🔹 Examples
+Examples
 
 - Toast messages
 - Retry buttons
 - Fallback UI
 
-🔹 Tools
+Tools
 
 - `try...catch`
 - `.catch()`
 - React Error Boundaries
 
-🔹 Backend (Server-side)
+Backend (Server-side)
 
 ✅ Goals
 
@@ -2558,13 +2652,13 @@ Error is a generic base class, while TypeError is a specific error thrown when o
 - Log errors
 - Send proper HTTP responses
 
-🔹 Examples
+Examples
 
 - Logging (Winston, Morgan)
 - HTTP status codes (500, 404)
 - Error middleware
 
-🔹 Key Differences
+Key Differences
 
 | Feature      | Frontend        | Backend             |
 | ------------ | --------------- | ------------------- |
@@ -2580,11 +2674,11 @@ Frontend focuses on user experience and graceful UI handling, while backend focu
 
 **Answer:**
 
-🔹 Result
+Result
 
 👉 Unhandled Promise Rejection
 
-🔹 Behavior
+Behavior
 
 In Browser:
 
@@ -2596,7 +2690,7 @@ In Node.js:
 - Can terminate process (in strict modes)
 - Emits unhandledRejection event
 
-🔹 Example
+Example
 
 ```js
 Promise.reject("Error!");
@@ -2604,13 +2698,13 @@ Promise.reject("Error!");
 
 ❌ No `.catch()` → unhandled rejection
 
-🔹 Risks
+Risks
 
 - Silent failures ❌
 - Debugging difficulty ❌
 - App instability ❌
 
-🔹 Best Practice
+Best Practice
 
 ```js
 promise.then((data) => {}).catch((err) => console.error(err));
@@ -2626,7 +2720,7 @@ try {
 }
 ```
 
-🔹 Global Handling (Node.js)
+Global Handling (Node.js)
 
 ```js
 process.on("unhandledRejection", (err) => {
@@ -2646,7 +2740,7 @@ Unhandled promise rejections can lead to silent failures or crashes, so they sho
 
 JavaScript performance can be improved by optimizing execution, reducing re-renders, minimizing bundle size, and efficient memory usage.
 
-🔹 Key Techniques
+Key Techniques
 
 - Avoid unnecessary DOM manipulation
 - Use debounce/throttle
@@ -2666,7 +2760,7 @@ JavaScript performance can be improved by optimizing execution, reducing re-rend
 
 Debouncing ensures a function is executed only after a delay once the user stops triggering it.
 
-🔹 Example (Search Input)
+Example (Search Input)
 
 ```js
 function debounce(fn, delay) {
@@ -2678,7 +2772,7 @@ function debounce(fn, delay) {
 }
 ```
 
-🔹 Use Cases
+Use Cases
 
 - Search input
 - Auto-save
@@ -2690,7 +2784,7 @@ function debounce(fn, delay) {
 
 Throttling ensures a function is executed at most once in a specified time interval.
 
-🔹 Example
+Example
 
 ```js
 function throttle(fn, limit) {
@@ -2705,7 +2799,7 @@ function throttle(fn, limit) {
 }
 ```
 
-🔹 Use Cases
+Use Cases
 
 - Scroll events
 - Mouse movement
@@ -2729,7 +2823,7 @@ function throttle(fn, limit) {
 
 A memory leak occurs when memory is not released even after it’s no longer needed.
 
-🔹 Common Causes
+Common Causes
 
 - Unremoved event listeners
 - Timers not cleared
@@ -2742,7 +2836,7 @@ A memory leak occurs when memory is not released even after it’s no longer nee
 
 Closures retain references to variables from outer scope, preventing garbage collection.
 
-🔹 Example
+Example
 
 ```js
 function outer() {
@@ -2764,13 +2858,13 @@ const fn = outer();
 
 Lazy loading delays loading of resources until they are needed.
 
-🔹 Example (React)
+Example (React)
 
 ```jsx
 const Component = React.lazy(() => import("./Component"));
 ```
 
-🔹 Use Cases
+Use Cases
 
 - Images
 - Routes
@@ -2782,20 +2876,20 @@ const Component = React.lazy(() => import("./Component"));
 
 Code splitting breaks the bundle into smaller chunks that are loaded on demand.
 
-🔹 Example
+Example
 
 ```jsx
 import("./Dashboard");
 ```
 
-🔹 Benefits
+Benefits
 
 - Faster initial load
 - Better performance
 
 ### Q. Minification & Tree Shaking
 
-🔹 Minification
+Minification
 
 Removes unnecessary code (spaces, comments).
 
@@ -2811,7 +2905,7 @@ function add(a, b) {
 }
 ```
 
-🔹 Tree Shaking
+Tree Shaking
 
 Removes unused code from bundle.
 
@@ -2825,7 +2919,7 @@ import { add } from "lib"; // only add is included
 
 Web Workers allow running JavaScript in a background thread, separate from the main UI thread.
 
-🔹 Why Needed
+Why Needed
 
 JS is single-threaded → heavy tasks block UI
 
@@ -2834,7 +2928,7 @@ Web Workers:
 - Run tasks in background
 - Keep UI responsive
 
-🔹 Example
+Example
 
 ```js
 const worker = new Worker("worker.js");
@@ -2846,7 +2940,7 @@ worker.onmessage = (e) => {
 };
 ```
 
-🔹 Use Cases
+Use Cases
 
 - Image processing
 - Large calculations

@@ -28,7 +28,6 @@
         "language": "text",
         "code": "Browser → DNS → CDN → Dispatcher → Web Server → App → Database"
       },
-
       {
         "type": "h4",
         "text": "2️⃣ DNS (Domain Name System) – The Phonebook of the Internet"
@@ -55,7 +54,6 @@
         "type": "info",
         "text": "DNS does not host content. It only resolves domain names to server locations (often a CDN)."
       },
-
       {
         "type": "h4",
         "text": "3️⃣ CDN (Content Delivery Network)"
@@ -87,7 +85,6 @@
         "language": "text",
         "code": "With CDN:\nUser in India → Mumbai edge server → Fast"
       },
-
       {
         "type": "bold",
         "text": "What CDN caches"
@@ -102,7 +99,6 @@
           ["HTML (sometimes)", "WebSockets"]
         ]
       },
-
       {
         "type": "h4",
         "text": "4️⃣ Publisher – Who publishes the website?"
@@ -129,7 +125,6 @@
         "style": "unordered",
         "items": ["Write application code", "Build assets", "Upload files to servers", "Configure CDN", "Define caching rules", "Deploy site to production"]
       },
-
       {
         "type": "h4",
         "text": "5️⃣ Dispatcher (Enterprise Layer)"
@@ -166,7 +161,6 @@
           ["Faster delivery", "More controlled filtering"]
         ]
       },
-
       {
         "type": "h4",
         "text": "6️⃣ Web Server"
@@ -193,7 +187,6 @@
         "type": "paragraph",
         "text": "Static files are served directly, while dynamic requests are forwarded to the application server."
       },
-
       {
         "type": "h4",
         "text": "7️⃣ Application Server"
@@ -233,7 +226,6 @@
         "style": "unordered",
         "items": ["SQL databases (MySQL, PostgreSQL)", "NoSQL databases (MongoDB)", "External APIs", "Cache layers such as Redis"]
       },
-
       {
         "type": "h4",
         "text": "9️⃣ Caching – The Secret Sauce"
@@ -265,7 +257,6 @@
         "type": "info",
         "text": "Caching is easy. Cache invalidation is one of the hardest problems in computer science."
       },
-
       {
         "type": "h4",
         "text": "🔟 How a Web Page Goes Live"
@@ -275,7 +266,6 @@
         "style": "ordered",
         "items": ["Developer writes code", "Code pushed to Git", "CI pipeline builds assets", "Files uploaded to server or CMS", "Dispatcher cache cleared", "CDN cache purged", "DNS points to CDN", "Users see the new page"]
       },
-
       {
         "type": "h4",
         "text": "1️⃣1️⃣ Real World Request Flow"
@@ -285,7 +275,6 @@
         "language": "text",
         "code": "User Browser\n↓\nDNS\n↓\nCDN (cached? yes → return)\n↓ no\nDispatcher (cached? yes → return)\n↓ no\nWeb Server\n↓\nApplication Server\n↓\nDatabase / APIs\n↑\nResponse cached on way back"
       },
-
       {
         "type": "h4",
         "text": "1️⃣2️⃣ Why This Matters"
@@ -294,6 +283,783 @@
         "type": "list",
         "style": "unordered",
         "items": ["Helps debug slow websites", "Useful in system design interviews", "Helps design scalable applications", "Improves architectural understanding"]
+      }
+    ]
+  },
+  {
+    "id": "basic-002",
+    "topic": "",
+    "subTopic": "SEO",
+    "difficulty": "Beginner",
+    "question": "What is robots.txt?",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Definition"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "robots.txt"
+          },
+          {
+            "type": "text",
+            "value": " is a text file placed in the root of a website that tells search engine crawlers (bots) which pages they are allowed or not allowed to crawl."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example URL:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "https://example.com/robots.txt"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why is it used?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "It is used to control how search engines like Google, Bing, etc., crawl your website."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Main Purpose"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Control Crawling"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Prevent bots from accessing certain pages"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "Protect Sensitive Areas (Not secure, but helps)"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Admin pages"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Internal APIs"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Temporary files"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "Optimize Crawl Budget"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Search engines don’t waste time on irrelevant pages"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "Avoid Duplicate Content Issues"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Block duplicate or unnecessary URLs"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Basic Syntax"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "User-agent: _\nDisallow: /admin/\nAllow: /public/"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explanation"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Rule", "Meaning"],
+        "data": [
+          ["User-agent: *", "Applies to all bots"],
+          ["Disallow: /admin/", "Block /admin folder"],
+          ["Allow: /public/", "Allow /public"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "User-agent: \\*\nDisallow: /private/\nDisallow: /temp/"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Bots cannot crawl /private and /temp"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Important Points ⚠️"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "❌ It does NOT secure data (just a guideline)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "❌ Bots can ignore it (malicious bots)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "✅ Only affects crawling, not indexing (in some cases)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "robots.txt vs Meta Robots"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "robots.txt", "Meta Robots"],
+        "data": [
+          ["Scope", "Whole site", "Specific page"],
+          ["Location", "Root file", "HTML `<head>`"],
+          ["Control", "Crawl", "Indexing"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Real Insight"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Even if blocked in robots.txt, a page can still appear in search results if:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Other sites link to it"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "robots.txt"
+          },
+          {
+            "type": "text",
+            "value": " is a file used to guide search engine crawlers on which parts of a website should or should not be crawled, helping optimize indexing and crawl efficiency."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🚀 Quick Summary"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "File in root → /robots.txt"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Controls crawler access"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improves SEO performance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Not a security feature"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "basic-003",
+    "topic": "",
+    "subTopic": "SEO",
+    "difficulty": "Beginner",
+    "question": "What is sitemap.xml?",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Definition"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "sitemap.xml"
+          },
+          {
+            "type": "text",
+            "value": " is a file that lists all important URLs of a website, helping search engines understand:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "What pages exist"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "How they are structured"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "When they were last updated"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Why is it used?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "It helps search engines like Google and Bing discover and index pages more efficiently."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Main Purpose"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Improve Indexing"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Ensures all important pages are found"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "Help Large Websites"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Useful for sites with many pages or deep structure"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "Faster Discovery of New Content"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Newly added pages get indexed quicker"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "Provide Metadata (Includes:)"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Last modified date"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Priority"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Change frequency"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Basic Structure"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "xml",
+        "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://example.com/</loc>\n    <lastmod>2026-04-16</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n</urlset>"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Tags Explained"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Tag", "Meaning"],
+        "data": [
+          ["<loc>", "Page URL"],
+          ["<lastmod>", "Last updated date"],
+          ["<changefreq>", "Update frequency"],
+          ["<priority>", "Importance (0–1)"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example URL"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "https://example.com/sitemap.xml"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Types of Sitemaps"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "XML Sitemap"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "For search engines (most common)"
+                }
+              ]
+            ]
+          },
+          [
+            {
+              "type": "text",
+              "value": "HTML Sitemap"
+            }
+          ],
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "For users (navigation page)"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "sitemap.xml vs robots.txt"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "sitemap.xml", "robots.txt"],
+        "data": [
+          ["Purpose", "List pages", "Control crawling"],
+          ["Type", "XML file", "Text file"],
+          ["Role", "Help indexing", "Restrict crawling"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Best Practices"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Include only important pages"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Keep it updated"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Submit to Google Search Console"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Avoid broken links"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Important Notes ⚠️"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Not mandatory but highly recommended"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Does NOT guarantee indexing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Works best when combined with good SEO"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "sitemap.xml"
+          },
+          {
+            "type": "text",
+            "value": " is a file that lists all important URLs of a website to help search engines discover and index content efficiently."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🚀 Quick Summary"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Lists all website URLs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Helps search engines crawl smarter"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improves SEO performance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Works alongside robots.txt"
+            }
+          ]
+        ]
       }
     ]
   }

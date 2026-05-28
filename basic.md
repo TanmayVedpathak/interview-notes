@@ -1,3 +1,7 @@
+# BASIC
+
+## Web Fundamentals
+
 ### Q. Full mental model of how a web page load
 
 **Answer:**
@@ -297,3 +301,200 @@ If you understand this:
 - You answer system design questions
 - You design scalable apps
 - You speak like a senior engineer
+
+## SEO
+
+### Q. What is `robots.txt`?
+
+**Answer:**
+
+Definition
+
+`robots.txt` is a text file placed in the root of a website that tells search engine crawlers (bots) which pages they are allowed or not allowed to crawl.
+
+Example URL:
+
+```
+https://example.com/robots.txt
+```
+
+Why is it used?
+
+It is used to control how search engines like Google, Bing, etc., crawl your website.
+
+Main Purpose
+
+1. Control Crawling
+   - Prevent bots from accessing certain pages
+
+2. Protect Sensitive Areas (Not secure, but helps)
+   - Admin pages
+   - Internal APIs
+   - Temporary files
+
+3. Optimize Crawl Budget
+   - Search engines don’t waste time on irrelevant pages
+
+4. Avoid Duplicate Content Issues
+   - Block duplicate or unnecessary URLs
+
+Basic Syntax
+
+```
+User-agent: _
+Disallow: /admin/
+Allow: /public/
+```
+
+Explanation
+
+| Rule                | Meaning               |
+| ------------------- | --------------------- |
+| `User-agent: *`     | Applies to all bots   |
+| `Disallow: /admin/` | Block `/admin` folder |
+| `Allow: /public/`   | Allow `/public`       |
+
+Example
+
+```
+User-agent: \*
+Disallow: /private/
+Disallow: /temp/
+```
+
+👉 Bots cannot crawl /private and /temp
+
+Important Points ⚠️
+
+- ❌ It does NOT secure data (just a guideline)
+- ❌ Bots can ignore it (malicious bots)
+- ✅ Only affects crawling, not indexing (in some cases)
+
+robots.txt vs Meta Robots
+
+| Feature  | robots.txt | Meta Robots   |
+| -------- | ---------- | ------------- |
+| Scope    | Whole site | Specific page |
+| Location | Root file  | HTML `<head>` |
+| Control  | Crawl      | Indexing      |
+
+Real Insight
+
+👉 Even if blocked in robots.txt, a page can still appear in search results if:
+
+Other sites link to it
+
+🔥 Interview Line
+
+`robots.txt` is a file used to guide search engine crawlers on which parts of a website should or should not be crawled, helping optimize indexing and crawl efficiency.
+
+🚀 Quick Summary
+
+- File in root → /robots.txt
+- Controls crawler access
+- Improves SEO performance
+- Not a security feature
+
+### Q. What is `sitemap.xml`?
+
+**Answer:**
+
+Definition
+
+`sitemap.xml` is a file that lists all important URLs of a website, helping search engines understand:
+
+- What pages exist
+- How they are structured
+- When they were last updated
+
+Why is it used?
+
+It helps search engines like Google and Bing discover and index pages more efficiently.
+
+Main Purpose
+
+1. Improve Indexing
+   - Ensures all important pages are found
+
+2. Help Large Websites
+   - Useful for sites with many pages or deep structure
+
+3. Faster Discovery of New Content
+   - Newly added pages get indexed quicker
+
+4. Provide Metadata
+
+   Includes:
+   - Last modified date
+   - Priority
+   - Change frequency
+
+Basic Structure
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>
+```
+
+Tags Explained
+
+| Tag            | Meaning           |
+| -------------- | ----------------- |
+| `<loc>`        | Page URL          |
+| `<lastmod>`    | Last updated date |
+| `<changefreq>` | Update frequency  |
+| `<priority>`   | Importance (0–1)  |
+
+Example URL
+
+```
+https://example.com/sitemap.xml
+```
+
+Types of Sitemaps
+
+1. XML Sitemap
+   - For search engines (most common)
+2. HTML Sitemap
+   - For users (navigation page)
+
+sitemap.xml vs robots.txt
+
+| Feature | sitemap.xml   | robots.txt        |
+| ------- | ------------- | ----------------- |
+| Purpose | List pages    | Control crawling  |
+| Type    | XML file      | Text file         |
+| Role    | Help indexing | Restrict crawling |
+
+Best Practices
+
+- Include only important pages
+- Keep it updated
+- Submit to Google Search Console
+- Avoid broken links
+
+Important Notes ⚠️
+
+- Not mandatory but highly recommended
+- Does NOT guarantee indexing
+- Works best when combined with good SEO
+
+🔥 Interview Line
+
+`sitemap.xml` is a file that lists all important URLs of a website to help search engines discover and index content efficiently.
+
+🚀 Quick Summary
+
+- Lists all website URLs
+- Helps search engines crawl smarter
+- Improves SEO performance
+- Works alongside robots.txt

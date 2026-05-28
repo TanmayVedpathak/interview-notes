@@ -258,7 +258,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "JavaScript Basics",
     "difficulty": "Beginner",
-    "question": "What is the difference between `alert`, `prompt`, and `confirm`?",
+    "question": "What is the difference between alert, prompt, and confirm?",
     "answer": [
       {
         "type": "paragraph",
@@ -303,7 +303,15 @@
         "content": [
           {
             "type": "text",
-            "value": "Template literals are ES6 string literals enclosed in backticks (`) that support string interpolation (${}), multi-line strings, and expression embedding."
+            "value": "Template literals are ES6 string literals enclosed in backticks "
+          },
+          {
+            "type": "badge",
+            "value": "(`)"
+          },
+          {
+            "type": "text",
+            "value": " that support string interpolation (${}), multi-line strings, and expression embedding."
           }
         ]
       }
@@ -314,7 +322,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "JavaScript Basics",
     "difficulty": "Beginner",
-    "question": "What is the `typeof` operator?",
+    "question": "What is the typeof operator?",
     "answer": [
       {
         "type": "paragraph",
@@ -423,7 +431,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "JavaScript Basics",
     "difficulty": "Beginner",
-    "question": "Difference between `isNaN()` and `Number.isNaN()`",
+    "question": "Difference between isNaN() and Number.isNaN()",
     "answer": [
       {
         "type": "paragraph",
@@ -458,7 +466,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "JavaScript Basics",
     "difficulty": "Beginner",
-    "question": "Explain `parseInt()` vs `Number()`",
+    "question": "Explain parseInt() vs Number()",
     "answer": [
       {
         "type": "paragraph",
@@ -592,7 +600,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "Functions & Scope",
     "difficulty": "Beginner",
-    "question": "What is scope (`global`, `function`, `block`)?",
+    "question": "What is scope (global, function, block)?",
     "answer": [
       {
         "type": "paragraph",
@@ -819,7 +827,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "Functions & Scope",
     "difficulty": "Beginner",
-    "question": "What is the `arguments` object?",
+    "question": "What is the arguments object?",
     "answer": [
       {
         "type": "paragraph",
@@ -1270,7 +1278,7 @@
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
-    "question": "How does `this` work in arrow functions?",
+    "question": "How does this work in arrow functions?",
     "answer": [
       {
         "type": "paragraph",
@@ -1844,7 +1852,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -1871,7 +1879,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -1898,7 +1906,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -1925,7 +1933,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -1952,7 +1960,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2008,7 +2016,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2035,7 +2043,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2071,7 +2079,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2107,7 +2115,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2134,7 +2142,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2170,7 +2178,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2197,7 +2205,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2224,7 +2232,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2260,7 +2268,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2287,7 +2295,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2314,7 +2322,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2336,7 +2344,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2363,7 +2371,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2394,7 +2402,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2430,7 +2438,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2457,7 +2465,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2493,7 +2501,7 @@
         "content": [
           {
             "type": "paragraph",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2520,7 +2528,7 @@
         "content": [
           {
             "type": "paragraph",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2542,7 +2550,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2569,7 +2577,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2605,7 +2613,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -2632,7 +2640,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 "
+            "value": ""
           },
           {
             "type": "badge",
@@ -3232,7 +3240,23 @@
         "columns": ["Method", "Parameters", "Supports negative index", "Description"],
         "data": [
           ["slice(start, end)", "start, end", "✅ Yes", "Extracts part of a string"],
-          ["substring(start, end)", "start, end", "❌ No", "Negative values treated as `0`"],
+          [
+            "substring(start, end)",
+            "start, end",
+            "❌ No",
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Negative values treated as "
+                },
+                {
+                  "type": "badge",
+                  "value": "0"
+                }
+              ]
+            }
+          ],
           ["substr(start, length)", "start, length", "✅ Yes", "Extracts based on length (deprecated)"]
         ]
       },
@@ -3418,7 +3442,32 @@
         "type": "table",
         "columns": ["Template Literals", "Concatenation"],
         "data": [
-          ["Uses backticks  `", "Uses +"],
+          [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Uses backticks "
+                },
+                {
+                  "type": "badge",
+                  "value": "`"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Uses "
+                },
+                {
+                  "type": "badge",
+                  "value": "+"
+                }
+              ]
+            }
+          ],
           ["Supports interpolation", "No interpolation"],
           ["Supports multi-line", "Single-line only"]
         ]
@@ -3516,7 +3565,26 @@
           {
             "type": "list",
             "style": "unordered",
-            "items": [[{ "type": "text", "value": "Callbacks" }], [{ "type": "text", "value": "Promises" }], [{ "type": "text", "value": "async/await" }]]
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": "Callbacks"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Promises"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "async/await"
+                }
+              ]
+            ]
           }
         ]
       },
@@ -3664,7 +3732,21 @@
         "data": [
           ["Chain-based", "Synchronous-looking"],
           ["Callback-style", "Cleaner & readable"],
-          ["Harder error handling", "Easy `try/catch`"],
+          [
+            "Harder error handling",
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Easy "
+                },
+                {
+                  "type": "badge",
+                  "value": "try/catch"
+                }
+              ]
+            }
+          ],
           ["Older syntax", "Modern ES2017"]
         ]
       },
@@ -4789,6 +4871,278 @@
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
+    "question": "Difference between event.target and event.currentTarget",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "event.target"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Definition"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Refers to the actual element that triggered the event"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div onclick=\"handleClick(event)\">\n  <button>Click Me</button>\n</div>"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function handleClick(e) {\n  console.log(e.target);\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 If you click the button, "
+          },
+          {
+            "type": "badge",
+            "value": "event.target"
+          },
+          {
+            "type": "text",
+            "value": " = button"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Key Point"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Always points to the deepest (origin) element"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "event.currentTarget"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Definition"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Refers to the element on which the event listener is attached"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function handleClick(e) {\n  console.log(e.currentTarget);\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 If listener is on div, then"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "event.currentTarget = div"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Key Differences"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "event.target", "event.currentTarget"],
+        "data": [
+          ["Meaning", "Element that triggered event", "Element with listener"],
+          ["Changes during bubbling?", "❌ No", "✅ Yes"],
+          ["Use case", "Identify clicked element", "Handle event on parent"]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example with Both"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "document.querySelector(\"div\").addEventListener(\"click\", (e) => {\n  console.log(\"target:\", e.target);\n  console.log(\"currentTarget:\", e.currentTarget);\n});"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Clicking button inside div:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "target → button\ncurrentTarget → div"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Real Use Case"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "✅ Event Delegation"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "document.querySelector(\"ul\").addEventListener(\"click\", (e) => {\n  if (e.target.tagName === \"LI\") {\n    console.log(\"Item clicked:\", e.target.textContent);\n  }\n});"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🚀 Final Summary"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "target → where event originated"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "currentTarget → where handler is attached"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Important for event delegation"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "🔥 Interview Line"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "event.target is the element that triggered the event, while event.currentTarget is the element where the event listener is attached."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-113",
+    "topic": "JAVASCRIPT",
+    "subTopic": "DOM & Browser APIs",
+    "difficulty": "Beginner",
     "question": "What is event bubbling?",
     "answer": [
       {
@@ -4830,7 +5184,7 @@
     ]
   },
   {
-    "id": "js-113",
+    "id": "js-114",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4880,7 +5234,7 @@
     ]
   },
   {
-    "id": "js-114",
+    "id": "js-115",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4930,7 +5284,7 @@
     ]
   },
   {
-    "id": "js-115",
+    "id": "js-116",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4948,7 +5302,7 @@
     ]
   },
   {
-    "id": "js-116",
+    "id": "js-117",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4980,7 +5334,7 @@
     ]
   },
   {
-    "id": "js-117",
+    "id": "js-118",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5003,7 +5357,7 @@
     ]
   },
   {
-    "id": "js-118",
+    "id": "js-119",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5031,7 +5385,7 @@
     ]
   },
   {
-    "id": "js-119",
+    "id": "js-120",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5050,7 +5404,7 @@
     ]
   },
   {
-    "id": "js-120",
+    "id": "js-121",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5097,7 +5451,7 @@
     ]
   },
   {
-    "id": "js-121",
+    "id": "js-122",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5134,7 +5488,7 @@
     ]
   },
   {
-    "id": "js-122",
+    "id": "js-123",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5148,7 +5502,7 @@
     ]
   },
   {
-    "id": "js-123",
+    "id": "js-124",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5208,7 +5562,7 @@
     ]
   },
   {
-    "id": "js-124",
+    "id": "js-125",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5308,7 +5662,7 @@
     ]
   },
   {
-    "id": "js-125",
+    "id": "js-126",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5374,7 +5728,7 @@
     ]
   },
   {
-    "id": "js-126",
+    "id": "js-127",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5451,7 +5805,7 @@
     ]
   },
   {
-    "id": "js-127",
+    "id": "js-128",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5510,7 +5864,7 @@
     ]
   },
   {
-    "id": "js-128",
+    "id": "js-129",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5582,7 +5936,7 @@
     ]
   },
   {
-    "id": "js-129",
+    "id": "js-130",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5641,7 +5995,7 @@
     ]
   },
   {
-    "id": "js-130",
+    "id": "js-131",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5700,7 +6054,7 @@
     ]
   },
   {
-    "id": "js-131",
+    "id": "js-132",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5750,7 +6104,7 @@
     ]
   },
   {
-    "id": "js-132",
+    "id": "js-133",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5796,7 +6150,7 @@
     ]
   },
   {
-    "id": "js-133",
+    "id": "js-134",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5855,7 +6209,7 @@
     ]
   },
   {
-    "id": "js-134",
+    "id": "js-135",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5874,8 +6228,44 @@
         "type": "table",
         "columns": ["Feature", "CommonJS", "ES Modules"],
         "data": [
-          ["Syntax", "`require()`", "`import`"],
-          ["Export", "`module.exports`", "`export`"],
+          [
+            "Syntax",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "require()"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "import"
+                }
+              ]
+            }
+          ],
+          [
+            "Export",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "module.exports"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "export"
+                }
+              ]
+            }
+          ],
           ["Loading", "Synchronous", "Asynchronous"],
           ["Used in", "Node.js", "Browser + Node"]
         ]
@@ -5888,7 +6278,7 @@
     ]
   },
   {
-    "id": "js-135",
+    "id": "js-136",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5947,7 +6337,7 @@
     ]
   },
   {
-    "id": "js-136",
+    "id": "js-137",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6020,7 +6410,7 @@
     ]
   },
   {
-    "id": "js-137",
+    "id": "js-138",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6073,7 +6463,7 @@
     ]
   },
   {
-    "id": "js-138",
+    "id": "js-139",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6132,7 +6522,7 @@
     ]
   },
   {
-    "id": "js-139",
+    "id": "js-140",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6201,7 +6591,7 @@
     ]
   },
   {
-    "id": "js-140",
+    "id": "js-141",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6297,7 +6687,7 @@
     ]
   },
   {
-    "id": "js-141",
+    "id": "js-142",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6374,7 +6764,7 @@
     ]
   },
   {
-    "id": "js-142",
+    "id": "js-143",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6424,7 +6814,7 @@
     ]
   },
   {
-    "id": "js-143",
+    "id": "js-144",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6495,7 +6885,7 @@
     ]
   },
   {
-    "id": "js-144",
+    "id": "js-145",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6568,7 +6958,7 @@
     ]
   },
   {
-    "id": "js-145",
+    "id": "js-146",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6631,7 +7021,7 @@
     ]
   },
   {
-    "id": "js-146",
+    "id": "js-147",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6705,7 +7095,7 @@
     ]
   },
   {
-    "id": "js-147",
+    "id": "js-148",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6782,7 +7172,7 @@
     ]
   },
   {
-    "id": "js-148",
+    "id": "js-149",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6878,7 +7268,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Short Answer"
+            "value": "Short Answer"
           }
         ]
       },
@@ -6905,7 +7295,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Explanation"
+            "value": "Explanation"
           }
         ]
       },
@@ -6990,7 +7380,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Key Insight"
+            "value": "Key Insight"
           }
         ]
       },
@@ -7077,7 +7467,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Error"
+            "value": "Error"
           }
         ]
       },
@@ -7095,7 +7485,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7109,7 +7499,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 TypeError"
+            "value": "TypeError"
           }
         ]
       },
@@ -7127,7 +7517,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7141,7 +7531,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Key Differences"
+            "value": "Key Differences"
           }
         ]
       },
@@ -7159,7 +7549,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Real Insight"
+            "value": "Real Insight"
           }
         ]
       },
@@ -7204,7 +7594,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Frontend (Client-side)"
+            "value": "Frontend (Client-side)"
           }
         ]
       },
@@ -7246,7 +7636,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Examples"
+            "value": "Examples"
           }
         ]
       },
@@ -7279,7 +7669,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Tools"
+            "value": "Tools"
           }
         ]
       },
@@ -7312,7 +7702,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Backend (Server-side)"
+            "value": "Backend (Server-side)"
           }
         ]
       },
@@ -7354,7 +7744,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Examples"
+            "value": "Examples"
           }
         ]
       },
@@ -7387,7 +7777,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Key Differences"
+            "value": "Key Differences"
           }
         ]
       },
@@ -7432,7 +7822,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Result"
+            "value": "Result"
           }
         ]
       },
@@ -7450,7 +7840,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Behavior"
+            "value": "Behavior"
           }
         ]
       },
@@ -7513,7 +7903,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7544,7 +7934,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Risks"
+            "value": "Risks"
           }
         ]
       },
@@ -7577,7 +7967,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Best Practice"
+            "value": "Best Practice"
           }
         ]
       },
@@ -7605,7 +7995,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Global Handling (Node.js)"
+            "value": "Global Handling (Node.js)"
           }
         ]
       },
@@ -7655,7 +8045,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Key Techniques"
+            "value": "Key Techniques"
           }
         ]
       },
@@ -7748,7 +8138,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example (Search Input)"
+            "value": "Example (Search Input)"
           }
         ]
       },
@@ -7762,7 +8152,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Use Cases"
+            "value": "Use Cases"
           }
         ]
       },
@@ -7813,7 +8203,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -7827,7 +8217,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Use Cases"
+            "value": "Use Cases"
           }
         ]
       },
@@ -7904,7 +8294,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Common Causes"
+            "value": "Common Causes"
           }
         ]
       },
@@ -7961,7 +8351,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -8002,7 +8392,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example (React)"
+            "value": "Example (React)"
           }
         ]
       },
@@ -8016,7 +8406,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Use Cases"
+            "value": "Use Cases"
           }
         ]
       },
@@ -8067,7 +8457,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -8081,7 +8471,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Benefits"
+            "value": "Benefits"
           }
         ]
       },
@@ -8138,7 +8528,6 @@
         "language": "javascript",
         "code": "function add(a,b){return a+b;}"
       },
-
       {
         "type": "bold",
         "text": "Tree Shaking"
@@ -8175,7 +8564,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Why Needed"
+            "value": "Why Needed"
           }
         ]
       },
@@ -8220,7 +8609,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Example"
+            "value": "Example"
           }
         ]
       },
@@ -8234,7 +8623,7 @@
         "content": [
           {
             "type": "text",
-            "value": "🔹 Use Cases"
+            "value": "Use Cases"
           }
         ]
       },
