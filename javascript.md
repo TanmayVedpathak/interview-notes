@@ -217,6 +217,108 @@ JavaScript does not support traditional function overloading; it is achieved by 
 
 The rest parameter collects remaining function arguments into a real array, replacing the need for arguments.
 
+### Q. Explain Pure and Impure function.
+
+**Answer:**
+
+#### Pure Function
+
+A pure function is a function that always gives the same output for the same input and does not change anything outside the function.
+
+In simple words, a pure function depends only on its input values and does not produce any side effects.
+
+Characteristics of a Pure Function
+
+1. It always returns the same result for the same arguments.
+2. It does not modify variables, objects, arrays, or data outside its scope.
+3. It does not depend on external changing values.
+4. It does not perform side effects like API calls, DOM updates, file changes, or console logging.
+
+Example of Pure Function
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 3)); // 5
+console.log(add(2, 3)); // 5
+```
+
+Here, `add()` is a pure function because whenever we pass 2 and 3, it always returns 5. It does not modify any external value.
+
+Another Example
+
+```js
+function square(num) {
+  return num * num;
+}
+
+console.log(square(4)); // 16
+```
+
+This function is pure because its output depends only on the input `num`.
+
+#### Impure Function
+
+An impure function is a function that may give different results for the same input or changes something outside the function.
+
+In simple words, an impure function depends on external data or creates side effects.
+
+Characteristics of an Impure Function
+
+1. It may return different results for the same input.
+2. It may modify external variables, arrays, or objects.
+3. It may depend on values outside the function.
+4. It may perform side effects such as API calls, DOM manipulation, database updates, file operations, or logging.
+
+Example of Impure Function
+
+```js
+let total = 0;
+
+function addToTotal(value) {
+  total += value;
+  return total;
+}
+
+console.log(addToTotal(5)); // 5
+console.log(addToTotal(5)); // 10
+```
+
+Here, `addToTotal()` is an impure function because it modifies the external variable total. Even though we pass the same input 5, the output changes.
+
+Another Example
+
+```js
+function getRandomNumber() {
+  return Math.random();
+}
+
+console.log(getRandomNumber());
+console.log(getRandomNumber());
+```
+
+This is impure because Math.random() returns a different value each time, even though no input is passed.
+
+Difference Between Pure and Impure Function
+
+| Pure Function                                     | Impure Function                                |
+| ------------------------------------------------- | ---------------------------------------------- |
+| Always returns the same output for the same input | May return different output for the same input |
+| Does not modify external data                     | Can modify external data                       |
+| Has no side effects                               | Can have side effects                          |
+| Easy to test and debug                            | Harder to test and debug                       |
+| Depends only on input parameters                  | May depend on external state                   |
+
+Why Pure Functions Are Important
+
+Pure functions are important because they make code easier to understand, test, and debug. Since they do not depend on external data and do not modify anything outside the function, their behavior is predictable.
+
+Pure functions are commonly used in functional programming and are very useful in JavaScript libraries and frameworks like React.
+
+For example, in React, components and state update functions should often behave predictably. Pure functions help avoid unexpected bugs caused by changing data directly.
+
 ## Closures
 
 ### Q. What is a closure?

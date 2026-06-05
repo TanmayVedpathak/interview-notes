@@ -1,0 +1,6775 @@
+[
+  {
+    "id": "html-001",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is HTML?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "HTML (HyperText Markup Language) is the standard language used to create and structure web pages."
+      },
+      {
+        "type": "bold",
+        "text": "Purpose"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Defines structure, not styling"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Works with CSS (design) + JS (behavior)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>My Page</title>\r\n  </head>\r\n  <body>\r\n    <h1>Hello World</h1>\r\n  </body>\r\n</html>\r"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "HTML is a markup language used to structure content on the web using elements and tags."
+      }
+    ]
+  },
+  {
+    "id": "html-002",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is the difference between HTML elements and tags?",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "HTML Tag"
+      },
+      {
+        "type": "paragraph",
+        "text": "The syntax used to mark content"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p></p>\r"
+      },
+      {
+        "type": "h4",
+        "text": "HTML Element"
+      },
+      {
+        "type": "paragraph",
+        "text": "Complete structure → opening tag + content + closing tag"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p>Hello</p>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Difference"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Tag", "Element"],
+        "data": [
+          ["Meaning", "Markup syntax", "Complete structure"],
+          ["Includes content", "❌ No", "✅ Yes"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "A tag is the syntax, while an element includes the tag along with its content."
+      }
+    ]
+  },
+  {
+    "id": "html-003",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "Difference between tags, attributes, and elements",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Tag"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a> </a>\r"
+      },
+      {
+        "type": "h4",
+        "text": "Attribute"
+      },
+      {
+        "type": "paragraph",
+        "text": "Provides additional information"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"https://example.com\">Link</a>\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 "
+          },
+          {
+            "type": "badge",
+            "value": "href"
+          },
+          {
+            "type": "text",
+            "value": " = attribute"
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Element"
+      },
+      {
+        "type": "bold",
+        "text": "Full structure"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"https://example.com\">Link</a>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Summary"
+      },
+      {
+        "type": "table",
+        "columns": ["Term", "Meaning"],
+        "data": [
+          ["Tag", "Markup syntax"],
+          ["Attribute", "Extra info inside tag"],
+          ["Element", "Tag + content"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Tags define structure, attributes add extra information, and elements represent the complete unit."
+      }
+    ]
+  },
+  {
+    "id": "html-004",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "Does <!DOCTYPE html> tag is a HTML tag?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "👉 ❌ No, it is NOT a tag"
+      },
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "It is a declaration that tells the browser:"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 “This document is HTML5”"
+      },
+      {
+        "type": "bold",
+        "text": "Purpose"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ensures browser uses standards mode"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<!DOCTYPE html>"
+          },
+          {
+            "type": "text",
+            "value": " is a declaration, not an HTML tag, and it tells the browser to use HTML5 standards."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-005",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What are void elements in HTML?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "Elements that do not have closing tags"
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<br />\r\n<img src=\"image.jpg\" />\r\n<input type=\"text\" />\r\n<hr />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Cannot have content inside"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Self-closing by nature"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Void elements are HTML elements that do not require closing tags and cannot contain content."
+      }
+    ]
+  },
+  {
+    "id": "html-006",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What are empty elements?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "Elements that have no content"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p></p>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Difference"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Void Elements", "Empty Elements"],
+        "data": [
+          ["Closing Tag", "❌ No", "✅ Yes"],
+          ["Content", "❌ Not allowed", "❌ Currently empty"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Empty elements have no content but may have closing tags, whereas void elements never have closing tags."
+      }
+    ]
+  },
+  {
+    "id": "html-007",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What happens if you overlap sets of tags?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Example (Incorrect HTML)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<b><i>Text</b></i>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Problem"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tags are not properly nested"
+      },
+      {
+        "type": "bold",
+        "text": "Result"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Browser tries to fix it automatically"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Can lead to:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Unexpected layout ❌"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Broken structure ❌"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Styling issues ❌"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Correct Way"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<b><i>Text</i></b>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Rule"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Always properly nest tags"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Overlapping tags break proper nesting, leading to unpredictable rendering and potential layout issues."
+      },
+      {
+        "type": "bold",
+        "text": "🚀 Final Summary"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "HTML → structure of web pages"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Tag vs Element → syntax vs full structure"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Attributes → extra info"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DOCTYPE → declaration, not tag"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Void elements → no closing tag"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Empty elements → no content"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Overlapping → invalid HTML"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-008",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Attributes & Metadata",
+    "difficulty": "Beginner",
+    "question": "What are HTML attributes?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Attributes provide additional information about HTML elements."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "They are always written in the opening tag."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Syntax"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<tag attribute=\"value\">Content</tag>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"https://example.com\">Visit</a>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 href is an attribute"
+      },
+      {
+        "type": "bold",
+        "text": "Common Attributes"
+      },
+      {
+        "type": "table",
+        "columns": ["Attribute", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "href"
+                }
+              ]
+            },
+            "Link destination"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "src"
+                }
+              ]
+            },
+            "Image source"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "alt"
+                }
+              ]
+            },
+            "Image description"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "id"
+                }
+              ]
+            },
+            "Unique identifier"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "class"
+                }
+              ]
+            },
+            "Styling/grouping"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "HTML attributes provide additional information about elements and are defined inside opening tags."
+      }
+    ]
+  },
+  {
+    "id": "html-009",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Attributes & Metadata",
+    "difficulty": "Beginner",
+    "question": "Can attribute values be anything or are there specific values?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "👉 ❌ Not anything — depends on the attribute"
+      },
+      {
+        "type": "paragraph",
+        "text": "Types of Attribute Values"
+      },
+      {
+        "type": "bold",
+        "text": "Predefined Values"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<input type=\"text\" />\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 "
+          },
+          {
+            "type": "badge",
+            "value": "type"
+          },
+          {
+            "type": "text",
+            "value": " must be specific ("
+          },
+          {
+            "type": "badge",
+            "value": "text"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "password"
+          },
+          {
+            "type": "text",
+            "value": ", etc.)"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Free Values"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div id=\"header\"></div>\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 "
+          },
+          {
+            "type": "badge",
+            "value": "id"
+          },
+          {
+            "type": "text",
+            "value": " can be any valid name"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Boolean Attributes"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<input disabled />\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Presence = true"
+      },
+      {
+        "type": "bold",
+        "text": "Key Insight"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Some attributes are restricted"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Some are flexible"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Attribute values depend on the attribute type—some accept predefined values, while others allow custom values."
+      }
+    ]
+  },
+  {
+    "id": "html-010",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Attributes & Metadata",
+    "difficulty": "Beginner",
+    "question": "What is the role of the <meta> tag in HTML?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "Provides metadata about the webpage"
+      },
+      {
+        "type": "bold",
+        "text": "Uses"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Character encoding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "SEO (description, keywords)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Viewport (responsive design)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Browser behavior"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<meta name=\"description\" content=\"Best website\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Point"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Placed inside "
+          },
+          {
+            "type": "badge",
+            "value": "<head>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "<meta>"
+          },
+          {
+            "type": "text",
+            "value": " tag provides metadata like character encoding, viewport settings, and SEO information."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-011",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Attributes & Metadata",
+    "difficulty": "Beginner",
+    "question": "How to indicate the character set in HTML?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Using <meta charset=\"UTF-8\">"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<meta charset=\"UTF-8\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Why Important"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Ensures correct display of text"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Supports multiple languages"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "The character set is defined using "
+          },
+          {
+            "type": "badge",
+            "value": "<meta charset=\"UTF-8\">"
+          },
+          {
+            "type": "text",
+            "value": " to ensure proper text rendering."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-012",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Attributes & Metadata",
+    "difficulty": "Beginner",
+    "question": "Why is a URL encoded in HTML?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Reason"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 URLs can only contain valid ASCII characters"
+      },
+      {
+        "type": "bold",
+        "text": "Problem"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Special characters like:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "space"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "@"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "badge",
+              "value": "#"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "badge",
+              "value": "&"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Can break URLs"
+      },
+      {
+        "type": "bold",
+        "text": "Solution"
+      },
+      {
+        "type": "paragraph",
+        "text": "Encode them into safe format"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Original: hello world\r\nEncoded: hello%20world\r"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "URLs are encoded to ensure special characters are safely transmitted over the internet."
+      }
+    ]
+  },
+  {
+    "id": "html-013",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Attributes & Metadata",
+    "difficulty": "Beginner",
+    "question": "What is URL Encoding?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "Process of converting characters into a format that can be safely transmitted in URLs"
+      },
+      {
+        "type": "bold",
+        "text": "How it Works"
+      },
+      {
+        "type": "paragraph",
+        "text": "Replaces unsafe characters with % + hex value"
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "table",
+        "columns": ["Character", "Encoded"],
+        "data": [
+          [
+            "Space",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "%20"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "@"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "%40"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "&"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "%26"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "https://example.com/search?q=hello%20world\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Also called percent encoding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used in query strings and URLs"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "URL encoding converts special characters into a safe format using percent encoding for reliable transmission."
+      },
+      {
+        "type": "bold",
+        "text": "🚀 Final Summary"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Attributes → extra info in tags"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Values → predefined or flexible"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<meta>"
+            },
+            {
+              "type": "text",
+              "value": " → metadata (SEO, charset, viewport)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Charset → UTF-8 for proper text"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "URL encoding → safe URL transmission"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-014",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Semantic HTML",
+    "difficulty": "Beginner",
+    "question": "What is semantic HTML?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "Semantic HTML means using HTML elements that clearly describe their meaning and purpose."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<header>\r\n  <h1>Website Title</h1>\r\n</header>\r\n<main>\r\n  <article>Blog content</article>\r\n</main>\r\n<footer>Footer info</footer>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Why Important"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Better SEO ✅"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improved accessibility ✅"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cleaner, readable code ✅"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Semantic HTML uses meaningful tags to describe content structure, improving SEO and accessibility."
+      }
+    ]
+  },
+  {
+    "id": "html-015",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Semantic HTML",
+    "difficulty": "Beginner",
+    "question": "What are semantic elements?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Definition"
+      },
+      {
+        "type": "paragraph",
+        "text": "Elements that describe their purpose clearly"
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "table",
+        "columns": ["Element", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<header>"
+                }
+              ]
+            },
+            "Top section"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<nav>"
+                }
+              ]
+            },
+            "Navigation"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<main>"
+                }
+              ]
+            },
+            "Main content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<section>"
+                }
+              ]
+            },
+            "Section of content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<article>"
+                }
+              ]
+            },
+            "Independent content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<aside>"
+                }
+              ]
+            },
+            "Sidebar"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<footer>"
+                }
+              ]
+            },
+            "Bottom section"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Non-Semantic Elements"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "<div>"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<span>"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Do not convey meaning"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Semantic elements describe the role of content, unlike non-semantic elements like div and span."
+      }
+    ]
+  },
+  {
+    "id": "html-016",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Semantic HTML",
+    "difficulty": "Beginner",
+    "question": "What are logical and physical tags in HTML?",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Physical Tags"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Define appearance (visual style)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<b>Bold</b> <i>Italic</i>\r"
+      },
+      {
+        "type": "h4",
+        "text": "Logical Tags"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Define meaning (semantic importance)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<strong>Important</strong> <em>Emphasized</em>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Difference"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Physical Tags", "Logical Tags"],
+        "data": [
+          ["Focus", "Style", "Meaning"],
+          ["SEO", "❌ Not helpful", "✅ Helpful"],
+          ["Accessibility", "❌ Poor", "✅ Better"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Physical tags control appearance, while logical tags convey meaning and improve accessibility."
+      }
+    ]
+  },
+  {
+    "id": "html-017",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Semantic HTML",
+    "difficulty": "Beginner",
+    "question": "Difference between <strong>, <b> and <em>, <i>",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<b>"
+          },
+          {
+            "type": "text",
+            "value": " vs "
+          },
+          {
+            "type": "badge",
+            "value": "<strong>"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<b>"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<strong>"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Meaning", "Bold text", "Important text"],
+          ["Semantic", "❌ No", "✅ Yes"],
+          ["SEO", "❌ No", "✅ Yes"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<b>Bold text</b> <strong>Important text</strong>\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<i>"
+          },
+          {
+            "type": "text",
+            "value": " vs "
+          },
+          {
+            "type": "badge",
+            "value": "<em>"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<i>"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<em>"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Meaning", "Italic", "Emphasis"],
+          ["Semantic", "❌ No", "✅ Yes"],
+          ["Accessibility", "❌ No", "✅ Yes"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<i>Italic text</i> <em>Emphasized text</em>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Insight"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Browsers may render both similarly"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 But semantics matter for SEO & screen readers"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Line"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<strong>"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "<em>"
+          },
+          {
+            "type": "text",
+            "value": " add semantic meaning, while "
+          },
+          {
+            "type": "badge",
+            "value": "<b>"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "<i>"
+          },
+          {
+            "type": "text",
+            "value": " only affect appearance."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🚀 Final Summary"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Semantic HTML → meaningful structure"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Semantic elements → describe content role"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Logical tags → meaning"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Physical tags → styling"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prefer "
+            },
+            {
+              "type": "badge",
+              "value": "<strong>"
+            },
+            {
+              "type": "text",
+              "value": " / "
+            },
+            {
+              "type": "badge",
+              "value": "<em>"
+            },
+            {
+              "type": "text",
+              "value": " over "
+            },
+            {
+              "type": "badge",
+              "value": "<b>"
+            },
+            {
+              "type": "text",
+              "value": " / "
+            },
+            {
+              "type": "badge",
+              "value": "<i>"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-018",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Elements & Layout",
+    "difficulty": "Beginner",
+    "question": "Difference between <div> and <span>",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<div>"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div>This is a div</div>\r\n<div>Another div</div>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "It is a block-level element"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Takes full width of its parent container"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Always starts on a new line"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for structuring large sections/layout"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<span>"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p>This is a <span style=\"color:red;\">red</span> word.</p>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "It is an inline element"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Takes only required width"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Does not start on a new line"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for styling small parts of text"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Key Difference"
+      },
+      {
+        "type": "table",
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<div>"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<span>"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Type", "Block", "Inline"],
+          ["Width", "Full width", "Content width"],
+          ["Line break", "Yes", "No"],
+          ["Use case", "Layout/sections", "Text styling"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-019",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Elements & Layout",
+    "difficulty": "Beginner",
+    "question": "Inline vs Block Elements",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Block Elements"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Take full width"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Start on a new line"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Can contain inline & block elements"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div></div>\r\n<p></p>\r\n<h1></h1>\r\nto\r\n<h6></h6>\r\n<section></section>\r\n<article></article>\r"
+      },
+      {
+        "type": "h4",
+        "text": "Inline Elements"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Take only necessary width"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Stay in the same line"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cannot contain block elements"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<span></span>, <a></a>, <strong></strong>, <em></em>, <img />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p>This is <span>inline</span> and <span>text</span></p>\r\n<div>Block 1</div>\r\n<div>Block 2</div>\r"
+      }
+    ]
+  },
+  {
+    "id": "html-020",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Elements & Layout",
+    "difficulty": "Beginner",
+    "question": "How to separate a section of text in HTML?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "There are multiple ways, depending on purpose:"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " (Paragraph)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p>This is paragraph 1</p>\r\n<p>This is paragraph 2</p>\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using "
+          },
+          {
+            "type": "badge",
+            "value": "<br>"
+          },
+          {
+            "type": "text",
+            "value": " (Line Break)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "Line 1<br />\r\nLine 2\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using "
+          },
+          {
+            "type": "badge",
+            "value": "<hr>"
+          },
+          {
+            "type": "text",
+            "value": " (Horizontal Line)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<hr />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Using semantic tags (BEST PRACTICE)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<section>\r\n  <h2>Title</h2>\r\n  <p>Content here</p>\r\n</section>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Other useful tags:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "<article>"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<div>"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<section>"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Using CSS spacing"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p style=\"margin-bottom:20px;\">Text 1</p>\r\n<p>Text 2</p>\r"
+      }
+    ]
+  },
+  {
+    "id": "html-021",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Elements & Layout",
+    "difficulty": "Beginner",
+    "question": "How many ways can we position an HTML element?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "There are 5 main positioning types in CSS:"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "static"
+          },
+          {
+            "type": "text",
+            "value": " (default)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: static;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Normal flow"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No positioning applied"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "relative"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: relative;\r\ntop: 10px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Moves relative to itself"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "absolute"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: absolute;\r\ntop: 0;\r\nleft: 0;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Positioned relative to nearest positioned parent"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "fixed"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: fixed;\r\ntop: 0;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Fixed relative to viewport"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Does not move on scroll"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "sticky"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: sticky;\r\ntop: 0;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Acts like relative + fixed"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Sticks when scrolling"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-022",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Elements & Layout",
+    "difficulty": "Beginner",
+    "question": "How to redirect to a particular section of a page?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "You use anchor links with "
+          },
+          {
+            "type": "badge",
+            "value": "id"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Step 1: Create a target section"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<h2 id=\"about\">About Section</h2>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Step 2: Link to it"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"#about\">Go to About</a>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "How it works:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "#about"
+            },
+            {
+              "type": "text",
+              "value": " refers to element with "
+            },
+            {
+              "type": "badge",
+              "value": "id=\"about\""
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Browser scrolls to that section"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Bonus: Smooth scrolling (CSS)"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "html {\r\n  scroll-behavior: smooth;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "html-023",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Links & Navigation",
+    "difficulty": "Beginner",
+    "question": "Difference between <link> and <a> tag",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<link>"
+          },
+          {
+            "type": "text",
+            "value": " tag"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<link rel=\"stylesheet\" href=\"styles.css\" />\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Used to connect external resources to HTML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Mostly used inside "
+            },
+            {
+              "type": "badge",
+              "value": "<head>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Not visible to users"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Example: CSS, favicon"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<a>"
+          },
+          {
+            "type": "text",
+            "value": " (anchor) tag"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"https://example.com\">Visit Website</a>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Used to create clickable links"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Visible on the webpage"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Navigates to another page/section"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Key Differences"
+      },
+      {
+        "type": "table",
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<link>"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<a>"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Purpose", "Resource linking", "Navigation"],
+          ["Visible", "❌ No", "✅ Yes"],
+          [
+            "Location",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<head>"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<body>"
+                }
+              ]
+            }
+          ],
+          ["Example use", "CSS, favicon", "Hyperlinks"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-024",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Links & Navigation",
+    "difficulty": "Beginner",
+    "question": "Difference between Absolute and Relative URL",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Absolute URL"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"https://www.google.com\">Google</a>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Full path including protocol + domain"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Works from anywhere"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Relative URL"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"/about.html\">About</a> <a href=\"contact.html\">Contact</a>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Path based on current file location"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used within the same website"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Key Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Absolute URL", "Relative URL"],
+        "data": [
+          ["Includes domain", "✅ Yes", "❌ No"],
+          ["Use case", "External links", "Internal navigation"],
+          ["Flexibility", "Fixed", "Depends on file location"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-025",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Links & Navigation",
+    "difficulty": "Beginner",
+    "question": "How to create an email link in HTML?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "You use the "
+          },
+          {
+            "type": "badge",
+            "value": "mailto:"
+          },
+          {
+            "type": "text",
+            "value": " protocol inside an anchor tag."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Basic Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"mailto:example@gmail.com\">Send Email</a>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "With Subject & Body"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<a href=\"mailto:example@gmail.com?subject=Hello&body=How are you?\"> Send Email </a>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "What happens:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Opens user's default email app"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Pre-fills email details"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-026",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Links & Navigation",
+    "difficulty": "Beginner",
+    "question": "Active links vs Normal links",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Normal Link"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Default state (not clicked yet)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Styled using:"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Active Link"
+      },
+      {
+        "type": "code",
+        "language": "csss",
+        "code": "a:active {\r\ncolor: red;\r\n}\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "When user is clicking (pressing) the link"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Very short stat"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Other Important States (Interview Bonus)"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a:link { color: blue; } /_ normal _/\r\na:visited { color: purple; } /_ after click _/\r\na:hover { color: green; } /_ mouse over _/\r\na:active { color: red; } /_ while clicking _/\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Order Rule (Important!)"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 LVHA order"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": ":link"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": ":visited"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": ":hover"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": ":active"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-027",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Lists",
+    "difficulty": "Beginner",
+    "question": "Types of lists in HTML",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTML provides 3 main types of lists:"
+      },
+      {
+        "type": "h4",
+        "content": [
+          {
+            "type": "text",
+            "value": "Ordered List ("
+          },
+          {
+            "type": "badge",
+            "value": "<ol>"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Displays items in a numbered format"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ol>\r\n  <li>Item 1</li>\r\n  <li>Item 2</li>\r\n</ol>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Output: 1, 2, 3..."
+      },
+      {
+        "type": "h4",
+        "content": [
+          {
+            "type": "text",
+            "value": "Unordered List ("
+          },
+          {
+            "type": "badge",
+            "value": "<ul>"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Displays items with bullets"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ul>\r\n  <li>Item A</li>\r\n  <li>Item B</li>\r\n</ul>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Output: ●, ○, ■ etc."
+      },
+      {
+        "type": "h4",
+        "content": [
+          {
+            "type": "text",
+            "value": "Definition List ("
+          },
+          {
+            "type": "badge",
+            "value": "<dl>"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Used for terms and descriptions"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<dl>\r\n  <dt>HTML</dt>\r\n  <dd>Markup language</dd>\r\n</dl>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Summary"
+      },
+      {
+        "type": "table",
+        "columns": ["Type", "Tag", "Use case"],
+        "data": [
+          [
+            "Ordered",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<ol>"
+                }
+              ]
+            },
+            "Steps, ranking"
+          ],
+          [
+            "Unordered",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<ul>"
+                }
+              ]
+            },
+            "General lists"
+          ],
+          [
+            "Definition",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<dl>"
+                }
+              ]
+            },
+            "Terms & definitions"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-028",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Lists",
+    "difficulty": "Beginner",
+    "question": "How to change list number type mid-list?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "You can change numbering using:"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Method 1: "
+          },
+          {
+            "type": "badge",
+            "value": "type"
+          },
+          {
+            "type": "text",
+            "value": " attribute"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ol type=\"1\">\r\n  <li>Item 1</li>\r\n  <li>Item 2</li>\r\n</ol>\r\n<ol type=\"A\">\r\n  <li>Item 3</li>\r\n</ol>\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Method 2: "
+          },
+          {
+            "type": "badge",
+            "value": "start"
+          },
+          {
+            "type": "text",
+            "value": " attribute"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ol start=\"5\">\r\n  <li>Item 5</li>\r\n</ol>\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Method 3: CSS (list"
+          },
+          {
+            "type": "badge",
+            "value": "-style-type"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ol style=\"list-style-type: upper-roman;\">\r\n  <li>Item</li>\r\n</ol>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Method 4: Nested lists (best for mixed styles)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ol>\r\n  <li>\r\n    Item 1\r\n    <ol type=\"a\">\r\n      <li>Sub item</li>\r\n    </ol>\r\n  </li>\r\n</ol>\r"
+      }
+    ]
+  },
+  {
+    "id": "html-029",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Lists",
+    "difficulty": "Beginner",
+    "question": "What happens if list-style-type is used on non-list?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "By default:"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Nothing happens"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div style=\"list-style-type: square;\">Hello</div>\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "No bullets appear because "
+          },
+          {
+            "type": "badge",
+            "value": "<div>"
+          },
+          {
+            "type": "text",
+            "value": " is not a list element"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Why?"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "list-style-type"
+          },
+          {
+            "type": "text",
+            "value": " works only on:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "<ul>"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<ol>"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<li>"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exception (advanced):"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you force element to behave like a list:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div style=\"display: list-item; list-style-type: square;\">Hello</div>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Now bullet will appear ✅"
+      }
+    ]
+  },
+  {
+    "id": "html-030",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Lists",
+    "difficulty": "Beginner",
+    "question": "Difference between <menu>, <dir>, and <ul>",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<ul>"
+          },
+          {
+            "type": "text",
+            "value": " (Unordered List)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<ul>\r\n  <li>Item</li>\r\n</ul>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Standard, widely used"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Displays bullet points"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Recommended"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<menu>"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<menu>\r\n  <li>Item</li>\r\n</menu>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Originally for menus/toolbars"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Now behaves like "
+            },
+            {
+              "type": "badge",
+              "value": "<ul>"
+            },
+            {
+              "type": "text",
+              "value": " in most browsers"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Rarely used"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "<dir>"
+          },
+          {
+            "type": "text",
+            "value": " (Deprecated ❌)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<dir>\r\n  <li>Item</li>\r\n</dir>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Used in old HTML for directory lists"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Not supported in modern HTML"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Key Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Tag", "Status", "Usage"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<ul>"
+                }
+              ]
+            },
+            "✅ Standard",
+            "General lists"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<menu>"
+                }
+              ]
+            },
+            "⚠️ Rare",
+            "Menus (limited use)"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<dir>"
+                }
+              ]
+            },
+            "❌ Deprecated",
+            "Avoid using"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-031",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Tables",
+    "difficulty": "Beginner",
+    "question": "What is a cell?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A cell is the smallest unit inside a table—formed by the intersection of a row and a column."
+      },
+      {
+        "type": "bold",
+        "text": "Created using:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<table border=\"1\">\r\n  <tr>\r\n    <th>Name</th>\r\n    <th>Age</th>\r\n  </tr>\r\n  <tr>\r\n    <td>Tanmay</td>\r\n    <td>25</td>\r\n  </tr>\r\n</table>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "<td>"
+            },
+            {
+              "type": "text",
+              "value": " → data cell"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<th>"
+            },
+            {
+              "type": "text",
+              "value": " → header cell"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Each box you see is a cell"
+      }
+    ]
+  },
+  {
+    "id": "html-032",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Tables",
+    "difficulty": "Beginner",
+    "question": "Cellpadding vs Cellspacing",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "cellpadding"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Space inside a cell (between content and border)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<table cellpadding=\"10\"></table>\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "cellspacing"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Space between cells"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<table cellspacing=\"10\"></table>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key Difference"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Cellpadding", "Cellspacing"],
+        "data": [
+          ["Space location", "Inside cell", "Between cells"],
+          ["Effect", "Increases inner spacing", "Creates gaps between cells"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "⚠️ Important (Modern HTML)"
+      },
+      {
+        "type": "info",
+        "text": "Both are deprecated in HTML5"
+      },
+      {
+        "type": "bold",
+        "text": "👉 Use CSS instead:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "td {\r\n  padding: 10px;\r\n}\r\ntable {\r\n  border-spacing: 10px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "html-033",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Tables",
+    "difficulty": "Beginner",
+    "question": "How to merge rows/columns?",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Merge columns → "
+          },
+          {
+            "type": "badge",
+            "value": "colspan"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<td colspan=\"2\">Merged Column</td>\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Merge rows → "
+          },
+          {
+            "type": "badge",
+            "value": "rowspan"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<td rowspan=\"2\">Merged Row</td>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<table border=\"1\">\r\n  <tr>\r\n    <td colspan=\"2\">Header</td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"2\">Side</td>\r\n    <td>Data 1</td>\r\n  </tr>\r\n  <tr>\r\n    <td>Data 2</td>\r\n  </tr>\r\n</table>\r"
+      }
+    ]
+  },
+  {
+    "id": "html-034",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Tables",
+    "difficulty": "Beginner",
+    "question": "What happens if rows/cols ≠ 100%?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "This refers to table width or column widths."
+      },
+      {
+        "type": "bold",
+        "text": "Case 1: Total < 100%"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Extra space remains unused"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Browser may distribute remaining space automatically"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Case 2: Total > 100%"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Table may overflow container"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Columns may shrink or break layout"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Case 3: Not defined"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Browser auto-adjusts based on content"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "👉 Browsers use auto layout algorithm, so:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Exact behavior may vary slightly"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Content plays a big role"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-035",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Tables",
+    "difficulty": "Beginner",
+    "question": "Border vs Rules attributes",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "border"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Controls outer + inner borders"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<table border=\"1\"></table>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Adds full grid border"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "rules"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Controls internal lines only"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<table border=\"1\" rules=\"rows\"></table>\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "rules"
+          },
+          {
+            "type": "text",
+            "value": " values:"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": ["Value", "Meaning"],
+        "data": [
+          ["none", "No inner borders"],
+          ["rows", "Horizontal lines only"],
+          ["cols", "Vertical lines only"],
+          ["all", "All inner borders"],
+          ["groups", "Between row groups"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "⚠️ Important"
+      },
+      {
+        "type": "code",
+        "language": "CSS",
+        "code": "table, td {\r\n  border: 1px solid black;\r\n  border-collapse: collapse;\r\n}\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "rules is obsolete in HTML5"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use CSS instead:"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tip"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Prefer CSS over old HTML attributes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Know:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "colspan, rowspan"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "padding vs spacing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Deprecated vs modern practices"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-036",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "Types of input fields in HTML",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "<input>"
+          },
+          {
+            "type": "text",
+            "value": " element supports many types via the type attribute."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common input types"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<input type=\"text\" />\r\n<input type=\"password\" />\r\n<input type=\"radio\" />\r\n<input type=\"checkbox\" />\r\n<input type=\"submit\" />\r\n<input type=\"button\" />\r\n<input type=\"file\" />\r\n<input type=\"hidden\" />\r\n<input type=\"reset\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Quick idea"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "text"
+            },
+            {
+              "type": "text",
+              "value": " → single-line text"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "password"
+            },
+            {
+              "type": "text",
+              "value": " → masked input"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "radio"
+            },
+            {
+              "type": "text",
+              "value": " → single choice (one option)"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "checkbox"
+            },
+            {
+              "type": "text",
+              "value": " → multiple choices"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "file"
+            },
+            {
+              "type": "text",
+              "value": " → upload files"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-037",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "Role of action attribute",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Defines where form data is sent after submission."
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<form action=\"/submit-form\"></form>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 When user clicks submit:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Data goes to "
+          },
+          {
+            "type": "badge",
+            "value": "/submit-form"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-038",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "Role of method attribute",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Specifies how data is sent to the server."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two main methods:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "GET"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<form method=\"GET\"></form>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Data is visible in URL"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for fetching data"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Example:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "/search?q=html\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "POST"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<form method=\"POST\"></form>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Data sent in request body"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "More secure than GET"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for submitting data"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-039",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "HTML5 new input types",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTML5 introduced smarter input types:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<input type=\"email\" />\r\n<input type=\"number\" />\r\n<input type=\"date\" />\r\n<input type=\"range\" />\r\n<input type=\"color\" />\r\n<input type=\"url\" />\r\n<input type=\"tel\" />\r\n<input type=\"search\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Built-in validation"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better mobile keyboards"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improved UX"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-040",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "What is novalidate?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Disables browser’s default form validation"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<form novalidate></form>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Even if fields have:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<input type=\"email\" required />\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "➡ Form will still submit without validation"
+      }
+    ]
+  },
+  {
+    "id": "html-041",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "Limits of text field size",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "maxlength"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "   <input type=\"text\" maxlength=\"10\" />\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Maximum number of characters"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "badge",
+            "value": "size"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "   <input type=\"text\" size=\"20\" />\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Visible width of input box (not limit)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Key Difference"
+      },
+      {
+        "type": "table",
+        "columns": ["Attribute", "Purpose"],
+        "data": [
+          ["maxlength", "Limits characters"],
+          ["size", "Controls display width"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-042",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Forms",
+    "difficulty": "Beginner",
+    "question": "Why group checkboxes?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Checkboxes are grouped using the same "
+          },
+          {
+            "type": "badge",
+            "value": "name"
+          },
+          {
+            "type": "text",
+            "value": " attribute."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<input type=\"checkbox\" name=\"hobby\" value=\"cricket\" /> Cricket <input type=\"checkbox\" name=\"hobby\" value=\"music\" /> Music\r"
+      },
+      {
+        "type": "bold",
+        "text": "Why?"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Allows multiple selections"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Sends grouped data to server"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Output (example):"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "hobby=cricket&hobby=music\r"
+      },
+      {
+        "type": "bold",
+        "text": "Without grouping:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each checkbox would be treated as separate data"
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tip"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "action"
+            },
+            {
+              "type": "text",
+              "value": " = WHERE"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "method"
+            },
+            {
+              "type": "text",
+              "value": " = HOW"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "GET"
+            },
+            {
+              "type": "text",
+              "value": " = visible, "
+            },
+            {
+              "type": "badge",
+              "value": "POST"
+            },
+            {
+              "type": "text",
+              "value": " = hidden"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "maxlength ≠ size"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Group checkboxes using same name"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-043",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "What is <figure> tag?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "<figure>"
+          },
+          {
+            "type": "text",
+            "value": " tag is a semantic HTML5 element used to group media content (image, diagram, code, chart, etc.) along with an optional caption."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<figure>\r\n  <img src=\"image.jpg\" alt=\"Sample\" />\r\n  <figcaption>This is a caption</figcaption>\r\n</figure>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Provides meaning/structure (semantic)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Often used with "
+            },
+            {
+              "type": "badge",
+              "value": "<figcaption>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Content can be moved independently without breaking the document flow"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-044",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "Difference between <figure> and <img>",
+    "answer": [
+      {
+        "type": "table",
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<figure>"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "<img>"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Type", "Container (semantic)", "Media element"],
+          ["Purpose", "Group media + caption", "Display image only"],
+          [
+            "Caption",
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Supports "
+                },
+                {
+                  "type": "badge",
+                  "value": "<figcaption>"
+                }
+              ]
+            },
+            "❌ No"
+          ],
+          ["Usage", "Structured content", "Simple image display"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 "
+          },
+          {
+            "type": "badge",
+            "value": "<figure>"
+          },
+          {
+            "type": "text",
+            "value": " wraps "
+          },
+          {
+            "type": "badge",
+            "value": "<img>"
+          },
+          {
+            "type": "text",
+            "value": " (it doesn’t replace it)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-045",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "What are media elements in HTML5?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTML5 introduced built-in media elements:"
+      },
+      {
+        "type": "bold",
+        "text": "Main ones:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<audio controls src=\"audio.mp3\"></audio>\r\n<video controls src=\"video.mp4\"></video>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Other related tags:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "<source>"
+            },
+            {
+              "type": "text",
+              "value": " → multiple formats"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<track>"
+            },
+            {
+              "type": "text",
+              "value": " → subtitles/captions"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<embed>"
+            },
+            {
+              "type": "text",
+              "value": " / "
+            },
+            {
+              "type": "badge",
+              "value": "<object>"
+            },
+            {
+              "type": "text",
+              "value": " → external media"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-046",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "What audio formats are supported?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Common supported formats:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<audio controls>\r\n  <source src=\"audio.mp3\" type=\"audio/mpeg\" />\r\n  <source src=\"audio.ogg\" type=\"audio/ogg\" />\r\n</audio>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "MP3 → most widely supported ✅"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "WAV → high quality, large size"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "OGG → open-source format"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-047",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "What is Canvas?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "<canvas>"
+          },
+          {
+            "type": "text",
+            "value": " element is used for drawing graphics using JavaScript."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<canvas id=\"myCanvas\"></canvas>\r\n<script>\r\n  const c = document.getElementById(\"myCanvas\");\r\n  const ctx = c.getContext(\"2d\");\r\n  ctx.fillRect(20, 20, 100, 50);\r\n</script>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Pixel-based"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Requires JavaScript"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Games 🎮"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Animations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Charts"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-048",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "What is SVG?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "SVG = Scalable Vector Graphics"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "XML-based graphics format"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Defined using shapes like "
+            },
+            {
+              "type": "badge",
+              "value": "<circle>"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "badge",
+              "value": "<rect>"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Vector-based"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Scales without losing quality"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Can be styled with CSS & JS"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-049",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "Difference between SVG and Canvas",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "SVG", "Canvas"],
+        "data": [
+          ["Type", "Vector", "Pixel (bitmap)"],
+          ["Scalability", "No quality loss", "Loses quality when scaled"],
+          ["DOM access", "Yes (elements accessible)", "No (drawn pixels only)"],
+          ["Performance", "Better for small graphics", "Better for complex graphics"],
+          ["Use case", "Icons, UI, diagrams", "Games, animations"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-050",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Media & Graphics",
+    "difficulty": "Beginner",
+    "question": "Explain HTML5 Graphics",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTML5 provides two main ways to create graphics:"
+      },
+      {
+        "type": "bold",
+        "text": "Canvas (Dynamic)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Script-based drawing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Pixel manipulation"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Good for real-time graphics"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "SVG (Static + Interactive)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Markup-based"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DOM elements"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Good for UI graphics"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Summary"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Canvas", "SVG"],
+        "data": [
+          ["Rendering", "JavaScript", "XML/HTML"],
+          ["Best for", "Games, animation", "Icons, charts"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tip"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "<figure>"
+            },
+            {
+              "type": "text",
+              "value": " = semantic wrapper"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "<img>"
+            },
+            {
+              "type": "text",
+              "value": " = actual image"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Canvas = pixel drawing (JS)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "SVG = vector graphics (DOM-based)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "MP3 = safest audio format"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-051",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "HTML5 APIs & Features",
+    "difficulty": "Beginner",
+    "question": "What are Web Workers?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Web Workers allow JavaScript to run in background threads, separate from the main UI thread."
+      },
+      {
+        "type": "bold",
+        "text": "Why needed?"
+      },
+      {
+        "type": "paragraph",
+        "text": "JavaScript is single-threaded, so heavy tasks can freeze the UI. Workers solve this."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "// main.js\r\nconst worker = new Worker(\"worker.js\");\r\nworker.postMessage(\"start\");\r\nworker.onmessage = (e) => {\r\n  console.log(e.data);\r\n};\r"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "// worker.js\r\nonmessage = function () {\r\n  postMessage(\"Task done\");\r\n};\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Runs in background"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No direct access to DOM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Communicates via "
+            },
+            {
+              "type": "badge",
+              "value": "postMessage()"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-052",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "HTML5 APIs & Features",
+    "difficulty": "Beginner",
+    "question": "What is Geolocation API?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "The Geolocation API allows websites to get the user's location (latitude & longitude)."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<script>\r\n  navigator.geolocation.getCurrentPosition((position) => {\r\n    console.log(position.coords.latitude);\r\n    console.log(position.coords.longitude);\r\n  });\r\n</script>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Requires user permission"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used in:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Maps"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Food delivery apps"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Ride booking"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-053",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "HTML5 APIs & Features",
+    "difficulty": "Beginner",
+    "question": "What is Data Transfer API?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "The Data Transfer API is used in drag-and-drop operations to store and transfer data."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div draggable=\"true\" ondragstart=\"drag(event)\">Drag me</div>\r\n<div ondrop=\"drop(event)\" ondragover=\"allowDrop(event)\"></div>\r\n<script>\r\n  function drag(e) {\r\n    e.dataTransfer.setData(\"text\", \"Hello\");\r\n  }\r\n  function drop(e) {\r\n    e.preventDefault();\r\n    console.log(e.dataTransfer.getData(\"text\"));\r\n  }\r\n</script>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Used with Drag & Drop API"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Methods:"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "setData()"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "getData()"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-054",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "HTML5 APIs & Features",
+    "difficulty": "Beginner",
+    "question": "What are Server-Sent Events (SSE)?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Server-Sent Events (SSE) allow the server to push updates to the browser automatically."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const source = new EventSource(\"/events\");\r\nsource.onmessage = (event) => {\r\n  console.log(event.data);\r\n};\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "One-way communication (server → client)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Uses "
+            },
+            {
+              "type": "badge",
+              "value": "EventSource"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Ideal for:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Live notifications"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "News feeds"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-055",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "HTML5 APIs & Features",
+    "difficulty": "Beginner",
+    "question": "What is Microdata?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Microdata is a way to add structured data to HTML so search engines understand content better."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div itemscope itemtype=\"https://schema.org/Person\">\r\n  <span itemprop=\"name\">Tanmay</span>\r\n</div>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Improves SEO"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Used for:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Rich search results"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Product info"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reviews"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-056",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "HTML5 APIs & Features",
+    "difficulty": "Beginner",
+    "question": "What are Web Components?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Web Components allow you to create reusable custom HTML elements."
+      },
+      {
+        "type": "bold",
+        "text": "Core technologies:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Custom Elements"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Shadow DOM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "HTML Templates"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "class MyElement extends HTMLElement {\r\n  connectedCallback() {\r\n    this.innerHTML = \"<p>Hello World</p>\";\r\n  }\r\n}\r\ncustomElements.define(\"my-element\", MyElement);\r"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<my-element></my-element>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Encapsulated (no CSS conflicts)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reusable components"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Works without frameworks"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tip (Quick Revision)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Web Workers → background JS threads"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Geolocation API → user location"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DataTransfer API → drag & drop data"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "SSE → server → client updates"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Microdata → structured SEO data"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Web Components → reusable custom elements"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-057",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Storage & Offline Features",
+    "difficulty": "Beginner",
+    "question": "What is Web Storage in HTML5?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Web Storage is a way to store key–value data in the browser (client-side), introduced in HTML5."
+      },
+      {
+        "type": "bold",
+        "text": "Types"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "localStorage"
+            },
+            {
+              "type": "text",
+              "value": " → persistent storage"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "sessionStorage"
+            },
+            {
+              "type": "text",
+              "value": " → temporary (per tab/session)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Basic usage"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<script>\r\n  localStorage.setItem(\"name\", \"Tanmay\");\r\n  const value = localStorage.getItem(\"name\");\r\n  localStorage.removeItem(\"name\");\r\n  localStorage.clear();\r\n</script>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Key points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Stores data as strings (key–value)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Larger capacity than cookies (~5–10MB)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Not sent with every HTTP request (unlike cookies)"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-058",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Storage & Offline Features",
+    "difficulty": "Beginner",
+    "question": "Difference between LocalStorage and SessionStorage",
+    "answer": [
+      {
+        "type": "table",
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "localStorage"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "sessionStorage"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Lifetime", "Until manually cleared", "Until tab/browser is closed"],
+          ["Scope", "Shared across tabs (same origin)", "Per tab/session"],
+          ["Persistence", "Persistent", "Temporary"],
+          ["Use case", "Remember user settings", "Temporary form data"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-059",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Storage & Offline Features",
+    "difficulty": "Beginner",
+    "question": "What is Application Cache?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Application Cache (AppCache) was an HTML5 feature used to store website resources offline, so pages could load without internet."
+      },
+      {
+        "type": "bold",
+        "text": "Example (old usage)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<html manifest=\"app.manifest\"></html>\r"
+      },
+      {
+        "type": "bold",
+        "text": "What it did"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Cached HTML, CSS, JS files"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Enabled offline access"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "⚠️ Important (Very Common Interview Point)"
+      },
+      {
+        "type": "warn",
+        "text": "👉 Application Cache is deprecated and removed"
+      },
+      {
+        "type": "bold",
+        "text": "Replacement"
+      },
+      {
+        "type": "paragraph",
+        "text": "Use Service Workers instead (modern approach)"
+      }
+    ]
+  },
+  {
+    "id": "html-060",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Storage & Offline Features",
+    "difficulty": "Beginner",
+    "question": "What is a manifest file?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "There are two contexts:"
+      },
+      {
+        "type": "h4",
+        "text": "(A) Old AppCache Manifest (Deprecated)"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "A "
+          },
+          {
+            "type": "badge",
+            "value": ".manifest"
+          },
+          {
+            "type": "text",
+            "value": " file that listed resources to cache:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "CACHE MANIFEST\r\nindex.html\r\nstyles.css\r\nscript.js\r"
+      },
+      {
+        "type": "h4",
+        "text": "(B) Modern Web App Manifest (PWA) ✅"
+      },
+      {
+        "type": "paragraph",
+        "text": "A JSON file that defines how a web app behaves when installed."
+      },
+      {
+        "type": "code",
+        "language": "json",
+        "code": "{\r\n  \"name\": \"My App\",\r\n  \"short_name\": \"App\",\r\n  \"start_url\": \"/\",\r\n  \"display\": \"standalone\",\r\n  \"icons\": []\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Used for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Add to home screen"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "App-like experience"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Icons, theme, splash screen"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tips (Very Important)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Web Storage ≠ Cookies"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "localStorage"
+            },
+            {
+              "type": "text",
+              "value": " = permanent"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "sessionStorage"
+            },
+            {
+              "type": "text",
+              "value": " = per tab"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "AppCache is deprecated ❌"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use Service Workers + PWA manifest ✅"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-061",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Images & Responsive Design",
+    "difficulty": "Beginner",
+    "question": "What are raster vs vector images?",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Raster Images (Bitmap)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Made of pixels"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Lose quality when zoomed (pixelated)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Common formats:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "JPEG, PNG, GIF"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "👉 Example: Photos"
+      },
+      {
+        "type": "h4",
+        "text": "Vector Images"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Made of mathematical paths"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Scale without losing quality"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Common format:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "SVG"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "👉 Example: Logos, icons"
+      },
+      {
+        "type": "bold",
+        "text": "Key Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Raster", "Vector"],
+        "data": [
+          ["Structure", "Pixels", "Paths (math-based)"],
+          ["Scaling", "Loses quality", "No quality loss"],
+          ["File size", "Larger (high-res images)", "Usually smaller"],
+          ["Use case", "Photos", "Logos, UI graphics"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-062",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Images & Responsive Design",
+    "difficulty": "Beginner",
+    "question": "How to make images responsive?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Method 1: CSS (most common)"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Image scales with container"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Method 2: "
+          },
+          {
+            "type": "badge",
+            "value": "srcset"
+          },
+          {
+            "type": "text",
+            "value": " (advanced)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img src=\"small.jpg\" srcset=\"small.jpg 500w, large.jpg 1000w\" sizes=\"(max-width: 600px) 100vw, 50vw\" />\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Browser chooses best image"
+      },
+      {
+        "type": "bold",
+        "text": "Method 3: Using responsive frameworks"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Example: Bootstrap → "
+          },
+          {
+            "type": "badge",
+            "value": "img-fluid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-063",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Images & Responsive Design",
+    "difficulty": "Beginner",
+    "question": "Image Map in HTML",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "An image map allows you to create clickable areas on an image."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img src=\"image.jpg\" usemap=\"#map1\" />\r\n<map name=\"map1\">\r\n  <area shape=\"rect\" coords=\"0,0,100,100\" href=\"page1.html\" />\r\n  <area shape=\"circle\" coords=\"200,100,50\" href=\"page2.html\" />\r\n</map>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Shapes supported:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "rect"
+            },
+            {
+              "type": "text",
+              "value": " → rectangle"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "circle"
+            },
+            {
+              "type": "text",
+              "value": " → circle"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "poly"
+            },
+            {
+              "type": "text",
+              "value": " → polygon"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-064",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Images & Responsive Design",
+    "difficulty": "Beginner",
+    "question": "How to align images and wrap text?",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Wrap text using "
+          },
+          {
+            "type": "badge",
+            "value": "float"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  float: left;\r\n  margin-right: 10px;\r\n}\r"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img src=\"img.jpg\" />\r\n<p>Text wraps around image...</p>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Align image center"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  display: block;\r\n  margin: 0 auto;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Using Flexbox (modern approach)"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  display: flex;\r\n  align-items: center;\r\n}\r"
+      },
+      {
+        "type": "warn",
+        "text": "⚠️ Note"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Old HTML attribute "
+            },
+            {
+              "type": "badge",
+              "value": "align"
+            },
+            {
+              "type": "text",
+              "value": " is deprecated"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use CSS instead"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tips"
+      },
+      {
+        "type": "info",
+        "text": "Raster = pixels, Vector = scalable"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "max-width: 100%"
+          },
+          {
+            "type": "text",
+            "value": " for responsive images"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Image map = clickable regions"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "float"
+          },
+          {
+            "type": "text",
+            "value": " or "
+          },
+          {
+            "type": "badge",
+            "value": "flexbox"
+          },
+          {
+            "type": "text",
+            "value": " for alignment"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-065",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "How to optimize website assets loading?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "This is about when and how assets (CSS, JS, images, fonts) are loaded."
+      },
+      {
+        "type": "bold",
+        "text": "Key techniques"
+      },
+      {
+        "type": "bold",
+        "text": "✅ 1. Minimize render-blocking resources"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<script src=\"app.js\" defer></script>\r\n<script src=\"analytics.js\" async></script>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "defer"
+            },
+            {
+              "type": "text",
+              "value": " → runs after HTML parsing"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "async"
+            },
+            {
+              "type": "text",
+              "value": " → loads independently"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 2. Lazy loading (load only when needed)"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img src=\"image.jpg\" loading=\"lazy\" />\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Improves initial page load speed"
+      },
+      {
+        "type": "bold",
+        "text": "✅ 3. Use Critical CSS"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Load only above-the-fold CSS first"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Defer rest"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 4. Use CDN (Content Delivery Network)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Serve assets from nearest location"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reduces latency"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Cloudflare"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Akamai Technologies"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 5. Preload important resources"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "✅ 6. Reduce HTTP requests"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Combine files (CSS/JS)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use sprites or inline SVG"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 7. Use caching"
+      },
+      {
+        "type": "code",
+        "language": "http",
+        "code": "Cache-Control: max-age=31536000\r"
+      }
+    ]
+  },
+  {
+    "id": "html-066",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "How can website assets be optimized?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "This is about reducing asset size and improving efficiency."
+      },
+      {
+        "type": "bold",
+        "text": "✅ 1. Compress images"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Use modern formats:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "WebP"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "AVIF"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Tools:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TinyPNG"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 2. Minify CSS, JS, HTML"
+      },
+      {
+        "type": "paragraph",
+        "text": "Before:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function test() {\r\n  console.log(\"hello\");\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "After:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function test() {\r\n  console.log(\"hello\");\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "✅ 3. Enable compression (Gzip/Brotli)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reduces file size over network"
+      },
+      {
+        "type": "bold",
+        "text": "✅ 4. Use modern image techniques"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img src=\"img.webp\" alt=\"...\" width=\"300\" height=\"200\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "✅ 5. Tree shaking & code splitting"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Remove unused JS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Load only required code"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Tools:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Webpack"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Vite"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 6. Optimize fonts"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "type": "badge",
+              "value": "font-display: swap"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Limit font weights"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prefer "
+            },
+            {
+              "type": "badge",
+              "value": ".woff2"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "✅ 7. Avoid unused assets"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Remove unused CSS/JS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Audit using browser DevTools"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Key Difference (Important for interview)"
+      },
+      {
+        "type": "table",
+        "columns": ["Aspect", "Asset Loading Optimization", "Asset Optimization"],
+        "data": [
+          ["Focus", "When/how assets load", "File size & efficiency"],
+          ["Goal", "Faster rendering", "Smaller payload"],
+          ["Examples", "Lazy loading, defer", "Compression, minification"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🚀 Interview Summary (1-liners)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Loading optimization = load smarter"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Asset optimization = make files smaller"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use lazy loading + CDN + caching"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use compression + minification + modern formats"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-067",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "What are HTML entities?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTML entities are special codes used to display reserved or special characters in HTML."
+      },
+      {
+        "type": "bold",
+        "text": "Why needed?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Some characters are used in HTML syntax (like <, >), so we use entities to display them."
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "&lt; → < &gt; → > &amp; → & &nbsp; → space\r"
+      },
+      {
+        "type": "bold",
+        "text": "Usage:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p>5 &lt; 10</p>\r"
+      }
+    ]
+  },
+  {
+    "id": "html-068",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Why named and numeric entities exist?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "There are two types:"
+      },
+      {
+        "type": "h4",
+        "text": "Named entities"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "&amp;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Easy to remember"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Human-readable"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Numeric entities"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "&#38; (decimal) &#x26; (hex)\r"
+      },
+      {
+        "type": "bold",
+        "text": "Why both exist?"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Named entities are limited"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Numeric entities support all Unicode characters"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "👉 Use numeric when:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Character has no named version"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "You need universal compatibility"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-069",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "What is favicon and how to add it?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A favicon is a small icon shown in:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Browser tabs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Bookmarks"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Address bar"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Add favicon:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\" />\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Modern format:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<link rel=\"icon\" href=\"favicon.png\" type=\"image/png\" />\r"
+      }
+    ]
+  },
+  {
+    "id": "html-070",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "What is HTML DOM?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "DOM (Document Object Model) represents HTML as a tree structure of objects."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<html>\r\n  <body>\r\n    <p>Hello</p>\r\n  </body>\r\n</html>\r"
+      },
+      {
+        "type": "bold",
+        "text": "👉 DOM Tree:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "html"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "body"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "p"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Why important?"
+      },
+      {
+        "type": "paragraph",
+        "text": "JavaScript can read & modify HTML using DOM"
+      }
+    ]
+  },
+  {
+    "id": "html-071",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "What is collapsing whitespace advantage?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTML collapses multiple spaces into one."
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p>Hello World</p>\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Output:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Hello World\r"
+      },
+      {
+        "type": "bold",
+        "text": "Advantages:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Cleaner HTML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Smaller file size"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Consistent rendering"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-072",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Is drag and drop possible in HTML5?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "✅ Yes, HTML5 supports drag and drop."
+      },
+      {
+        "type": "bold",
+        "text": "Basic example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div draggable=\"true\">Drag me</div>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Uses:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "File uploads"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "UI interactions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reordering items"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-073",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Is it possible for text to appear outside browser?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "👉 Yes, using CSS positioning/overflow."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  position: absolute;\r\n  left: -100px;\r\n}\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Text can move outside visible area"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Can also use:"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "overflow: visible"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Negative margins"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-074",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "What are applets?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Applets were small Java programs embedded in web pages."
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<applet code=\"MyApp.class\"></applet>\r"
+      },
+      {
+        "type": "bold",
+        "text": "⚠️ Important"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Deprecated and removed"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Required Java plugin (no longer supported)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "👉 Replaced by:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "JavaScript"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Web APIs"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-075",
+    "topic": "HTML (HyperText Markup Language)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "When to use frames?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Frames ("
+          },
+          {
+            "type": "badge",
+            "value": "<frame>"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "<frameset>"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Used to split page into sections"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "⚠️ Status"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Deprecated in HTML5"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Modern alternative:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "<iframe>"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<iframe src=\"https://example.com\"></iframe>\r"
+      },
+      {
+        "type": "h4",
+        "text": "When to use today?"
+      },
+      {
+        "type": "bold",
+        "text": "Embedding:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Videos"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Maps"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "External content"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "🔥 Interview Tips (Quick Recap)"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Entities → display special characters"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Named vs Numeric → readability vs full Unicode"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DOM → tree structure of HTML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Whitespace → auto-collapsed"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Drag & Drop → supported in HTML5"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Applets & Frames → ❌ deprecated"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "type": "badge",
+              "value": "<iframe>"
+            },
+            {
+              "type": "text",
+              "value": " instead"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

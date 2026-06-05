@@ -1,0 +1,8068 @@
+[
+  {
+    "id": "css-001",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is CSS?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS stands for Cascading Style Sheets. It is used to control the appearance and layout of HTML elements on a webpage."
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS helps in styling:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Colors"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Fonts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Spacing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Layouts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Animations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Responsive design"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: blue;\r\n  font-size: 20px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-002",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is a stylesheet?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A stylesheet is a file or block containing CSS rules that define how HTML elements should appear."
+      },
+      {
+        "type": "paragraph",
+        "text": "There are 3 types of stylesheets:"
+      },
+      {
+        "type": "bold",
+        "text": "1. Inline CSS"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "<p style=\"color:red;\">Hello</p>\r"
+      },
+      {
+        "type": "bold",
+        "text": "2. Internal CSS"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<style>\r\n  p {\r\n    color: blue;\r\n  }\r\n</style>\r"
+      },
+      {
+        "type": "bold",
+        "text": "3. External CSS"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<link rel=\"stylesheet\" href=\"style.css\" />\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "External stylesheets are most commonly used because they improve maintainability and reusability."
+      }
+    ]
+  },
+  {
+    "id": "css-003",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is cascading in CSS?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "“Cascading” means CSS decides which style rule should apply when multiple rules target the same element."
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS follows priority rules based on:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Importance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Specificity"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Source order"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: blue;\r\n}\r\np {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Final color will be red because the later rule overrides the earlier one."
+      }
+    ]
+  },
+  {
+    "id": "css-004",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "How do CSS precedence/cascading rules work?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS applies styles according to a priority system."
+      },
+      {
+        "type": "bold",
+        "text": "Order of precedence:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "!important"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Inline CSS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "ID selectors"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Class selectors / attributes / pseudo-classes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Element selectors"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Universal selector"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<p id=\"demo\" class=\"text\" style=\"color:red;\">Hello</p>\r"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "#demo {\r\n  color: blue;\r\n}\r\n.text {\r\n  color: green;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Final color = red (inline style has higher priority)"
+      }
+    ]
+  },
+  {
+    "id": "css-005",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is !important and how does it affect rules?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "!important"
+          },
+          {
+            "type": "text",
+            "value": " gives a CSS rule the highest priority."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: blue !important;\r\n}\r\np {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Final color = blue"
+      },
+      {
+        "type": "bold",
+        "text": "Important points:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Overrides normal specificity rules"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Should be used carefully"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Excessive use makes CSS difficult to maintain"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-006",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is W3C?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "W3C stands for World Wide Web Consortium."
+      },
+      {
+        "type": "paragraph",
+        "text": "It is the international organization that develops web standards for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "HTML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "CSS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "XML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Accessibility"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Web APIs"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Its goal is to ensure:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Consistent web standards"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Browser compatibility"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better accessibility"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-007",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is CSS3?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS3 is the modern version of CSS that introduced advanced styling features."
+      },
+      {
+        "type": "bold",
+        "text": "Features introduced in CSS3:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Flexbox"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Grid"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Animations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Transitions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Media queries"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Border radius"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Shadows"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  border-radius: 10px;\r\n  transition: 0.3s;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS3 is modular, meaning features are divided into separate modules."
+      }
+    ]
+  },
+  {
+    "id": "css-008",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What are the advantages of CSS?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Advantages of CSS:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Separation of content and design"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reusable styles"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Faster page loading"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Easier maintenance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Responsive design support"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better consistency across pages"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improved accessibility"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cleaner HTML structure"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "paragraph",
+        "text": "One CSS file can style an entire website."
+      }
+    ]
+  },
+  {
+    "id": "css-009",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What are the limitations of CSS?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Limitations of CSS:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Different browser support issues"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No programming logic like loops/conditions (basic CSS)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Global scope can cause conflicts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Difficult to manage in very large projects without methodology"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Limited parent selection support (older CSS versions)"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Two classes with same names may conflict in large applications."
+      }
+    ]
+  },
+  {
+    "id": "css-010",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Basics & Fundamentals",
+    "difficulty": "Beginner",
+    "question": "What is general CSS nomenclature?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS nomenclature refers to the structure and naming of CSS rules."
+      },
+      {
+        "type": "bold",
+        "text": "Basic syntax:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "selector {\r\n  property: value;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Parts:"
+      },
+      {
+        "type": "table",
+        "columns": ["Part", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "p"
+                }
+              ]
+            },
+            "Selector"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "color"
+                }
+              ]
+            },
+            "Property"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "blue"
+                }
+              ]
+            },
+            "Value"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common terminology:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Selector"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Property"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Value"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Declaration"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Rule set"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Class"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "ID"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Pseudo-class"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".button:hover {\r\n  background: black;\r\n}\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": ".button"
+            },
+            {
+              "type": "text",
+              "value": " → class selector"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": ":hover"
+            },
+            {
+              "type": "text",
+              "value": " → pseudo-class"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "background"
+            },
+            {
+              "type": "text",
+              "value": " → property"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "black"
+            },
+            {
+              "type": "text",
+              "value": " → value"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-011",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "What is a property in CSS?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A CSS property defines what style should be changed for an HTML element."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "color"
+            },
+            {
+              "type": "text",
+              "value": " → property"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "blue"
+            },
+            {
+              "type": "text",
+              "value": " → value"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Common CSS properties:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "color"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "font-size"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "margin"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "padding"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "background"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "border"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-012",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "What is a ruleset?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A ruleset is a complete CSS rule consisting of:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Selector"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Declaration block"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: red;\r\n  font-size: 20px;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Breakdown:"
+      },
+      {
+        "type": "table",
+        "columns": ["Part", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "p"
+                }
+              ]
+            },
+            "Selector"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "{}"
+                }
+              ]
+            },
+            "Declaration block"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "color: red;"
+                }
+              ]
+            },
+            "Declaration"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "font-size: 20px;"
+                }
+              ]
+            },
+            "Declaration"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-013",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "Name CSS components (selector, property, value)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A CSS rule mainly contains these components:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h1 {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "table",
+        "columns": ["Component", "Example", "Meaning"],
+        "data": [
+          [
+            "Selector",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "h1"
+                }
+              ]
+            },
+            "Targets element"
+          ],
+          [
+            "Property",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "color"
+                }
+              ]
+            },
+            "Style type"
+          ],
+          [
+            "Value",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "blue"
+                }
+              ]
+            },
+            "Style value"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Additional terms:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Declaration → "
+            },
+            {
+              "type": "badge",
+              "value": "color: blue;"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Declaration block → "
+            },
+            {
+              "type": "badge",
+              "value": "{ color: blue; }"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-014",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "What is an at-rule?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "An at-rule is a special CSS statement that begins with @ and performs specific behavior."
+      },
+      {
+        "type": "bold",
+        "text": "Common at-rules:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "@media"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@media (max-width: 600px) {\r\n  body {\r\n    background: lightgray;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "@import"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@import url(\"style.css\");\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "@keyframes"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@keyframes slide {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Purpose of at-rules:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Responsive design"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Animations"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Importing styles"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Font declarations"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-015",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "Define CSS frameworks",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS frameworks are pre-written CSS libraries that help developers build websites faster using ready-made styles and components."
+      },
+      {
+        "type": "bold",
+        "text": "Popular CSS frameworks:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Bootstrap"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Tailwind CSS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Bulma"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Foundation"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Advantages:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Faster development"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Responsive layouts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reusable components"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cross-browser consistency"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<button class=\"btn btn-primary\">Submit</button>\r"
+      }
+    ]
+  },
+  {
+    "id": "css-016",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "What are CSS modules?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS Modules are a way to create locally scoped CSS to avoid class name conflicts."
+      },
+      {
+        "type": "bold",
+        "text": "Mostly used with:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "React"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Next.js"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Modern frontend tools"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "/_ Button.module.css _/ .button {\r\n  color: white;\r\n}\r"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "import styles from \"./Button.module.css\";\r\n<button className={styles.button}>Click</button>;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Avoids global CSS conflicts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better maintainability"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Scoped styling"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-017",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "What are vendor prefixes?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Vendor prefixes are browser-specific prefixes added to experimental CSS properties for compatibility."
+      },
+      {
+        "type": "bold",
+        "text": "Common prefixes:"
+      },
+      {
+        "type": "table",
+        "columns": ["Prefix", "Browser"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "-webkit-"
+                }
+              ]
+            },
+            "Chrome, Safari"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "-moz-"
+                }
+              ]
+            },
+            "Firefox"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "-ms-"
+                }
+              ]
+            },
+            "Internet Explorer"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "-o-"
+                }
+              ]
+            },
+            "Opera"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  -webkit-transform: rotate(20deg);\r\n  -moz-transform: rotate(20deg);\r\n  transform: rotate(20deg);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Why used?"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Experimental browser support"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Before official standardization"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-018",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Syntax & Core Concepts",
+    "difficulty": "Beginner",
+    "question": "How case-sensitive is CSS?",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "CSS is generally case-insensitive for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Property names"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Property values"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "HTML element selectors"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "P {\r\n  color: RED;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Works correctly."
+      },
+      {
+        "type": "paragraph",
+        "text": "But CSS IS case-sensitive in some cases:"
+      },
+      {
+        "type": "bold",
+        "text": "1. Class names"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div class=\"Box\"></div>\r"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Will NOT match because Box ≠ box"
+      },
+      {
+        "type": "bold",
+        "text": "2. IDs"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div id=\"Header\"></div>\r"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "#header {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Different identifiers."
+      }
+    ]
+  },
+  {
+    "id": "css-019",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "What is a CSS selector?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A CSS selector is a pattern used to select and target HTML elements for styling."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "p"
+            },
+            {
+              "type": "text",
+              "value": " is the selector"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It selects all "
+            },
+            {
+              "type": "badge",
+              "value": "<p>"
+            },
+            {
+              "type": "text",
+              "value": " elements"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common examples:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h1        /* element selector */.class    /* class selector */#id       /* id selector */*         /* universal selector */\r"
+      }
+    ]
+  },
+  {
+    "id": "css-020",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "Types of CSS selectors",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS provides different types of selectors to target elements."
+      },
+      {
+        "type": "bold",
+        "text": "1. Element Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets HTML tags."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "2. Class Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets elements with a class."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  background: yellow;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "3. ID Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets unique element IDs."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "#header {\r\n  font-size: 20px;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "4. Universal Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets all elements."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "* {\r\n  margin: 0;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "5. Group Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets multiple elements."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h1,\r\np {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "6. Attribute Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets elements based on attributes."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "input[type=\"text\"] {\r\n  border: 1px solid black;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "7. Pseudo-class Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets special states."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a:hover {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "8. Pseudo-element Selector"
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets part of an element."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p::first-letter {\r\n  font-size: 30px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-021",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "Attribute selectors",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Attribute selectors target elements based on their HTML attributes."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "input[type=\"email\"] {\r\n  border: 1px solid blue;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common attribute selectors:"
+      },
+      {
+        "type": "table",
+        "columns": ["Selector", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[attr]"
+                }
+              ]
+            },
+            "Has attribute"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[attr=value]"
+                }
+              ]
+            },
+            "Exact match"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[attr^=val]"
+                }
+              ]
+            },
+            "Starts with"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[attr$=val]"
+                }
+              ]
+            },
+            "Ends with"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[attr*=val]"
+                }
+              ]
+            },
+            "Contains"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a[target] {\r\n}\r\ninput[type=\"password\"] {\r\n}\r\nimg[src$=\".png\"] {\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-022",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "Contextual selectors",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Contextual selectors style elements based on their relationship with other elements."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div p {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects all "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " inside "
+          },
+          {
+            "type": "badge",
+            "value": "<div>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Purpose:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "More precise targeting"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Avoid unnecessary classes"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-023",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "CSS combinators",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Combinators define relationships between selectors."
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "1. Descendant combinator ("
+          },
+          {
+            "type": "badge",
+            "value": "space"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div p {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Targets all "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " inside "
+          },
+          {
+            "type": "badge",
+            "value": "<div>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "2. Child combinator ("
+          },
+          {
+            "type": "badge",
+            "value": ">"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div > p {\r\n  color: blue;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Targets direct child "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "3. Adjacent sibling ("
+          },
+          {
+            "type": "badge",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h1 + p {\r\n  color: green;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Targets first "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " immediately after "
+          },
+          {
+            "type": "badge",
+            "value": "<h1>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "4. General sibling ("
+          },
+          {
+            "type": "badge",
+            "value": "~"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h1 ~ p {\r\n  color: orange;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Targets all sibling "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " after "
+          },
+          {
+            "type": "badge",
+            "value": "<h1>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-024",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "How selectors are matched by browser?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Browsers match selectors from right to left for performance optimization."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div ul li a {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Browser checks:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Find all "
+            },
+            {
+              "type": "badge",
+              "value": "<a>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Check if inside "
+            },
+            {
+              "type": "badge",
+              "value": "<li>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Then inside "
+            },
+            {
+              "type": "badge",
+              "value": "<ul>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Then inside "
+            },
+            {
+              "type": "badge",
+              "value": "<div>"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Why right-to-left?"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Faster matching"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better rendering performance"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-025",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "Specificity & how to calculate it",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Specificity determines which CSS rule gets applied when multiple rules target the same element."
+      },
+      {
+        "type": "bold",
+        "text": "Specificity hierarchy:"
+      },
+      {
+        "type": "table",
+        "columns": ["Selector Type", "Value"],
+        "data": [
+          ["Inline style", "1000"],
+          ["ID", "100"],
+          ["Class/attribute/pseudo-class", "10"],
+          ["Element/pseudo-element", "1"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "#header {\r\n  color: blue;\r\n}\r\n.title {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 "
+          },
+          {
+            "type": "badge",
+            "value": "#header"
+          },
+          {
+            "type": "text",
+            "value": " wins because ID specificity is higher."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Calculation example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div#box .text p\r"
+      },
+      {
+        "type": "bold",
+        "text": "Specificity:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "#box"
+            },
+            {
+              "type": "text",
+              "value": " → 100"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": ".text"
+            },
+            {
+              "type": "text",
+              "value": " → 10"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "div"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "badge",
+              "value": "p"
+            },
+            {
+              "type": "text",
+              "value": " → 1 + 1"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Total = 112"
+      }
+    ]
+  },
+  {
+    "id": "css-026",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": ":root pseudo-class",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": ":root"
+          },
+          {
+            "type": "text",
+            "value": " selects the highest-level element in the document."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "In HTML, "
+          },
+          {
+            "type": "badge",
+            "value": ":root"
+          },
+          {
+            "type": "text",
+            "value": " refers to:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<html></html>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common use:"
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS variables"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ":root {\r\n  --primary-color: blue;\r\n}\r\np {\r\n  color: var(--primary-color);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Advantages:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Global variables"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Easier theme management"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Reusable values"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-027",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "Difference between nth-child() vs nth-of-type()",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": ":nth-child()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Selects element based on child position among all siblings."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p: nth-child(2);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " only if it is the second child."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": ":nth-of-type()"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Selects based on element type only."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p: nth-of-type(2);\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects second "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " regardless of other elements."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div>\r\n  <h1>Title</h1>\r\n  <p>Para 1</p>\r\n  <p>Para 2</p>\r\n</div>\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "p:nth-child(2)"
+            },
+            {
+              "type": "text",
+              "value": " → selects first "
+            },
+            {
+              "type": "badge",
+              "value": "<p>"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "p:nth-of-type(2)"
+            },
+            {
+              "type": "text",
+              "value": " → selects second "
+            },
+            {
+              "type": "badge",
+              "value": "<p>"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-028",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Selectors & Specificity",
+    "difficulty": "Beginner",
+    "question": "Selector combinations (div p, div > p, etc.)",
+    "answer": [
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "1. "
+          },
+          {
+            "type": "badge",
+            "value": "div p"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Descendant selector"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div p {\n  color: red;\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects all "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " inside "
+          },
+          {
+            "type": "badge",
+            "value": "<div>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "2. "
+          },
+          {
+            "type": "badge",
+            "value": "div > p"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Child selector"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div > p {\n  color: blue;\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects only direct child "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "3. "
+          },
+          {
+            "type": "badge",
+            "value": "div + p"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Adjacent sibling selector"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div + p {\n  color: green;\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects first "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " immediately after "
+          },
+          {
+            "type": "badge",
+            "value": "<div>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "4. "
+          },
+          {
+            "type": "badge",
+            "value": "div ~ p"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "General sibling selector"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div ~ p {\n  color: orange;\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "👉 Selects all "
+          },
+          {
+            "type": "badge",
+            "value": "<p>"
+          },
+          {
+            "type": "text",
+            "value": " siblings after "
+          },
+          {
+            "type": "badge",
+            "value": "<div>"
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Quick Summary"
+      },
+      {
+        "type": "table",
+        "columns": ["Selector", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "A B"
+                }
+              ]
+            },
+            "Descendant"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "A > B"
+                }
+              ]
+            },
+            "Direct child"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "A + B"
+                }
+              ]
+            },
+            "Immediate sibling"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "A ~ B"
+                }
+              ]
+            },
+            "All following siblings"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-029",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "What is CSS Box Model?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "The CSS Box Model describes how every HTML element is represented as a rectangular box."
+      },
+      {
+        "type": "paragraph",
+        "text": "It consists of:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Content"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Padding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Border"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Margin"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Structure:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Margin\r\n └── Border\r\n      └── Padding\r\n           └── Content\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  width: 200px;\r\n  padding: 20px;\r\n  border: 5px solid black;\r\n  margin: 10px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-030",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Properties in box model",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "The CSS Box Model contains four main properties:"
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Purpose"],
+        "data": [
+          ["Content", "Actual text/image"],
+          ["Padding", "Space inside border"],
+          ["Border", "Surrounds padding/content"],
+          ["Margin", "Space outside border"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  width: 100px;\r\n  height: 50px;\r\n  padding: 10px;\r\n  border: 2px solid black;\r\n  margin: 20px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-031",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Margin vs padding",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "Margin", "Padding"],
+        "data": [
+          ["Location", "Outside border", "Inside border"],
+          ["Affects background?", "❌ No", "✅ Yes"],
+          ["Collapses?", "✅ Vertical margins can collapse", "❌ No"],
+          ["Used for", "Space between elements", "Inner spacing"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  margin: 20px;\r\n  padding: 20px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-032",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Border vs outline",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "Border", "Outline"],
+        "data": [
+          ["Takes space?", "✅ Yes", "❌ No"],
+          ["Part of box model?", "✅ Yes", "❌ No"],
+          ["Affects layout?", "✅ Yes", "❌ No"],
+          ["Can be offset?", "❌ No", "✅ Yes"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  border: 2px solid black;\r\n  outline: 2px solid red;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-033",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Box-sizing (border-box vs content-box)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "box-sizing"
+          },
+          {
+            "type": "text",
+            "value": " property controls how element dimensions are calculated."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "1. "
+          },
+          {
+            "type": "badge",
+            "value": "content-box"
+          },
+          {
+            "type": "text",
+            "value": " (default)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "box-sizing: content-box;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Width/height apply only to content."
+      },
+      {
+        "type": "paragraph",
+        "text": "Formula:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Total width = width + padding + border\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "2. "
+          },
+          {
+            "type": "badge",
+            "value": "border-box"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "box-sizing: border-box;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Width includes:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Content"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Padding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Border"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Formula:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Total width = specified width\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common practice:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "* {\r\n  box-sizing: border-box;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-034",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Which properties do NOT affect box model?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Properties that do NOT affect box model dimensions include:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "outline"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "box-shadow"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "transform"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "opacity"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "visibility"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "div {\r\n  outline: 2px solid red;\r\n  box-shadow: 0 0 10px black;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Element size remains unchanged."
+      }
+    ]
+  },
+  {
+    "id": "css-035",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Block vs inline vs inline-block",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "Block", "Inline", "Inline-block"],
+        "data": [
+          ["Starts new line", "✅ Yes", "❌ No", "❌ No"],
+          ["Width/height allowed", "✅ Yes", "❌ No", "✅ Yes"],
+          ["Takes full width", "✅ Yes", "❌ No", "❌ No"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Block Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "display: block;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div></div>\r\n<p></p>\r\n<section></section>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Inline Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "display: inline;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<span></span>\r\n<a></a>\r\n<strong></strong>\r"
+      },
+      {
+        "type": "bold",
+        "text": "Inline-block Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "display: inline-block;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Behaves inline but supports width/height."
+      }
+    ]
+  },
+  {
+    "id": "css-036",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Block Formatting Context (BFC)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A Block Formatting Context (BFC) is a special layout context in CSS that controls how block elements are rendered."
+      },
+      {
+        "type": "paragraph",
+        "text": "BFC helps with:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Containing floats"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Preventing margin collapse"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Isolating layouts"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Create BFC using:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "overflow: hidden;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "OR"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "display: flow-root;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  overflow: hidden;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-037",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Box Model & Layout",
+    "difficulty": "Beginner",
+    "question": "Element dimensions (height, width, height:auto)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS dimensions define the size of elements."
+      },
+      {
+        "type": "paragraph",
+        "text": "Width"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "width: 200px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Defines horizontal size."
+      },
+      {
+        "type": "paragraph",
+        "text": "Height"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "height: 100px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Defines vertical size."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "height: auto"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "height: auto;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Height automatically adjusts based on content."
+      },
+      {
+        "type": "bold",
+        "text": "Responsive example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  width: 100%;\r\n  height: auto;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Related properties:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "min-width"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "max-width"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "min-height"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "max-height"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-038",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "CSS positioning properties (static, relative, etc.)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS provides different positioning methods for placing elements."
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "1. "
+          },
+          {
+            "type": "badge",
+            "value": "static"
+          },
+          {
+            "type": "text",
+            "value": " (default)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: static;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Normal document flow"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "top"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "badge",
+              "value": "left"
+            },
+            {
+              "type": "text",
+              "value": ", etc. do not work"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "2. "
+          },
+          {
+            "type": "badge",
+            "value": "relative"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: relative;\r\ntop: 10px;\r\nleft: 20px;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Moves relative to original position"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Space remains reserved"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "3. "
+          },
+          {
+            "type": "badge",
+            "value": "absolute"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: absolute;\r\ntop: 0;\r\nright: 0;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Removed from normal flow"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Positioned relative to nearest positioned parent"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "4. "
+          },
+          {
+            "type": "badge",
+            "value": "fixed"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: fixed;\r\nbottom: 0;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Relative to viewport"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Stays fixed during scrolling"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "5. "
+          },
+          {
+            "type": "badge",
+            "value": "sticky"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: sticky;\r\ntop: 0;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Behaves relative until scroll threshold"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Then acts fixed"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-039",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "z-index and stacking context",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "z-index"
+          },
+          {
+            "type": "text",
+            "value": " controls stacking order of overlapping elements."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  position: absolute;\r\n  z-index: 10;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Higher "
+          },
+          {
+            "type": "badge",
+            "value": "z-index"
+          },
+          {
+            "type": "text",
+            "value": " appears above lower values."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Important:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "z-index"
+          },
+          {
+            "type": "text",
+            "value": " works only on:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "positioned elements"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "flex/grid children"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Stacking Context"
+      },
+      {
+        "type": "paragraph",
+        "text": "A stacking context is an isolated layering environment."
+      },
+      {
+        "type": "paragraph",
+        "text": "Created by:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "position + z-index"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "opacity < 1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "transform"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "filter"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-040",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "Float property",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "float"
+          },
+          {
+            "type": "text",
+            "value": " property moves elements left or right and allows surrounding content to wrap around them."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  float: left;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Values:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "left"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "right"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "none"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common use:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Wrapping text around images"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-041",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "When to use float?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "float"
+          },
+          {
+            "type": "text",
+            "value": " mainly for:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Text wrapping around images"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Legacy layouts"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  float: right;\r\n  margin-left: 10px;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Modern layouts should prefer:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Flexbox"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "CSS Grid"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Important:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Floated elements may require clearing:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "clear: both;\r"
+      }
+    ]
+  },
+  {
+    "id": "css-042",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "Ways to position elements",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Elements can be positioned using:"
+      },
+      {
+        "type": "table",
+        "columns": ["Method", "Purpose"],
+        "data": [
+          ["Static positioning", "Default flow"],
+          ["Relative positioning", "Offset from original"],
+          ["Absolute positioning", "Precise placement"],
+          ["Fixed positioning", "Viewport-fixed"],
+          ["Sticky positioning", "Scroll-based"],
+          ["Float", "Text wrapping"],
+          ["Flexbox", "1D layouts"],
+          ["Grid", "2D layouts"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-043",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "Sticky positioning",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "position: sticky"
+          },
+          {
+            "type": "text",
+            "value": " combines:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "relative positioning"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "fixed positioning"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "header {\r\n  position: sticky;\r\n  top: 0;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Behavior:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Normal flow initially"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Sticks when reaching specified position"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common use:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Sticky headers"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Sidebars"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Navigation bars"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-044",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Positioning & Display",
+    "difficulty": "Beginner",
+    "question": "Center alignment techniques",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "1. Text center"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "text-align: center;\r"
+      },
+      {
+        "type": "bold",
+        "text": "2. Block center"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "margin: 0 auto;\r\nwidth: 200px;\r"
+      },
+      {
+        "type": "bold",
+        "text": "3. Flexbox center"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "display: flex;\r\njustify-content: center;\r\nalign-items: center;\r"
+      },
+      {
+        "type": "bold",
+        "text": "4. Grid center"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "display: grid;\r\nplace-items: center;\r"
+      }
+    ]
+  },
+  {
+    "id": "css-045",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Flexbox & Grid",
+    "difficulty": "Beginner",
+    "question": "What is Flexbox?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Flexbox is a one-dimensional CSS layout system used to align and distribute items efficiently."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  display: flex;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Features:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Easy alignment"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Flexible sizing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Responsive layouts"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Axes:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Main axis"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cross axis"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-046",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Flexbox & Grid",
+    "difficulty": "Beginner",
+    "question": "Flexbox properties (flex-grow, align-content, etc.)",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Container properties"
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "display:flex"
+                }
+              ]
+            },
+            "Enable flexbox"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "flex-direction"
+                }
+              ]
+            },
+            "Row/column direction"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "justify-content"
+                }
+              ]
+            },
+            "Main-axis alignment"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "align-items"
+                }
+              ]
+            },
+            "Cross-axis alignment"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "align-content"
+                }
+              ]
+            },
+            "Multi-line alignment"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "flex-wrap"
+                }
+              ]
+            },
+            "Wrapping control"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Item properties"
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "flex-grow"
+                }
+              ]
+            },
+            "Expand item"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "flex-shrink"
+                }
+              ]
+            },
+            "Shrink item"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "flex-basis"
+                }
+              ]
+            },
+            "Initial size"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "align-self"
+                }
+              ]
+            },
+            "Individual alignment"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "order"
+                }
+              ]
+            },
+            "Change display order"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".item {\r\n  flex-grow: 1;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-047",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Flexbox & Grid",
+    "difficulty": "Beginner",
+    "question": "flex: 1",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "flex: 1"
+          },
+          {
+            "type": "text",
+            "value": " is shorthand for:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "flex: 1 1 0;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Meaning:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "flex-grow: 1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "flex-shrink: 1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "flex-basis: 0"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Effect:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Item expands equally to fill available space."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".item {\r\n  flex: 1;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-048",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Flexbox & Grid",
+    "difficulty": "Beginner",
+    "question": "What is CSS Grid?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS Grid is a two-dimensional layout system for rows and columns."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  display: grid;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Features:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Row + column control"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Complex layouts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Precise placement"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-049",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Flexbox & Grid",
+    "difficulty": "Beginner",
+    "question": "Grid system",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A grid system divides a page into structured columns and rows."
+      },
+      {
+        "type": "bold",
+        "text": "Common example:"
+      },
+      {
+        "type": "paragraph",
+        "text": "12-column layout"
+      },
+      {
+        "type": "bold",
+        "text": "Used in:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Responsive frameworks"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Dashboards"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Page layouts"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-050",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Flexbox & Grid",
+    "difficulty": "Beginner",
+    "question": "Grid vs Flexbox differences",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "Flexbox", "Grid"],
+        "data": [
+          ["Dimension", "One-dimensional", "Two-dimensional"],
+          ["Best for", "Components/UI", "Full layouts"],
+          ["Direction", "Row OR column", "Rows AND columns"],
+          ["Alignment", "Content flow", "Precise placement"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Use Flexbox for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Navigation bars"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Buttons"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Small layouts"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Use Grid for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Full-page layouts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Complex dashboards"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Multi-row structures"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-051",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Units & Dimensions",
+    "difficulty": "Beginner",
+    "question": "CSS units (px, %, em, rem)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS units define the size of elements, text, spacing, and layouts."
+      },
+      {
+        "type": "h4",
+        "text": "Absolute Unit"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "px"
+          },
+          {
+            "type": "text",
+            "value": " (Pixels)"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "width: 200px;\r\nfont-size: 16px;\r"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Fixed size"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Most commonly used"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Does not scale relative to parent"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Relative Units"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "%"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "width: 50%;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Relative to parent element"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "em"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "font-size: 2em;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Relative to parent's font size"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "rem"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "font-size: 2rem;\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Relative to root ("
+          },
+          {
+            "type": "badge",
+            "value": "html"
+          },
+          {
+            "type": "text",
+            "value": ") font size"
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Quick Comparison"
+      },
+      {
+        "type": "table",
+        "columns": ["Unit", "Relative To"],
+        "data": [
+          ["px", "Fixed pixels"],
+          ["%", "Parent element"],
+          ["em", "Parent font size"],
+          ["rem", "Root font size"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-052",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Units & Dimensions",
+    "difficulty": "Beginner",
+    "question": "Difference between em vs rem",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "em", "rem"],
+        "data": [
+          ["Relative to", "Parent font size", "Root font size"],
+          ["Nested scaling", "✅ Yes", "❌ No"],
+          ["Predictability", "Lower", "Higher"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "cs",
+        "code": "html {\r\nfont-size: 16px;\r\n}\r\n.parent {\r\nfont-size: 20px;\r\n}\r\n.child {\r\nfont-size: 2em;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Child = 40px"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".child {\r\n  font-size: 2rem;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "👉 Child = 32px"
+      },
+      {
+        "type": "bold",
+        "text": "Interview Tip"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "em"
+            },
+            {
+              "type": "text",
+              "value": " scales based on parent"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "rem"
+            },
+            {
+              "type": "text",
+              "value": " scales based on root"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Most modern projects prefer "
+            },
+            {
+              "type": "badge",
+              "value": "rem"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-053",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Units & Dimensions",
+    "difficulty": "Beginner",
+    "question": "Viewport units (vh, vw)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Viewport units are relative to browser window size."
+      },
+      {
+        "type": "bold",
+        "text": "Unit Meaning"
+      },
+      {
+        "type": "table",
+        "columns": ["Unit", "Meaning"],
+        "data": [
+          ["vw", "Viewport width"],
+          ["vh", "Viewport height"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "width: 50vw;\r\nheight: 100vh;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common Usage"
+      },
+      {
+        "type": "paragraph",
+        "text": "Full-screen hero section:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".hero {\r\n  height: 100vh;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "table",
+        "columns": ["Viewport Width", "50vw"],
+        "data": [["1000px", "500px"]]
+      },
+      {
+        "type": "table",
+        "columns": ["Viewport Height", "100vh"],
+        "data": [
+          ["Viewport Height", "100vh"],
+          ["800px", "800px"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-054",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Units & Dimensions",
+    "difficulty": "Beginner",
+    "question": "How to define element dimensions",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Element dimensions are controlled using sizing properties."
+      },
+      {
+        "type": "paragraph",
+        "text": "Width"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "width: 300px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Height"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "height: 200px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Min Width"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "min-width: 200px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Max Width"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "max-width: 100%;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Min Height"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "min-height: 100px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Max Height"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "max-height: 500px;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Responsive Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "img {\r\n  width: 100%;\r\n  height: auto;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Important Interview Point"
+      },
+      {
+        "type": "paragraph",
+        "text": "Dimensions are affected by:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Width"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Height"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Padding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Border"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "box-sizing"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-055",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Colors & Backgrounds",
+    "difficulty": "Beginner",
+    "question": "Hex vs RGB color",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Both are used to define colors in CSS."
+      },
+      {
+        "type": "bold",
+        "text": "Hex Color"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "color: #ff0000;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Format:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "#RRGGBB\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "#ff0000"
+            },
+            {
+              "type": "text",
+              "value": " → Red"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "#00ff00"
+            },
+            {
+              "type": "text",
+              "value": " → Green"
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "#0000ff"
+            },
+            {
+              "type": "text",
+              "value": " → Blue"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "RGB Color"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "color: rgb(255, 0, 0);\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Format:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "rgb(red, green, blue)\r"
+      },
+      {
+        "type": "bold",
+        "text": "Comparison"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Hex", "RGB"],
+        "data": [
+          ["Readability", "Moderate", "High"],
+          ["Transparency support", "Via Hex8", "Via RGBA"],
+          ["Common usage", "Very common", "Very common"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-056",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Colors & Backgrounds",
+    "difficulty": "Beginner",
+    "question": "Background vs color difference",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Property", "Purpose"],
+        "data": [
+          ["color", "Text color"],
+          ["background", "Element background"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: white;\r\n  background: blue;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Result"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Text = white"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Background = blue"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-057",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Colors & Backgrounds",
+    "difficulty": "Beginner",
+    "question": "Gradient in CSS (types)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A gradient creates a smooth transition between colors."
+      },
+      {
+        "type": "bold",
+        "text": "Linear Gradient"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "background: linear-gradient(red, blue);\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Direction Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "background: linear-gradient(to right, red, blue);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Radial Gradient"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "background: radial-gradient(red, blue);\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Creates circular color transition."
+      },
+      {
+        "type": "bold",
+        "text": "Conic Gradient"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "background: conic-gradient(red, yellow, blue);\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Creates pie-chart style gradient."
+      },
+      {
+        "type": "bold",
+        "text": "Gradient Types Summary"
+      },
+      {
+        "type": "table",
+        "columns": ["Type", "Shape"],
+        "data": [
+          ["Linear", "Straight line"],
+          ["Radial", "Circle/Ellipse"],
+          ["Conic", "Around center point"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-058",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Colors & Backgrounds",
+    "difficulty": "Beginner",
+    "question": "Transparent overlays",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Transparent overlays place a semi-transparent layer over content or images."
+      },
+      {
+        "type": "paragraph",
+        "text": "Using RGBA"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".overlay {\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".hero {\r\n  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hero.jpg);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Uses"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Improve text readability"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Hero sections"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Modal backgrounds"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-059",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Colors & Backgrounds",
+    "difficulty": "Beginner",
+    "question": "Responsive background images",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Responsive background images adapt to different screen sizes."
+      },
+      {
+        "type": "bold",
+        "text": "Common Technique"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".hero {\r\n  background-image: url(hero.jpg);\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Important Properties"
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Purpose"],
+        "data": [
+          ["background-size: cover", "Fill container"],
+          ["background-size: contain", "Show full image"],
+          ["background-position", "Alignment"],
+          ["background-repeat", "Prevent tiling"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".hero {\r\n  background-image: url(hero.jpg);\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-060",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Typography",
+    "difficulty": "Beginner",
+    "question": "Font-related properties",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Font-related CSS properties control the appearance of text."
+      },
+      {
+        "type": "bold",
+        "text": "Common Font Properties"
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "font-family"
+                }
+              ]
+            },
+            "Font type"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "font-size"
+                }
+              ]
+            },
+            "Text size"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "font-weight"
+                }
+              ]
+            },
+            "Thickness"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "font-style"
+                }
+              ]
+            },
+            "Normal/italic"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "font-variant"
+                }
+              ]
+            },
+            "Small caps"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "line-height"
+                }
+              ]
+            },
+            "Line spacing"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "letter-spacing"
+                }
+              ]
+            },
+            "Space between letters"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "word-spacing"
+                }
+              ]
+            },
+            "Space between words"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  font-family: Arial, sans-serif;\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  line-height: 1.5;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Font Shorthand"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "font:\r\n  italic bold 16px/1.5 Arial,\r\n  sans-serif;\r"
+      }
+    ]
+  },
+  {
+    "id": "css-061",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Typography",
+    "difficulty": "Beginner",
+    "question": "Font-face property",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "@font-face"
+          },
+          {
+            "type": "text",
+            "value": " allows custom fonts to be loaded and used on a website."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@font-face {\r\n  font-family: \"MyFont\";\r\n  src: url(\"MyFont.woff2\") format(\"woff2\");\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Usage"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "body {\r\n  font-family: \"MyFont\", sans-serif;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Custom branding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Consistent typography"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No dependency on user-installed fonts"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common Font Formats"
+      },
+      {
+        "type": "table",
+        "columns": ["Format", "Usage"],
+        "data": [
+          ["WOFF2", "Recommended"],
+          ["WOFF", "Good support"],
+          ["TTF", "Larger files"],
+          ["OTF", "Desktop fonts"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-062",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Typography",
+    "difficulty": "Beginner",
+    "question": "Text overflow (ellipsis)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "text-overflow: ellipsis"
+          },
+          {
+            "type": "text",
+            "value": " truncates overflowing text and displays ...."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  width: 200px;\r\n  overflow: hidden;\r\n  white-space: nowrap;\r\n  text-overflow: ellipsis;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Output"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "This is a very long text...\r"
+      },
+      {
+        "type": "h4",
+        "text": "Requirements"
+      },
+      {
+        "type": "bold",
+        "text": "Must use:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "overflow: hidden;\r\nwhite-space: nowrap;\r\ntext-overflow: ellipsis;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common Use Cases"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Card titles"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Product names"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Table columns"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-063",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Typography",
+    "difficulty": "Beginner",
+    "question": "Multi-line ellipsis",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Multi-line truncation limits text to a specific number of lines."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".description {\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 3;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Result"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Line 1\r\nLine 2\r\nLine 3...\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common Use Cases"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Blog cards"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "News previews"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Product descriptions"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Important Interview Point"
+      },
+      {
+        "type": "bold",
+        "text": "Single-line ellipsis:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "text-overflow: ellipsis;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Multi-line ellipsis:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "-webkit-line-clamp;\r"
+      }
+    ]
+  },
+  {
+    "id": "css-064",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "Transform property (2D & 3D)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "transform"
+          },
+          {
+            "type": "text",
+            "value": " property modifies an element's position, size, rotation, or shape without affecting document flow."
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "2D Transforms"
+      },
+      {
+        "type": "bold",
+        "text": "Translate"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: translate(50px, 20px);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Scale"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: scale(1.5);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Rotate"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: rotate(45deg);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Skew"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "transform: skew(20deg);\r"
+      },
+      {
+        "type": "h4",
+        "text": "3D Transforms"
+      },
+      {
+        "type": "bold",
+        "text": "Rotate X"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: rotateX(45deg);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Rotate Y"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: rotateY(45deg);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Translate Z"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: translateZ(100px);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Combining Transforms"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: translateX(20px) rotate(30deg);\r"
+      }
+    ]
+  },
+  {
+    "id": "css-065",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "Translate vs absolute positioning",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "Translate", "Absolute Positioning"],
+        "data": [
+          ["Layout affected", "❌ No", "❌ No"],
+          ["Creates movement", "✅ Yes", "✅ Yes"],
+          ["GPU acceleration", "✅ Yes", "❌ Usually No"],
+          ["Animation performance", "Better", "Slower"],
+          ["Original position retained", "✅ Yes", "❌ No"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Translate Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transform: translateX(100px);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Absolute Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "position: absolute;\r\nleft: 100px;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Interview Tip"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "transform: translate()"
+          },
+          {
+            "type": "text",
+            "value": " for animations whenever possible."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-066",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "CSS transitions",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Transitions create smooth changes between CSS property values."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "button {\r\n  transition: background-color 0.3s;\r\n}\r\nbutton:hover {\r\n  background-color: red;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Result"
+      },
+      {
+        "type": "paragraph",
+        "text": "Background color changes smoothly instead of instantly."
+      },
+      {
+        "type": "bold",
+        "text": "Common Uses"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Hover effects"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Menus"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Buttons"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cards"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-067",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "Transition property syntax",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Syntax:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transition: property duration timing-function delay;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transition: all 0.3s ease;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Individual Properties"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "transition-property: transform;\r\ntransition-duration: 0.3s;\r\ntransition-timing-function: ease;\r\ntransition-delay: 0s;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".card {\r\n  transition: transform 0.3s ease-in-out;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-068",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "CSS animations (example)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Animations use "
+          },
+          {
+            "type": "badge",
+            "value": "@keyframes"
+          },
+          {
+            "type": "text",
+            "value": " to define intermediate states."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@keyframes fadeIn {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n.box {\r\n  animation: fadeIn 1s ease;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Animation Shorthand"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "animation: fadeIn 1s ease 0s 1 normal forwards;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common Uses"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Loaders"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Banners"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "UI effects"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Micro-interactions"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-069",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "Animation timing functions",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Timing functions control animation speed progression."
+      },
+      {
+        "type": "bold",
+        "text": "Common Values"
+      },
+      {
+        "type": "table",
+        "columns": ["Function", "Behavior"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "linear"
+                }
+              ]
+            },
+            "Constant speed"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "ease"
+                }
+              ]
+            },
+            "Slow → Fast → Slow"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "ease-in"
+                }
+              ]
+            },
+            "Slow start"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "ease-out"
+                }
+              ]
+            },
+            "Slow end"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "ease-in-out"
+                }
+              ]
+            },
+            "Slow both ends"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "animation-timing-function: ease-in-out;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Custom Timing"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\r"
+      }
+    ]
+  },
+  {
+    "id": "css-070",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Transforms, Transitions & Animations",
+    "difficulty": "Beginner",
+    "question": "Tweening in CSS",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Tweening (in-betweening) is the process of generating intermediate values between animation states."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@keyframes move {\r\n  from {\r\n    left: 0;\r\n  }\r\n  to {\r\n    left: 200px;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Browser automatically creates intermediate positions:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "0px → 20px → 40px → 60px → ... → 200px\r"
+      },
+      {
+        "type": "h4",
+        "text": "Why Important?"
+      },
+      {
+        "type": "bold",
+        "text": "Without tweening:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "0px → 200px\r"
+      },
+      {
+        "type": "h4",
+        "text": "Instant jump"
+      },
+      {
+        "type": "bold",
+        "text": "With tweening:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Smooth motion\r"
+      }
+    ]
+  },
+  {
+    "id": "css-071",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Responsive Design",
+    "difficulty": "Beginner",
+    "question": "Responsive vs adaptive design",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Both approaches aim to make websites work on different screen sizes."
+      },
+      {
+        "type": "bold",
+        "text": "Responsive Design"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Uses fluid layouts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Uses flexible images"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Uses media queries"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Layout changes continuously"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  width: 100%;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Adaptive Design"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Uses predefined layouts"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Different layouts for specific screen sizes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Layout changes at fixed breakpoints"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "320px → Mobile Layout\r\n768px → Tablet Layout\r\n1200px → Desktop Layout\r"
+      },
+      {
+        "type": "bold",
+        "text": "Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Responsive", "Adaptive"],
+        "data": [
+          ["Layout", "Fluid", "Fixed layouts"],
+          ["Flexibility", "High", "Moderate"],
+          ["Maintenance", "Easier", "Harder"],
+          ["Device Support", "Better", "Specific breakpoints"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-072",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Responsive Design",
+    "difficulty": "Beginner",
+    "question": "Fluid vs adaptive design",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Fluid Design"
+      },
+      {
+        "type": "bold",
+        "text": "Uses relative units:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "width: 80%;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Layout continuously grows and shrinks."
+      },
+      {
+        "type": "h4",
+        "text": "Adaptive Design"
+      },
+      {
+        "type": "bold",
+        "text": "Uses fixed breakpoints:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "width: 960px;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Layout switches between predefined versions."
+      },
+      {
+        "type": "bold",
+        "text": "Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Fluid", "Adaptive"],
+        "data": [
+          ["Units", "%, vw, rem", "Mostly px"],
+          ["Behavior", "Continuous scaling", "Layout switching"],
+          ["Flexibility", "High", "Medium"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-073",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Responsive Design",
+    "difficulty": "Beginner",
+    "question": "Media queries & types",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Media queries allow CSS to apply styles based on device characteristics."
+      },
+      {
+        "type": "bold",
+        "text": "Syntax"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@media (max-width: 768px) {\r\n  .menu {\r\n    display: none;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common Media Types"
+      },
+      {
+        "type": "table",
+        "columns": ["Type", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "all"
+                }
+              ]
+            },
+            "All devices"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "screen"
+                }
+              ]
+            },
+            "Screens"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "print"
+                }
+              ]
+            },
+            "Printed pages"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "speech"
+                }
+              ]
+            },
+            "Screen readers"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Examples"
+      },
+      {
+        "type": "bold",
+        "text": "Mobile"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@media (max-width: 768px) {\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Tablet"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@media (min-width: 768px) and (max-width: 1024px) {\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Desktop"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@media (min-width: 1025px) {\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-074",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Responsive Design",
+    "difficulty": "Beginner",
+    "question": "How to hide/show elements based on screen size",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Using media queries."
+      },
+      {
+        "type": "bold",
+        "text": "Hide on mobile"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@media (max-width: 768px) {\r\n  .desktop-only {\r\n    display: none;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Show only on mobile"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".mobile-only {\r\n  display: none;\r\n}\r\n@media (max-width: 768px) {\r\n  .mobile-only {\r\n    display: block;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "h4",
+        "text": "Alternative"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "visibility: hidden;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Difference:"
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Space Reserved?"],
+        "data": [
+          ["display:none", "❌ No"],
+          ["visibility:hidden", "✅ Yes"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-075",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Responsive Design",
+    "difficulty": "Beginner",
+    "question": "Responsive text techniques",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Responsive text adapts to screen size."
+      },
+      {
+        "type": "paragraph",
+        "text": "Using"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "font-size: 1rem;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Using viewport units"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "font-size: 3vw;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Using clamp()"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "font-size: clamp(1rem, 2vw, 2rem);\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Meaning:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Minimum → 1rem\r\nPreferred → 2vw\r\nMaximum → 2rem\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h1 {\r\n  font-size: clamp(2rem, 5vw, 4rem);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Interview Tip"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "clamp()"
+          },
+          {
+            "type": "text",
+            "value": " is the preferred modern solution for responsive typography."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-076",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "CSS variables (custom properties)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS Variables store reusable values."
+      },
+      {
+        "type": "bold",
+        "text": "Declaration"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ":root {\r\n  --primary-color: blue;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Usage"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "button {\r\n  background: var(--primary-color);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Reusable values"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Easier maintenance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Theme support"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ":root {\r\n  --spacing: 16px;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-077",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "CSS counters",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS Counters automatically generate numbering."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "body {\r\n  counter-reset: section;\r\n}\r\nh2::before {\r\n  counter-increment: section;\r\n  content: counter(section) \". \";\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": "Output"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "1. Introduction\r\n2. About\r\n3. Contact\r"
+      },
+      {
+        "type": "bold",
+        "text": "Common Uses"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Documentation"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Chapters"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "FAQ numbering"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-078",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "Overflow (hidden, etc.)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "The overflow property controls content that exceeds element boundaries."
+      },
+      {
+        "type": "bold",
+        "text": "Values"
+      },
+      {
+        "type": "table",
+        "columns": ["Value", "Behavior"],
+        "data": [
+          ["visible", "Default"],
+          ["hidden", "Hide overflow"],
+          ["scroll", "Always show scrollbar"],
+          ["auto", "Scrollbar when needed"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  overflow: hidden;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Horizontal & Vertical"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "overflow-x: auto;\r\noverflow-y: scroll;\r"
+      }
+    ]
+  },
+  {
+    "id": "css-079",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "inherit keyword",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "inherit"
+          },
+          {
+            "type": "text",
+            "value": " forces a property to inherit its parent's value."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".parent {\r\n  color: blue;\r\n}\r\n.child {\r\n  color: inherit;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Result"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "Child text becomes blue\r"
+      },
+      {
+        "type": "bold",
+        "text": "Useful For"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Consistent theming"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Component styling"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-080",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "calc() function",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "calc()"
+          },
+          {
+            "type": "text",
+            "value": " performs calculations inside CSS."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Syntax"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "width: calc(100% - 50px);\r"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".sidebar {\r\n  width: 250px;\r\n}\r\n.content {\r\n  width: calc(100% - 250px);\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Supports"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Addition (+)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Subtraction (-)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Multiplication (*)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Division (/)"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-081",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "Progressive rendering",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Progressive rendering improves perceived performance by displaying content as soon as possible."
+      },
+      {
+        "type": "bold",
+        "text": "Techniques"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Critical CSS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Lazy loading"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Skeleton screens"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Code splitting"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Resource prioritization"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img loading=\"lazy\" src=\"image.jpg\" />\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Faster perceived load time"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better user experience"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Improved Core Web Vitals"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-082",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Advanced Features",
+    "difficulty": "Beginner",
+    "question": "Feature detection in browsers",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Feature detection checks whether a browser supports a feature before using it."
+      },
+      {
+        "type": "bold",
+        "text": "CSS Feature Detection"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Using "
+          },
+          {
+            "type": "badge",
+            "value": "@supports"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@supports (display: grid) {\r\n  .container {\r\n    display: grid;\r\n  }\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "JavaScript Feature Detection"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "if (\"geolocation\" in navigator) {\r\n  console.log(\"Supported\");\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Why Important?"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Progressive enhancement"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better compatibility"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Graceful degradation"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@supports (backdrop-filter: blur(10px)) {\r\n  .card {\r\n    backdrop-filter: blur(10px);\r\n  }\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-083",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Pseudo Classes & Elements",
+    "difficulty": "Beginner",
+    "question": "Pseudo-classes vs pseudo-elements",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Both allow styling without adding extra HTML."
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Pseudo-class ("
+          },
+          {
+            "type": "badge",
+            "value": ":"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets a specific state of an element."
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a:hover {\r\n}\r\ninput:focus {\r\n}\r\nli:first-child {\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "Pseudo-element ("
+          },
+          {
+            "type": "badge",
+            "value": "::"
+          },
+          {
+            "type": "text",
+            "value": ")"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Targets a specific part of an element."
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p::first-letter {\r\n}\r\np::before {\r\n}\r\np::after {\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Pseudo-class", "Pseudo-element"],
+        "data": [
+          [
+            "Syntax",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": ":"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "::"
+                }
+              ]
+            }
+          ],
+          ["Targets", "State", "Part of element"],
+          [
+            "Example",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": ":hover"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "::before"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-084",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Pseudo Classes & Elements",
+    "difficulty": "Beginner",
+    "question": ":hover vs :focus",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": ":hover"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Activated when mouse is over an element."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "button:hover {\r\n  background: red;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": ":focus"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Activated when element receives keyboard focus."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "input:focus {\r\n  border-color: blue;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", ":hover", ":focus"],
+        "data": [
+          ["Mouse required", "✅ Yes", "❌ No"],
+          ["Keyboard support", "❌ No", "✅ Yes"],
+          ["Accessibility", "Lower", "Higher"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Interview Tip"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Always provide visible "
+          },
+          {
+            "type": "badge",
+            "value": ":focus"
+          },
+          {
+            "type": "text",
+            "value": " styles for accessibility."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-085",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Pseudo Classes & Elements",
+    "difficulty": "Beginner",
+    "question": "::before and ::after",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Used to insert content before or after an element."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".btn::before {\r\n  content: \"★\";\r\n}\r\n.btn::after {\r\n  content: \"→\";\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Requirements"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "content: \"\";\r"
+      },
+      {
+        "type": "warn",
+        "content": [
+          {
+            "type": "text",
+            "value": "content: '' is mandatory."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common Uses"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Icons"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Decorative elements"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Badges"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Tooltips"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-086",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Pseudo Classes & Elements",
+    "difficulty": "Beginner",
+    "question": "::first-letter, ::first-line, :first-child",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "::first-letter"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Styles first letter."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p::first-letter {\r\n  font-size: 2rem;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "::first-line"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Styles first line."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p::first-line {\r\n  font-weight: bold;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": ":first-child"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Selects first child element."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "li:first-child {\r\n  color: red;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Selector", "Purpose"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "::first-letter"
+                }
+              ]
+            },
+            "First letter"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "::first-line"
+                }
+              ]
+            },
+            "First line"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": ":first-child"
+                }
+              ]
+            },
+            "First child element"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-087",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "CSS sprites",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS Sprites combine multiple images into a single image file."
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Fewer HTTP requests"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Faster loading"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better performance"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".icon-home {\r\n  background-position: 0 0;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-088",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "File splitting",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "File splitting organizes CSS into multiple files."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "base.css\r\nlayout.css\r\ncomponents.css\r\nutilities.css\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Easier maintenance"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better scalability"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Team collaboration"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-089",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Fixing browser-specific issues",
+    "answer": [
+      {
+        "type": "bold",
+        "text": "Common techniques:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Vendor prefixes"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "-webkit-transform: rotate(20deg);\r\ntransform: rotate(20deg);\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Feature detection"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@supports (display: grid) {\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS Reset/Normalize"
+      },
+      {
+        "type": "paragraph",
+        "text": "Helps reduce browser inconsistencies."
+      }
+    ]
+  },
+  {
+    "id": "css-090",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Performance & Optimization",
+    "difficulty": "Beginner",
+    "question": "Reset vs Normalize CSS",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Reset CSS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Removes browser default styles."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r"
+      },
+      {
+        "type": "h4",
+        "text": "Normalize CSS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Keeps useful defaults while normalizing differences."
+      },
+      {
+        "type": "bold",
+        "text": "Differences"
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Reset", "Normalize"],
+        "data": [
+          ["Removes styles", "Yes", "No"],
+          ["Preserves defaults", "No", "Yes"],
+          ["Aggressive", "Yes", "No"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-091",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Preprocessors & Architecture",
+    "difficulty": "Beginner",
+    "question": "What is CSS preprocessor?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "A CSS preprocessor extends CSS with programming-like features."
+      },
+      {
+        "type": "bold",
+        "text": "Examples:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Sass"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Less"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Stylus"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Features"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Variables"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Mixins"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Nesting"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Functions"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "$primary: blue;\r\nbutton {\r\n  color: $primary;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-092",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Preprocessors & Architecture",
+    "difficulty": "Beginner",
+    "question": "Sass, Less, Stylus",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Popular CSS preprocessors."
+      },
+      {
+        "type": "table",
+        "columns": ["Feature", "Sass", "Less", "Stylus"],
+        "data": [
+          ["Popularity", "Highest", "High", "Moderate"],
+          ["Syntax flexibility", "Medium", "Medium", "High"],
+          ["Ecosystem", "Large", "Medium", "Smaller"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Examples"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sass"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "$color: blue;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Less"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@color: blue;\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Stylus"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "color = blue\r"
+      }
+    ]
+  },
+  {
+    "id": "css-093",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Preprocessors & Architecture",
+    "difficulty": "Beginner",
+    "question": "Mixins / functions",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Mixins"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reusable blocks of styles."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "@mixin center {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Usage:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".box {\r\n  @include center;\r\n}\r"
+      },
+      {
+        "type": "h4",
+        "text": "Functions"
+      },
+      {
+        "type": "paragraph",
+        "text": "Return calculated values."
+      },
+      {
+        "type": "code",
+        "language": "scss",
+        "code": "@function double($size) {\r\n  @return $size \\* 2;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-094",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Preprocessors & Architecture",
+    "difficulty": "Beginner",
+    "question": "CSS variables vs preprocessor variables",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "CSS Variables", "Sass Variables"],
+        "data": [
+          ["Runtime changes", "✅ Yes", "❌ No"],
+          ["Browser support", "Modern browsers", "Compiled away"],
+          ["JS access", "✅ Yes", "❌ No"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS Variable"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ":root {\r\n  --primary: blue;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sass Variable"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "$primary: blue;\r"
+      }
+    ]
+  },
+  {
+    "id": "css-095",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Accessibility (a11y)",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Accessibility ensures websites are usable by everyone."
+      },
+      {
+        "type": "bold",
+        "text": "Best Practices"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Semantic HTML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Keyboard navigation"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Visible focus states"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Proper contrast ratios"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Alt text for images"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<img src=\"logo.png\" alt=\"Company Logo\" />\r"
+      }
+    ]
+  },
+  {
+    "id": "css-096",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "DOM reflow",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Reflow occurs when browser recalculates layout."
+      },
+      {
+        "type": "bold",
+        "text": "Triggers:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Width changes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Height changes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DOM updates"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Expensive Operations"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "element.style.width = \"200px\";\r"
+      },
+      {
+        "type": "bold",
+        "text": "Optimization"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Batch DOM updates"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Prefer transforms"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-097",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Image scroll control property",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "The most common property is:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "background-attachment: fixed;\r"
+      },
+      {
+        "type": "bold",
+        "text": "Values"
+      },
+      {
+        "type": "table",
+        "columns": ["Value", "Behavior"],
+        "data": [
+          ["scroll", "Default"],
+          ["fixed", "Fixed during scrolling"],
+          ["local", "Scroll with content"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-098",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Underline removal in links",
+    "answer": [
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a {\r\n  text-decoration: none;\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Restore on hover"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "a:hover {\r\n  text-decoration: underline;\r\n}\r"
+      }
+    ]
+  },
+  {
+    "id": "css-099",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Pagination in CSS",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS alone does not create pagination logic."
+      },
+      {
+        "type": "bold",
+        "text": "However for print:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".page {\r\n  break-after: page;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "For web pagination:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "CSS styles controls"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "JavaScript/backend controls page changes"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-100",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Automatic numbering using counters",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "CSS Counters generate numbering automatically."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "body {\r\n  counter-reset: section;\r\n}\r\nh2::before {\r\n  counter-increment: section;\r\n  content: counter(section) \". \";\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Output"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "1. Introduction\r\n2. Features\r\n3. Contact\r"
+      }
+    ]
+  },
+  {
+    "id": "css-101",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "Why background & color are separate",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "They control different parts of an element."
+      },
+      {
+        "type": "table",
+        "columns": ["Property", "Controls"],
+        "data": [
+          ["color", "Text"],
+          ["background", "Background area"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "p {\r\n  color: white;\r\n  background: black;\r\n}\r"
+      },
+      {
+        "type": "bold",
+        "text": "Benefits"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Independent control"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Better design flexibility"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Easier theming"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-102",
+    "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Miscellaneous",
+    "difficulty": "Beginner",
+    "question": "CSS working under the hood",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "When a page loads:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Browser downloads HTML"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Browser downloads CSS "
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "CSS is parsed into CSSOM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "HTML becomes DOM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DOM + CSSOM → Render Tree"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Layout (Reflow)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Paint"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Composite"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Rendering Pipeline"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "HTML → DOM\r\nCSS → CSSOM\r\nDOM + CSSOM\r\n↓\r\nRender Tree\r\n↓\r\nLayout\r\n↓\r\nPaint\r\n↓\r\nComposite\r"
+      }
+    ]
+  }
+]

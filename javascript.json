@@ -865,6 +865,229 @@
   {
     "id": "js-033",
     "topic": "JAVASCRIPT",
+    "subTopic": "Functions & Scope",
+    "difficulty": "Beginner",
+    "question": "Explain Pure and Impure function.",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Pure Function"
+      },
+      {
+        "type": "paragraph",
+        "text": "A pure function is a function that always gives the same output for the same input and does not change anything outside the function."
+      },
+      {
+        "type": "paragraph",
+        "text": "In simple words, a pure function depends only on its input values and does not produce any side effects."
+      },
+      {
+        "type": "bold",
+        "text": "Characteristics of a Pure Function"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "It always returns the same result for the same arguments."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It does not modify variables, objects, arrays, or data outside its scope."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It does not depend on external changing values."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It does not perform side effects like API calls, DOM updates, file changes, or console logging."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example of Pure Function"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function add(a, b) {\n  return a + b;\n}\nconsole.log(add(2, 3)); // 5\nconsole.log(add(2, 3)); // 5"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Here, "
+          },
+          {
+            "type": "badge",
+            "value": "add()"
+          },
+          {
+            "type": "text",
+            "value": " is a pure function because whenever we pass 2 and 3, it always returns 5. It does not modify any external value."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Another Example"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function square(num) {\n  return num * num;\n}\nconsole.log(square(4)); // 16"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "This function is pure because its output depends only on the input "
+          },
+          {
+            "type": "badge",
+            "value": "num"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Impure Function"
+      },
+      {
+        "type": "paragraph",
+        "text": "An impure function is a function that may give different results for the same input or changes something outside the function."
+      },
+      {
+        "type": "paragraph",
+        "text": "In simple words, an impure function depends on external data or creates side effects."
+      },
+      {
+        "type": "bold",
+        "text": "Characteristics of an Impure Function"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "It may return different results for the same input."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It may modify external variables, arrays, or objects."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It may depend on values outside the function."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It may perform side effects such as API calls, DOM manipulation, database updates, file operations, or logging."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example of Impure Function"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "let total = 0;\nfunction addToTotal(value) {\n  total += value;\n  return total;\n}\nconsole.log(addToTotal(5)); // 5\nconsole.log(addToTotal(5)); // 10"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Here, "
+          },
+          {
+            "type": "badge",
+            "value": "addToTotal()"
+          },
+          {
+            "type": "text",
+            "value": " is an impure function because it modifies the external variable total. Even though we pass the same input 5, the output changes."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Another Example"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function getRandomNumber() {\n  return Math.random();\n}\nconsole.log(getRandomNumber());\nconsole.log(getRandomNumber());"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is impure because Math.random() returns a different value each time, even though no input is passed."
+      },
+      {
+        "type": "bold",
+        "text": "Difference Between Pure and Impure Function"
+      },
+      {
+        "type": "table",
+        "columns": ["Pure Function", "Impure Function"],
+        "data": [
+          ["Always returns the same output for the same input", "May return different output for the same input"],
+          ["Does not modify external data", "Can modify external data"],
+          ["Has no side effects", "Can have side effects"],
+          ["Easy to test and debug", "Harder to test and debug"],
+          ["Depends only on input parameters", "May depend on external state"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Why Pure Functions Are Important"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pure functions are important because they make code easier to understand, test, and debug. Since they do not depend on external data and do not modify anything outside the function, their behavior is predictable."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pure functions are commonly used in functional programming and are very useful in JavaScript libraries and frameworks like React."
+      },
+      {
+        "type": "paragraph",
+        "text": "For example, in React, components and state update functions should often behave predictably. Pure functions help avoid unexpected bugs caused by changing data directly."
+      }
+    ]
+  },
+  {
+    "id": "js-034",
+    "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
     "question": "What is a closure?",
@@ -881,7 +1104,7 @@
     ]
   },
   {
-    "id": "js-034",
+    "id": "js-035",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -899,7 +1122,7 @@
     ]
   },
   {
-    "id": "js-035",
+    "id": "js-036",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -950,7 +1173,7 @@
     ]
   },
   {
-    "id": "js-036",
+    "id": "js-037",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -968,7 +1191,7 @@
     ]
   },
   {
-    "id": "js-037",
+    "id": "js-038",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -995,7 +1218,7 @@
     ]
   },
   {
-    "id": "js-038",
+    "id": "js-039",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -1009,7 +1232,7 @@
     ]
   },
   {
-    "id": "js-039",
+    "id": "js-040",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -1027,7 +1250,7 @@
     ]
   },
   {
-    "id": "js-040",
+    "id": "js-041",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -1045,7 +1268,7 @@
     ]
   },
   {
-    "id": "js-041",
+    "id": "js-042",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -1072,7 +1295,7 @@
     ]
   },
   {
-    "id": "js-042",
+    "id": "js-043",
     "topic": "JAVASCRIPT",
     "subTopic": "Closures",
     "difficulty": "Beginner",
@@ -1086,7 +1309,7 @@
     ]
   },
   {
-    "id": "js-043",
+    "id": "js-044",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1151,7 +1374,7 @@
     ]
   },
   {
-    "id": "js-044",
+    "id": "js-045",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1205,7 +1428,7 @@
     ]
   },
   {
-    "id": "js-045",
+    "id": "js-046",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1274,7 +1497,7 @@
     ]
   },
   {
-    "id": "js-046",
+    "id": "js-047",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1367,7 +1590,7 @@
     ]
   },
   {
-    "id": "js-047",
+    "id": "js-048",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1412,7 +1635,7 @@
     ]
   },
   {
-    "id": "js-048",
+    "id": "js-049",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1444,7 +1667,7 @@
     ]
   },
   {
-    "id": "js-049",
+    "id": "js-050",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1485,7 +1708,7 @@
     ]
   },
   {
-    "id": "js-050",
+    "id": "js-051",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1504,7 +1727,7 @@
     ]
   },
   {
-    "id": "js-051",
+    "id": "js-052",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1545,7 +1768,7 @@
     ]
   },
   {
-    "id": "js-052",
+    "id": "js-053",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1586,7 +1809,7 @@
     ]
   },
   {
-    "id": "js-053",
+    "id": "js-054",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1605,7 +1828,7 @@
     ]
   },
   {
-    "id": "js-054",
+    "id": "js-055",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1651,7 +1874,7 @@
     ]
   },
   {
-    "id": "js-055",
+    "id": "js-056",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1669,7 +1892,7 @@
     ]
   },
   {
-    "id": "js-056",
+    "id": "js-057",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1710,7 +1933,7 @@
     ]
   },
   {
-    "id": "js-057",
+    "id": "js-058",
     "topic": "JAVASCRIPT",
     "subTopic": "Objects & Prototypes",
     "difficulty": "Beginner",
@@ -1776,7 +1999,7 @@
     ]
   },
   {
-    "id": "js-058",
+    "id": "js-059",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2704,7 +2927,7 @@
     ]
   },
   {
-    "id": "js-059",
+    "id": "js-060",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2727,7 +2950,7 @@
     ]
   },
   {
-    "id": "js-060",
+    "id": "js-061",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2750,7 +2973,7 @@
     ]
   },
   {
-    "id": "js-061",
+    "id": "js-062",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2816,7 +3039,7 @@
     ]
   },
   {
-    "id": "js-062",
+    "id": "js-063",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2861,7 +3084,7 @@
     ]
   },
   {
-    "id": "js-063",
+    "id": "js-064",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2884,7 +3107,7 @@
     ]
   },
   {
-    "id": "js-064",
+    "id": "js-065",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2907,7 +3130,7 @@
     ]
   },
   {
-    "id": "js-065",
+    "id": "js-066",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2947,7 +3170,7 @@
     ]
   },
   {
-    "id": "js-066",
+    "id": "js-067",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -2971,7 +3194,7 @@
     ]
   },
   {
-    "id": "js-067",
+    "id": "js-068",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3008,7 +3231,7 @@
     ]
   },
   {
-    "id": "js-068",
+    "id": "js-069",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3036,7 +3259,7 @@
     ]
   },
   {
-    "id": "js-069",
+    "id": "js-070",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3077,7 +3300,7 @@
     ]
   },
   {
-    "id": "js-070",
+    "id": "js-071",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3118,7 +3341,7 @@
     ]
   },
   {
-    "id": "js-071",
+    "id": "js-072",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3141,7 +3364,7 @@
     ]
   },
   {
-    "id": "js-072",
+    "id": "js-073",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3178,7 +3401,7 @@
     ]
   },
   {
-    "id": "js-073",
+    "id": "js-074",
     "topic": "JAVASCRIPT",
     "subTopic": "Arrays & Array Methods",
     "difficulty": "Beginner",
@@ -3229,7 +3452,7 @@
     ]
   },
   {
-    "id": "js-074",
+    "id": "js-075",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3285,7 +3508,7 @@
     ]
   },
   {
-    "id": "js-075",
+    "id": "js-076",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3299,7 +3522,7 @@
     ]
   },
   {
-    "id": "js-076",
+    "id": "js-077",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3322,7 +3545,7 @@
     ]
   },
   {
-    "id": "js-077",
+    "id": "js-078",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3336,7 +3559,7 @@
     ]
   },
   {
-    "id": "js-078",
+    "id": "js-079",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3359,7 +3582,7 @@
     ]
   },
   {
-    "id": "js-079",
+    "id": "js-080",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3400,7 +3623,7 @@
     ]
   },
   {
-    "id": "js-080",
+    "id": "js-081",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3432,7 +3655,7 @@
     ]
   },
   {
-    "id": "js-081",
+    "id": "js-082",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3480,7 +3703,7 @@
     ]
   },
   {
-    "id": "js-082",
+    "id": "js-083",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3494,7 +3717,7 @@
     ]
   },
   {
-    "id": "js-083",
+    "id": "js-084",
     "topic": "JAVASCRIPT",
     "subTopic": "Strings",
     "difficulty": "Beginner",
@@ -3531,7 +3754,7 @@
     ]
   },
   {
-    "id": "js-084",
+    "id": "js-085",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3596,7 +3819,7 @@
     ]
   },
   {
-    "id": "js-085",
+    "id": "js-086",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3652,7 +3875,7 @@
     ]
   },
   {
-    "id": "js-086",
+    "id": "js-087",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3684,7 +3907,7 @@
     ]
   },
   {
-    "id": "js-087",
+    "id": "js-088",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3720,7 +3943,7 @@
     ]
   },
   {
-    "id": "js-088",
+    "id": "js-089",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3758,7 +3981,7 @@
     ]
   },
   {
-    "id": "js-089",
+    "id": "js-090",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3814,7 +4037,7 @@
     ]
   },
   {
-    "id": "js-090",
+    "id": "js-091",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3859,7 +4082,7 @@
     ]
   },
   {
-    "id": "js-091",
+    "id": "js-092",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3878,7 +4101,7 @@
     ]
   },
   {
-    "id": "js-092",
+    "id": "js-093",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3929,7 +4152,7 @@
     ]
   },
   {
-    "id": "js-093",
+    "id": "js-094",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3965,7 +4188,7 @@
     ]
   },
   {
-    "id": "js-094",
+    "id": "js-095",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -3997,7 +4220,7 @@
     ]
   },
   {
-    "id": "js-095",
+    "id": "js-096",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -4020,7 +4243,7 @@
     ]
   },
   {
-    "id": "js-096",
+    "id": "js-097",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -4076,7 +4299,7 @@
     ]
   },
   {
-    "id": "js-097",
+    "id": "js-098",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -4099,7 +4322,7 @@
     ]
   },
   {
-    "id": "js-098",
+    "id": "js-099",
     "topic": "JAVASCRIPT",
     "subTopic": "Asynchronous JavaScript",
     "difficulty": "Beginner",
@@ -4141,7 +4364,7 @@
     ]
   },
   {
-    "id": "js-099",
+    "id": "js-100",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4229,7 +4452,7 @@
     ]
   },
   {
-    "id": "js-100",
+    "id": "js-101",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4312,7 +4535,7 @@
     ]
   },
   {
-    "id": "js-101",
+    "id": "js-102",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4377,7 +4600,7 @@
     ]
   },
   {
-    "id": "js-102",
+    "id": "js-103",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4424,7 +4647,7 @@
     ]
   },
   {
-    "id": "js-103",
+    "id": "js-104",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4493,7 +4716,7 @@
     ]
   },
   {
-    "id": "js-104",
+    "id": "js-105",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4573,7 +4796,7 @@
     ]
   },
   {
-    "id": "js-105",
+    "id": "js-106",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4632,7 +4855,7 @@
     ]
   },
   {
-    "id": "js-106",
+    "id": "js-107",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4682,7 +4905,7 @@
     ]
   },
   {
-    "id": "js-107",
+    "id": "js-108",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4741,7 +4964,7 @@
     ]
   },
   {
-    "id": "js-108",
+    "id": "js-109",
     "topic": "JAVASCRIPT",
     "subTopic": "Execution Context & Internals",
     "difficulty": "Beginner",
@@ -4760,7 +4983,7 @@
     ]
   },
   {
-    "id": "js-109",
+    "id": "js-110",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4817,7 +5040,7 @@
     ]
   },
   {
-    "id": "js-110",
+    "id": "js-111",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4844,7 +5067,7 @@
     ]
   },
   {
-    "id": "js-111",
+    "id": "js-112",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -4867,7 +5090,7 @@
     ]
   },
   {
-    "id": "js-112",
+    "id": "js-113",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5139,7 +5362,7 @@
     ]
   },
   {
-    "id": "js-113",
+    "id": "js-114",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5184,7 +5407,7 @@
     ]
   },
   {
-    "id": "js-114",
+    "id": "js-115",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5234,7 +5457,7 @@
     ]
   },
   {
-    "id": "js-115",
+    "id": "js-116",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5284,7 +5507,7 @@
     ]
   },
   {
-    "id": "js-116",
+    "id": "js-117",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5302,7 +5525,7 @@
     ]
   },
   {
-    "id": "js-117",
+    "id": "js-118",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5334,7 +5557,7 @@
     ]
   },
   {
-    "id": "js-118",
+    "id": "js-119",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5357,7 +5580,7 @@
     ]
   },
   {
-    "id": "js-119",
+    "id": "js-120",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5385,7 +5608,7 @@
     ]
   },
   {
-    "id": "js-120",
+    "id": "js-121",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5404,7 +5627,7 @@
     ]
   },
   {
-    "id": "js-121",
+    "id": "js-122",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5451,7 +5674,7 @@
     ]
   },
   {
-    "id": "js-122",
+    "id": "js-123",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5488,7 +5711,7 @@
     ]
   },
   {
-    "id": "js-123",
+    "id": "js-124",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5502,7 +5725,7 @@
     ]
   },
   {
-    "id": "js-124",
+    "id": "js-125",
     "topic": "JAVASCRIPT",
     "subTopic": "DOM & Browser APIs",
     "difficulty": "Beginner",
@@ -5562,7 +5785,7 @@
     ]
   },
   {
-    "id": "js-125",
+    "id": "js-126",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5662,7 +5885,7 @@
     ]
   },
   {
-    "id": "js-126",
+    "id": "js-127",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5728,7 +5951,7 @@
     ]
   },
   {
-    "id": "js-127",
+    "id": "js-128",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5805,7 +6028,7 @@
     ]
   },
   {
-    "id": "js-128",
+    "id": "js-129",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5864,7 +6087,7 @@
     ]
   },
   {
-    "id": "js-129",
+    "id": "js-130",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5936,7 +6159,7 @@
     ]
   },
   {
-    "id": "js-130",
+    "id": "js-131",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -5995,7 +6218,7 @@
     ]
   },
   {
-    "id": "js-131",
+    "id": "js-132",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6054,7 +6277,7 @@
     ]
   },
   {
-    "id": "js-132",
+    "id": "js-133",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6104,7 +6327,7 @@
     ]
   },
   {
-    "id": "js-133",
+    "id": "js-134",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6150,7 +6373,7 @@
     ]
   },
   {
-    "id": "js-134",
+    "id": "js-135",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6209,7 +6432,7 @@
     ]
   },
   {
-    "id": "js-135",
+    "id": "js-136",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6278,7 +6501,7 @@
     ]
   },
   {
-    "id": "js-136",
+    "id": "js-137",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6337,7 +6560,7 @@
     ]
   },
   {
-    "id": "js-137",
+    "id": "js-138",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6410,7 +6633,7 @@
     ]
   },
   {
-    "id": "js-138",
+    "id": "js-139",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6463,7 +6686,7 @@
     ]
   },
   {
-    "id": "js-139",
+    "id": "js-140",
     "topic": "JAVASCRIPT",
     "subTopic": "ES6+ Features",
     "difficulty": "Beginner",
@@ -6522,7 +6745,7 @@
     ]
   },
   {
-    "id": "js-140",
+    "id": "js-141",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6591,7 +6814,7 @@
     ]
   },
   {
-    "id": "js-141",
+    "id": "js-142",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6687,7 +6910,7 @@
     ]
   },
   {
-    "id": "js-142",
+    "id": "js-143",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6764,7 +6987,7 @@
     ]
   },
   {
-    "id": "js-143",
+    "id": "js-144",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6814,7 +7037,7 @@
     ]
   },
   {
-    "id": "js-144",
+    "id": "js-145",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6885,7 +7108,7 @@
     ]
   },
   {
-    "id": "js-145",
+    "id": "js-146",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -6958,7 +7181,7 @@
     ]
   },
   {
-    "id": "js-146",
+    "id": "js-147",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7021,7 +7244,7 @@
     ]
   },
   {
-    "id": "js-147",
+    "id": "js-148",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7095,7 +7318,7 @@
     ]
   },
   {
-    "id": "js-148",
+    "id": "js-149",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7172,7 +7395,7 @@
     ]
   },
   {
-    "id": "js-149",
+    "id": "js-150",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7257,7 +7480,7 @@
     ]
   },
   {
-    "id": "js-150",
+    "id": "js-151",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7456,7 +7679,7 @@
     ]
   },
   {
-    "id": "js-151",
+    "id": "js-152",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7583,7 +7806,7 @@
     ]
   },
   {
-    "id": "js-152",
+    "id": "js-153",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -7811,7 +8034,7 @@
     ]
   },
   {
-    "id": "js-153",
+    "id": "js-154",
     "topic": "JAVASCRIPT",
     "subTopic": "Error Handling",
     "difficulty": "Beginner",
@@ -8025,7 +8248,7 @@
     ]
   },
   {
-    "id": "js-154",
+    "id": "js-155",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8118,7 +8341,7 @@
     ]
   },
   {
-    "id": "js-155",
+    "id": "js-156",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8183,7 +8406,7 @@
     ]
   },
   {
-    "id": "js-156",
+    "id": "js-157",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8248,7 +8471,7 @@
     ]
   },
   {
-    "id": "js-157",
+    "id": "js-158",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8274,7 +8497,7 @@
     ]
   },
   {
-    "id": "js-158",
+    "id": "js-159",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8331,7 +8554,7 @@
     ]
   },
   {
-    "id": "js-159",
+    "id": "js-160",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8372,7 +8595,7 @@
     ]
   },
   {
-    "id": "js-160",
+    "id": "js-161",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8437,7 +8660,7 @@
     ]
   },
   {
-    "id": "js-161",
+    "id": "js-162",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8496,7 +8719,7 @@
     ]
   },
   {
-    "id": "js-162",
+    "id": "js-163",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -8544,7 +8767,7 @@
     ]
   },
   {
-    "id": "js-163",
+    "id": "js-164",
     "topic": "JAVASCRIPT",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
