@@ -6499,7 +6499,7 @@
       },
       {
         "type": "bold",
-        "content": "Output"
+        "text": "Output"
       },
       {
         "type": "code",
