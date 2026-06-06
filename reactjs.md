@@ -222,24 +222,24 @@ Interview phrase:
 
 A Single Page Application (SPA) is a web application that loads a single HTML page initially and dynamically updates the content without reloading the entire page.
 
-🔹 How It Works
+How It Works
 
 1. Browser loads index.html
 2. JavaScript loads
 3. Routing and rendering happen on the client
 4. Only components update — not full page
 
-🔹 Example
+Example
 
 React apps created with CRA or Vite are SPAs.
 
-🔹 Benefits
+Benefits
 
 - Fast navigation
 - Smooth UX
 - Less server load
 
-🔹 Drawbacks
+Drawbacks
 
 - SEO challenges (without SSR)
 - Slower first load (large JS bundle)
@@ -253,24 +253,24 @@ Gmail, Facebook, Twitter
 
 CSR means the browser downloads a minimal HTML file and uses JavaScript to render the page content on the client side.
 
-🔹 Flow
+Flow
 
 ```
 Request → Empty HTML → JS loads → React renders UI
 ```
 
-🔹 Used In
+Used In
 
 - React SPA
 - Vue SPA
 - Angular apps
 
-🔹 Pros
+Pros
 
 - Fast navigation after first load
 - Good for dashboards & web apps
 
-🔹 Cons
+Cons
 
 - SEO not ideal
 - Slow initial load
@@ -282,24 +282,24 @@ Request → Empty HTML → JS loads → React renders UI
 
 SSR means the server generates the complete HTML for each request and sends it to the browser.
 
-🔹 Flow
+Flow
 
 ```
 Request → Server builds HTML → Send full page → Browser displays immediately
 ```
 
-🔹 Example Framework
+Example Framework
 
 - Next.js
 - Remix
 
-🔹 Pros
+Pros
 
 - Better SEO
 - Faster first paint
 - Better performance on slow devices
 
-🔹 Cons
+Cons
 
 - Higher server load
 - Slightly slower navigation
@@ -310,23 +310,23 @@ Request → Server builds HTML → Send full page → Browser displays immediate
 
 SSG generates HTML pages at build time and serves them as static files.
 
-🔹 Flow
+Flow
 
 ```
 Build Time → HTML generated → CDN serves static file
 ```
 
-🔹 Example
+Example
 
 Blog site built using Next.js getStaticProps
 
-🔹 Pros
+Pros
 
 - Very fast
 - Excellent SEO
 - CDN friendly
 
-🔹 Cons
+Cons
 
 - Content not real-time
 - Requires rebuild for updates
@@ -337,13 +337,13 @@ Blog site built using Next.js getStaticProps
 
 ISR is a hybrid approach that allows static pages to be regenerated after deployment, without rebuilding the entire site.
 
-🔹 Flow
+Flow
 
 ```
 Build → Serve static page → After interval → Regenerate in background
 ```
 
-🔹 Example (Next.js)
+Example (Next.js)
 
 ```jsx
 export async function getStaticProps() {
@@ -354,7 +354,7 @@ export async function getStaticProps() {
 }
 ```
 
-🔹 Pros
+Pros
 
 - Static performance
 - Updated content
@@ -383,6 +383,343 @@ export async function getStaticProps() {
 🔥 Final Interview Summary (Strong Answer)
 
 “SPA is an architecture where a single HTML page dynamically updates content. CSR renders pages in the browser, SSR renders them on the server, SSG generates pages at build time, and ISR allows static pages to update incrementally after deployment.”
+
+### Q. Explain reusability, modularity, testability in react js
+
+**Answer:**
+
+#### Reusability in React JS
+
+Reusability means creating components, functions, or logic that can be used in multiple places instead of writing the same code again and again.
+
+React is component-based, so reusability is one of its main advantages.
+
+Example
+
+```jsx
+function Button({ text, onClick }) {
+  return <button onClick={onClick}>{text}</button>;
+}
+```
+
+Now the same `Button` component can be reused in different places:
+
+```jsx
+<Button text="Login" onClick={handleLogin} />
+<Button text="Register" onClick={handleRegister} />
+<Button text="Logout" onClick={handleLogout} />
+```
+
+Here, we do not need to create separate button code for login, register, and logout. We use the same component with different props.
+
+Why Reusability is Important
+
+Reusability helps reduce duplicate code. It also makes the application easier to maintain because changes can be made in one place and reused everywhere.
+
+For example, if the button design changes, we only update the `Button` component once.
+
+Common Ways to Achieve Reusability
+
+1. Reusable Components
+
+```jsx
+function Card({ title, description }) {
+  return (
+    <div className="card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}
+```
+
+Usage:
+
+```jsx
+<Card title="React" description="A JavaScript library for building UI" />
+<Card title="Vue" description="A progressive JavaScript framework" />
+```
+
+2. Custom Hooks
+
+Custom Hooks allow us to reuse logic between components.
+
+```jsx
+import { useState } from "react";
+
+function useToggle(initialValue = false) {
+  const [value, setValue] = useState(initialValue);
+
+  function toggle() {
+    setValue((prev) => !prev);
+  }
+
+  return [value, toggle];
+}
+```
+
+Usage:
+
+```jsx
+function Menu() {
+  const [isOpen, toggleMenu] = useToggle(false);
+
+  return (
+    <>
+      <button onClick={toggleMenu}>Toggle Menu</button>
+      {isOpen && <p>Menu is open</p>}
+    </>
+  );
+}
+```
+
+Here, `useToggle` can be reused in many components.
+
+#### Modularity in React JS
+
+Modularity means dividing an application into small, independent, and manageable parts.
+
+In React, these parts are usually components, hooks, utility functions, services, and modules.
+
+Instead of writing the whole application in one large file, we split it into smaller files and components.
+
+Example
+
+```
+src/
+  components/
+    Header.jsx
+    Footer.jsx
+    Button.jsx
+    Card.jsx
+  pages/
+    Home.jsx
+    About.jsx
+    Login.jsx
+  hooks/
+    useToggle.js
+  services/
+    api.js
+  App.jsx
+```
+
+This structure makes the project easier to understand and maintain.
+
+Example of Modular Component
+
+```jsx
+function Header() {
+  return (
+    <header>
+      <h1>My App</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
+```
+
+This `Header` component can be kept in a separate file and imported wherever needed:
+
+```jsx
+import Header from "./components/Header";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <h2>Welcome</h2>
+      </main>
+    </>
+  );
+}
+```
+
+Why Modularity is Important
+
+Modularity makes code easier to read, debug, test, and maintain.
+
+When each part of the application has a clear responsibility, developers can work on different parts of the project without affecting the entire application.
+
+Benefits of Modularity
+
+| Benefit            | Explanation                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| Easy maintenance   | Changes are easier because code is separated into small parts |
+| Better readability | Small files are easier to understand                          |
+| Team collaboration | Different developers can work on different modules            |
+| Easier debugging   | Problems can be located quickly                               |
+| Better scalability | New features can be added without disturbing existing code    |
+
+#### Testability in React JS
+
+Testability means how easy it is to test a component, function, or feature to make sure it works correctly.
+
+A testable React component is usually simple, predictable, and independent.
+
+Example of Testable Component
+
+```jsx
+function Greeting({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
+```
+
+This component is easy to test because it depends only on props.
+
+Example test:
+
+```jsx
+import { render, screen } from "@testing-library/react";
+import Greeting from "./Greeting";
+
+test("renders greeting message", () => {
+  render(<Greeting name="John" />);
+
+  expect(screen.getByText("Hello, John")).toBeInTheDocument();
+});
+```
+
+The component is testable because it does not depend on external APIs, global variables, or complex side effects.
+
+How to Improve Testability in React
+
+1. Keep Components Small
+
+Small components are easier to test than large components.
+
+```jsx
+function UserName({ name }) {
+  return <p>{name}</p>;
+}
+```
+
+This is easier to test than a large component containing UI, API calls, state management, and business logic all together.
+
+2. Pass Data Through Props
+
+Components that receive data through props are easier to test.
+
+```jsx
+function UserCard({ user }) {
+  return (
+    <div>
+      <h3>{user.name}</h3>
+      <p>{user.email}</p>
+    </div>
+  );
+}
+```
+
+In tests, we can pass mock data:
+
+```js
+const mockUser = {
+  name: "John",
+  email: "john@example.com",
+};
+```
+
+3. Separate Logic from UI
+
+Instead of writing all logic inside JSX, move it into functions or custom Hooks.
+
+```js
+function calculateTotal(price, quantity) {
+return price \* quantity;
+}
+```
+
+This function can be tested separately.
+
+4. Avoid Direct Dependency on External Services
+
+Instead of calling APIs directly inside components, use services or custom Hooks.
+
+```js
+// api.js
+export function getUsers() {
+  return fetch("/api/users").then((res) => res.json());
+}
+```
+
+This makes it easier to mock API calls during testing.
+
+Relationship Between Reusability, Modularity, and Testability
+
+These three concepts are closely related.
+
+| Concept     | Meaning                                 | React Example                                 |
+| ----------- | --------------------------------------- | --------------------------------------------- |
+| Reusability | Use the same code in multiple places    | Reusable `Button`, `Card`, custom Hooks       |
+| Modularity  | Split code into small independent parts | Separate components, hooks, services, pages   |
+| Testability | Make code easy to test                  | Small pure components, props-based components |
+
+A reusable component is usually modular. A modular component is usually easier to test. A testable component is usually easier to reuse and maintain.
+
+Practical Example Combining All Three
+
+```jsx
+function ProductCard({ product, onAddToCart }) {
+  return (
+    <div className="product-card">
+      <h3>{product.name}</h3>
+      <p>Price: ₹{product.price}</p>
+      <button onClick={() => onAddToCart(product)}>Add to Cart</button>
+    </div>
+  );
+}
+```
+
+Why This Component is Good
+
+Reusable
+
+The `ProductCard` component can be reused for many products.
+
+```jsx
+<ProductCard product={phone} onAddToCart={handleAddToCart} />
+<ProductCard product={laptop} onAddToCart={handleAddToCart} />
+
+```
+
+Modular
+
+The component handles only one responsibility: displaying product information and triggering add-to-cart action.
+
+Testable
+
+The component receives `product` and `onAddToCart` through props, so we can easily test it with mock data and mock functions.
+
+Example test idea:
+
+```jsx
+test("calls onAddToCart when button is clicked", () => {
+  const product = { name: "Phone", price: 20000 };
+  const mockAddToCart = jest.fn();
+
+  render(<ProductCard product={product} onAddToCart={mockAddToCart} />);
+
+  fireEvent.click(screen.getByText("Add to Cart"));
+
+  expect(mockAddToCart).toHaveBeenCalledWith(product);
+});
+```
+
+Final Answer
+
+In React JS, reusability means writing components or logic that can be used in multiple places. For example, a common `Button`, `Card`, or custom Hook.
+
+Modularity means dividing the application into small, independent parts such as components, hooks, pages, and services. This makes the code easier to manage and scale.
+
+Testability means writing code in such a way that it can be easily tested. Small components, props-based data, pure functions, and separated business logic improve testability.
+
+Together, these concepts help create React applications that are clean, maintainable, scalable, and easy to debug.
 
 ## Components & Rendering
 
@@ -1228,6 +1565,300 @@ One-Line Interview Summary
 ### 🔥 30-Second Interview Summary (Hooks)
 
 “Hooks allow functional components to manage state, side effects, and shared logic. They simplify code, improve reusability, and replace class-based lifecycle methods.”
+
+### Q. Explain `useId`
+
+**Answer:**
+
+`useId` is a React Hook used to generate a unique ID inside a component.
+
+It is mainly used for accessibility attributes, such as connecting a `<label>` with an `<input>` using `htmlFor` and `id`. React officially describes `useId` as a Hook for generating unique IDs that can be passed to accessibility attributes.
+
+Syntax
+
+```js
+const id = useId();
+```
+
+Example
+
+```jsx
+import { useId } from "react";
+
+function InputField() {
+  const id = useId();
+
+  return (
+    <div>
+      <label htmlFor={id}>Username</label>
+      <input id={id} type="text" />
+    </div>
+  );
+}
+```
+
+In this example, `useId()` creates a unique ID. The same ID is used in both `label` and `input`, so clicking the label focuses the input.
+
+Why not use random values?
+
+You should not use `Math.random()` or manually generated random IDs for this because they can cause mismatch problems during server-side rendering and hydration.
+
+`useId` is safe for server rendering because React can keep the generated IDs consistent between server and client, as long as the component tree is the same.
+
+Important Points
+
+- useId generates a unique ID for a component.
+- It is useful for accessibility.
+- It helps connect elements like labels, inputs, hints, and error messages.
+- It should not be used to generate keys in a list.
+- For list keys, use stable IDs from your data instead.
+
+Example with multiple IDs
+
+```jsx
+import { useId } from "react";
+
+function SignupForm() {
+  const id = useId();
+
+  return (
+    <form>
+      <label htmlFor={`${id}-email`}>Email</label>
+      <input id={`${id}-email`} type="email" />
+
+      <label htmlFor={`${id}-password`}>Password</label>
+      <input id={`${id}-password`} type="password" />
+    </form>
+  );
+}
+```
+
+Here, one generated ID is reused to create multiple related unique IDs.
+
+Final Answer
+
+`useId` is a React Hook that generates unique IDs. It is mostly used for accessibility, such as linking labels with inputs. It is safe for server-side rendering and should not be used for list keys.
+
+### Q. Explain `useDeferredValue`
+
+**Answer:**
+
+`useDeferredValue` is a React Hook that lets you delay updating a non-urgent part of the UI.
+
+React describes `useDeferredValue` as a Hook that lets you defer updating a part of the UI.
+
+It is useful when one part of the UI should update immediately, but another expensive part can update slightly later.
+
+Syntax
+
+```jsx
+const deferredValue = useDeferredValue(value);
+```
+
+Simple Explanation
+
+Suppose a user is typing in a search box.
+
+The input value should update immediately while typing. But filtering or rendering a large list based on that input may be expensive.
+
+In that case, we can use `useDeferredValue` so that:
+
+- The input stays fast.
+- The expensive list update can happen later.
+- React keeps the UI responsive.
+
+Example
+
+```jsx
+import { useState, useDeferredValue } from "react";
+
+function SearchPage({ products }) {
+  const [search, setSearch] = useState("");
+
+  const deferredSearch = useDeferredValue(search);
+
+  const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(deferredSearch.toLowerCase()));
+
+  return (
+    <div>
+      <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search products" />
+
+      <ul>
+        {filteredProducts.map((product) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+Here, `search` updates immediately when the user types. But `deferredSearch` may update slightly later, allowing React to keep the input responsive.
+
+Important Points
+
+- `useDeferredValue` does not stop the original value from updating.
+- It creates a deferred version of that value.
+- It is useful for expensive rendering.
+- It does not add a fixed delay like `setTimeout`.
+- React starts the deferred update after finishing the urgent update.
+- It does not automatically reduce network requests.
+
+Showing stale UI
+
+Sometimes, the UI may show old results while new results are being prepared. You can show this using comparison:
+
+```jsx
+const isStale = search !== deferredSearch;
+```
+
+Example:
+
+```jsx
+<div style={{ opacity: isStale ? 0.5 : 1 }}>
+  <ProductList search={deferredSearch} />
+</div>
+```
+
+This tells the user that the displayed result is slightly behind the typed value.
+
+Final Answer
+
+`useDeferredValue` is used to defer a value so that expensive UI updates can happen later. It helps keep the interface responsive, especially during typing, searching, filtering, or rendering large lists.
+
+### Q. Explain `useTransition`
+
+**Answer:**
+
+`useTransition` is a React Hook used to mark some state updates as non-urgent.
+
+React describes `useTransition` as a Hook that lets you render a part of the UI in the background.
+
+It helps keep the UI responsive when a state update may cause expensive rendering.
+
+Syntax
+
+```jsx
+const [isPending, startTransition] = useTransition();
+```
+
+It returns two values:
+
+| Value             | Meaning                                                      |
+| ----------------- | ------------------------------------------------------------ |
+| `isPending`       | A boolean that tells whether the transition is still running |
+| `startTransition` | A function used to mark state updates as non-urgent          |
+
+Simple Explanation
+
+Some updates are urgent. For example:
+
+- Typing in an input
+- Clicking a button
+- Opening a menu
+
+Some updates are less urgent. For example:
+
+- Rendering a large list
+- Changing a tab with heavy content
+- Updating a complex chart
+
+`useTransition` allows React to handle urgent updates first and process non-urgent updates in the background.
+
+Example
+
+```jsx
+import { useState, useTransition } from "react";
+
+function SearchPage({ products }) {
+  const [input, setInput] = useState("");
+  const [query, setQuery] = useState("");
+
+  const [isPending, startTransition] = useTransition();
+
+  function handleChange(e) {
+    const value = e.target.value;
+
+    setInput(value);
+
+    startTransition(() => {
+      setQuery(value);
+    });
+  }
+
+  const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(query.toLowerCase()));
+
+  return (
+    <div>
+      <input value={input} onChange={handleChange} />
+
+      {isPending && <p>Updating results...</p>}
+
+      <ul>
+        {filteredProducts.map((product) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+In this example:
+
+- `setInput(value)` is urgent because the input should update immediately.
+- `setQuery(value)` is wrapped inside `startTransition`, so React treats it as non-urgent.
+- `isPending` can be used to show a loading or pending message.
+
+Important Points
+
+- `useTransition` helps prevent slow UI during expensive updates.
+- It is useful when state updates trigger heavy rendering.
+- `startTransition` marks state updates as low priority.
+- `isPending` helps show a pending state.
+- The function passed to `startTransition` runs immediately, but the state updates inside it are marked as transitions.
+- `useTransition` must be called inside a component or custom Hook.
+
+Final Answer
+
+`useTransition` is used to mark some state updates as non-urgent so React can keep the UI responsive. It is helpful when an update causes expensive rendering. It returns isPending and startTransition.
+
+### Q. Difference Between `useDeferredValue` and `useTransition`
+
+**Answer:**
+
+| Feature       | `useDeferredValue`                    | `useTransition`                   |
+| ------------- | ------------------------------------- | --------------------------------- |
+| Main purpose  | Defers a value                        | Defers a state update             |
+| Works with    | Existing value                        | State setter function             |
+| Returns       | Deferred value                        | `[isPending, startTransition]`    |
+| Useful for    | Search input, filtering, large lists  | Tabs, routes, heavy state updates |
+| Pending state | Does not directly provide `isPending` | Provides `isPending`              |
+| Control level | Less control                          | More control                      |
+
+Simple Difference
+
+Use `useDeferredValue` when you already have a value and want to use a delayed version of it.
+
+Use `useTransition` when you are updating state and want to mark that update as non-urgent.
+
+Example Summary
+
+```jsx
+// useDeferredValue
+const deferredSearch = useDeferredValue(search);
+```
+
+Here, React creates a deferred version of `search`.
+
+```jsx
+// useTransition
+startTransition(() => {
+  setQuery(value);
+});
+```
+
+Here, React treats `setQuery(value)` as a non-urgent update.
 
 ## Forms & Events
 
@@ -2128,7 +2759,7 @@ Key takeaway (say this):
 
 Error boundaries are only class components because they rely on lifecycle methods like componentDidCatch and getDerivedStateFromError, which are not available in function components.
 
-🔹 Explanation
+Explanation
 
 React introduced error boundaries before hooks existed.
 
@@ -2156,7 +2787,7 @@ Function components:
 
 No.
 
-🔹 Explanation
+Explanation
 
 Error boundaries cannot catch errors within themselves.
 
@@ -2165,7 +2796,7 @@ They only catch errors in:
 - Child components
 - Their subtree
 
-🔹 Example
+Example
 
 ```js
 <ErrorBoundary>
@@ -2187,13 +2818,13 @@ They only catch errors in:
 
 Error boundaries should be placed around critical parts of the UI to prevent the entire app from crashing.
 
-🔹 Best Practices
+Best Practices
 
 - Wrap route-level components
 - Wrap independent UI sections
 - Avoid wrapping entire app
 
-🔹 Example
+Example
 
 ```js
 <App>
@@ -2226,7 +2857,7 @@ Error boundaries should be placed around critical parts of the UI to prevent the
 
 No.
 
-🔹 Explanation
+Explanation
 
 Error boundaries only catch errors during:
 
@@ -2240,7 +2871,7 @@ They do NOT catch:
 - Async code (setTimeout, promises)
 - Server-side errors
 
-🔹 Example
+Example
 
 ```jsx
 <button
@@ -2254,7 +2885,7 @@ They do NOT catch:
 
 ❌ Not caught by Error Boundary
 
-🔹 How to Handle Instead
+How to Handle Instead
 
 ```js
 try {
@@ -2763,6 +3394,187 @@ Interview one-liner:
 
 “Reconciliation is how React efficiently updates the DOM by comparing virtual DOM trees.”
 
+### Q. What is reconciliation overhead?
+
+**Answer:**
+
+Reconciliation overhead is the extra work React does to compare the new Virtual DOM with the previous Virtual DOM and decide what needs to change in the real DOM.
+
+In React, whenever a component’s state or props change, React does not immediately replace the whole UI. Instead, it creates a new Virtual DOM tree and compares it with the old one. This comparison process is called reconciliation.
+
+The time and resources spent during this comparison process are called reconciliation overhead.
+
+Simple Explanation
+
+React follows this process:
+
+1. State or props change.
+2. React re-renders the component.
+3. React creates a new Virtual DOM.
+4. React compares the new Virtual DOM with the old Virtual DOM.
+5. React finds the minimum required changes.
+6. React updates only the necessary parts of the real DOM.
+
+The work done in steps 3 and 4 is reconciliation work. When this work becomes expensive, it is called reconciliation overhead.
+
+Example
+
+```jsx
+function ProductList({ products }) {
+  return (
+    <ul>
+      {products.map((product) => (
+        <li key={product.id}>{product.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+If `products` changes, React will compare the previous list with the new list. It checks which items were added, removed, or updated.
+
+For a small list, this is fast. But for a very large list, this comparison can take more time.
+
+That extra comparison cost is reconciliation overhead.
+
+Why Reconciliation Overhead Happens
+
+Reconciliation overhead can increase when:
+
+1. Too Many Components Re-render
+
+```jsx
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <Header />
+      <Sidebar />
+      <ProductList />
+      <Footer />
+    </>
+  );
+}
+```
+
+When `count` changes, `App` re-renders. Child components may also re-render even if their data did not change.
+
+This increases reconciliation work.
+
+2. Large Lists Are Rendered
+
+```jsx
+{
+  items.map((item) => <Item key={item.id} item={item} />);
+}
+```
+
+If the list contains thousands of items, React has to compare many elements during reconciliation.
+
+3. Incorrect Keys Are Used
+
+```jsx
+{
+  items.map((item, index) => <li key={index}>{item.name}</li>);
+}
+```
+
+Using array index as a key can confuse React when items are inserted, removed, or reordered.
+
+React may do more work than necessary, increasing reconciliation overhead.
+
+Better:
+
+```jsx
+{
+  items.map((item) => <li key={item.id}>{item.name}</li>);
+}
+```
+
+Stable keys help React identify which items actually changed.
+
+4. New Object or Function References Are Created Every Render
+
+```jsx
+<Child data={{ name: "John" }} onClick={() => console.log("Clicked")} />
+```
+
+Every render creates a new object and a new function. React may treat them as changed props.
+
+This can cause unnecessary child re-renders.
+
+How to Reduce Reconciliation Overhead
+
+1. Use Stable Keys
+
+```jsx
+{
+  users.map((user) => <UserCard key={user.id} user={user} />);
+}
+```
+
+Use unique and stable IDs instead of array indexes.
+
+2. Use `React.memo`
+
+```jsx
+const UserCard = React.memo(function UserCard({ user }) {
+  return <div>{user.name}</div>;
+});
+```
+
+`React.memo` prevents a component from re-rendering when its props have not changed.
+
+3. Use `useMemo`
+
+```jsx
+const filteredUsers = useMemo(() => {
+  return users.filter((user) => user.active);
+}, [users]);
+```
+
+`useMemo` helps avoid recalculating expensive values on every render.
+
+4. Use `useCallback`
+
+```jsx
+const handleClick = useCallback(() => {
+  console.log("Clicked");
+}, []);
+```
+
+`useCallback` helps keep function references stable between renders.
+
+5. Split Components Properly
+
+Instead of keeping too much state in a parent component, move state closer to where it is needed.
+
+This prevents unrelated components from re-rendering.
+
+6. Virtualize Large Lists
+
+For very large lists, use libraries like `react-window` or `react-virtualized`.
+
+Instead of rendering thousands of items, virtualization renders only the visible items.
+
+Difference Between Rendering and Reconciliation
+
+| Concept        | Meaning                                             |
+| -------------- | --------------------------------------------------- |
+| Rendering      | Creating the new UI description or Virtual DOM      |
+| Reconciliation | Comparing the new Virtual DOM with the previous one |
+| Commit phase   | Applying the actual changes to the real DOM         |
+
+Final Answer
+
+Reconciliation overhead is the performance cost React spends comparing the new Virtual DOM with the old Virtual DOM to find what changed.
+
+It happens during React updates when state or props change. It can become expensive when many components re-render, large lists are used, unstable keys are given, or unnecessary new props are created.
+
+To reduce reconciliation overhead, use stable keys, memoization, component splitting, and list virtualization.
+
 ### Q. What is Fiber architecture?
 
 **Answer:**
@@ -3156,7 +3968,7 @@ When route changes → title updates automatically.
 
 2️⃣ What is React Helmet Async?
 
-🔹 Short Interview Answer
+Short Interview Answer
 
 react-helmet-async is an improved version of React Helmet that supports server-side rendering (SSR) and avoids memory leaks in async environments.
 
@@ -3207,18 +4019,18 @@ React Helmet vs Helmet Async
 
 Why It Is Used (Very Important for Interviews)
 
-🔹 SEO Optimization
+SEO Optimization
 
 - Dynamic meta tags per route
 - Google reads correct title/description
 
-🔹 Social Sharing
+Social Sharing
 
 ```html
 <meta property="og:title" content="Product Page" />
 ```
 
-🔹 Dynamic Titles
+Dynamic Titles
 
 Better UX:
 
@@ -3275,7 +4087,7 @@ What is snapshot testing?
 
 I optimize React apps by reducing unnecessary re-renders, improving bundle size, and optimizing data handling.
 
-🔹 Key Techniques
+Key Techniques
 
 - Use `React.memo`, `useMemo`, `useCallback`
 - Code splitting (`React.lazy`)
@@ -3294,14 +4106,14 @@ I optimize React apps by reducing unnecessary re-renders, improving bundle size,
 
 I handle API failures using proper error handling, fallback UI, and retry strategies.
 
-🔹 Approach
+Approach
 
 - `try/catch` or `.catch()`
 - Show user-friendly error message
 - Retry logic (exponential backoff)
 - Use global error handling (interceptors)
 
-🔹 Example
+Example
 
 ```js
 try {
@@ -3317,14 +4129,14 @@ try {
 
 Authentication is managed using tokens (JWT), stored securely, and protected routes.
 
-🔹 Flow
+Flow
 
 1. Login → get token
 2. Store token (cookie/localStorage)
 3. Attach token in API headers
 4. Protect routes
 
-🔹 Tools
+Tools
 
 - Context API / Redux
 - Axios interceptors
@@ -3335,7 +4147,7 @@ Authentication is managed using tokens (JWT), stored securely, and protected rou
 
 Role-based access is implemented by checking user roles and conditionally rendering routes/components.
 
-🔹 Example
+Example
 
 ```jsx
 if (user.role !== "admin") {
@@ -3343,7 +4155,7 @@ if (user.role !== "admin") {
 }
 ```
 
-🔹 Best Practice
+Best Practice
 
 - Centralized role config
 - Backend validation (important!)
@@ -3354,7 +4166,7 @@ if (user.role !== "admin") {
 
 For SEO, I use SSR or SSG and manage meta tags dynamically.
 
-🔹 Techniques
+Techniques
 
 - Use Next.js
 - Use react-helmet-async
@@ -3367,7 +4179,7 @@ For SEO, I use SSR or SSG and manage meta tags dynamically.
 
 I follow a modular and scalable folder structure.
 
-🔹 Example Structure
+Example Structure
 
 ```css
 src/
@@ -3380,7 +4192,7 @@ src/
   routes/
 ```
 
-🔹 Best Practices
+Best Practices
 
 - Feature-based structure
 - Reusable components
@@ -3392,7 +4204,7 @@ src/
 
 Environment variables are used for configuration and managed using `.env` files.
 
-🔹 Example
+Example
 
 ```env
 REACT_APP_API_URL=https://api.com
@@ -3402,7 +4214,7 @@ REACT_APP_API_URL=https://api.com
 process.env.REACT_APP_API_URL
 ```
 
-🔹 Best Practices
+Best Practices
 
 - Never expose secrets
 - Use different env for dev/prod
@@ -3413,13 +4225,13 @@ process.env.REACT_APP_API_URL
 
 React apps are deployed by building optimized static files and hosting them on a server/CDN.
 
-🔹 Steps
+Steps
 
 ```bash
 npm run build
 ```
 
-🔹 Platforms
+Platforms
 
 - Vercel
 - Netlify
@@ -3431,7 +4243,7 @@ npm run build
 
 Feature flags allow enabling/disabling features without redeploying.
 
-🔹 Approaches
+Approaches
 
 - Config-based flags
 - Remote config (API)
@@ -3449,14 +4261,14 @@ if (featureFlags.newUI) {
 
 I use logging, monitoring tools, and error tracking to debug production issues.
 
-🔹 Tools
+Tools
 
 - Console logs (controlled)
 - Error tracking:
   - Sentry
   - LogRocket
 
-🔹 Techniques
+Techniques
 
 - Source maps
 - Network inspection
@@ -3469,5 +4281,298 @@ I use logging, monitoring tools, and error tracking to debug production issues.
 ## Extra
 
 ### Q. React query
+
+**Answer:**
+
+## Design Pattern
+
+### Q. Explain in detail about Design Pattern
+
+📌 Definition
+
+Design patterns are reusable solutions to commonly occurring problems in software design.
+
+They are templates or best practices, not exact code.
+
+🧩 Key Idea
+
+“Don’t reinvent the wheel — use proven solutions.”
+
+Design patterns help you write:
+
+- Cleaner code
+- Maintainable systems
+- Scalable architecture
+
+🏗️ Types of Design Patterns
+
+1. 🏭 Creational Patterns (Object Creation)
+
+Focus on how objects are created
+
+- Singleton → Only one instance exists
+- Factory → Creates objects without exposing logic
+- Builder → Step-by-step object creation
+
+```js
+// Singleton Example
+const Singleton = (function () {
+  let instance;
+
+  function createInstance() {
+    return { name: "I am single" };
+  }
+
+  return {
+    getInstance: function () {
+      if (!instance) {
+        instance = createInstance();
+      }
+      return instance;
+    },
+  };
+})();
+```
+
+l 2. 🧱 Structural Patterns (Composition)
+
+Focus on how objects are structured
+
+- Adapter → Makes incompatible interfaces work together
+- Decorator → Adds behavior without modifying code
+- Facade → Simplifies complex systems
+
+```js
+// Decorator Example
+function addLogging(fn) {
+  return function (...args) {
+    console.log("Calling function");
+    return fn(...args);
+  };
+}
+```
+
+3. 🔄 Behavioral Patterns (Communication)
+
+Focus on how objects interact
+
+- Observer → Subscribing to changes (very common in JS)
+- Strategy → Switch algorithms dynamically
+- Command → Encapsulate actions
+
+```js
+// Observer Example
+const observers = [];
+
+function subscribe(fn) {
+  observers.push(fn);
+}
+
+function notify(data) {
+  observers.forEach((fn) => fn(data));
+}
+```
+
+⚙️ Why Use Design Patterns?
+
+- Solve recurring problems efficiently
+- Improve code readability
+- Enable scalability
+- Promote best practices
+
+📦 Real-World Examples
+
+- React
+  - Component pattern (composition)
+  - Hooks → Observer-like behavior
+- Redux
+  - Uses Observer pattern
+- JavaScript
+  - Event listeners → Observer pattern
+
+⚠️ Important Notes
+
+- ❌ Not mandatory — use only when needed
+- ❌ Overusing patterns = overengineering
+- ❌ Not language-specific
+
+💡 Best Practices
+
+- Start simple → apply patterns when needed
+- Understand the problem first, then choose pattern
+- Don’t force patterns into small/simple code
+
+### Q. Layout Components
+
+**Answer:**
+
+📌 Definition
+
+Layout components are reusable UI components responsible for structuring and organizing the overall layout of an application. They define where content appears rather than what the content is.
+
+🧠 Key Idea
+
+Layout components control structure (positioning, spacing, alignment), not business logic or data.
+
+🏗️ Common Types of Layout Components
+
+1. Container / Wrapper
+
+- Centers content and applies max width
+- Adds padding/margin
+
+```jsx
+const Container = ({ children }) => <div className="max-w-7xl mx-auto px-4">{children}</div>;
+```
+
+2. Grid Layout
+
+- Used for 2D layouts (rows + columns)
+
+```html
+<div className="grid grid-cols-3 gap-4">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+3. Flex Layout
+
+- Used for 1D layouts (row or column)
+
+```html
+<div className="flex justify-between items-center">
+  <div>Left</div>
+  <div>Right</div>
+</div>
+```
+
+4. Page Layout
+
+- Defines full page structure (header, footer, sidebar)
+
+```jsx
+const Layout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
+```
+
+5. Sidebar Layout
+
+- Used in dashboards or admin panels
+
+```jsx
+<div className="flex">
+  <Sidebar />
+  <main className="flex-1">Content</main>
+</div>
+```
+
+6. Stack / Spacer Components
+
+- Used for consistent spacing
+
+```jsx
+const Stack = ({ children }) => <div className="flex flex-col gap-4">{children}</div>;
+```
+
+⚙️ How Layout Components Work
+
+1. Wrap content
+2. Apply CSS (Flexbox, Grid, spacing)
+3. Ensure consistency across pages
+4. Promote reusability
+
+📦 Real-World Example (React App Structure)
+
+```jsx
+<App>
+  <Layout>
+    <HomePage />
+  </Layout>
+</App>
+```
+
+```jsx
+const Layout = ({ children }) => (
+  <div className="min-h-screen flex flex-col">
+    <Header />
+    <div className="flex flex-1">
+      <Sidebar />
+      <main className="flex-1 p-4">{children}</main>
+    </div>
+    <Footer />
+  </div>
+);
+```
+
+🎯 Key Principles
+
+- Separation of Concerns
+
+  Layout ≠ Business logic
+
+- Reusability
+
+  Same layout across multiple pages
+
+- Consistency
+
+  Uniform spacing, alignment
+
+- Responsiveness
+
+  Works across screen sizes
+
+⚠️ Common Mistakes
+
+- Mixing layout + business logic
+- Hardcoding spacing instead of reusable components
+- Not making layouts responsive
+- Deep nesting → hard to maintain
+
+💡 Best Practices
+
+- Use utility-first CSS (Tailwind) or design systems
+- Create generic layout components (Container, Grid, Stack)
+- Keep layouts dumb (presentational)
+- Use props for flexibility
+
+```jsx
+const Container = ({ children, className = "" }) => <div className={`max-w-7xl mx-auto ${className}`}>{children}</div>;
+```
+
+### Q. Container Components
+
+**Answer:**
+
+### Q. Recursive Components
+
+**Answer:**
+
+### Q. Composition Components
+
+**Answer:**
+
+### Q. Partial Components
+
+**Answer:**
+
+### Q. Compound Components
+
+**Answer:**
+
+### Q. Error Handling
+
+**Answer:**
+
+### Q. Explain `as` props
 
 **Answer:**

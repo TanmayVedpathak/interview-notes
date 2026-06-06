@@ -1387,7 +1387,525 @@
     ]
   },
   {
-    "id": "react-019",
+    "id": "js-019",
+    "topic": "REACT JS",
+    "subTopic": "React Basics",
+    "difficulty": "Beginner",
+    "question": "Explain reusability, modularity, testability in react js",
+    "answer": [
+      {
+        "type": "h4",
+        "text": "Reusability in React JS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reusability means creating components, functions, or logic that can be used in multiple places instead of writing the same code again and again."
+      },
+      {
+        "type": "paragraph",
+        "text": "React is component-based, so reusability is one of its main advantages."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function Button({ text, onClick }) {\n  return <button onClick={onClick}>{text}</button>;\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Now the same "
+          },
+          {
+            "type": "badge",
+            "value": "Button"
+          },
+          {
+            "type": "text",
+            "value": " component can be reused in different places:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "<Button text=\"Login\" onClick={handleLogin} />\n<Button text=\"Register\" onClick={handleRegister} />\n<Button text=\"Logout\" onClick={handleLogout} />"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here, we do not need to create separate button code for login, register, and logout. We use the same component with different props."
+      },
+      {
+        "type": "bold",
+        "text": "Why Reusability is Important"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reusability helps reduce duplicate code. It also makes the application easier to maintain because changes can be made in one place and reused everywhere."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "For example, if the button design changes, we only update the "
+          },
+          {
+            "type": "badge",
+            "value": "Button"
+          },
+          {
+            "type": "text",
+            "value": " component once."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Common Ways to Achieve Reusability"
+      },
+      {
+        "type": "bold",
+        "text": "1. Reusable Components"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function Card({ title, description }) {\n  return (\n    <div className=\"card\">\n      <h3>{title}</h3>\n      <p>{description}</p>\n    </div>\n  );\n}"
+      },
+      {
+        "type": "bold",
+        "text": "Usage:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "<Card title=\"React\" description=\"A JavaScript library for building UI\" />\n<Card title=\"Vue\" description=\"A progressive JavaScript framework\" />"
+      },
+      {
+        "type": "bold",
+        "text": "2. Custom Hooks"
+      },
+      {
+        "type": "paragraph",
+        "text": "Custom Hooks allow us to reuse logic between components."
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import { useState } from \"react\";\nfunction useToggle(initialValue = false) {\nconst [value, setValue] = useState(initialValue);\nfunction toggle() {\nsetValue((prev) => !prev);\n}\nreturn [value, toggle];\n}"
+      },
+      {
+        "type": "bold",
+        "text": "Usage:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function Menu() {\n  const [isOpen, toggleMenu] = useToggle(false);\n  return (\n    <>\n      <button onClick={toggleMenu}>Toggle Menu</button>\n      {isOpen && <p>Menu is open</p>}\n    </>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Here, "
+          },
+          {
+            "type": "badge",
+            "value": "useToggle"
+          },
+          {
+            "type": "text",
+            "value": " can be reused in many components."
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Modularity in React JS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Modularity means dividing an application into small, independent, and manageable parts."
+      },
+      {
+        "type": "paragraph",
+        "text": "In React, these parts are usually components, hooks, utility functions, services, and modules."
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of writing the whole application in one large file, we split it into smaller files and components."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "src/\n  components/\n    Header.jsx\n    Footer.jsx\n    Button.jsx\n    Card.jsx\n  pages/\n    Home.jsx\n    About.jsx\n    Login.jsx\n  hooks/\n    useToggle.js\n  services/\n    api.js\n  App.jsx"
+      },
+      {
+        "type": "paragraph",
+        "text": "This structure makes the project easier to understand and maintain."
+      },
+      {
+        "type": "bold",
+        "text": "Example of Modular Component"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function Header() {\n  return (\n    <header>\n      <h1>My App</h1>\n      <nav>\n        <a href=\"/\">Home</a>\n        <a href=\"/about\">About</a>\n      </nav>\n    </header>\n  );\n}\nexport default Header;"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "This "
+          },
+          {
+            "type": "badge",
+            "value": "Header"
+          },
+          {
+            "type": "text",
+            "value": " component can be kept in a separate file and imported wherever needed:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import Header from \"./components/Header\";\nfunction App() {\n  return (\n    <>\n      <Header />\n      <main>\n        <h2>Welcome</h2>\n      </main>\n    </>\n  );\n}"
+      },
+      {
+        "type": "bold",
+        "text": "Why Modularity is Important"
+      },
+      {
+        "type": "paragraph",
+        "text": "Modularity makes code easier to read, debug, test, and maintain."
+      },
+      {
+        "type": "paragraph",
+        "text": "When each part of the application has a clear responsibility, developers can work on different parts of the project without affecting the entire application."
+      },
+      {
+        "type": "bold",
+        "text": "Benefits of Modularity"
+      },
+      {
+        "type": "table",
+        "columns": ["Benefit", "Explanation"],
+        "data": [
+          ["Easy maintenance", "Changes are easier because code is separated into small parts"],
+          ["Better readability", "Small files are easier to understand"],
+          ["Team collaboration", "Different developers can work on different modules"],
+          ["Easier debugging", "Problems can be located quickly"],
+          ["Better scalability", "New features can be added without disturbing existing code"]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Testability in React JS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Testability means how easy it is to test a component, function, or feature to make sure it works correctly."
+      },
+      {
+        "type": "paragraph",
+        "text": "A testable React component is usually simple, predictable, and independent."
+      },
+      {
+        "type": "bold",
+        "text": "Example of Testable Component"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function Greeting({ name }) {\n  return <h1>Hello, {name}</h1>;\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "This component is easy to test because it depends only on props."
+      },
+      {
+        "type": "bold",
+        "text": "Example test:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import { render, screen } from \"@testing-library/react\";\nimport Greeting from \"./Greeting\";\ntest(\"renders greeting message\", () => {\n  render(<Greeting name=\"John\" />);\n  expect(screen.getByText(\"Hello, John\")).toBeInTheDocument();\n});"
+      },
+      {
+        "type": "paragraph",
+        "text": "The component is testable because it does not depend on external APIs, global variables, or complex side effects."
+      },
+      {
+        "type": "bold",
+        "text": "How to Improve Testability in React"
+      },
+      {
+        "type": "bold",
+        "text": "1. Keep Components Small"
+      },
+      {
+        "type": "paragraph",
+        "text": "Small components are easier to test than large components."
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function UserName({ name }) {\n  return <p>{name}</p>;\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is easier to test than a large component containing UI, API calls, state management, and business logic all together."
+      },
+      {
+        "type": "bold",
+        "text": "2. Pass Data Through Props"
+      },
+      {
+        "type": "paragraph",
+        "text": "Components that receive data through props are easier to test."
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function UserCard({ user }) {\n  return (\n    <div>\n      <h3>{user.name}</h3>\n      <p>{user.email}</p>\n    </div>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "In tests, we can pass mock data:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const mockUser = {\n  name: \"John\",\n  email: \"john@example.com\",\n};"
+      },
+      {
+        "type": "bold",
+        "text": "3. Separate Logic from UI"
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of writing all logic inside JSX, move it into functions or custom Hooks."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "function calculateTotal(price, quantity) {\nreturn price \\* quantity;\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "This function can be tested separately."
+      },
+      {
+        "type": "bold",
+        "text": "4. Avoid Direct Dependency on External Services"
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of calling APIs directly inside components, use services or custom Hooks."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "// api.js\nexport function getUsers() {\n  return fetch(\"/api/users\").then((res) => res.json());\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "This makes it easier to mock API calls during testing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Relationship Between Reusability, Modularity, and Testability"
+      },
+      {
+        "type": "paragraph",
+        "text": "These three concepts are closely related."
+      },
+      {
+        "type": "table",
+        "columns": ["Concept", "Meaning", "React Example"],
+        "data": [
+          [
+            "Reusability",
+            "Use the same code in multiple places",
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Reusable "
+                },
+                {
+                  "type": "badge",
+                  "value": "Button"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "badge",
+                  "value": "Card"
+                },
+                {
+                  "type": "text",
+                  "value": ", custom Hooks"
+                }
+              ]
+            }
+          ],
+          ["Modularity", "Split code into small independent parts", "Separate components, hooks, services, pages"],
+          ["Testability", "Make code easy to test", "Small pure components, props-based components"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A reusable component is usually modular. A modular component is usually easier to test. A testable component is usually easier to reuse and maintain."
+      },
+      {
+        "type": "bold",
+        "text": "Practical Example Combining All Three"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function ProductCard({ product, onAddToCart }) {\n  return (\n    <div className=\"product-card\">\n      <h3>{product.name}</h3>\n      <p>Price: ₹{product.price}</p>\n      <button onClick={() => onAddToCart(product)}>Add to Cart</button>\n    </div>\n  );\n}"
+      },
+      {
+        "type": "h4",
+        "text": "Why This Component is Good"
+      },
+      {
+        "type": "bold",
+        "text": "Reusable"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "badge",
+            "value": "ProductCard"
+          },
+          {
+            "type": "text",
+            "value": " component can be reused for many products."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "<ProductCard product={phone} onAddToCart={handleAddToCart} />\n<ProductCard product={laptop} onAddToCart={handleAddToCart} />"
+      },
+      {
+        "type": "bold",
+        "text": "Modular"
+      },
+      {
+        "type": "paragraph",
+        "text": "The component handles only one responsibility: displaying product information and triggering add-to-cart action."
+      },
+      {
+        "type": "bold",
+        "text": "Testable"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "The component receives "
+          },
+          {
+            "type": "badge",
+            "value": "product"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "onAddToCart"
+          },
+          {
+            "type": "text",
+            "value": " through props, so we can easily test it with mock data and mock functions."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example test idea:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "test(\"calls onAddToCart when button is clicked\", () => {\n  const product = { name: \"Phone\", price: 20000 };\n  const mockAddToCart = jest.fn();\n  render(<ProductCard product={product} onAddToCart={mockAddToCart} />);\n  fireEvent.click(screen.getByText(\"Add to Cart\"));\n  expect(mockAddToCart).toHaveBeenCalledWith(product);\n});"
+      },
+      {
+        "type": "bold",
+        "text": "Final Answer"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "In React JS, reusability means writing components or logic that can be used in multiple places. For example, a common "
+          },
+          {
+            "type": "badge",
+            "value": "Button"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "badge",
+            "value": "Card"
+          },
+          {
+            "type": "text",
+            "value": ", or custom Hook."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Modularity means dividing the application into small, independent parts such as components, hooks, pages, and services. This makes the code easier to manage and scale."
+      },
+      {
+        "type": "paragraph",
+        "text": "Testability means writing code in such a way that it can be easily tested. Small components, props-based data, pure functions, and separated business logic improve testability."
+      },
+      {
+        "type": "paragraph",
+        "text": "Together, these concepts help create React applications that are clean, maintainable, scalable, and easy to debug."
+      }
+    ]
+  },
+  {
+    "id": "react-020",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1432,7 +1950,7 @@
     ]
   },
   {
-    "id": "react-020",
+    "id": "react-021",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1519,7 +2037,7 @@
     ]
   },
   {
-    "id": "react-021",
+    "id": "react-022",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1617,7 +2135,7 @@
     ]
   },
   {
-    "id": "react-022",
+    "id": "react-023",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1693,7 +2211,7 @@
     ]
   },
   {
-    "id": "react-023",
+    "id": "react-024",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1780,7 +2298,7 @@
     ]
   },
   {
-    "id": "react-024",
+    "id": "react-025",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1878,7 +2396,7 @@
     ]
   },
   {
-    "id": "react-025",
+    "id": "react-026",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1928,7 +2446,7 @@
     ]
   },
   {
-    "id": "react-026",
+    "id": "react-027",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -1986,7 +2504,7 @@
     ]
   },
   {
-    "id": "react-027",
+    "id": "react-028",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -2036,7 +2554,7 @@
     ]
   },
   {
-    "id": "react-028",
+    "id": "react-029",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -2072,7 +2590,7 @@
     ]
   },
   {
-    "id": "react-029",
+    "id": "react-030",
     "topic": "REACT JS",
     "subTopic": "Components & Rendering",
     "difficulty": "Beginner",
@@ -2149,7 +2667,7 @@
     ]
   },
   {
-    "id": "react-030",
+    "id": "react-031",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2230,7 +2748,7 @@
     ]
   },
   {
-    "id": "react-031",
+    "id": "react-032",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2323,7 +2841,7 @@
     ]
   },
   {
-    "id": "react-032",
+    "id": "react-033",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2410,7 +2928,7 @@
     ]
   },
   {
-    "id": "react-033",
+    "id": "react-034",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2461,7 +2979,7 @@
     ]
   },
   {
-    "id": "react-034",
+    "id": "react-035",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2521,7 +3039,7 @@
     ]
   },
   {
-    "id": "react-035",
+    "id": "react-036",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2613,7 +3131,7 @@
     ]
   },
   {
-    "id": "react-036",
+    "id": "react-037",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2658,7 +3176,7 @@
     ]
   },
   {
-    "id": "react-037",
+    "id": "react-038",
     "topic": "REACT",
     "subTopic": "Hooks",
     "question": "What is the difference between useEffect, useLayoutEffect, and useInsertionEffect?",
@@ -2898,7 +3416,7 @@
     ]
   },
   {
-    "id": "react-038",
+    "id": "react-039",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2934,7 +3452,7 @@
     ]
   },
   {
-    "id": "react-039",
+    "id": "react-040",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -2977,7 +3495,7 @@
     ]
   },
   {
-    "id": "react-040",
+    "id": "react-041",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3037,7 +3555,7 @@
     ]
   },
   {
-    "id": "react-041",
+    "id": "react-042",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3073,7 +3591,7 @@
     ]
   },
   {
-    "id": "react-042",
+    "id": "react-043",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3118,7 +3636,7 @@
     ]
   },
   {
-    "id": "react-043",
+    "id": "react-044",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3201,7 +3719,7 @@
     ]
   },
   {
-    "id": "react-044",
+    "id": "react-045",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3255,7 +3773,7 @@
     ]
   },
   {
-    "id": "react-045",
+    "id": "react-046",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3307,7 +3825,7 @@
     ]
   },
   {
-    "id": "react-046",
+    "id": "react-047",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3367,7 +3885,7 @@
     ]
   },
   {
-    "id": "react-047",
+    "id": "react-048",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3466,7 +3984,7 @@
     ]
   },
   {
-    "id": "react-048",
+    "id": "react-049",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3522,7 +4040,7 @@
     ]
   },
   {
-    "id": "react-049",
+    "id": "react-050",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3588,7 +4106,7 @@
     ]
   },
   {
-    "id": "react-050",
+    "id": "react-051",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3775,7 +4293,7 @@
     ]
   },
   {
-    "id": "react-051",
+    "id": "react-052",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3820,7 +4338,7 @@
     ]
   },
   {
-    "id": "react-052",
+    "id": "react-053",
     "topic": "REACT JS",
     "subTopic": "Hooks",
     "difficulty": "Beginner",
@@ -3940,7 +4458,918 @@
     ]
   },
   {
-    "id": "react-053",
+    "id": "js-054",
+    "topic": "REACT JS",
+    "subTopic": "Hooks",
+    "difficulty": "Beginner",
+    "question": "Explain useId",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useId"
+          },
+          {
+            "type": "text",
+            "value": " is a React Hook used to generate a unique ID inside a component."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "It is mainly used for accessibility attributes, such as connecting a "
+          },
+          {
+            "type": "badge",
+            "value": "<label>"
+          },
+          {
+            "type": "text",
+            "value": " with an "
+          },
+          {
+            "type": "badge",
+            "value": "<input>"
+          },
+          {
+            "type": "text",
+            "value": " using "
+          },
+          {
+            "type": "badge",
+            "value": "htmlFor"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "id"
+          },
+          {
+            "type": "text",
+            "value": ". React officially describes "
+          },
+          {
+            "type": "badge",
+            "value": "useId"
+          },
+          {
+            "type": "text",
+            "value": " as a Hook for generating unique IDs that can be passed to accessibility attributes."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Syntax"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const id = useId();"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import { useId } from \"react\";\nfunction InputField() {\n  const id = useId();\n  return (\n    <div>\n      <label htmlFor={id}>Username</label>\n      <input id={id} type=\"text\" />\n    </div>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "In this example, "
+          },
+          {
+            "type": "badge",
+            "value": "useId()"
+          },
+          {
+            "type": "text",
+            "value": " creates a unique ID. The same ID is used in both "
+          },
+          {
+            "type": "badge",
+            "value": "label"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "input"
+          },
+          {
+            "type": "text",
+            "value": ", so clicking the label focuses the input."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Why not use random values?"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "You should not use "
+          },
+          {
+            "type": "badge",
+            "value": "Math.random()"
+          },
+          {
+            "type": "text",
+            "value": " or manually generated random IDs for this because they can cause mismatch problems during server-side rendering and hydration."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useId"
+          },
+          {
+            "type": "text",
+            "value": " is safe for server rendering because React can keep the generated IDs consistent between server and client, as long as the component tree is the same."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Important Points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "useId generates a unique ID for a component."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It is useful for accessibility."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It helps connect elements like labels, inputs, hints, and error messages."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It should not be used to generate keys in a list."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "For list keys, use stable IDs from your data instead."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example with multiple IDs"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import { useId } from \"react\";\nfunction SignupForm() {\n  const id = useId();\n  return (\n    <form>\n      <label htmlFor={`${id}-email`}>Email</label>\n      <input id={`${id}-email`} type=\"email\" />\n      <label htmlFor={`${id}-password`}>Password</label>\n      <input id={`${id}-password`} type=\"password\" />\n    </form>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here, one generated ID is reused to create multiple related unique IDs."
+      },
+      {
+        "type": "bold",
+        "text": "Final Answer"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useId"
+          },
+          {
+            "type": "text",
+            "value": " is a React Hook that generates unique IDs. It is mostly used for accessibility, such as linking labels with inputs. It is safe for server-side rendering and should not be used for list keys."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-055",
+    "topic": "REACT JS",
+    "subTopic": "Hooks",
+    "difficulty": "Beginner",
+    "question": "Explain useDeferredValue",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useDeferredValue"
+          },
+          {
+            "type": "text",
+            "value": " is a React Hook that lets you delay updating a non-urgent part of the UI."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "React describes "
+          },
+          {
+            "type": "badge",
+            "value": "useDeferredValue"
+          },
+          {
+            "type": "text",
+            "value": " as a Hook that lets you defer updating a part of the UI."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "It is useful when one part of the UI should update immediately, but another expensive part can update slightly later."
+      },
+      {
+        "type": "bold",
+        "text": "Syntax"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const deferredValue = useDeferredValue(value);"
+      },
+      {
+        "type": "bold",
+        "text": "Simple Explanation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Suppose a user is typing in a search box."
+      },
+      {
+        "type": "paragraph",
+        "text": "The input value should update immediately while typing. But filtering or rendering a large list based on that input may be expensive."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "In that case, we can use "
+          },
+          {
+            "type": "badge",
+            "value": "useDeferredValue"
+          },
+          {
+            "type": "text",
+            "value": " so that:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "The input stays fast."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "The expensive list update can happen later."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React keeps the UI responsive."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import { useState, useDeferredValue } from \"react\";\nfunction SearchPage({ products }) {\n  const [search, setSearch] = useState(\"\");\n  const deferredSearch = useDeferredValue(search);\n  const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(deferredSearch.toLowerCase()));\n  return (\n    <div>\n      <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder=\"Search products\" />\n      <ul>\n        {filteredProducts.map((product) => (\n          <li key={product.id}>{product.name}</li>\n        ))}\n      </ul>\n    </div>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Here, "
+          },
+          {
+            "type": "badge",
+            "value": "search"
+          },
+          {
+            "type": "text",
+            "value": " updates immediately when the user types. But "
+          },
+          {
+            "type": "badge",
+            "value": "deferredSearch"
+          },
+          {
+            "type": "text",
+            "value": " may update slightly later, allowing React to keep the input responsive."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Important Points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "useDeferredValue"
+            },
+            {
+              "type": "text",
+              "value": " does not stop the original value from updating."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It creates a deferred version of that value."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It is useful for expensive rendering."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It does not add a fixed delay like "
+            },
+            {
+              "type": "badge",
+              "value": "setTimeout"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React starts the deferred update after finishing the urgent update."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It does not automatically reduce network requests."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Showing stale UI"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sometimes, the UI may show old results while new results are being prepared. You can show this using comparison:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const isStale = search !== deferredSearch;"
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "<div style={{ opacity: isStale ? 0.5 : 1 }}>\n  <ProductList search={deferredSearch} />\n</div>"
+      },
+      {
+        "type": "paragraph",
+        "text": "This tells the user that the displayed result is slightly behind the typed value."
+      },
+      {
+        "type": "bold",
+        "text": "Final Answer"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useDeferredValue"
+          },
+          {
+            "type": "text",
+            "value": " is used to defer a value so that expensive UI updates can happen later. It helps keep the interface responsive, especially during typing, searching, filtering, or rendering large lists."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-056",
+    "topic": "REACT JS",
+    "subTopic": "Hooks",
+    "difficulty": "Beginner",
+    "question": "Explain useTransition",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useTransition"
+          },
+          {
+            "type": "text",
+            "value": " is a React Hook used to mark some state updates as non-urgent."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "React describes "
+          },
+          {
+            "type": "badge",
+            "value": "useTransition"
+          },
+          {
+            "type": "text",
+            "value": " as a Hook that lets you render a part of the UI in the background."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "It helps keep the UI responsive when a state update may cause expensive rendering."
+      },
+      {
+        "type": "bold",
+        "text": "Syntax"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const [isPending, startTransition] = useTransition();"
+      },
+      {
+        "type": "paragraph",
+        "text": "It returns two values:"
+      },
+      {
+        "type": "table",
+        "columns": ["Value", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "isPending"
+                }
+              ]
+            },
+            "A boolean that tells whether the transition is still running"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "startTransition"
+                }
+              ]
+            },
+            "A function used to mark state updates as non-urgent"
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Simple Explanation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Some updates are urgent. For example:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Typing in an input"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Clicking a button"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Opening a menu"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Some updates are less urgent. For example:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Rendering a large list"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Changing a tab with heavy content"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Updating a complex chart"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useTransition"
+          },
+          {
+            "type": "text",
+            "value": " allows React to handle urgent updates first and process non-urgent updates in the background."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "import { useState, useTransition } from \"react\";\nfunction SearchPage({ products }) {\n  const [input, setInput] = useState(\"\");\n  const [query, setQuery] = useState(\"\");\n  const [isPending, startTransition] = useTransition();\n  function handleChange(e) {\n    const value = e.target.value;\n    setInput(value);\n    startTransition(() => {\n      setQuery(value);\n    });\n  }\n  const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(query.toLowerCase()));\n  return (\n    <div>\n      <input value={input} onChange={handleChange} />\n      {isPending && <p>Updating results...</p>}\n      <ul>\n        {filteredProducts.map((product) => (\n          <li key={product.id}>{product.name}</li>\n        ))}\n      </ul>\n    </div>\n  );\n}"
+      },
+      {
+        "type": "bold",
+        "text": "In this example:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "setInput(value)"
+            },
+            {
+              "type": "text",
+              "value": " is urgent because the input should update immediately."
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "setQuery(value)"
+            },
+            {
+              "type": "text",
+              "value": " is wrapped inside "
+            },
+            {
+              "type": "badge",
+              "value": "startTransition"
+            },
+            {
+              "type": "text",
+              "value": ", so React treats it as non-urgent."
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "isPending"
+            },
+            {
+              "type": "text",
+              "value": " can be used to show a loading or pending message."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Important Points"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "badge",
+              "value": "useTransition"
+            },
+            {
+              "type": "text",
+              "value": " helps prevent slow UI during expensive updates."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "It is useful when state updates trigger heavy rendering."
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "startTransition"
+            },
+            {
+              "type": "text",
+              "value": " marks state updates as low priority."
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "isPending"
+            },
+            {
+              "type": "text",
+              "value": " helps show a pending state."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "The function passed to "
+            },
+            {
+              "type": "badge",
+              "value": "startTransition"
+            },
+            {
+              "type": "text",
+              "value": " runs immediately, but the state updates inside it are marked as transitions."
+            }
+          ],
+          [
+            {
+              "type": "badge",
+              "value": "useTransition"
+            },
+            {
+              "type": "text",
+              "value": " must be called inside a component or custom Hook."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Final Answer"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useTransition"
+          },
+          {
+            "type": "text",
+            "value": " is used to mark some state updates as non-urgent so React can keep the UI responsive. It is helpful when an update causes expensive rendering. It returns isPending and startTransition."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "js-057",
+    "topic": "REACT JS",
+    "subTopic": "Hooks",
+    "difficulty": "Beginner",
+    "question": "Difference Between useDeferredValue and useTransition",
+    "answer": [
+      {
+        "type": "table",
+        "columns": ["Feature", "`useDeferredValue`", "`useTransition`"],
+        "data": [
+          ["Main purpose", "Defers a value", "Defers a state update"],
+          ["Works with", "Existing value", "State setter function"],
+          [
+            "Returns",
+            "Deferred value",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[isPending, startTransition]"
+                }
+              ]
+            }
+          ],
+          ["Useful for", "Search input, filtering, large lists", "Tabs, routes, heavy state updates"],
+          [
+            "Pending state",
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Does not directly provide "
+                },
+                {
+                  "type": "badge",
+                  "value": "isPending"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Provides "
+                },
+                {
+                  "type": "badge",
+                  "value": "isPending"
+                }
+              ]
+            }
+          ],
+          ["Control level", "Less control", "More control"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Simple Difference"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "useDeferredValue"
+          },
+          {
+            "type": "text",
+            "value": " when you already have a value and want to use a delayed version of it."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "useTransition"
+          },
+          {
+            "type": "text",
+            "value": " when you are updating state and want to mark that update as non-urgent."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example Summary"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "// useDeferredValue\nconst deferredSearch = useDeferredValue(search);"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Here, React creates a deferred version of "
+          },
+          {
+            "type": "badge",
+            "value": "search"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "// useTransition\nstartTransition(() => {\n  setQuery(value);\n});"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Here, React treats "
+          },
+          {
+            "type": "badge",
+            "value": "setQuery(value)"
+          },
+          {
+            "type": "text",
+            "value": " as a non-urgent update."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "react-058",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4014,7 +5443,7 @@
     ]
   },
   {
-    "id": "react-054",
+    "id": "react-059",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4088,7 +5517,7 @@
     ]
   },
   {
-    "id": "react-055",
+    "id": "react-060",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4125,7 +5554,7 @@
     ]
   },
   {
-    "id": "react-056",
+    "id": "react-061",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4193,7 +5622,7 @@
     ]
   },
   {
-    "id": "react-057",
+    "id": "react-062",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4262,7 +5691,7 @@
     ]
   },
   {
-    "id": "react-058",
+    "id": "react-063",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4360,7 +5789,7 @@
     ]
   },
   {
-    "id": "react-059",
+    "id": "react-064",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4406,7 +5835,7 @@
     ]
   },
   {
-    "id": "react-060",
+    "id": "react-065",
     "topic": "REACT JS",
     "subTopic": "Forms & Events",
     "difficulty": "Beginner",
@@ -4538,7 +5967,7 @@
     ]
   },
   {
-    "id": "react-061",
+    "id": "react-066",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4610,7 +6039,7 @@
     ]
   },
   {
-    "id": "react-062",
+    "id": "react-067",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4703,7 +6132,7 @@
     ]
   },
   {
-    "id": "react-063",
+    "id": "react-068",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4811,7 +6240,7 @@
     ]
   },
   {
-    "id": "react-064",
+    "id": "react-069",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4924,7 +6353,7 @@
     ]
   },
   {
-    "id": "react-065",
+    "id": "react-070",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -4978,7 +6407,7 @@
     ]
   },
   {
-    "id": "react-066",
+    "id": "react-071",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5028,7 +6457,7 @@
     ]
   },
   {
-    "id": "react-067",
+    "id": "react-072",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5067,7 +6496,7 @@
     ]
   },
   {
-    "id": "react-068",
+    "id": "react-073",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5154,7 +6583,7 @@
     ]
   },
   {
-    "id": "react-069",
+    "id": "react-074",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5222,7 +6651,7 @@
     ]
   },
   {
-    "id": "react-070",
+    "id": "react-075",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5314,7 +6743,7 @@
     ]
   },
   {
-    "id": "react-071",
+    "id": "react-076",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5372,7 +6801,7 @@
     ]
   },
   {
-    "id": "react-072",
+    "id": "react-077",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5465,7 +6894,7 @@
     ]
   },
   {
-    "id": "react-073",
+    "id": "react-078",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5533,7 +6962,7 @@
     ]
   },
   {
-    "id": "react-074",
+    "id": "react-079",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5629,7 +7058,7 @@
     ]
   },
   {
-    "id": "react-075",
+    "id": "react-080",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5722,7 +7151,7 @@
     ]
   },
   {
-    "id": "react-076",
+    "id": "react-081",
     "topic": "REACT JS",
     "subTopic": "State Management",
     "difficulty": "Beginner",
@@ -5794,7 +7223,7 @@
     ]
   },
   {
-    "id": "react-077",
+    "id": "react-082",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -5890,7 +7319,7 @@
     ]
   },
   {
-    "id": "react-078",
+    "id": "react-083",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -5989,7 +7418,7 @@
     ]
   },
   {
-    "id": "react-079",
+    "id": "react-084",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6094,7 +7523,7 @@
     ]
   },
   {
-    "id": "react-080",
+    "id": "react-085",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6191,7 +7620,7 @@
     ]
   },
   {
-    "id": "react-081",
+    "id": "react-086",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6285,7 +7714,7 @@
     ]
   },
   {
-    "id": "react-082",
+    "id": "react-087",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6386,7 +7815,7 @@
     ]
   },
   {
-    "id": "react-083",
+    "id": "react-088",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6495,7 +7924,7 @@
     ]
   },
   {
-    "id": "react-084",
+    "id": "react-089",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6570,7 +7999,7 @@
     ]
   },
   {
-    "id": "react-085",
+    "id": "react-090",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6681,7 +8110,7 @@
     ]
   },
   {
-    "id": "react-086",
+    "id": "react-091",
     "topic": "REACT JS",
     "subTopic": "Performance Optimization",
     "difficulty": "Beginner",
@@ -6771,7 +8200,7 @@
     ]
   },
   {
-    "id": "react-087",
+    "id": "react-092",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -6855,7 +8284,7 @@
     ]
   },
   {
-    "id": "react-088",
+    "id": "react-093",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -6972,7 +8401,7 @@
     ]
   },
   {
-    "id": "react-089",
+    "id": "react-094",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7074,7 +8503,7 @@
     ]
   },
   {
-    "id": "react-090",
+    "id": "react-095",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7185,7 +8614,7 @@
     ]
   },
   {
-    "id": "react-091",
+    "id": "react-096",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7244,7 +8673,7 @@
     ]
   },
   {
-    "id": "react-092",
+    "id": "react-097",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7334,7 +8763,7 @@
     ]
   },
   {
-    "id": "react-093",
+    "id": "react-098",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7372,7 +8801,7 @@
     ]
   },
   {
-    "id": "react-094",
+    "id": "react-099",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7467,7 +8896,7 @@
     ]
   },
   {
-    "id": "react-095",
+    "id": "react-100",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7589,7 +9018,7 @@
     ]
   },
   {
-    "id": "react-096",
+    "id": "react-101",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7689,7 +9118,7 @@
     ]
   },
   {
-    "id": "react-097",
+    "id": "react-102",
     "topic": "REACT JS",
     "subTopic": "Lifecycle & Error Handling",
     "difficulty": "Beginner",
@@ -7864,7 +9293,7 @@
     ]
   },
   {
-    "id": "react-098",
+    "id": "react-103",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -7933,7 +9362,7 @@
     ]
   },
   {
-    "id": "react-099",
+    "id": "react-104",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -7998,7 +9427,7 @@
     ]
   },
   {
-    "id": "react-100",
+    "id": "react-105",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8090,7 +9519,7 @@
     ]
   },
   {
-    "id": "react-101",
+    "id": "react-106",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8169,7 +9598,7 @@
     ]
   },
   {
-    "id": "react-102",
+    "id": "react-107",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8276,7 +9705,7 @@
     ]
   },
   {
-    "id": "react-103",
+    "id": "react-108",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8371,7 +9800,7 @@
     ]
   },
   {
-    "id": "react-104",
+    "id": "react-109",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8407,7 +9836,7 @@
     ]
   },
   {
-    "id": "react-105",
+    "id": "react-110",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8519,7 +9948,7 @@
     ]
   },
   {
-    "id": "react-106",
+    "id": "react-111",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8571,7 +10000,7 @@
     ]
   },
   {
-    "id": "react-107",
+    "id": "react-112",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -8614,7 +10043,7 @@
     ]
   },
   {
-    "id": "react-108",
+    "id": "react-113",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Intermediate",
@@ -8663,7 +10092,7 @@
     ]
   },
   {
-    "id": "react-109",
+    "id": "react-114",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Intermediate",
@@ -8715,7 +10144,7 @@
     ]
   },
   {
-    "id": "react-110",
+    "id": "react-115",
     "topic": "REACT JS",
     "subTopic": "Routing",
     "difficulty": "Beginner",
@@ -9225,7 +10654,7 @@
     ]
   },
   {
-    "id": "react-111",
+    "id": "react-116",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9306,7 +10735,7 @@
     ]
   },
   {
-    "id": "react-112",
+    "id": "react-117",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9402,7 +10831,7 @@
     ]
   },
   {
-    "id": "react-113",
+    "id": "react-118",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9492,7 +10921,7 @@
     ]
   },
   {
-    "id": "react-114",
+    "id": "react-119",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9582,7 +11011,7 @@
     ]
   },
   {
-    "id": "react-115",
+    "id": "react-120",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9620,7 +11049,7 @@
     ]
   },
   {
-    "id": "react-116",
+    "id": "react-121",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9700,7 +11129,7 @@
     ]
   },
   {
-    "id": "react-117",
+    "id": "react-122",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9787,7 +11216,7 @@
     ]
   },
   {
-    "id": "react-118",
+    "id": "react-123",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9858,7 +11287,7 @@
     ]
   },
   {
-    "id": "react-119",
+    "id": "react-124",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -9945,7 +11374,7 @@
     ]
   },
   {
-    "id": "react-120",
+    "id": "react-125",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10026,7 +11455,406 @@
     ]
   },
   {
-    "id": "react-121",
+    "id": "js-126",
+    "topic": "REACT JS",
+    "subTopic": "Advanced React",
+    "difficulty": "Beginner",
+    "question": "What is reconciliation overhead?",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Reconciliation overhead is the extra work React does to compare the new Virtual DOM with the previous Virtual DOM and decide what needs to change in the real DOM."
+      },
+      {
+        "type": "paragraph",
+        "text": "In React, whenever a component’s state or props change, React does not immediately replace the whole UI. Instead, it creates a new Virtual DOM tree and compares it with the old one. This comparison process is called reconciliation."
+      },
+      {
+        "type": "paragraph",
+        "text": "The time and resources spent during this comparison process are called reconciliation overhead."
+      },
+      {
+        "type": "bold",
+        "text": "Simple Explanation"
+      },
+      {
+        "type": "paragraph",
+        "text": "React follows this process:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "State or props change."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React re-renders the component."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React creates a new Virtual DOM."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React compares the new Virtual DOM with the old Virtual DOM."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React finds the minimum required changes."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "React updates only the necessary parts of the real DOM."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The work done in steps 3 and 4 is reconciliation work. When this work becomes expensive, it is called reconciliation overhead."
+      },
+      {
+        "type": "bold",
+        "text": "Example"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function ProductList({ products }) {\n  return (\n    <ul>\n      {products.map((product) => (\n        <li key={product.id}>{product.name}</li>\n      ))}\n    </ul>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "If "
+          },
+          {
+            "type": "badge",
+            "value": "products"
+          },
+          {
+            "type": "text",
+            "value": " changes, React will compare the previous list with the new list. It checks which items were added, removed, or updated."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "For a small list, this is fast. But for a very large list, this comparison can take more time."
+      },
+      {
+        "type": "paragraph",
+        "text": "That extra comparison cost is reconciliation overhead."
+      },
+      {
+        "type": "bold",
+        "text": "Why Reconciliation Overhead Happens"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reconciliation overhead can increase when:"
+      },
+      {
+        "type": "bold",
+        "text": "1. Too Many Components Re-render"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "function App() {\n  const [count, setCount] = useState(0);\n  return (\n    <>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n      <Header />\n      <Sidebar />\n      <ProductList />\n      <Footer />\n    </>\n  );\n}"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "When "
+          },
+          {
+            "type": "badge",
+            "value": "count"
+          },
+          {
+            "type": "text",
+            "value": " changes, "
+          },
+          {
+            "type": "badge",
+            "value": "App"
+          },
+          {
+            "type": "text",
+            "value": " re-renders. Child components may also re-render even if their data did not change."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "This increases reconciliation work."
+      },
+      {
+        "type": "bold",
+        "text": "2. Large Lists Are Rendered"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "{\n  items.map((item) => <Item key={item.id} item={item} />);\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "If the list contains thousands of items, React has to compare many elements during reconciliation."
+      },
+      {
+        "type": "bold",
+        "text": "3. Incorrect Keys Are Used"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "{\n  items.map((item, index) => <li key={index}>{item.name}</li>);\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Using array index as a key can confuse React when items are inserted, removed, or reordered."
+      },
+      {
+        "type": "paragraph",
+        "text": "React may do more work than necessary, increasing reconciliation overhead."
+      },
+      {
+        "type": "bold",
+        "text": "Better:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "{\n  items.map((item) => <li key={item.id}>{item.name}</li>);\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Stable keys help React identify which items actually changed."
+      },
+      {
+        "type": "bold",
+        "text": "4. New Object or Function References Are Created Every Render"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "<Child data={{ name: \"John\" }} onClick={() => console.log(\"Clicked\")} />"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every render creates a new object and a new function. React may treat them as changed props."
+      },
+      {
+        "type": "paragraph",
+        "text": "This can cause unnecessary child re-renders."
+      },
+      {
+        "type": "bold",
+        "text": "How to Reduce Reconciliation Overhead"
+      },
+      {
+        "type": "bold",
+        "text": "1. Use Stable Keys"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "{\n  users.map((user) => <UserCard key={user.id} user={user} />);\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Use unique and stable IDs instead of array indexes."
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "2. Use "
+          },
+          {
+            "type": "badge",
+            "value": "React.memo"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const UserCard = React.memo(function UserCard({ user }) {\n  return <div>{user.name}</div>;\n});"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "React.memo"
+          },
+          {
+            "type": "text",
+            "value": " prevents a component from re-rendering when its props have not changed."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "3. Use "
+          },
+          {
+            "type": "badge",
+            "value": "useMemo"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const filteredUsers = useMemo(() => {\n  return users.filter((user) => user.active);\n}, [users]);"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useMemo"
+          },
+          {
+            "type": "text",
+            "value": " helps avoid recalculating expensive values on every render."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "content": [
+          {
+            "type": "text",
+            "value": "4. Use "
+          },
+          {
+            "type": "badge",
+            "value": "useCallback"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "code": "const handleClick = useCallback(() => {\n  console.log(\"Clicked\");\n}, []);"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "useCallback"
+          },
+          {
+            "type": "text",
+            "value": " helps keep function references stable between renders."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "5. Split Components Properly"
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of keeping too much state in a parent component, move state closer to where it is needed."
+      },
+      {
+        "type": "paragraph",
+        "text": "This prevents unrelated components from re-rendering."
+      },
+      {
+        "type": "bold",
+        "text": "6. Virtualize Large Lists"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "For very large lists, use libraries like "
+          },
+          {
+            "type": "badge",
+            "value": "react-window"
+          },
+          {
+            "type": "text",
+            "value": " or "
+          },
+          {
+            "type": "badge",
+            "value": "react-virtualized"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of rendering thousands of items, virtualization renders only the visible items."
+      },
+      {
+        "type": "bold",
+        "text": "Difference Between Rendering and Reconciliation"
+      },
+      {
+        "type": "table",
+        "columns": ["Concept", "Meaning"],
+        "data": [
+          ["Rendering", "Creating the new UI description or Virtual DOM"],
+          ["Reconciliation", "Comparing the new Virtual DOM with the previous one"],
+          ["Commit phase", "Applying the actual changes to the real DOM"]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Final Answer"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reconciliation overhead is the performance cost React spends comparing the new Virtual DOM with the old Virtual DOM to find what changed."
+      },
+      {
+        "type": "paragraph",
+        "text": "It happens during React updates when state or props change. It can become expensive when many components re-render, large lists are used, unstable keys are given, or unnecessary new props are created."
+      },
+      {
+        "type": "paragraph",
+        "text": "To reduce reconciliation overhead, use stable keys, memoization, component splitting, and list virtualization."
+      }
+    ]
+  },
+  {
+    "id": "react-127",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10122,7 +11950,7 @@
     ]
   },
   {
-    "id": "react-122",
+    "id": "react-128",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10212,7 +12040,7 @@
     ]
   },
   {
-    "id": "react-123",
+    "id": "react-129",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -10737,7 +12565,7 @@
     ]
   },
   {
-    "id": "react-124",
+    "id": "react-130",
     "topic": "REACT JS",
     "subTopic": "Advanced React",
     "difficulty": "Beginner",
@@ -11271,7 +13099,7 @@
     ]
   },
   {
-    "id": "react-125",
+    "id": "react-131",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11386,7 +13214,7 @@
     ]
   },
   {
-    "id": "react-126",
+    "id": "react-132",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11465,7 +13293,7 @@
     ]
   },
   {
-    "id": "react-127",
+    "id": "react-133",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11549,7 +13377,7 @@
     ]
   },
   {
-    "id": "react-128",
+    "id": "react-134",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11608,7 +13436,7 @@
     ]
   },
   {
-    "id": "react-129",
+    "id": "react-135",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11665,7 +13493,7 @@
     ]
   },
   {
-    "id": "react-130",
+    "id": "react-136",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11730,7 +13558,7 @@
     ]
   },
   {
-    "id": "react-131",
+    "id": "react-137",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11802,7 +13630,7 @@
     ]
   },
   {
-    "id": "react-132",
+    "id": "react-138",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11867,7 +13695,7 @@
     ]
   },
   {
-    "id": "react-133",
+    "id": "react-139",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
@@ -11923,7 +13751,7 @@
     ]
   },
   {
-    "id": "react-134",
+    "id": "react-140",
     "topic": "REACT JS",
     "subTopic": "Real-World / Scenario-Based",
     "difficulty": "Beginner",
