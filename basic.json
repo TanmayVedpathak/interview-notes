@@ -288,7 +288,7 @@
   },
   {
     "id": "basic-002",
-    "topic": "",
+    "topic": "Basic",
     "subTopic": "SEO",
     "difficulty": "Beginner",
     "question": "What is robots.txt?",
@@ -644,7 +644,7 @@
   },
   {
     "id": "basic-003",
-    "topic": "",
+    "topic": "Basic",
     "subTopic": "SEO",
     "difficulty": "Beginner",
     "question": "What is sitemap.xml?",

@@ -1,19 +1,14 @@
 [
   {
     "id": "ts-001",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
     "question": "What is TypeScript and how is it different from JavaScript?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -34,13 +29,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Concept"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Concept"
       },
       {
         "type": "list",
@@ -61,19 +51,13 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Differences"
-          }
-        ]
+        "type": "bold",
+        "text": "Differences"
       },
       {
         "type": "table",
         "columns": ["Feature", "TypeScript", "JavaScript"],
         "data": [
-          ["---------------", "------------------------------------", "------------"],
           ["Typing", "Static (optional)", "Dynamic"],
           ["Compilation", "Required", "Not required"],
           ["Error Detection", "Compile-time", "Runtime"],
@@ -82,13 +66,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -96,16 +75,11 @@
         "code": "// TypeScript\nlet age: number = 25;\n// JavaScript\nlet age = 25;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -117,19 +91,14 @@
   },
   {
     "id": "ts-002",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
     "question": "Benefits of using TypeScript in large applications",
     "answer": [
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Benefits"
-          }
-        ]
+        "text": "Key Benefits"
       },
       {
         "type": "bold",
@@ -258,13 +227,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -272,16 +236,11 @@
         "code": "function add(a: number, b: number) {\n  return a + b;\n}\nadd(5, \"10\"); // ❌ Error in TypeScript"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -293,19 +252,14 @@
   },
   {
     "id": "ts-003",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
     "question": "What are types in TypeScript? Primitive vs Non-Primitive",
     "answer": [
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -320,60 +274,143 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Primitive Types"
-          }
-        ]
+        "type": "h4",
+        "text": "Primitive Types"
       },
       {
         "type": "table",
         "columns": ["Type", "Example"],
         "data": [
-          ["---------", "------------------------------"],
-          ["number", "`let age: number = 25`"],
-          ["string", "`let name: string = \"Tanmay\"`"],
-          ["boolean", "`let isActive: boolean = true`"],
-          ["null", "`let x: null = null`"],
-          ["undefined", "`let y: undefined = undefined`"],
+          [
+            "number",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "let age: number = 25"
+                }
+              ]
+            }
+          ],
+          [
+            "string",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "let name: string = \"Tanmay\""
+                }
+              ]
+            }
+          ],
+          [
+            "boolean",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "let isActive: boolean = true"
+                }
+              ]
+            }
+          ],
+          [
+            "null",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "let x: null = null"
+                }
+              ]
+            }
+          ],
+          [
+            "undefined",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "let y: undefined = undefined"
+                }
+              ]
+            }
+          ],
           ["symbol", "Unique identifiers"],
           ["bigint", "Large numbers"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Non-Primitive Types"
-          }
-        ]
+        "type": "h4",
+        "text": "Non-Primitive Types"
       },
       {
         "type": "table",
         "columns": ["Type", "Example"],
         "data": [
-          ["--------", "-----------------------"],
-          ["object", "`{name: \"Tanmay\"}`"],
-          ["array", "`number[]`"],
-          ["tuple", "`[string, number]`"],
-          ["enum", "`enum Role { Admin }`"],
-          ["function", "`(a: number) => number`"]
+          [
+            "object",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "{name: \"Tanmay\"}"
+                }
+              ]
+            }
+          ],
+          [
+            "array",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "number[]"
+                }
+              ]
+            }
+          ],
+          [
+            "tuple",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "[string, number]"
+                }
+              ]
+            }
+          ],
+          [
+            "enum",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "enum Role { Admin }"
+                }
+              ]
+            }
+          ],
+          [
+            "function",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "(a: number) => number"
+                }
+              ]
+            }
+          ]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -385,19 +422,14 @@
   },
   {
     "id": "ts-004",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
     "question": "What is Type Inference?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -412,13 +444,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -426,13 +453,8 @@
         "code": "let name = \"Tanmay\"; // inferred as string\nlet age = 25; // inferred as number"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "list",
@@ -447,16 +469,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -468,19 +485,14 @@
   },
   {
     "id": "ts-005",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
-    "question": "What is the `any` type? When should you avoid it?",
+    "question": "What is the any type? When should you avoid it?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -499,13 +511,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -513,13 +520,8 @@
         "code": "let data: any = 10;\ndata = \"hello\"; // ✅ allowed\ndata = true; // ✅ allowed"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Why Avoid It?"
-          }
-        ]
+        "type": "bold",
+        "text": "Why Avoid It?"
       },
       {
         "type": "list",
@@ -546,13 +548,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "When to Use"
-          }
-        ]
+        "type": "bold",
+        "text": "When to Use"
       },
       {
         "type": "list",
@@ -573,16 +570,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -598,38 +590,27 @@
   },
   {
     "id": "ts-006",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
-    "question": "Difference between `unknown` and `any`",
+    "question": "Difference between unknown and any",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Difference"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Difference"
       },
       {
         "type": "table",
-        "columns": ["Feature", "`any`", "`unknown`"],
+        "columns": ["Feature", "any", "unknown"],
         "data": [
-          ["-----------", "----------------", "----------------"],
           ["Type Safety", "❌ None", "✅ Strict"],
           ["Assignment", "Anything allowed", "Needs type check"],
           ["Usage", "Unsafe", "Safe alternative"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -637,16 +618,11 @@
         "code": "let value: unknown = \"Hello\";\n// ❌ Error\nvalue.toUpperCase();\n// ✅ Safe usage\nif (typeof value === \"string\") {\n  value.toUpperCase();\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -670,19 +646,14 @@
   },
   {
     "id": "ts-007",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
-    "question": "What is `never` type and when is it used?",
+    "question": "What is never type and when is it used?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -697,13 +668,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Cases"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Cases"
       },
       {
         "type": "bold",
@@ -724,13 +690,8 @@
         "code": "function infiniteLoop(): never {\n  while (true) {}\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "list",
@@ -763,16 +724,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -792,38 +748,45 @@
   },
   {
     "id": "ts-008",
-    "topic": "",
-    "subTopic": "Interfaces & Types",
+    "topic": "Typescript",
+    "subTopic": "Core TypeScript Concepts",
     "difficulty": "Beginner",
-    "question": "Difference between `void` and `undefined`",
+    "question": "Difference between void and undefined",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Difference"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Difference"
       },
       {
         "type": "table",
-        "columns": ["Feature", "`void`", "`undefined`"],
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "void"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "undefined"
+              }
+            ]
+          }
+        ],
         "data": [
-          ["-------", "---------------", "-----------"],
           ["Meaning", "No return value", "A value"],
           ["Usage", "Functions", "Variables"],
           ["Type", "Special", "Primitive"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -831,13 +794,8 @@
         "code": "function log(): void {\n  console.log(\"Hello\");\n}\nlet x: undefined = undefined;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "list",
@@ -866,16 +824,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -899,19 +852,14 @@
   },
   {
     "id": "ts-009",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Interfaces & Types",
     "difficulty": "Beginner",
-    "question": "What is the difference between `interface` and `type`?",
+    "question": "What is the difference between interface and type?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -940,34 +888,45 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Differences"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Differences"
       },
       {
         "type": "table",
         "columns": ["Feature", "interface", "type"],
         "data": [
-          ["--------------------", "------------", "------------------"],
           ["Object Definition", "✅ Yes", "✅ Yes"],
           ["Union / Intersection", "❌ No", "✅ Yes"],
           ["Primitive Alias", "❌ No", "✅ Yes"],
-          ["Extensibility", "`extends`", "`&` (intersection)"],
+          [
+            "Extensibility",
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "extends"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "&"
+                },
+                {
+                  "type": "text",
+                  "value": " (intersection)"
+                }
+              ]
+            }
+          ],
           ["Declaration Merging", "✅ Supported", "❌ Not supported"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -975,16 +934,11 @@
         "code": "// Interface\ninterface User {\n  name: string;\n  age: number;\n}\n// Type\ntype UserType = {\n  name: string;\n  age: number;\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -1008,28 +962,18 @@
   },
   {
     "id": "ts-010",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Interfaces & Types",
     "difficulty": "Beginner",
     "question": "Can interfaces extend multiple interfaces?",
     "answer": [
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Answer: ✅ Yes"
-          }
-        ]
+        "text": "Answer: ✅ Yes"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -1037,13 +981,8 @@
         "code": "interface Person {\n  name: string;\n}\ninterface Employee {\n  employeeId: number;\n}\ninterface Manager extends Person, Employee {\n  department: string;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
@@ -1059,16 +998,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -1096,37 +1030,22 @@
   },
   {
     "id": "ts-011",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Interfaces & Types",
     "difficulty": "Beginner",
-    "question": "What are optional properties in `interfaces`?",
+    "question": "What are optional properties in interfaces?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Properties that are not required when creating an object"
-          }
-        ]
+        "text": "Properties that are not required when creating an object"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Syntax"
-          }
-        ]
+        "type": "bold",
+        "text": "Syntax"
       },
       {
         "type": "paragraph",
@@ -1146,13 +1065,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -1160,13 +1074,8 @@
         "code": "interface User {\n  name: string;\n  age?: number;\n}\nconst user1: User = {\n  name: \"Tanmay\",\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Cases"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Cases"
       },
       {
         "type": "list",
@@ -1193,16 +1102,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -1222,37 +1126,22 @@
   },
   {
     "id": "ts-012",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Interfaces & Types",
     "difficulty": "Beginner",
-    "question": "What is `readonly` in TypeScript?",
+    "question": "What is readonly in TypeScript?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Prevents modification of a property after initialization"
-          }
-        ]
+        "text": "Prevents modification of a property after initialization"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -1260,34 +1149,19 @@
         "code": "interface User {\n  readonly id: number;\n  name: string;\n}\nconst user: User = { id: 1, name: \"Tanmay\" };\n// ❌ Error\nuser.id = 2;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Ensures immutability"
-          }
-        ]
+        "text": "Ensures immutability"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -1303,19 +1177,14 @@
   },
   {
     "id": "ts-013",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Interfaces & Types",
     "difficulty": "Beginner",
     "question": "Difference between type alias and interface in real-world usage",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "When to Use Interface"
-          }
-        ]
+        "type": "bold",
+        "text": "When to Use Interface"
       },
       {
         "type": "list",
@@ -1348,13 +1217,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "When to Use Type"
-          }
-        ]
+        "type": "bold",
+        "text": "When to Use Type"
       },
       {
         "type": "list",
@@ -1395,13 +1259,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -1409,85 +1268,45 @@
         "code": "// Interface (best for objects)\ninterface User {\n  name: string;\n}\n// Type (best for unions)\ntype Status = \"success\" | \"error\";"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Practical Rule"
-          }
-        ]
+        "type": "bold",
+        "text": "Practical Rule"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Use interface by default for objects"
-          }
-        ]
+        "text": "👉 Use interface by default for objects"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Use type when you need flexibility"
-          }
-        ]
+        "text": "👉 Use type when you need flexibility"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Interfaces are preferred for object contracts, while types are better for unions and complex type compositions."
-          }
-        ]
+        "type": "info",
+        "text": "Interfaces are preferred for object contracts, while types are better for unions and complex type compositions."
       }
     ]
   },
   {
     "id": "ts-014",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Interfaces & Types",
     "difficulty": "Beginner",
     "question": "How do you create index signatures?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Used when you don’t know property names in advance"
-          }
-        ]
+        "text": "Used when you don’t know property names in advance"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Syntax"
-          }
-        ]
+        "type": "bold",
+        "text": "Syntax"
       },
       {
         "type": "code",
@@ -1495,13 +1314,8 @@
         "code": "interface Dictionary {\n  [key: string]: string;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -1509,13 +1323,8 @@
         "code": "interface UserRoles {\n  [username: string]: string;\n}\nconst roles: UserRoles = {\n  Tanmay: \"admin\",\n  Rahul: \"user\",\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Points"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Points"
       },
       {
         "type": "list",
@@ -1556,13 +1365,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Advanced Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Advanced Example"
       },
       {
         "type": "code",
@@ -1570,57 +1374,29 @@
         "code": "interface ApiResponse {\n  [key: string]: string | number;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Index signatures allow dynamic object keys with predefined value types, useful for dictionaries or API responses."
-          }
-        ]
+        "type": "info",
+        "text": "Index signatures allow dynamic object keys with predefined value types, useful for dictionaries or API responses."
       }
     ]
   },
   {
     "id": "ts-015",
-    "topic": "",
-    "subTopic": "Functions & Generics",
-    "difficulty": "Beginner",
-    "question": "Final Summary",
-    "answer": []
-  },
-  {
-    "id": "ts-016",
-    "topic": "",
+    "topic": "Typescript",
     "subTopic": "Functions & Generics",
     "difficulty": "Beginner",
     "question": "How do you define types for functions in TypeScript?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "In TypeScript, you can define types for:"
-          }
-        ]
+        "text": "In TypeScript, you can define types for:"
       },
       {
         "type": "list",
@@ -1641,13 +1417,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Syntax"
-          }
-        ]
+        "type": "bold",
+        "text": "Syntax"
       },
       {
         "type": "code",
@@ -1655,13 +1426,8 @@
         "code": "function functionName(param: type): returnType {\n  return value;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -1670,12 +1436,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Function Type (Variable)"
-          }
-        ]
+        "text": "Function Type (Variable)"
       },
       {
         "type": "code",
@@ -1683,13 +1444,8 @@
         "code": "let multiply: (a: number, b: number) => number;\nmultiply = (x, y) => x * y;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key"
-          }
-        ]
+        "type": "bold",
+        "text": "Key"
       },
       {
         "type": "list",
@@ -1710,40 +1466,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Function types in TypeScript define both parameter types and return types to ensure type safety."
-          }
-        ]
+        "type": "info",
+        "text": "Function types in TypeScript define both parameter types and return types to ensure type safety."
       }
     ]
   },
   {
-    "id": "ts-017",
-    "topic": "",
+    "id": "ts-016",
+    "topic": "Typescript",
     "subTopic": "Functions & Generics",
     "difficulty": "Beginner",
     "question": "What are optional and default parameters?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Optional Parameters"
-          }
-        ]
+        "type": "h4",
+        "text": "Optional Parameters"
       },
       {
         "type": "code",
@@ -1773,13 +1514,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Default Parameters"
-          }
-        ]
+        "type": "h4",
+        "text": "Default Parameters"
       },
       {
         "type": "code",
@@ -1805,58 +1541,37 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Difference"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Difference"
       },
       {
         "type": "table",
         "columns": ["Feature", "Optional", "Default"],
         "data": [
-          ["-------------", "--------", "-------"],
           ["Required", "❌ No", "❌ No"],
           ["Default Value", "❌ No", "✅ Yes"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Optional parameters are not required, while default parameters automatically assign a value if none is provided."
-          }
-        ]
+        "type": "info",
+        "text": "Optional parameters are not required, while default parameters automatically assign a value if none is provided."
       }
     ]
   },
   {
-    "id": "ts-018",
-    "topic": "",
+    "id": "ts-017",
+    "topic": "Typescript",
     "subTopic": "Functions & Generics",
     "difficulty": "Beginner",
     "question": "What are generics? Why are they useful?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -1872,12 +1587,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Problem Without Generics"
-          }
-        ]
+        "text": "Problem Without Generics"
       },
       {
         "type": "code",
@@ -1886,21 +1596,11 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "❌ Loses type safety"
-          }
-        ]
+        "text": "❌ Loses type safety"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "With Generics"
-          }
-        ]
+        "text": "With Generics"
       },
       {
         "type": "code",
@@ -1908,13 +1608,8 @@
         "code": "function identity<T>(value: T): T {\n  return value;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Benefits"
-          }
-        ]
+        "type": "bold",
+        "text": "Benefits"
       },
       {
         "type": "list",
@@ -1955,40 +1650,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Generics allow writing reusable components that maintain type safety across different data types."
-          }
-        ]
+        "type": "info",
+        "text": "Generics allow writing reusable components that maintain type safety across different data types."
       }
     ]
   },
   {
-    "id": "ts-019",
-    "topic": "",
+    "id": "ts-018",
+    "topic": "Typescript",
     "subTopic": "Functions & Generics",
     "difficulty": "Beginner",
     "question": "Example of generic function",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Basic Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Basic Example"
       },
       {
         "type": "code",
@@ -1996,13 +1676,8 @@
         "code": "function getValue<T>(value: T): T {\n  return value;\n}\ngetValue<string>(\"Hello\");\ngetValue<number>(10);"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Generic with Arrays"
-          }
-        ]
+        "type": "bold",
+        "text": "Generic with Arrays"
       },
       {
         "type": "code",
@@ -2010,58 +1685,33 @@
         "code": "function getFirstElement<T>(arr: T[]): T {\n  return arr[0];\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Type is decided at runtime usage (but checked at compile time)"
-          }
-        ]
+        "text": "Type is decided at runtime usage (but checked at compile time)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "A generic function adapts to different types while preserving type information."
-          }
-        ]
+        "type": "info",
+        "text": "A generic function adapts to different types while preserving type information."
       }
     ]
   },
   {
-    "id": "ts-020",
-    "topic": "",
+    "id": "ts-019",
+    "topic": "Typescript",
     "subTopic": "Functions & Generics",
     "difficulty": "Beginner",
     "question": "What are generic constraints?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
@@ -2077,13 +1727,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2091,13 +1736,8 @@
         "code": "function getLength<T extends { length: number }>(item: T): number {\n  return item.length;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Usage"
-          }
-        ]
+        "type": "bold",
+        "text": "Usage"
       },
       {
         "type": "code",
@@ -2105,13 +1745,8 @@
         "code": "getLength(\"Hello\"); // ✅ string has length\ngetLength([1, 2, 3]); // ✅ array has length\ngetLength(10); // ❌ number doesn't have"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Why"
-          }
-        ]
+        "type": "bold",
+        "text": "Why"
       },
       {
         "type": "list",
@@ -2132,59 +1767,56 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Generic constraints restrict types to ensure only valid operations are performed."
-          }
-        ]
+        "type": "info",
+        "text": "Generic constraints restrict types to ensure only valid operations are performed."
       }
     ]
   },
   {
-    "id": "ts-021",
-    "topic": "",
-    "subTopic": "Advanced Types",
+    "id": "ts-020",
+    "topic": "Typescript",
+    "subTopic": "Functions & Generics",
     "difficulty": "Beginner",
-    "question": "Difference between `T extends object` vs `T extends {}`",
+    "question": "Difference between T extends object vs T extends {}",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Difference"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Difference"
       },
       {
         "type": "table",
-        "columns": ["Feature", "`T extends object`", "`T extends {}`"],
+        "columns": [
+          "Feature",
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "T extends object"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "T extends {}"
+              }
+            ]
+          }
+        ],
         "data": [
-          ["------------------", "------------------", "--------------"],
           ["Accepts primitives", "❌ No", "✅ Yes"],
           ["Accepts objects", "✅ Yes", "✅ Yes"],
           ["Strictness", "More strict", "Less strict"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Explanation"
-          }
-        ]
+        "type": "bold",
+        "text": "Explanation"
       },
       {
         "type": "paragraph",
@@ -2223,13 +1855,8 @@
         "code": "function test<T extends {}>(val: T) {}\ntest({}); // ✅\ntest(10); // ✅"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Important Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Important Insight"
       },
       {
         "type": "list",
@@ -2258,16 +1885,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -2290,43 +1912,40 @@
     ]
   },
   {
-    "id": "ts-022",
-    "topic": "",
+    "id": "ts-021",
+    "topic": "Typescript",
     "subTopic": "Advanced Types",
     "difficulty": "Beginner",
     "question": "What are union and intersection types?",
     "answer": [
       {
-        "type": "table",
-        "columns": ["Union Types (`", "`)"],
-        "data": []
-      },
-      {
         "type": "paragraph",
         "content": [
           {
             "type": "text",
-            "value": "✅ Definition"
+            "value": "Union Types ("
+          },
+          {
+            "type": "badge",
+            "value": " | "
+          },
+          {
+            "type": "text",
+            "value": ")"
           }
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Allows a variable to hold multiple possible types"
-          }
-        ]
+        "type": "bold",
+        "text": "✅ Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "text": "Allows a variable to hold multiple possible types"
+      },
+      {
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2334,13 +1953,8 @@
         "code": "let value: string | number;\nvalue = \"Hello\"; // ✅\nvalue = 10; // ✅"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "list",
@@ -2372,31 +1986,16 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "✅ Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Combines multiple types into one"
-          }
-        ]
+        "text": "Combines multiple types into one"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2404,76 +2003,41 @@
         "code": "type A = { name: string };\ntype B = { age: number };\ntype Person = A & B;\nconst user: Person = {\n  name: \"Tanmay\",\n  age: 25,\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Must satisfy all types"
-          }
-        ]
+        "text": "Must satisfy all types"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Union types allow multiple possible types, while intersection types combine multiple types into one."
-          }
-        ]
+        "type": "info",
+        "text": "Union types allow multiple possible types, while intersection types combine multiple types into one."
       }
     ]
   },
   {
-    "id": "ts-023",
-    "topic": "",
+    "id": "ts-022",
+    "topic": "Typescript",
     "subTopic": "Advanced Types",
     "difficulty": "Beginner",
     "question": "What is type narrowing?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Process of refining a broad type into a specific type"
-          }
-        ]
+        "text": "Process of refining a broad type into a specific type"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2481,13 +2045,8 @@
         "code": "function print(value: string | number) {\n  if (typeof value === \"string\") {\n    console.log(value.toUpperCase()); // narrowed to string\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Why Important"
-          }
-        ]
+        "type": "bold",
+        "text": "Why Important"
       },
       {
         "type": "list",
@@ -2508,16 +2067,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -2536,33 +2090,32 @@
     ]
   },
   {
-    "id": "ts-024",
-    "topic": "",
+    "id": "ts-023",
+    "topic": "Typescript",
     "subTopic": "Advanced Types",
     "difficulty": "Beginner",
-    "question": "Explain type guards (`typeof`, `instanceof`, custom guards)",
+    "question": "Explain type guards (typeof, instanceof, custom guards)",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Techniques used to narrow types safely"
-          }
-        ]
+        "text": "Techniques used to narrow types safely"
       },
       {
         "type": "bold",
-        "text": "`typeof` Guard"
+        "content": [
+          {
+            "type": "badge",
+            "value": "typeof"
+          },
+          {
+            "type": "text",
+            "value": " Guard"
+          }
+        ]
       },
       {
         "type": "code",
@@ -2571,7 +2124,16 @@
       },
       {
         "type": "bold",
-        "text": "`instanceof` Guard"
+        "content": [
+          {
+            "type": "badge",
+            "value": "instanceof"
+          },
+          {
+            "type": "text",
+            "value": " Guard"
+          }
+        ]
       },
       {
         "type": "code",
@@ -2588,13 +2150,8 @@
         "code": "type User = { name: string };\nfunction isUser(obj: any): obj is User {\n  return obj && typeof obj.name === \"string\";\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "paragraph",
@@ -2610,16 +2167,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -2646,38 +2198,23 @@
     ]
   },
   {
-    "id": "ts-025",
-    "topic": "",
+    "id": "ts-024",
+    "topic": "Typescript",
     "subTopic": "Advanced Types",
     "difficulty": "Beginner",
     "question": "What is discriminated union?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "A union type with a common literal property (discriminator)"
-          }
-        ]
+        "text": "A union type with a common literal property (discriminator)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2685,13 +2222,8 @@
         "code": "type Circle = { kind: \"circle\"; radius: number };\ntype Square = { kind: \"square\"; size: number };\ntype Shape = Circle | Square;\nfunction area(shape: Shape) {\n  if (shape.kind === \"circle\") {\n    return Math.PI * shape.radius ** 2;\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Points"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Points"
       },
       {
         "type": "list",
@@ -2720,58 +2252,33 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Discriminated unions use a common property to differentiate types and enable automatic type narrowing."
-          }
-        ]
+        "type": "info",
+        "text": "Discriminated unions use a common property to differentiate types and enable automatic type narrowing."
       }
     ]
   },
   {
-    "id": "ts-026",
-    "topic": "",
+    "id": "ts-025",
+    "topic": "Typescript",
     "subTopic": "Advanced Types",
     "difficulty": "Beginner",
     "question": "What are mapped types?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Create new types by transforming existing types"
-          }
-        ]
+        "text": "Create new types by transforming existing types"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Syntax"
-          }
-        ]
+        "type": "bold",
+        "text": "Syntax"
       },
       {
         "type": "code",
@@ -2779,13 +2286,8 @@
         "code": "type NewType = {\n  [Key in keyof OldType]: OldType[Key];\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2793,13 +2295,8 @@
         "code": "type User = {\n  name: string;\n  age: number;\n};\ntype ReadOnlyUser = {\n  readonly [K in keyof User]: User[K];\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Built-in Examples"
-          }
-        ]
+        "type": "bold",
+        "text": "Built-in Examples"
       },
       {
         "type": "list",
@@ -2826,58 +2323,33 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Mapped types transform existing types by iterating over their keys."
-          }
-        ]
+        "type": "info",
+        "text": "Mapped types transform existing types by iterating over their keys."
       }
     ]
   },
   {
-    "id": "ts-027",
-    "topic": "",
-    "subTopic": "Utility Types",
+    "id": "ts-026",
+    "topic": "Typescript",
+    "subTopic": "Advanced Types",
     "difficulty": "Beginner",
     "question": "What are conditional types?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Types that depend on a condition"
-          }
-        ]
+        "text": "Types that depend on a condition"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Syntax"
-          }
-        ]
+        "type": "bold",
+        "text": "Syntax"
       },
       {
         "type": "code",
@@ -2885,13 +2357,8 @@
         "code": "type Result<T> = T extends string ? string : number;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -2899,13 +2366,8 @@
         "code": "type Check<T> = T extends number ? \"Number\" : \"Other\";\ntype A = Check<number>; // \"Number\"\ntype B = Check<string>; // \"Other\""
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Advanced Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Advanced Example"
       },
       {
         "type": "code",
@@ -2913,76 +2375,41 @@
         "code": "type NonNullable<T> = T extends null | undefined ? never : T;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Works like ternary operator for types"
-          }
-        ]
+        "text": "Works like ternary operator for types"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Conditional types allow type logic using conditions, similar to a ternary operator."
-          }
-        ]
+        "type": "info",
+        "text": "Conditional types allow type logic using conditions, similar to a ternary operator."
       }
     ]
   },
   {
-    "id": "ts-028",
-    "topic": "",
+    "id": "ts-027",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "What are utility types in TypeScript?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Utility types are predefined generic types in TypeScript that help transform and manipulate existing types."
-          }
-        ]
+        "text": "Utility types are predefined generic types in TypeScript that help transform and manipulate existing types."
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Why They Are Useful"
-          }
-        ]
+        "type": "bold",
+        "text": "Why They Are Useful"
       },
       {
         "type": "list",
@@ -3015,13 +2442,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Common Utility Types"
-          }
-        ]
+        "type": "bold",
+        "text": "Common Utility Types"
       },
       {
         "type": "list",
@@ -3078,58 +2500,33 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Utility types are built-in generic helpers that transform existing types to make code more reusable and maintainable."
-          }
-        ]
+        "type": "info",
+        "text": "Utility types are built-in generic helpers that transform existing types to make code more reusable and maintainable."
       }
     ]
   },
   {
-    "id": "ts-029",
-    "topic": "",
+    "id": "ts-028",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "Partial<T>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Makes all properties optional"
-          }
-        ]
+        "text": "Makes all properties optional"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3137,13 +2534,8 @@
         "code": "type User = {\n  name: string;\n  age: number;\n};\ntype PartialUser = Partial<User>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3151,34 +2543,19 @@
         "code": "{\nname?: string;\nage?: number;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Updating objects (e.g., PATCH API)"
-          }
-        ]
+        "text": "Updating objects (e.g., PATCH API)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3193,38 +2570,23 @@
     ]
   },
   {
-    "id": "ts-030",
-    "topic": "",
+    "id": "ts-029",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "Required<T>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Makes all properties mandatory"
-          }
-        ]
+        "text": "Makes all properties mandatory"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3232,13 +2594,8 @@
         "code": "type User = {\n  name?: string;\n  age?: number;\n};\ntype RequiredUser = Required<User>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3246,34 +2603,19 @@
         "code": "{\n  name: string;\n  age: number;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Ensuring complete data"
-          }
-        ]
+        "text": "Ensuring complete data"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3288,38 +2630,23 @@
     ]
   },
   {
-    "id": "ts-031",
-    "topic": "",
+    "id": "ts-030",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "Readonly<T>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Makes all properties immutable"
-          }
-        ]
+        "text": "Makes all properties immutable"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3327,13 +2654,8 @@
         "code": "type User = {\n  name: string;\n};\ntype ReadonlyUser = Readonly<User>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3341,34 +2663,19 @@
         "code": "{\nreadonly name: string;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Prevent accidental mutation (e.g., state management)"
-          }
-        ]
+        "text": "Prevent accidental mutation (e.g., state management)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3383,38 +2690,23 @@
     ]
   },
   {
-    "id": "ts-032",
-    "topic": "",
+    "id": "ts-031",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "Pick<T, K>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Select specific properties from a type"
-          }
-        ]
+        "text": "Select specific properties from a type"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3422,13 +2714,8 @@
         "code": "type User = {\n  name: string;\n  age: number;\n  email: string;\n};\ntype UserPreview = Pick<User, \"name\" | \"age\">;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3436,34 +2723,19 @@
         "code": "{\n  name: string;\n  age: number;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "API response shaping"
-          }
-        ]
+        "text": "API response shaping"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3478,38 +2750,23 @@
     ]
   },
   {
-    "id": "ts-033",
-    "topic": "",
+    "id": "ts-032",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "Omit<T, K>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Removes specific properties from a type"
-          }
-        ]
+        "text": "Removes specific properties from a type"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3517,13 +2774,8 @@
         "code": "type User = {\n  name: string;\n  age: number;\n  password: string;\n};\ntype SafeUser = Omit<User, \"password\">;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3531,34 +2783,19 @@
         "code": "{\n  name: string;\n  age: number;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Excluding sensitive data"
-          }
-        ]
+        "text": "Excluding sensitive data"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3573,38 +2810,23 @@
     ]
   },
   {
-    "id": "ts-034",
-    "topic": "",
+    "id": "ts-033",
+    "topic": "Typescript",
     "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "Record<K, T>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Creates an object type with keys of type K and values of type T"
-          }
-        ]
+        "text": "Creates an object type with keys of type K and values of type T"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3612,13 +2834,8 @@
         "code": "type Roles = \"admin\" | \"user\";\ntype UserRoles = Record<Roles, string>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3626,34 +2843,19 @@
         "code": "{\n  admin: string;\n  user: string;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Dictionaries / Maps"
-          }
-        ]
+        "text": "Dictionaries / Maps"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3668,38 +2870,23 @@
     ]
   },
   {
-    "id": "ts-035",
-    "topic": "",
-    "subTopic": "Classes & OOP in TypeScript",
+    "id": "ts-034",
+    "topic": "Typescript",
+    "subTopic": "Utility Types",
     "difficulty": "Beginner",
     "question": "When would you use ReturnType or Parameters?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "ReturnType<T>"
-          }
-        ]
+        "type": "bold",
+        "text": "ReturnType<T>"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Extracts return type of a function"
-          }
-        ]
+        "text": "Extracts return type of a function"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3707,49 +2894,24 @@
         "code": "function getUser() {\n  return { name: \"Tanmay\" };\n}\ntype User = ReturnType<typeof getUser>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Reusing function return types"
-          }
-        ]
+        "text": "Reusing function return types"
+      },
+      {
+        "type": "bold",
+        "text": "Parameters<T>"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Parameters<T>"
-          }
-        ]
+        "text": "Extracts parameter types as a tuple"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Extracts parameter types as a tuple"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -3757,13 +2919,8 @@
         "code": "function add(a: number, b: number) {}\ntype Params = Parameters<typeof add>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -3771,13 +2928,8 @@
         "code": "[number, number];"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Use Case"
-          }
-        ]
+        "type": "bold",
+        "text": "Use Case"
       },
       {
         "type": "list",
@@ -3804,16 +2956,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -3836,29 +2983,19 @@
     ]
   },
   {
-    "id": "ts-036",
-    "topic": "",
+    "id": "ts-035",
+    "topic": "Typescript",
     "subTopic": "Classes & OOP in TypeScript",
     "difficulty": "Beginner",
     "question": "How does TypeScript support OOP?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript supports Object-Oriented Programming (OOP) by adding features on top of JavaScript such as:"
-          }
-        ]
+        "text": "TypeScript supports Object-Oriented Programming (OOP) by adding features on top of JavaScript such as:"
       },
       {
         "type": "list",
@@ -3903,22 +3040,12 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Features"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Features"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Classes"
-          }
-        ]
+        "type": "h4",
+        "text": "✅ Classes"
       },
       {
         "type": "code",
@@ -3926,13 +3053,8 @@
         "code": "class Person {\n  name: string;\n  constructor(name: string) {\n    this.name = name;\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Inheritance"
-          }
-        ]
+        "type": "h4",
+        "text": "✅ Inheritance"
       },
       {
         "type": "code",
@@ -3940,13 +3062,8 @@
         "code": "class Employee extends Person {\n  role: string;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Interfaces (Contracts)"
-          }
-        ]
+        "type": "h4",
+        "text": "✅ Interfaces (Contracts)"
       },
       {
         "type": "code",
@@ -3954,13 +3071,8 @@
         "code": "interface User {\n  name: string;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Encapsulation"
-          }
-        ]
+        "type": "h4",
+        "text": "✅ Encapsulation"
       },
       {
         "type": "paragraph",
@@ -3996,76 +3108,41 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript supports OOP through classes, interfaces, inheritance, and access modifiers, enabling better structure and maintainability."
-          }
-        ]
+        "type": "info",
+        "text": "TypeScript supports OOP through classes, interfaces, inheritance, and access modifiers, enabling better structure and maintainability."
       }
     ]
   },
   {
-    "id": "ts-037",
-    "topic": "",
+    "id": "ts-036",
+    "topic": "Typescript",
     "subTopic": "Classes & OOP in TypeScript",
     "difficulty": "Beginner",
     "question": "What are access modifiers (public, private, protected)?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Access modifiers control visibility and accessibility of class members"
-          }
-        ]
+        "text": "Access modifiers control visibility and accessibility of class members"
+      },
+      {
+        "type": "h4",
+        "text": "Types"
+      },
+      {
+        "type": "bold",
+        "text": "✅ public (default)"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Types"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ public (default)"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Accessible everywhere"
-          }
-        ]
+        "text": "Accessible everywhere"
       },
       {
         "type": "code",
@@ -4073,22 +3150,12 @@
         "code": "class A {\n  public name = \"Tanmay\";\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ private"
-          }
-        ]
+        "type": "bold",
+        "text": "✅ private"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Accessible only within the same class"
-          }
-        ]
+        "text": "Accessible only within the same class"
       },
       {
         "type": "code",
@@ -4096,22 +3163,12 @@
         "code": "class A {\n  private age = 25;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ protected"
-          }
-        ]
+        "type": "bold",
+        "text": "✅ protected"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Accessible within class and subclasses"
-          }
-        ]
+        "text": "Accessible within class and subclasses"
       },
       {
         "type": "code",
@@ -4119,77 +3176,46 @@
         "code": "class A {\n  protected value = 10;\n}\nclass B extends A {\n  getValue() {\n    return this.value; // ✅ allowed\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Comparison"
-          }
-        ]
+        "type": "bold",
+        "text": "Comparison"
       },
       {
         "type": "table",
         "columns": ["Modifier", "Same Class", "Subclass", "Outside"],
         "data": [
-          ["---------", "----------", "--------", "-------"],
           ["public", "✅", "✅", "✅"],
           ["private", "✅", "❌", "❌"],
           ["protected", "✅", "✅", "❌"]
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Access modifiers control visibility: public is open, private is restricted to the class, and protected allows access in subclasses."
-          }
-        ]
+        "type": "info",
+        "text": "Access modifiers control visibility: public is open, private is restricted to the class, and protected allows access in subclasses."
       }
     ]
   },
   {
-    "id": "ts-038",
-    "topic": "",
+    "id": "ts-037",
+    "topic": "Typescript",
     "subTopic": "Classes & OOP in TypeScript",
     "difficulty": "Beginner",
     "question": "What is a constructor in TypeScript?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "A special method used to initialize objects"
-          }
-        ]
+        "text": "A special method used to initialize objects"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -4198,12 +3224,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Shortcut (Parameter Properties)"
-          }
-        ]
+        "text": "Shortcut (Parameter Properties)"
       },
       {
         "type": "code",
@@ -4211,13 +3232,8 @@
         "code": "class User {\n  constructor(public name: string) {}\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Points"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Points"
       },
       {
         "type": "list",
@@ -4238,40 +3254,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "A constructor initializes class properties when an object is created."
-          }
-        ]
+        "type": "info",
+        "text": "A constructor initializes class properties when an object is created."
       }
     ]
   },
   {
-    "id": "ts-039",
-    "topic": "",
+    "id": "ts-038",
+    "topic": "Typescript",
     "subTopic": "Classes & OOP in TypeScript",
     "difficulty": "Beginner",
     "question": "What are abstract classes?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "list",
@@ -4292,13 +3293,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -4306,13 +3302,8 @@
         "code": "abstract class Animal {\n  abstract makeSound(): void;\n  move() {\n    console.log(\"Moving...\");\n  }\n}\nclass Dog extends Animal {\n  makeSound() {\n    console.log(\"Bark\");\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Points"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Points"
       },
       {
         "type": "list",
@@ -4333,46 +3324,30 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Abstract classes define a blueprint with optional implementation and must be extended by subclasses."
-          }
-        ]
+        "type": "info",
+        "text": "Abstract classes define a blueprint with optional implementation and must be extended by subclasses."
       }
     ]
   },
   {
-    "id": "ts-040",
-    "topic": "",
+    "id": "ts-039",
+    "topic": "Typescript",
     "subTopic": "Classes & OOP in TypeScript",
     "difficulty": "Beginner",
     "question": "Difference between interface and abstract class",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Differences"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Differences"
       },
       {
         "type": "table",
         "columns": ["Feature", "Interface", "Abstract Class"],
         "data": [
-          ["--------------------", "-----------------", "--------------"],
           ["Implementation", "❌ No", "✅ Yes"],
           ["Methods", "Only declarations", "Both"],
           ["Multiple inheritance", "✅ Yes", "❌ No"],
@@ -4381,13 +3356,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -4395,13 +3365,8 @@
         "code": "interface A {\n  method(): void;\n}\nabstract class B {\n  abstract method(): void;\n  log() {\n    console.log(\"Hello\");\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "list",
@@ -4422,67 +3387,37 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Interfaces define structure only, while abstract classes provide both structure and partial implementation."
-          }
-        ]
+        "type": "info",
+        "text": "Interfaces define structure only, while abstract classes provide both structure and partial implementation."
       }
     ]
   },
   {
-    "id": "ts-041",
-    "topic": "",
-    "subTopic": "Modules & Configuration",
+    "id": "ts-040",
+    "topic": "Typescript",
+    "subTopic": "Classes & OOP in TypeScript",
     "difficulty": "Beginner",
     "question": "Can TypeScript enforce design patterns?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Short Answer"
-          }
-        ]
+        "type": "bold",
+        "text": "Short Answer"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Yes (at compile-time), but not strictly at runtime"
-          }
-        ]
+        "text": "👉 Yes (at compile-time), but not strictly at runtime"
+      },
+      {
+        "type": "bold",
+        "text": "Explanation"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Explanation"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript helps enforce patterns using:"
-          }
-        ]
+        "text": "TypeScript helps enforce patterns using:"
       },
       {
         "type": "list",
@@ -4515,13 +3450,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example (Singleton Pattern)"
-          }
-        ]
+        "type": "bold",
+        "text": "Example (Singleton Pattern)"
       },
       {
         "type": "code",
@@ -4529,13 +3459,8 @@
         "code": "class Singleton {\n  private static instance: Singleton;\n  private constructor() {}\n  static getInstance() {\n    if (!Singleton.instance) {\n      Singleton.instance = new Singleton();\n    }\n    return Singleton.instance;\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "What TypeScript Ensures"
-          }
-        ]
+        "type": "bold",
+        "text": "What TypeScript Ensures"
       },
       {
         "type": "list",
@@ -4562,13 +3487,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "What It Cannot Enforce"
-          }
-        ]
+        "type": "bold",
+        "text": "What It Cannot Enforce"
       },
       {
         "type": "list",
@@ -4589,40 +3509,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript helps enforce design patterns through types and structure at compile time, but cannot guarantee runtime behavior."
-          }
-        ]
+        "type": "info",
+        "text": "TypeScript helps enforce design patterns through types and structure at compile time, but cannot guarantee runtime behavior."
       }
     ]
   },
   {
-    "id": "ts-042",
-    "topic": "",
+    "id": "ts-041",
+    "topic": "Typescript",
     "subTopic": "Modules & Configuration",
     "difficulty": "Beginner",
-    "question": "What is `tsconfig.json`?",
+    "question": "What is tsconfig.json?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
@@ -4638,22 +3543,12 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Purpose"
-          }
-        ]
+        "type": "bold",
+        "text": "Purpose"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Defines how TypeScript should:"
-          }
-        ]
+        "text": "Defines how TypeScript should:"
       },
       {
         "type": "list",
@@ -4680,13 +3575,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Basic Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Basic Example"
       },
       {
         "type": "code",
@@ -4695,12 +3585,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Sections"
-          }
-        ]
+        "text": "Key Sections"
       },
       {
         "type": "list",
@@ -4747,16 +3632,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -4771,33 +3651,28 @@
     ]
   },
   {
-    "id": "ts-043",
-    "topic": "",
+    "id": "ts-042",
+    "topic": "Typescript",
     "subTopic": "Modules & Configuration",
     "difficulty": "Beginner",
-    "question": "What are common compiler options (`strict`, `target`, `module`)?",
+    "question": "What are common compiler options (strict, target, module)?",
     "answer": [
       {
+        "type": "h4",
+        "content": [
+          {
+            "type": "badge",
+            "value": "strict"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Enables all strict type-checking options"
+      },
+      {
         "type": "bold",
-        "text": "`strict`"
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Enables all strict type-checking options"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "text": "Example"
       },
       {
         "type": "code",
@@ -4805,13 +3680,8 @@
         "code": "{\n  \"compilerOptions\": {\n    \"strict\": true\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Includes"
-          }
-        ]
+        "type": "bold",
+        "text": "Includes"
       },
       {
         "type": "list",
@@ -4838,16 +3708,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -4860,26 +3725,21 @@
         ]
       },
       {
+        "type": "h4",
+        "content": [
+          {
+            "type": "badge",
+            "value": "target"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Specifies the JavaScript version to compile to"
+      },
+      {
         "type": "bold",
-        "text": "`target`"
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Specifies the JavaScript version to compile to"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "text": "Example"
       },
       {
         "type": "code",
@@ -4887,34 +3747,19 @@
         "code": "{\n  \"compilerOptions\": {\n    \"target\": \"ES5\"\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Common Values"
-          }
-        ]
+        "type": "bold",
+        "text": "Common Values"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "ES5, ES6 (ES2015), ESNext"
-          }
-        ]
+        "text": "ES5, ES6 (ES2015), ESNext"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -4927,26 +3772,21 @@
         ]
       },
       {
+        "type": "h4",
+        "content": [
+          {
+            "type": "badge",
+            "value": "module"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Specifies the module system"
+      },
+      {
         "type": "bold",
-        "text": "`module`"
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Specifies the module system"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "text": "Example"
       },
       {
         "type": "code",
@@ -4954,13 +3794,8 @@
         "code": "{\n  \"compilerOptions\": {\n    \"module\": \"commonjs\"\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Common Values"
-          }
-        ]
+        "type": "bold",
+        "text": "Common Values"
       },
       {
         "type": "list",
@@ -4987,16 +3822,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -5011,29 +3841,19 @@
     ]
   },
   {
-    "id": "ts-044",
-    "topic": "",
+    "id": "ts-043",
+    "topic": "Typescript",
     "subTopic": "Modules & Configuration",
     "difficulty": "Beginner",
     "question": "Difference between ESModule and CommonJS",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "ESModule (ESM)"
-          }
-        ]
+        "type": "h4",
+        "text": "ESModule (ESM)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Features"
-          }
-        ]
+        "type": "bold",
+        "text": "✅ Features"
       },
       {
         "type": "list",
@@ -5072,13 +3892,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -5086,22 +3901,12 @@
         "code": "import { add } from \"./math\";\nexport const value = 10;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "CommonJS (CJS)"
-          }
-        ]
+        "type": "h4",
+        "text": "CommonJS (CJS)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Features"
-          }
-        ]
+        "type": "bold",
+        "text": "✅ Features"
       },
       {
         "type": "list",
@@ -5140,13 +3945,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -5154,19 +3954,13 @@
         "code": "const math = require(\"./math\");\nmodule.exports = { value: 10 };"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Differences"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Differences"
       },
       {
         "type": "table",
         "columns": ["Feature", "ESModule", "CommonJS"],
         "data": [
-          ["------------", "-------------", "----------------------"],
           ["Syntax", "import/export", "require/module.exports"],
           ["Loading", "Static", "Dynamic"],
           ["Usage", "Modern JS", "Node.js (legacy)"],
@@ -5174,40 +3968,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "ESModules use modern static imports/exports, while CommonJS uses dynamic require and module.exports."
-          }
-        ]
+        "type": "info",
+        "text": "ESModules use modern static imports/exports, while CommonJS uses dynamic require and module.exports."
       }
     ]
   },
   {
-    "id": "ts-045",
-    "topic": "",
-    "subTopic": "Real-world / Practical Questions",
+    "id": "ts-044",
+    "topic": "Typescript",
+    "subTopic": "Modules & Configuration",
     "difficulty": "Beginner",
     "question": "How does TypeScript handle imports/exports?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Core Idea"
-          }
-        ]
+        "type": "bold",
+        "text": "Core Idea"
       },
       {
         "type": "list",
@@ -5240,22 +4019,12 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript Code"
-          }
-        ]
+        "type": "bold",
+        "text": "TypeScript Code"
       },
       {
         "type": "code",
@@ -5268,13 +4037,8 @@
         "code": "import { add } from \"./math\";"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Compiled Output (CommonJS)"
-          }
-        ]
+        "type": "bold",
+        "text": "Compiled Output (CommonJS)"
       },
       {
         "type": "code",
@@ -5282,13 +4046,8 @@
         "code": "exports.add = function (a, b) {\n  return a + b;\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Important Concepts"
-          }
-        ]
+        "type": "h4",
+        "text": "Important Concepts"
       },
       {
         "type": "bold",
@@ -5318,22 +4077,12 @@
         "code": "import type { User } from \"./types\";"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript separates:"
-          }
-        ]
+        "text": "TypeScript separates:"
       },
       {
         "type": "list",
@@ -5354,40 +4103,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript uses ESModule syntax but compiles it into different module systems like CommonJS based on configuration."
-          }
-        ]
+        "type": "info",
+        "text": "TypeScript uses ESModule syntax but compiles it into different module systems like CommonJS based on configuration."
       }
     ]
   },
   {
-    "id": "ts-046",
-    "topic": "",
+    "id": "ts-045",
+    "topic": "Typescript",
     "subTopic": "Real-world / Practical Questions",
     "difficulty": "Beginner",
     "question": "How do you type an API response?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Approach"
-          }
-        ]
+        "type": "bold",
+        "text": "Approach"
       },
       {
         "type": "list",
@@ -5408,13 +4142,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -5422,13 +4151,8 @@
         "code": "interface User {\n  id: number;\n  name: string;\n  email: string;\n}\nasync function fetchUsers(): Promise<User[]> {\n  const res = await fetch(\"/api/users\");\n  return res.json();\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "With Generic API Wrapper"
-          }
-        ]
+        "type": "bold",
+        "text": "With Generic API Wrapper"
       },
       {
         "type": "code",
@@ -5436,13 +4160,8 @@
         "code": "async function fetchData<T>(url: string): Promise<T> {\n  const res = await fetch(url);\n  return res.json();\n}\n// Usage\nconst users = await fetchData<User[]>(\"/api/users\");"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Best Practices"
-          }
-        ]
+        "type": "bold",
+        "text": "Best Practices"
       },
       {
         "type": "list",
@@ -5469,40 +4188,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "API responses are typed using interfaces or generics to ensure type safety and predictable data handling."
-          }
-        ]
+        "type": "info",
+        "text": "API responses are typed using interfaces or generics to ensure type safety and predictable data handling."
       }
     ]
   },
   {
-    "id": "ts-047",
-    "topic": "",
+    "id": "ts-046",
+    "topic": "Typescript",
     "subTopic": "Real-world / Practical Questions",
     "difficulty": "Beginner",
     "question": "How do you handle nullable values safely?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Problem"
-          }
-        ]
+        "type": "bold",
+        "text": "Problem"
       },
       {
         "type": "paragraph",
@@ -5526,22 +4230,12 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Solutions"
-          }
-        ]
+        "type": "bold",
+        "text": "Solutions"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 1. Union Types"
-          }
-        ]
+        "text": "✅ 1. Union Types"
       },
       {
         "type": "code",
@@ -5550,12 +4244,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 2. Optional Chaining"
-          }
-        ]
+        "text": "✅ 2. Optional Chaining"
       },
       {
         "type": "code",
@@ -5564,12 +4253,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 3. Nullish Coalescing"
-          }
-        ]
+        "text": "✅ 3. Nullish Coalescing"
       },
       {
         "type": "code",
@@ -5578,12 +4262,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 4. Type Guards"
-          }
-        ]
+        "text": "✅ 4. Type Guards"
       },
       {
         "type": "code",
@@ -5592,12 +4271,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "⚠️ 5. Non-null Assertion (use carefully)"
-          }
-        ]
+        "text": "⚠️ 5. Non-null Assertion (use carefully)"
       },
       {
         "type": "code",
@@ -5605,13 +4279,8 @@
         "code": "user.name!;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Best Practice"
-          }
-        ]
+        "type": "bold",
+        "text": "Best Practice"
       },
       {
         "type": "paragraph",
@@ -5631,44 +4300,29 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Nullable values are handled using union types, optional chaining, and null checks to ensure safe access."
-          }
-        ]
+        "type": "info",
+        "text": "Nullable values are handled using union types, optional chaining, and null checks to ensure safe access."
       }
     ]
   },
   {
-    "id": "ts-048",
-    "topic": "",
+    "id": "ts-047",
+    "topic": "Typescript",
     "subTopic": "Real-world / Practical Questions",
     "difficulty": "Beginner",
     "question": "How do you migrate a JavaScript project to TypeScript?",
     "answer": [
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Step-by-Step"
-          }
-        ]
+        "text": "Step-by-Step"
       },
       {
         "type": "bold",
-        "text": "Install TypeScript"
+        "text": "1. Install TypeScript"
       },
       {
         "type": "code",
@@ -5677,7 +4331,7 @@
       },
       {
         "type": "bold",
-        "text": "Create config"
+        "text": "2. Create config"
       },
       {
         "type": "code",
@@ -5686,7 +4340,7 @@
       },
       {
         "type": "bold",
-        "text": "Rename files"
+        "text": "3. Rename files"
       },
       {
         "type": "paragraph",
@@ -5715,7 +4369,7 @@
       },
       {
         "type": "bold",
-        "text": "Enable gradual typing"
+        "text": "4. Enable gradual typing"
       },
       {
         "type": "code",
@@ -5724,20 +4378,15 @@
       },
       {
         "type": "bold",
-        "text": "Fix errors gradually"
+        "text": "5. Fix errors gradually"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Start with critical modules"
-          }
-        ]
+        "text": "Start with critical modules"
       },
       {
         "type": "bold",
-        "text": "Enable strict mode later"
+        "text": "6. Enable strict mode later"
       },
       {
         "type": "code",
@@ -5745,52 +4394,32 @@
         "code": "{\n  \"strict\": true\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Strategy"
-          }
-        ]
+        "type": "bold",
+        "text": "Strategy"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Incremental migration (not all at once)"
-          }
-        ]
+        "text": "Incremental migration (not all at once)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Migrate gradually by enabling TypeScript, renaming files, and progressively adding types instead of converting everything at once."
-          }
-        ]
+        "type": "info",
+        "text": "Migrate gradually by enabling TypeScript, renaming files, and progressively adding types instead of converting everything at once."
       }
     ]
   },
   {
-    "id": "ts-049",
-    "topic": "",
+    "id": "ts-048",
+    "topic": "Typescript",
     "subTopic": "Real-world / Practical Questions",
     "difficulty": "Beginner",
-    "question": "How do you avoid overusing `any`?",
+    "question": "How do you avoid overusing any?",
     "answer": [
       {
-        "type": "paragraph",
+        "type": "bold",
         "content": [
           {
             "type": "text",
@@ -5821,13 +4450,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Alternatives"
-          }
-        ]
+        "type": "bold",
+        "text": "Alternatives"
       },
       {
         "type": "paragraph",
@@ -5849,12 +4473,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Use Generics"
-          }
-        ]
+        "text": "✅ Use Generics"
       },
       {
         "type": "code",
@@ -5863,12 +4482,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Define Proper Types"
-          }
-        ]
+        "text": "✅ Define Proper Types"
       },
       {
         "type": "code",
@@ -5877,12 +4491,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Use Utility Types"
-          }
-        ]
+        "text": "✅ Use Utility Types"
       },
       {
         "type": "list",
@@ -5909,13 +4518,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Rule"
-          }
-        ]
+        "type": "bold",
+        "text": "Rule"
       },
       {
         "type": "paragraph",
@@ -5935,16 +4539,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -5971,20 +4570,15 @@
     ]
   },
   {
-    "id": "ts-050",
-    "topic": "",
+    "id": "ts-049",
+    "topic": "Typescript",
     "subTopic": "Real-world / Practical Questions",
     "difficulty": "Beginner",
     "question": "How do you structure types in a large project?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Recommended Structure"
-          }
-        ]
+        "type": "bold",
+        "text": "Recommended Structure"
       },
       {
         "type": "code",
@@ -5992,22 +4586,12 @@
         "code": "src/\n├── components/\n├── features/\n├── services/\n├── types/\n│ ├── user.types.ts\n│ ├── api.types.ts\n│ └── index.ts"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Best Practices"
-          }
-        ]
+        "type": "bold",
+        "text": "Best Practices"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 1. Centralized Types"
-          }
-        ]
+        "text": "✅ 1. Centralized Types"
       },
       {
         "type": "paragraph",
@@ -6024,30 +4608,15 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 2. Feature-based Types"
-          }
-        ]
+        "text": "✅ 2. Feature-based Types"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Co-locate types with features"
-          }
-        ]
+        "text": "Co-locate types with features"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 3. Use Naming Conventions"
-          }
-        ]
+        "text": "✅ 3. Use Naming Conventions"
       },
       {
         "type": "paragraph",
@@ -6076,12 +4645,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 4. Barrel Files"
-          }
-        ]
+        "text": "✅ 4. Barrel Files"
       },
       {
         "type": "code",
@@ -6090,75 +4654,40 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 5. Separate API vs UI Types"
-          }
-        ]
+        "text": "✅ 5. Separate API vs UI Types"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Backend vs frontend mapping"
-          }
-        ]
+        "text": "Backend vs frontend mapping"
+      },
+      {
+        "type": "bold",
+        "text": "Key Insight"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Insight"
-          }
-        ]
+        "text": "Scalability depends on organized types"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Scalability depends on organized types"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "In large projects, types should be modular, reusable, and organized by feature or domain."
-          }
-        ]
+        "type": "info",
+        "text": "In large projects, types should be modular, reusable, and organized by feature or domain."
       }
     ]
   },
   {
-    "id": "ts-051",
-    "topic": "",
+    "id": "ts-050",
+    "topic": "Typescript",
     "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
     "question": "How do you type React props in TypeScript?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Using Interface"
-          }
-        ]
+        "type": "bold",
+        "text": "Using Interface"
       },
       {
         "type": "code",
@@ -6166,13 +4695,8 @@
         "code": "interface Props {\nname: string;\nage?: number;\n}\nfunction User({ name, age }: Props) {\nreturn <div>{name}</div>;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Using Type"
-          }
-        ]
+        "type": "bold",
+        "text": "Using Type"
       },
       {
         "type": "code",
@@ -6180,13 +4704,8 @@
         "code": "type Props = {\nname: string;\n};\nconst User = ({ name }: Props) => <div>{name}</div>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "With Children"
-          }
-        ]
+        "type": "bold",
+        "text": "With Children"
       },
       {
         "type": "code",
@@ -6194,13 +4713,8 @@
         "code": "type Props = {\nchildren: React.ReactNode;\n};\nfunction Wrapper({ children }: Props) {\nreturn <div>{children}</div>;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "With Default Props"
-          }
-        ]
+        "type": "bold",
+        "text": "With Default Props"
       },
       {
         "type": "code",
@@ -6208,13 +4722,8 @@
         "code": "type Props = {\n  name?: string;\n};\nfunction User({ name = \"Guest\" }: Props) {}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Best Practices"
-          }
-        ]
+        "type": "bold",
+        "text": "Best Practices"
       },
       {
         "type": "list",
@@ -6245,34 +4754,24 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "React props are typed using interfaces or types to ensure component reliability and better developer experience."
-          }
-        ]
+        "type": "info",
+        "text": "React props are typed using interfaces or types to ensure component reliability and better developer experience."
       }
     ]
   },
   {
-    "id": "ts-052",
-    "topic": "",
+    "id": "ts-051",
+    "topic": "Typescript",
     "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
     "question": "How do you type functional components?",
     "answer": [
       {
-        "type": "paragraph",
+        "type": "bold",
         "content": [
           {
             "type": "text",
@@ -6294,7 +4793,7 @@
         "code": "interface Props {\nname: string;\n}\nfunction User({ name }: Props) {\nreturn <div>{name}</div>;\n}"
       },
       {
-        "type": "paragraph",
+        "type": "bold",
         "content": [
           {
             "type": "text",
@@ -6312,52 +4811,32 @@
         "code": "type Props = {\nname: string;\n};\nconst User = ({ name }: Props) => <div>{name}</div>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Explicitly type props for better safety"
-          }
-        ]
+        "text": "Explicitly type props for better safety"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Functional components are typed by defining a props interface or type and applying it to the component parameters."
-          }
-        ]
+        "type": "info",
+        "text": "Functional components are typed by defining a props interface or type and applying it to the component parameters."
       }
     ]
   },
   {
-    "id": "ts-053",
-    "topic": "",
+    "id": "ts-052",
+    "topic": "Typescript",
     "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
-    "question": "Difference between `React.FC` and normal function typing",
+    "question": "Difference between React.FC and normal function typing",
     "answer": [
       {
-        "type": "paragraph",
+        "type": "h4",
         "content": [
           {
             "type": "badge",
@@ -6371,13 +4850,8 @@
         "code": "const User: React.FC<{ name: string }> = ({ name }) => {\nreturn <div>{name}</div>;\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Normal Function (Preferred)"
-          }
-        ]
+        "type": "h4",
+        "text": "Normal Function (Preferred)"
       },
       {
         "type": "code",
@@ -6385,19 +4859,13 @@
         "code": "interface Props {\nname: string;\n}\nfunction User({ name }: Props) {\nreturn <div>{name}</div>;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Differences"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Differences"
       },
       {
         "type": "table",
         "columns": ["Feature", "React.FC", "Normal Function"],
         "data": [
-          ["--------------", "-------------------", "--------------------"],
           ["children", "Included by default", "Must define manually"],
           ["Readability", "Less clean", "Cleaner"],
           ["Flexibility", "Limited", "More flexible"],
@@ -6405,7 +4873,7 @@
         ]
       },
       {
-        "type": "paragraph",
+        "type": "bold",
         "content": [
           {
             "type": "text",
@@ -6446,16 +4914,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -6470,20 +4933,15 @@
     ]
   },
   {
-    "id": "ts-054",
-    "topic": "",
+    "id": "ts-053",
+    "topic": "Typescript",
     "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
-    "question": "How to type `useState`, `useRef`, `useReducer`",
+    "question": "How to type useState, useRef, useReducer",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "useState"
-          }
-        ]
+        "type": "bold",
+        "text": "useState"
       },
       {
         "type": "code",
@@ -6491,13 +4949,8 @@
         "code": "const [count, setCount] = useState<number>(0);"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "With Union"
-          }
-        ]
+        "type": "bold",
+        "text": "With Union"
       },
       {
         "type": "code",
@@ -6505,13 +4958,8 @@
         "code": "const [user, setUser] = useState<User | null>(null);"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "useRef"
-          }
-        ]
+        "type": "bold",
+        "text": "useRef"
       },
       {
         "type": "code",
@@ -6519,13 +4967,8 @@
         "code": "const inputRef = useRef<HTMLInputElement | null>(null);"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "useReducer"
-          }
-        ]
+        "type": "bold",
+        "text": "useReducer"
       },
       {
         "type": "code",
@@ -6533,16 +4976,11 @@
         "code": "type State = { count: number };\ntype Action = { type: \"increment\" } | { type: \"decrement\" };\nfunction reducer(state: State, action: Action): State {\n  switch (action.type) {\n    case \"increment\":\n      return { count: state.count + 1 };\n    default:\n      return state;\n  }\n}\nconst [state, dispatch] = useReducer(reducer, { count: 0 });"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -6569,20 +5007,15 @@
     ]
   },
   {
-    "id": "ts-055",
-    "topic": "",
+    "id": "ts-054",
+    "topic": "Typescript",
     "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
     "question": "How to type event handlers",
     "answer": [
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Input Change Event"
-          }
-        ]
+        "text": "Input Change Event"
       },
       {
         "type": "code",
@@ -6591,12 +5024,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Button Click"
-          }
-        ]
+        "text": "Button Click"
       },
       {
         "type": "code",
@@ -6605,12 +5033,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Form Submit"
-          }
-        ]
+        "text": "Form Submit"
       },
       {
         "type": "code",
@@ -6618,13 +5041,8 @@
         "code": "function handleSubmit(e: React.FormEvent<HTMLFormElement>) {\n  e.preventDefault();\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Tip"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Tip"
       },
       {
         "type": "paragraph",
@@ -6640,16 +5058,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -6676,20 +5089,15 @@
     ]
   },
   {
-    "id": "ts-056",
-    "topic": "",
+    "id": "ts-055",
+    "topic": "Typescript",
     "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
     "question": "How to type props with children",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Method 1: Explicit"
-          }
-        ]
+        "type": "bold",
+        "text": "Method 1: Explicit"
       },
       {
         "type": "code",
@@ -6697,13 +5105,8 @@
         "code": "type Props = {\nchildren: React.ReactNode;\n};\nfunction Wrapper({ children }: Props) {\nreturn <div>{children}</div>;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Method 2: With PropsWithChildren"
-          }
-        ]
+        "type": "bold",
+        "text": "Method 2: With PropsWithChildren"
       },
       {
         "type": "code",
@@ -6711,13 +5114,8 @@
         "code": "import { PropsWithChildren } from \"react\";\ntype Props = {\n  title: string;\n};\nfunction Card({ title, children }: PropsWithChildren<Props>) {}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
@@ -6733,16 +5131,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "text",
@@ -6769,38 +5162,23 @@
     ]
   },
   {
-    "id": "ts-057",
-    "topic": "",
-    "subTopic": "Debugging & Best Practices",
+    "id": "ts-056",
+    "topic": "Typescript",
+    "subTopic": "React + TypeScript",
     "difficulty": "Beginner",
     "question": "Controlled vs Uncontrolled components typing",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Controlled Components"
-          }
-        ]
+        "type": "h4",
+        "text": "Controlled Components"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "State is controlled by React"
-          }
-        ]
+        "text": "State is controlled by React"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -6808,31 +5186,16 @@
         "code": "const [value, setValue] = useState<string>(\"\");\n<input\nvalue={value}\nonChange={(e) => setValue(e.target.value)}\n/>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Typing"
-          }
-        ]
+        "type": "bold",
+        "text": "Typing"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "State + event types required"
-          }
-        ]
+        "text": "State + event types required"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Uncontrolled Components"
-          }
-        ]
+        "type": "h4",
+        "text": "Uncontrolled Components"
       },
       {
         "type": "paragraph",
@@ -6848,13 +5211,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -6862,37 +5220,21 @@
         "code": "const inputRef = useRef<HTMLInputElement>(null);\n<input ref={inputRef} />;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Typing"
-          }
-        ]
+        "type": "bold",
+        "text": "Typing"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Focus on useRef"
-          }
-        ]
+        "text": "Focus on useRef"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Differences"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Differences"
       },
       {
         "type": "table",
         "columns": ["Feature", "React.FC", "Normal Function"],
         "data": [
-          ["--------------", "-------------------", "--------------------"],
           ["children", "Included by default", "Must define manually"],
           ["Readability", "Less clean", "Cleaner"],
           ["Flexibility", "Limited", "More flexible"],
@@ -6900,28 +5242,18 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Controlled components use React state and require state/event typing, while uncontrolled components rely on refs and direct DOM access."
-          }
-        ]
+        "type": "info",
+        "text": "Controlled components use React state and require state/event typing, while uncontrolled components rely on refs and direct DOM access."
       }
     ]
   },
   {
-    "id": "ts-058",
-    "topic": "",
+    "id": "ts-057",
+    "topic": "Typescript",
     "subTopic": "Debugging & Best Practices",
     "difficulty": "Beginner",
     "question": "What are common TypeScript errors you’ve faced?",
@@ -6937,12 +5269,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Assigning wrong type"
-          }
-        ]
+        "text": "👉 Assigning wrong type"
       },
       {
         "type": "bold",
@@ -6955,12 +5282,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Missing or incorrect type definition"
-          }
-        ]
+        "text": "👉 Missing or incorrect type definition"
       },
       {
         "type": "bold",
@@ -6973,12 +5295,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 user might be null"
-          }
-        ]
+        "text": "👉 user might be null"
       },
       {
         "type": "bold",
@@ -6991,12 +5308,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Happens when noImplicitAny is enabled"
-          }
-        ]
+        "text": "👉 Happens when noImplicitAny is enabled"
       },
       {
         "type": "bold",
@@ -7009,12 +5321,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Need type narrowing"
-          }
-        ]
+        "text": "👉 Need type narrowing"
       },
       {
         "type": "bold",
@@ -7026,49 +5333,29 @@
         "code": "function fn(): string {\n  return 10; // ❌\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Common TypeScript errors include type mismatches, null safety issues, implicit any, and improper handling of union types."
-          }
-        ]
+        "type": "info",
+        "text": "Common TypeScript errors include type mismatches, null safety issues, implicit any, and improper handling of union types."
       }
     ]
   },
   {
-    "id": "ts-059",
-    "topic": "",
+    "id": "ts-058",
+    "topic": "Typescript",
     "subTopic": "Debugging & Best Practices",
     "difficulty": "Beginner",
     "question": "How do you improve type safety?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Best Practices"
-          }
-        ]
+        "type": "bold",
+        "text": "Best Practices"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Enable strict mode"
-          }
-        ]
+        "text": "✅ Enable strict mode"
       },
       {
         "type": "paragraph",
@@ -7111,12 +5398,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Use proper types/interfaces"
-          }
-        ]
+        "text": "✅ Use proper types/interfaces"
       },
       {
         "type": "code",
@@ -7125,12 +5407,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Use type guards"
-          }
-        ]
+        "text": "✅ Use type guards"
       },
       {
         "type": "code",
@@ -7139,12 +5416,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Use utility types"
-          }
-        ]
+        "text": "✅ Use utility types"
       },
       {
         "type": "paragraph",
@@ -7169,12 +5441,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Handle null safely"
-          }
-        ]
+        "text": "✅ Handle null safely"
       },
       {
         "type": "list",
@@ -7211,58 +5478,33 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Type safety is improved by enabling strict mode, avoiding any, using proper types, and applying type guards."
-          }
-        ]
+        "type": "info",
+        "text": "Type safety is improved by enabling strict mode, avoiding any, using proper types, and applying type guards."
       }
     ]
   },
   {
-    "id": "ts-060",
-    "topic": "",
+    "id": "ts-059",
+    "topic": "Typescript",
     "subTopic": "Debugging & Best Practices",
     "difficulty": "Beginner",
     "question": "What is strict mode?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "A set of strict type-checking rules in TypeScript"
-          }
-        ]
+        "text": "A set of strict type-checking rules in TypeScript"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Enable"
-          }
-        ]
+        "type": "bold",
+        "text": "Enable"
       },
       {
         "type": "code",
@@ -7270,13 +5512,8 @@
         "code": "{\n  \"compilerOptions\": {\n    \"strict\": true\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Includes"
-          }
-        ]
+        "type": "bold",
+        "text": "Includes"
       },
       {
         "type": "list",
@@ -7309,13 +5546,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Benefits"
-          }
-        ]
+        "type": "bold",
+        "text": "Benefits"
       },
       {
         "type": "list",
@@ -7342,67 +5574,37 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Strict mode enables all strict type checks, improving code reliability and preventing common runtime errors."
-          }
-        ]
+        "type": "info",
+        "text": "Strict mode enables all strict type checks, improving code reliability and preventing common runtime errors."
       }
     ]
   },
   {
-    "id": "ts-061",
-    "topic": "",
+    "id": "ts-060",
+    "topic": "Typescript",
     "subTopic": "Debugging & Best Practices",
     "difficulty": "Beginner",
     "question": "How do you debug type issues?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Techniques"
-          }
-        ]
+        "type": "bold",
+        "text": "Techniques"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 1. Hover / IntelliSense"
-          }
-        ]
+        "text": "✅ 1. Hover / IntelliSense"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Check inferred types in editor"
-          }
-        ]
+        "text": "Check inferred types in editor"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 2. Use typeof"
-          }
-        ]
+        "text": "✅ 2. Use typeof"
       },
       {
         "type": "code",
@@ -7411,12 +5613,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 3. Break complex types"
-          }
-        ]
+        "text": "✅ 3. Break complex types"
       },
       {
         "type": "code",
@@ -7425,12 +5622,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 4. Add temporary types"
-          }
-        ]
+        "text": "✅ 4. Add temporary types"
       },
       {
         "type": "code",
@@ -7439,12 +5631,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 5. Use as const"
-          }
-        ]
+        "text": "✅ 5. Use as const"
       },
       {
         "type": "code",
@@ -7453,75 +5640,40 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ 6. Read error messages carefully"
-          }
-        ]
+        "text": "✅ 6. Read error messages carefully"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TS errors are very descriptive"
-          }
-        ]
+        "text": "TS errors are very descriptive"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Debugging type issues involves inspecting inferred types, breaking complex types, and leveraging TypeScript’s detailed error messages."
-          }
-        ]
+        "type": "info",
+        "text": "Debugging type issues involves inspecting inferred types, breaking complex types, and leveraging TypeScript’s detailed error messages."
       }
     ]
   },
   {
-    "id": "ts-062",
-    "topic": "",
+    "id": "ts-061",
+    "topic": "Typescript",
     "subTopic": "Debugging & Best Practices",
     "difficulty": "Beginner",
-    "question": "When should you use `as` (type assertion)?",
+    "question": "When should you use as (type assertion)?",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Tells TypeScript to treat a value as a specific type"
-          }
-        ]
+        "text": "Tells TypeScript to treat a value as a specific type"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -7529,22 +5681,12 @@
         "code": "const input = document.getElementById(\"name\") as HTMLInputElement;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "When to Use"
-          }
-        ]
+        "type": "bold",
+        "text": "When to Use"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ DOM elements"
-          }
-        ]
+        "text": "✅ DOM elements"
       },
       {
         "type": "code",
@@ -7553,12 +5695,7 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ When TS cannot infer correctly"
-          }
-        ]
+        "text": "✅ When TS cannot infer correctly"
       },
       {
         "type": "code",
@@ -7567,84 +5704,44 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "✅ Third-party libraries"
-          }
-        ]
+        "text": "✅ Third-party libraries"
+      },
+      {
+        "type": "bold",
+        "text": "Rule"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Rule"
-          }
-        ]
+        "text": "👉 Use only when you're sure about the type"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Use only when you're sure about the type"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Type assertions are used when TypeScript cannot infer types, but should be used cautiously as they bypass type checking."
-          }
-        ]
+        "type": "info",
+        "text": "Type assertions are used when TypeScript cannot infer types, but should be used cautiously as they bypass type checking."
       }
     ]
   },
   {
-    "id": "ts-063",
-    "topic": "",
-    "subTopic": "Bonus Coding Questions",
+    "id": "ts-062",
+    "topic": "Typescript",
+    "subTopic": "Debugging & Best Practices",
     "difficulty": "Beginner",
     "question": "Risks of type assertions",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Main Problem"
-          }
-        ]
+        "type": "bold",
+        "text": "Main Problem"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 TypeScript trusts you blindly"
-          }
-        ]
+        "text": "👉 TypeScript trusts you blindly"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -7653,21 +5750,11 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "❌ No error, but wrong type → runtime bug"
-          }
-        ]
+        "text": "❌ No error, but wrong type → runtime bug"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Risks"
-          }
-        ]
+        "type": "bold",
+        "text": "Risks"
       },
       {
         "type": "list",
@@ -7694,13 +5781,8 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Safer Alternatives"
-          }
-        ]
+        "type": "bold",
+        "text": "Safer Alternatives"
       },
       {
         "type": "list",
@@ -7727,40 +5809,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Type assertions can introduce runtime bugs by bypassing type checks, so they should be used sparingly."
-          }
-        ]
+        "type": "info",
+        "text": "Type assertions can introduce runtime bugs by bypassing type checks, so they should be used sparingly."
       }
     ]
   },
   {
-    "id": "ts-064",
-    "topic": "",
+    "id": "ts-063",
+    "topic": "Typescript",
     "subTopic": "Bonus Coding Questions",
     "difficulty": "Beginner",
     "question": "Write a generic function to reverse an array",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Solution"
-          }
-        ]
+        "type": "bold",
+        "text": "Solution"
       },
       {
         "type": "code",
@@ -7768,13 +5835,8 @@
         "code": "function reverseArray<T>(arr: T[]): T[] {\n  return [...arr].reverse();\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Usage"
-          }
-        ]
+        "type": "bold",
+        "text": "Usage"
       },
       {
         "type": "code",
@@ -7782,13 +5844,8 @@
         "code": "reverseArray<number>([1, 2, 3]); // [3, 2, 1]\nreverseArray<string>([\"a\", \"b\"]); // [\"b\", \"a\"]"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
@@ -7808,40 +5865,25 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "A generic reverse function ensures type safety while working with any array type."
-          }
-        ]
+        "type": "info",
+        "text": "A generic reverse function ensures type safety while working with any array type."
       }
     ]
   },
   {
-    "id": "ts-065",
-    "topic": "",
+    "id": "ts-064",
+    "topic": "Typescript",
     "subTopic": "Bonus Coding Questions",
     "difficulty": "Beginner",
     "question": "Create a type-safe function for API calls",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Generic API Function"
-          }
-        ]
+        "type": "bold",
+        "text": "Generic API Function"
       },
       {
         "type": "code",
@@ -7849,13 +5891,8 @@
         "code": "async function fetchData<T>(url: string): Promise<T> {\n  const res = await fetch(url);\n  if (!res.ok) {\n    throw new Error(\"API Error\");\n  }\n  return res.json();\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Usage"
-          }
-        ]
+        "type": "bold",
+        "text": "Usage"
       },
       {
         "type": "code",
@@ -7863,13 +5900,8 @@
         "code": "interface User {\n  id: number;\n  name: string;\n}\nconst users = await fetchData<User[]>(\"/api/users\");"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Improved Version (with response wrapper)"
-          }
-        ]
+        "type": "bold",
+        "text": "Improved Version (with response wrapper)"
       },
       {
         "type": "code",
@@ -7877,40 +5909,25 @@
         "code": "type ApiResponse<T> = {\n  data: T;\n  success: boolean;\n};\nasync function fetchApi<T>(url: string): Promise<ApiResponse<T>> {\n  const res = await fetch(url);\n  return res.json();\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Generic API functions allow reusable and type-safe data fetching across different response types."
-          }
-        ]
+        "type": "info",
+        "text": "Generic API functions allow reusable and type-safe data fetching across different response types."
       }
     ]
   },
   {
-    "id": "ts-066",
-    "topic": "",
+    "id": "ts-065",
+    "topic": "Typescript",
     "subTopic": "Bonus Coding Questions",
     "difficulty": "Beginner",
     "question": "Implement a utility type like MyPartial<T>",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Implementation"
-          }
-        ]
+        "type": "bold",
+        "text": "Implementation"
       },
       {
         "type": "code",
@@ -7918,13 +5935,8 @@
         "code": "type MyPartial<T> = {\n  [K in keyof T]?: T[K];\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -7932,13 +5944,8 @@
         "code": "type User = {\n  name: string;\n  age: number;\n};\ntype PartialUser = MyPartial<User>;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Result"
-          }
-        ]
+        "type": "bold",
+        "text": "Result"
       },
       {
         "type": "code",
@@ -7946,13 +5953,8 @@
         "code": "{\nname?: string;\nage?: number;\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Concept"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Concept"
       },
       {
         "type": "paragraph",
@@ -7972,16 +5974,11 @@
         ]
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
+        "type": "info",
         "content": [
           {
             "type": "badge",
@@ -7996,20 +5993,15 @@
     ]
   },
   {
-    "id": "ts-067",
-    "topic": "",
+    "id": "ts-066",
+    "topic": "Typescript",
     "subTopic": "Bonus Coding Questions",
     "difficulty": "Beginner",
     "question": "Type a nested object safely",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -8017,13 +6009,8 @@
         "code": "type User = {\n  id: number;\n  profile: {\n    name: string;\n    address: {\n      city: string;\n      pincode: number;\n    };\n  };\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Safe Access"
-          }
-        ]
+        "type": "bold",
+        "text": "Safe Access"
       },
       {
         "type": "code",
@@ -8031,13 +6018,8 @@
         "code": "const user: User = {\n  id: 1,\n  profile: {\n    name: \"Tanmay\",\n    address: {\n      city: \"Mumbai\",\n      pincode: 400001,\n    },\n  },\n};\n// Safe usage\nconsole.log(user.profile.address.city);"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Optional Nested Fields"
-          }
-        ]
+        "type": "bold",
+        "text": "Optional Nested Fields"
       },
       {
         "type": "code",
@@ -8045,13 +6027,8 @@
         "code": "type User = {\n  profile?: {\n    name?: string;\n  };\n};"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Safe Access with Optional Chaining"
-          }
-        ]
+        "type": "bold",
+        "text": "Safe Access with Optional Chaining"
       },
       {
         "type": "code",
@@ -8059,58 +6036,33 @@
         "code": "user.profile?.name;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Nested objects are typed using structured types and accessed safely using optional chaining."
-          }
-        ]
+        "type": "info",
+        "text": "Nested objects are typed using structured types and accessed safely using optional chaining."
       }
     ]
   },
   {
-    "id": "ts-068",
-    "topic": "",
+    "id": "ts-067",
+    "topic": "Typescript",
     "subTopic": "Bonus Coding Questions",
     "difficulty": "Beginner",
     "question": "Create a discriminated union example",
     "answer": [
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "bold",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Union with a common property (discriminator)"
-          }
-        ]
+        "text": "Union with a common property (discriminator)"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "type": "bold",
+        "text": "Example"
       },
       {
         "type": "code",
@@ -8118,13 +6070,8 @@
         "code": "type Success = {\n  status: \"success\";\n  data: string;\n};\ntype ErrorResponse = {\n  status: \"error\";\n  message: string;\n};\ntype ApiResult = Success | ErrorResponse;"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Usage"
-          }
-        ]
+        "type": "bold",
+        "text": "Usage"
       },
       {
         "type": "code",
@@ -8132,40 +6079,20 @@
         "code": "function handleResponse(res: ApiResult) {\n  if (res.status === \"success\") {\n    console.log(res.data);\n  } else {\n    console.log(res.message);\n  }\n}"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Key Point"
-          }
-        ]
+        "type": "bold",
+        "text": "Key Point"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "TypeScript auto-narrows based on status"
-          }
-        ]
+        "text": "TypeScript auto-narrows based on status"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "type": "bold",
+        "text": "🔥 Interview Line"
       },
       {
-        "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Discriminated unions use a shared literal property to safely distinguish between types."
-          }
-        ]
+        "type": "info",
+        "text": "Discriminated unions use a shared literal property to safely distinguish between types."
       }
     ]
   }
