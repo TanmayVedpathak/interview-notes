@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Basic",
+    "slug": "basic",
+    "icon": "/img/coding.png",
+    "alt": "basic"
+  },
+  {
+    "title": "HTML",
+    "slug": "html",
+    "icon": "/img/html.png",
+    "alt": "html"
+  },
+  {
+    "title": "CSS",
+    "slug": "css",
+    "icon": "/img/css-3.png",
+    "alt": "css"
+  },
+  {
+    "title": "JavaScript",
+    "slug": "javascript",
+    "icon": "/img/javascript.png",
+    "alt": "javascript"
+  },
+  {
+    "title": "React",
+    "slug": "reactjs",
+    "icon": "/img/react.png",
+    "alt": "react-js"
+  },
+  {
+    "title": "Next",
+    "slug": "nextjs",
+    "icon": "/img/nextjs.png",
+    "alt": "next-js"
+  },
+  {
+    "title": "TypeScript",
+    "slug": "typescript",
+    "icon": "/img/typescript.png",
+    "alt": "typescript"
+  },
+  {
+    "title": "Node Js",
+    "slug": "nodejs",
+    "icon": "/img/node-js.png",
+    "alt": "node-js"
+  },
+  {
+    "title": "MongoDB",
+    "slug": "mongodb",
+    "icon": "/img/mongodb.png",
+    "alt": "mongodb"
+  }
+]
