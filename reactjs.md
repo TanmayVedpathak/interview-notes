@@ -16542,6 +16542,8 @@ Wrap the component with the required Context provider.
 
 **Example:**
 
+<!-- {% raw %} -->
+
 ```jsx
 render(
   <AuthContext.Provider
@@ -16555,6 +16557,8 @@ render(
   </AuthContext.Provider>,
 );
 ```
+
+<!-- {% endraw %} -->
 
 Then assert the visible behavior.
 
