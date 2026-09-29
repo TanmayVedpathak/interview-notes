@@ -1,7 +1,7 @@
 [
   {
     "id": "basic-001",
-    "topic": "basic",
+    "topic": "BASIC",
     "subTopic": "Web Fundamentals",
     "difficulty": "Intermediate",
     "question": "Full mental model of how a web page load",
@@ -288,19 +288,1571 @@
   },
   {
     "id": "basic-002",
-    "topic": "Basic",
+    "topic": "BASIC",
+    "subTopic": "Web Fundamentals",
+    "difficulty": "Beginner",
+    "question": "List all HTTP status codes.",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "HTTP status codes are grouped into five categories based on the first digit."
+      },
+      {
+        "type": "h4",
+        "text": "1xx — Informational"
+      },
+      {
+        "type": "table",
+        "columns": ["Code", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "100"
+                }
+              ]
+            },
+            "Continue"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "101"
+                }
+              ]
+            },
+            "Switching Protocols"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "102"
+                }
+              ]
+            },
+            "Processing"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "103"
+                }
+              ]
+            },
+            "Early Hints"
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "2xx — Success"
+      },
+      {
+        "type": "table",
+        "columns": ["Code", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "200"
+                }
+              ]
+            },
+            "OK"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "201"
+                }
+              ]
+            },
+            "Created"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "202"
+                }
+              ]
+            },
+            "Accepted"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "203"
+                }
+              ]
+            },
+            "Non-Authoritative Information"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "204"
+                }
+              ]
+            },
+            "No Content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "205"
+                }
+              ]
+            },
+            "Reset Content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "206"
+                }
+              ]
+            },
+            "Partial Content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "207"
+                }
+              ]
+            },
+            "Multi-Status"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "208"
+                }
+              ]
+            },
+            "Already Reported"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "226"
+                }
+              ]
+            },
+            "IM Used"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Common examples:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "200 → request succeeded\n201 → resource created\n204 → success with no response body"
+      },
+      {
+        "type": "h4",
+        "text": "3xx — Redirection"
+      },
+      {
+        "type": "table",
+        "columns": ["Code", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "300"
+                }
+              ]
+            },
+            "Multiple Choices"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "301"
+                }
+              ]
+            },
+            "Moved Permanently"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "302"
+                }
+              ]
+            },
+            "Found"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "303"
+                }
+              ]
+            },
+            "See Other"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "304"
+                }
+              ]
+            },
+            "Not Modified"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "305"
+                }
+              ]
+            },
+            "Use Proxy — deprecated"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "306"
+                }
+              ]
+            },
+            "Unused"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "307"
+                }
+              ]
+            },
+            "Temporary Redirect"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "308"
+                }
+              ]
+            },
+            "Permanent Redirect"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "307"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "badge",
+            "value": "308"
+          },
+          {
+            "type": "text",
+            "value": " preserve the original HTTP method and body during redirection."
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "4xx — Client Errors"
+      },
+      {
+        "type": "table",
+        "columns": ["Code", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "400"
+                }
+              ]
+            },
+            "Bad Request"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "401"
+                }
+              ]
+            },
+            "Unauthorized"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "402"
+                }
+              ]
+            },
+            "Payment Required"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "403"
+                }
+              ]
+            },
+            "Forbidden"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "404"
+                }
+              ]
+            },
+            "Not Found"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "405"
+                }
+              ]
+            },
+            "Method Not Allowed"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "406"
+                }
+              ]
+            },
+            "Not Acceptable"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "407"
+                }
+              ]
+            },
+            "Proxy Authentication Required"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "408"
+                }
+              ]
+            },
+            "Request Timeout"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "409"
+                }
+              ]
+            },
+            "Conflict"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "410"
+                }
+              ]
+            },
+            "Gone"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "411"
+                }
+              ]
+            },
+            "Length Required"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "412"
+                }
+              ]
+            },
+            "Precondition Failed"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "413"
+                }
+              ]
+            },
+            "Content Too Large"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "414"
+                }
+              ]
+            },
+            "URI Too Long"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "415"
+                }
+              ]
+            },
+            "Unsupported Media Type"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "416"
+                }
+              ]
+            },
+            "Range Not Satisfiable"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "417"
+                }
+              ]
+            },
+            "Expectation Failed"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "418"
+                }
+              ]
+            },
+            "I'm a Teapot"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "421"
+                }
+              ]
+            },
+            "Misdirected Request"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "422"
+                }
+              ]
+            },
+            "Unprocessable Content"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "423"
+                }
+              ]
+            },
+            "Locked"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "424"
+                }
+              ]
+            },
+            "Failed Dependency"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "425"
+                }
+              ]
+            },
+            "Too Early"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "426"
+                }
+              ]
+            },
+            "Upgrade Required"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "428"
+                }
+              ]
+            },
+            "Precondition Required"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "429"
+                }
+              ]
+            },
+            "Too Many Requests"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "431"
+                }
+              ]
+            },
+            "Request Header Fields Too Large"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "451"
+                }
+              ]
+            },
+            "Unavailable For Legal Reasons"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Important commonly used codes:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "400 → invalid request\n401 → authentication required or invalid\n403 → authenticated but not allowed\n404 → resource not found\n409 → conflict with current server state\n422 → syntactically valid request but invalid content\n429 → rate limit exceeded"
+      },
+      {
+        "type": "h4",
+        "text": "5xx — Server Errors"
+      },
+      {
+        "type": "table",
+        "columns": ["Code", "Meaning"],
+        "data": [
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "500"
+                }
+              ]
+            },
+            "Internal Server Error"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "501"
+                }
+              ]
+            },
+            "Not Implemented"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "502"
+                }
+              ]
+            },
+            "Bad Gateway"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "503"
+                }
+              ]
+            },
+            "Service Unavailable"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "504"
+                }
+              ]
+            },
+            "Gateway Timeout"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "505"
+                }
+              ]
+            },
+            "HTTP Version Not Supported"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "506"
+                }
+              ]
+            },
+            "Variant Also Negotiates"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "507"
+                }
+              ]
+            },
+            "Insufficient Storage"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "508"
+                }
+              ]
+            },
+            "Loop Detected"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "510"
+                }
+              ]
+            },
+            "Not Extended"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "511"
+                }
+              ]
+            },
+            "Network Authentication Required"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Common examples:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "500 → unexpected server failure\n502 → invalid response from upstream service\n503 → server temporarily unavailable\n504 → upstream service timed out"
+      },
+      {
+        "type": "bold",
+        "text": "Interview Line"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "HTTP status codes are grouped as "
+          },
+          {
+            "type": "badge",
+            "value": "1xx"
+          },
+          {
+            "type": "text",
+            "value": " informational, "
+          },
+          {
+            "type": "badge",
+            "value": "2xx"
+          },
+          {
+            "type": "text",
+            "value": " success, "
+          },
+          {
+            "type": "badge",
+            "value": "3xx"
+          },
+          {
+            "type": "text",
+            "value": " redirection, "
+          },
+          {
+            "type": "badge",
+            "value": "4xx"
+          },
+          {
+            "type": "text",
+            "value": " client errors, and "
+          },
+          {
+            "type": "badge",
+            "value": "5xx"
+          },
+          {
+            "type": "text",
+            "value": " server errors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "basic-003",
+    "topic": "BASIC",
+    "subTopic": "Web Fundamentals",
+    "difficulty": "Beginner",
+    "question": "Explain in detail IndexedDB.",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "IndexedDB is a browser database designed for storing large amounts of structured data on the client."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Unlike "
+          },
+          {
+            "type": "badge",
+            "value": "localStorage"
+          },
+          {
+            "type": "text",
+            "value": ", which stores only strings, IndexedDB can store structured values such as:"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "objects\narrays\nnumbers\nstrings\ndates\nblobs\nfiles"
+      },
+      {
+        "type": "paragraph",
+        "text": "It is commonly used for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Offline-first applications"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cached API data"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Large datasets"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Draft forms"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Local search data"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Files and images"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Progressive Web Apps"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Main concepts"
+      },
+      {
+        "type": "h5",
+        "text": "Database"
+      },
+      {
+        "type": "paragraph",
+        "text": "Open a database using:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const request = indexedDB.open(\"app-db\", 1);"
+      },
+      {
+        "type": "paragraph",
+        "text": "The second argument is the database version."
+      },
+      {
+        "type": "h5",
+        "text": "Object stores"
+      },
+      {
+        "type": "paragraph",
+        "text": "An object store is similar to a table."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "request.onupgradeneeded = () => {\n  const db = request.result;\n\n  db.createObjectStore(\"users\", {\n    keyPath: \"id\",\n  });\n};"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "keyPath"
+          },
+          {
+            "type": "text",
+            "value": " specifies which property acts as the primary key."
+          }
+        ]
+      },
+      {
+        "type": "h5",
+        "text": "Keys"
+      },
+      {
+        "type": "paragraph",
+        "text": "Keys can be:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "explicit\nkeyPath-based\nauto-incremented"
+      },
+      {
+        "type": "paragraph",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "db.createObjectStore(\"users\", {\n  keyPath: \"id\",\n  autoIncrement: true,\n});"
+      },
+      {
+        "type": "h5",
+        "text": "Transactions"
+      },
+      {
+        "type": "paragraph",
+        "text": "All reads and writes happen inside transactions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Common modes are:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "readonly\nreadwrite\nversionchange"
+      },
+      {
+        "type": "paragraph",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const transaction = db.transaction(\"users\", \"readwrite\");\n\nconst store = transaction.objectStore(\"users\");\n\nstore.put({\n  id: 1,\n  name: \"John\",\n});"
+      },
+      {
+        "type": "paragraph",
+        "text": "Transactions help preserve consistency."
+      },
+      {
+        "type": "h5",
+        "text": "Requests"
+      },
+      {
+        "type": "paragraph",
+        "text": "The native IndexedDB API is event-based."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const request = indexedDB.open(\"app-db\", 1);\n\nrequest.onsuccess = () => {\n  const db = request.result;\n};\n\nrequest.onerror = () => {\n  console.error(request.error);\n};"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Libraries such as "
+          },
+          {
+            "type": "badge",
+            "value": "idb"
+          },
+          {
+            "type": "text",
+            "value": " provide Promise-based wrappers."
+          }
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Reading data"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const transaction = db.transaction(\"users\", \"readonly\");\n\nconst store = transaction.objectStore(\"users\");\n\nconst request = store.get(1);\n\nrequest.onsuccess = () => {\n  console.log(request.result);\n};"
+      },
+      {
+        "type": "h4",
+        "text": "Indexes"
+      },
+      {
+        "type": "paragraph",
+        "text": "Indexes allow efficient lookups by non-primary-key fields."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "store.createIndex(\"email\", \"email\", {\n  unique: true,\n});"
+      },
+      {
+        "type": "paragraph",
+        "text": "Then:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const emailIndex = store.index(\"email\");\n\nemailIndex.get(\"john@example.com\");"
+      },
+      {
+        "type": "h4",
+        "text": "Cursors"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cursors iterate over many records."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const request = store.openCursor();\n\nrequest.onsuccess = () => {\n  const cursor = request.result;\n\n  if (cursor) {\n    console.log(cursor.value);\n\n    cursor.continue();\n  }\n};"
+      },
+      {
+        "type": "h4",
+        "text": "IndexedDB vs localStorage"
+      },
+      {
+        "type": "table",
+        "columns": ["IndexedDB", "localStorage"],
+        "data": [
+          ["Structured data", "Strings only"],
+          ["Asynchronous", "Synchronous"],
+          ["Transactions", "No transactions"],
+          ["Indexes", "No indexes"],
+          ["Good for larger datasets", "Good for small values"],
+          ["Supports blobs/files", "String storage"],
+          ["More complex", "Very simple"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "localStorage"
+          },
+          {
+            "type": "text",
+            "value": " can block the main thread because it is synchronous."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "IndexedDB is asynchronous and better suited for larger client-side datasets."
+      },
+      {
+        "type": "h4",
+        "text": "Schema upgrades"
+      },
+      {
+        "type": "paragraph",
+        "text": "Schema changes happen when opening the database with a higher version."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "indexedDB.open(\"app-db\", 2);"
+      },
+      {
+        "type": "paragraph",
+        "text": "Then update stores/indexes inside:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "onupgradeneeded;"
+      },
+      {
+        "type": "h4",
+        "text": "Multiple tabs"
+      },
+      {
+        "type": "paragraph",
+        "text": "If another tab has an older connection open, an upgrade can be blocked."
+      },
+      {
+        "type": "paragraph",
+        "text": "Useful events include:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "blocked\nversionchange"
+      },
+      {
+        "type": "paragraph",
+        "text": "Applications should close outdated connections when a version change is requested."
+      },
+      {
+        "type": "h4",
+        "text": "IndexedDB and Web Workers"
+      },
+      {
+        "type": "paragraph",
+        "text": "IndexedDB can be accessed from Web Workers, which is useful when storage and data processing should happen away from the UI thread."
+      },
+      {
+        "type": "h4",
+        "text": "Security consideration"
+      },
+      {
+        "type": "paragraph",
+        "text": "IndexedDB is client-side storage."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users can clear or modify browser storage, so it should not be treated as an authoritative or secure backend database."
+      },
+      {
+        "type": "bold",
+        "text": "Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "IndexedDB is an asynchronous transactional browser database for structured client-side data with object stores, indexes, cursors, and versioned schema upgrades."
+      }
+    ]
+  },
+  {
+    "id": "basic-004",
+    "topic": "BASIC",
+    "subTopic": "Web Fundamentals",
+    "difficulty": "Beginner",
+    "question": "Explain in detail Shadow DOM.",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Shadow DOM is a browser feature that creates an encapsulated DOM subtree for a component."
+      },
+      {
+        "type": "paragraph",
+        "text": "It is commonly used with Web Components."
+      },
+      {
+        "type": "h4",
+        "text": "Shadow host and shadow root"
+      },
+      {
+        "type": "paragraph",
+        "text": "Create a shadow root:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "const host = document.querySelector(\"#component\");\n\nconst shadowRoot = host.attachShadow({\n  mode: \"open\",\n});"
+      },
+      {
+        "type": "paragraph",
+        "text": "Conceptually:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "Document\n└── component ← shadow host\n    └── #shadow-root\n        ├── style\n        ├── h2\n        └── button"
+      },
+      {
+        "type": "paragraph",
+        "text": "The host belongs to the normal DOM."
+      },
+      {
+        "type": "paragraph",
+        "text": "The internal nodes belong to the shadow tree."
+      },
+      {
+        "type": "h4",
+        "text": "Style encapsulation"
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS inside the shadow root is scoped to that shadow tree."
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "shadowRoot.innerHTML = `\n  <style>\n    button {\n      color: red;\n    }\n  </style>\n\n  <button>Save</button>\n`;"
+      },
+      {
+        "type": "paragraph",
+        "text": "That rule does not normally affect unrelated buttons outside the component."
+      },
+      {
+        "type": "paragraph",
+        "text": "Similarly, normal page selectors do not directly style internal shadow elements in the usual way."
+      },
+      {
+        "type": "h4",
+        "content": [
+          {
+            "type": "badge",
+            "value": "open"
+          },
+          {
+            "type": "text",
+            "value": " vs "
+          },
+          {
+            "type": "badge",
+            "value": "closed"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "element.attachShadow({\n  mode: \"open\",\n});"
+      },
+      {
+        "type": "paragraph",
+        "text": "allows:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "element.shadowRoot;"
+      },
+      {
+        "type": "paragraph",
+        "text": "to return the shadow root."
+      },
+      {
+        "type": "paragraph",
+        "text": "With:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "mode: \"closed\";"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "external access through "
+          },
+          {
+            "type": "badge",
+            "value": "element.shadowRoot"
+          },
+          {
+            "type": "text",
+            "value": " returns "
+          },
+          {
+            "type": "badge",
+            "value": "null"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Closed mode is not a security feature."
+      },
+      {
+        "type": "h4",
+        "text": "Slots"
+      },
+      {
+        "type": "paragraph",
+        "text": "Slots let external content be projected into the component."
+      },
+      {
+        "type": "paragraph",
+        "text": "Shadow tree:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<div>\n  <slot name=\"title\"> </slot>\n</div>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Usage:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<my-card>\n  <h2 slot=\"title\">Hello</h2>\n</my-card>"
+      },
+      {
+        "type": "paragraph",
+        "text": "A slot without a name is the default slot."
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<slot></slot>"
+      },
+      {
+        "type": "h4",
+        "text": "Styling the host"
+      },
+      {
+        "type": "paragraph",
+        "text": "Inside shadow CSS:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ":host {\n  display: block;\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "You can also conditionally style the host:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ":host(.active) {\n  border: 1px solid;\n}"
+      },
+      {
+        "type": "h4",
+        "text": "CSS custom properties"
+      },
+      {
+        "type": "paragraph",
+        "text": "CSS variables can cross the shadow boundary and are useful for theming."
+      },
+      {
+        "type": "paragraph",
+        "text": "Outside:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "my-card {\n  --title-color: blue;\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Inside:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "h2 {\n  color: var(--title-color, black);\n}"
+      },
+      {
+        "type": "h4",
+        "text": "Events and retargeting"
+      },
+      {
+        "type": "paragraph",
+        "text": "Events may cross shadow boundaries, but the browser can retarget them."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "If a button inside a shadow root is clicked, outside code may see the custom-element host as "
+          },
+          {
+            "type": "badge",
+            "value": "event.target"
+          },
+          {
+            "type": "text",
+            "value": " instead of the internal button."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "You can inspect the path with:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "event.composedPath();"
+      },
+      {
+        "type": "paragraph",
+        "text": "Custom events that must cross the boundary often use:"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "new CustomEvent(\"save\", {\n  bubbles: true,\n  composed: true,\n});"
+      },
+      {
+        "type": "h4",
+        "text": "Shadow DOM vs normal DOM"
+      },
+      {
+        "type": "table",
+        "columns": ["Normal DOM", "Shadow DOM"],
+        "data": [
+          ["Shared page tree", "Encapsulated subtree"],
+          ["Global CSS can affect descendants", "Styles are scoped"],
+          ["Easy selector traversal", "Shadow boundary limits selector traversal"],
+          ["General application markup", "Component encapsulation"]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Shadow DOM vs iframe"
+      },
+      {
+        "type": "paragraph",
+        "text": "An iframe creates a separate document and browsing context."
+      },
+      {
+        "type": "paragraph",
+        "text": "Shadow DOM stays in the same document and JavaScript environment."
+      },
+      {
+        "type": "paragraph",
+        "text": "So Shadow DOM is lighter and designed for component-level encapsulation."
+      },
+      {
+        "type": "h4",
+        "text": "Web Component example"
+      },
+      {
+        "type": "code",
+        "language": "js",
+        "code": "class UserCard extends HTMLElement {\n  constructor() {\n    super();\n\n    const shadow = this.attachShadow({\n      mode: \"open\",\n    });\n\n    shadow.innerHTML = `\n      <style>\n        h2 {\n          color: purple;\n        }\n      </style>\n\n      <h2>User Card</h2>\n    `;\n  }\n}\n\ncustomElements.define(\"user-card\", UserCard);"
+      },
+      {
+        "type": "paragraph",
+        "text": "Usage:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "code": "<user-card> </user-card>"
+      },
+      {
+        "type": "h4",
+        "text": "Important limitation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Shadow DOM provides encapsulation, not security."
+      },
+      {
+        "type": "paragraph",
+        "text": "Open roots can be accessed by page JavaScript, and browser developer tools can inspect shadow trees."
+      },
+      {
+        "type": "bold",
+        "text": "Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "Shadow DOM creates an encapsulated component subtree with scoped styling, slots for content projection, and controlled event-boundary behavior."
+      }
+    ]
+  },
+  {
+    "id": "basic-005",
+    "topic": "BASIC",
     "subTopic": "SEO",
     "difficulty": "Beginner",
     "question": "What is robots.txt?",
     "answer": [
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
@@ -316,13 +1868,8 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example URL:"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Example URL:"
       },
       {
         "type": "code",
@@ -330,35 +1877,20 @@
         "code": "https://example.com/robots.txt"
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Why is it used?"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Why is it used?"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "It is used to control how search engines like Google, Bing, etc., crawl your website."
-          }
-        ]
+        "text": "It is used to control how search engines like Google, Bing, etc., crawl your website."
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Main Purpose"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Main Purpose"
       },
       {
         "type": "list",
-        "style": "ordered",
+        "style": "unordered",
         "items": [
           [
             {
@@ -366,94 +1898,65 @@
               "value": "Control Crawling"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Prevent bots from accessing certain pages"
-                }
-              ]
-            ]
-          },
+          [
+            {
+              "type": "text",
+              "value": "Prevent bots from accessing certain pages"
+            }
+          ],
           [
             {
               "type": "text",
               "value": "Protect Sensitive Areas (Not secure, but helps)"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Admin pages"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "value": "Internal APIs"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "value": "Temporary files"
-                }
-              ]
-            ]
-          },
+          [
+            {
+              "type": "text",
+              "value": "Admin pages"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Internal APIs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Temporary files"
+            }
+          ],
           [
             {
               "type": "text",
               "value": "Optimize Crawl Budget"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Search engines don’t waste time on irrelevant pages"
-                }
-              ]
-            ]
-          },
+          [
+            {
+              "type": "text",
+              "value": "Search engines don’t waste time on irrelevant pages"
+            }
+          ],
           [
             {
               "type": "text",
               "value": "Avoid Duplicate Content Issues"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Block duplicate or unnecessary URLs"
-                }
-              ]
-            ]
-          }
+          [
+            {
+              "type": "text",
+              "value": "Block duplicate or unnecessary URLs"
+            }
+          ]
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Basic Syntax"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Basic Syntax"
       },
       {
         "type": "code",
@@ -462,30 +1965,76 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Explanation"
-          }
-        ]
+        "text": "Explanation"
       },
       {
         "type": "table",
         "columns": ["Rule", "Meaning"],
         "data": [
-          ["User-agent: *", "Applies to all bots"],
-          ["Disallow: /admin/", "Block /admin folder"],
-          ["Allow: /public/", "Allow /public"]
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "User-agent: *"
+                }
+              ]
+            },
+            "Applies to all bots"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "Disallow: /admin/"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Block "
+                },
+                {
+                  "type": "badge",
+                  "value": "/admin"
+                },
+                {
+                  "type": "text",
+                  "value": " folder"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "Allow: /public/"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Allow "
+                },
+                {
+                  "type": "badge",
+                  "value": "/public"
+                }
+              ]
+            }
+          ]
         ]
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example"
-          }
-        ]
+        "text": "Example"
       },
       {
         "type": "code",
@@ -494,21 +2043,11 @@
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Bots cannot crawl /private and /temp"
-          }
-        ]
+        "text": "👉 Bots cannot crawl /private and /temp"
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Important Points ⚠️"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Important Points ⚠️"
       },
       {
         "type": "list",
@@ -535,58 +2074,48 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "robots.txt vs Meta Robots"
-          }
-        ]
+        "type": "paragraph",
+        "text": "robots.txt vs Meta Robots"
       },
       {
         "type": "table",
         "columns": ["Feature", "robots.txt", "Meta Robots"],
         "data": [
           ["Scope", "Whole site", "Specific page"],
-          ["Location", "Root file", "HTML `<head>`"],
+          [
+            "Location",
+            "Root file",
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "HTML "
+                },
+                {
+                  "type": "badge",
+                  "value": "<head>"
+                }
+              ]
+            }
+          ],
           ["Control", "Crawl", "Indexing"]
         ]
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Real Insight"
-          }
-        ]
+        "text": "Real Insight"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "👉 Even if blocked in robots.txt, a page can still appear in search results if:"
-          }
-        ]
+        "text": "👉 Even if blocked in robots.txt, a page can still appear in search results if:"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "Other sites link to it"
-          }
-        ]
+        "text": "Other sites link to it"
       },
       {
         "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "text": "Interview Line"
       },
       {
         "type": "info",
@@ -602,13 +2131,8 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "🚀 Quick Summary"
-          }
-        ]
+        "type": "paragraph",
+        "text": "🚀 Quick Summary"
       },
       {
         "type": "list",
@@ -643,20 +2167,15 @@
     ]
   },
   {
-    "id": "basic-003",
-    "topic": "Basic",
+    "id": "basic-006",
+    "topic": "BASIC",
     "subTopic": "SEO",
     "difficulty": "Beginner",
     "question": "What is sitemap.xml?",
     "answer": [
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Definition"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Definition"
       },
       {
         "type": "paragraph",
@@ -696,31 +2215,16 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Why is it used?"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Why is it used?"
       },
       {
         "type": "paragraph",
-        "content": [
-          {
-            "type": "text",
-            "value": "It helps search engines like Google and Bing discover and index pages more efficiently."
-          }
-        ]
+        "text": "It helps search engines like Google and Bing discover and index pages more efficiently."
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Main Purpose"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Main Purpose"
       },
       {
         "type": "list",
@@ -732,127 +2236,138 @@
               "value": "Improve Indexing"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Ensures all important pages are found"
-                }
-              ]
-            ]
-          },
+          [
+            {
+              "type": "text",
+              "value": "Ensures all important pages are found"
+            }
+          ],
           [
             {
               "type": "text",
               "value": "Help Large Websites"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Useful for sites with many pages or deep structure"
-                }
-              ]
-            ]
-          },
+          [
+            {
+              "type": "text",
+              "value": "Useful for sites with many pages or deep structure"
+            }
+          ],
           [
             {
               "type": "text",
               "value": "Faster Discovery of New Content"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Newly added pages get indexed quicker"
-                }
-              ]
-            ]
-          },
           [
             {
               "type": "text",
-              "value": "Provide Metadata (Includes:)"
+              "value": "Newly added pages get indexed quicker"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "Last modified date"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "value": "Priority"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "value": "Change frequency"
-                }
-              ]
-            ]
-          }
+          [
+            {
+              "type": "text",
+              "value": "Provide Metadata"
+            }
+          ]
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Basic Structure"
-          }
+        "type": "paragraph",
+        "text": "Includes:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Last modified date"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Priority"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Change frequency"
+            }
+          ]
         ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Basic Structure"
       },
       {
         "type": "code",
         "language": "xml",
-        "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://example.com/</loc>\n    <lastmod>2026-04-16</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n</urlset>"
+        "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n\n  <url>\n    <loc>https://example.com/</loc>\n    <lastmod>2026-04-16</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n\n</urlset>"
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Tags Explained"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Tags Explained"
       },
       {
         "type": "table",
         "columns": ["Tag", "Meaning"],
         "data": [
-          ["<loc>", "Page URL"],
-          ["<lastmod>", "Last updated date"],
-          ["<changefreq>", "Update frequency"],
-          ["<priority>", "Importance (0–1)"]
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<loc>"
+                }
+              ]
+            },
+            "Page URL"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<lastmod>"
+                }
+              ]
+            },
+            "Last updated date"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<changefreq>"
+                }
+              ]
+            },
+            "Update frequency"
+          ],
+          [
+            {
+              "content": [
+                {
+                  "type": "badge",
+                  "value": "<priority>"
+                }
+              ]
+            },
+            "Importance (0–1)"
+          ]
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Example URL"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Example URL"
       },
       {
         "type": "code",
@@ -860,17 +2375,12 @@
         "code": "https://example.com/sitemap.xml"
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Types of Sitemaps"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Types of Sitemaps"
       },
       {
         "type": "list",
-        "style": "ordered",
+        "style": "unordered",
         "items": [
           [
             {
@@ -878,46 +2388,29 @@
               "value": "XML Sitemap"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "For search engines (most common)"
-                }
-              ]
-            ]
-          },
+          [
+            {
+              "type": "text",
+              "value": "For search engines (most common)"
+            }
+          ],
           [
             {
               "type": "text",
               "value": "HTML Sitemap"
             }
           ],
-          {
-            "type": "list",
-            "style": "unordered",
-            "items": [
-              [
-                {
-                  "type": "text",
-                  "value": "For users (navigation page)"
-                }
-              ]
-            ]
-          }
+          [
+            {
+              "type": "text",
+              "value": "For users (navigation page)"
+            }
+          ]
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "sitemap.xml vs robots.txt"
-          }
-        ]
+        "type": "paragraph",
+        "text": "sitemap.xml vs robots.txt"
       },
       {
         "type": "table",
@@ -929,13 +2422,8 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Best Practices"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Best Practices"
       },
       {
         "type": "list",
@@ -968,13 +2456,8 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "Important Notes ⚠️"
-          }
-        ]
+        "type": "paragraph",
+        "text": "Important Notes ⚠️"
       },
       {
         "type": "list",
@@ -1002,12 +2485,7 @@
       },
       {
         "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "🔥 Interview Line"
-          }
-        ]
+        "text": "Interview Line"
       },
       {
         "type": "info",
@@ -1023,13 +2501,8 @@
         ]
       },
       {
-        "type": "bold",
-        "content": [
-          {
-            "type": "text",
-            "value": "🚀 Quick Summary"
-          }
-        ]
+        "type": "paragraph",
+        "text": "🚀 Quick Summary"
       },
       {
         "type": "list",
@@ -1059,6 +2532,307 @@
               "value": "Works alongside robots.txt"
             }
           ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "basic-007",
+    "topic": "BASIC",
+    "subTopic": "Package manager",
+    "difficulty": "Beginner",
+    "question": "npm ci vs npm install",
+    "answer": [
+      {
+        "type": "paragraph",
+        "text": "Both commands install dependencies, but they are intended for different workflows."
+      },
+      {
+        "type": "h4",
+        "content": [
+          {
+            "type": "badge",
+            "value": "npm install"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "npm install"
+          },
+          {
+            "type": "text",
+            "value": " mainly for normal development and dependency management."
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm install"
+      },
+      {
+        "type": "paragraph",
+        "text": "It reads:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "package.json\npackage-lock.json"
+      },
+      {
+        "type": "paragraph",
+        "text": "and installs compatible dependencies."
+      },
+      {
+        "type": "paragraph",
+        "text": "When adding a package:"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm install axios"
+      },
+      {
+        "type": "paragraph",
+        "text": "it normally updates:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "package.json\npackage-lock.json"
+      },
+      {
+        "type": "h4",
+        "content": [
+          {
+            "type": "badge",
+            "value": "npm ci"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "badge",
+            "value": "npm ci"
+          },
+          {
+            "type": "text",
+            "value": " is designed for clean and reproducible installs."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "It is commonly used in:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "CI/CD\nDocker builds\ndeployment pipelines\nautomated environments"
+      },
+      {
+        "type": "paragraph",
+        "text": "It requires an existing lock file."
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm ci"
+      },
+      {
+        "type": "paragraph",
+        "text": "Important characteristics:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Installs the exact dependency tree from the lock file"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Fails if "
+            },
+            {
+              "type": "badge",
+              "value": "package.json"
+            },
+            {
+              "type": "text",
+              "value": " and the lock file are inconsistent"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Does not update the lock file"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Removes existing "
+            },
+            {
+              "type": "badge",
+              "value": "node_modules"
+            },
+            {
+              "type": "text",
+              "value": " before installing"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Is not used to add new dependencies"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Comparison"
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "npm install"
+              }
+            ]
+          },
+          {
+            "content": [
+              {
+                "type": "badge",
+                "value": "npm ci"
+              }
+            ]
+          }
+        ],
+        "data": [
+          ["Local development", "CI/CD and clean builds"],
+          ["Can update lock file", "Does not update lock file"],
+          ["Can add dependencies", "Not for adding dependencies"],
+          ["Can work without an existing lock file", "Requires lock file"],
+          ["Resolves dependency changes", "Uses locked dependency tree"],
+          [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Does not always clean "
+                },
+                {
+                  "type": "badge",
+                  "value": "node_modules"
+                },
+                {
+                  "type": "text",
+                  "value": " first"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Removes "
+                },
+                {
+                  "type": "badge",
+                  "value": "node_modules"
+                },
+                {
+                  "type": "text",
+                  "value": " first"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h4",
+        "text": "Typical workflow"
+      },
+      {
+        "type": "paragraph",
+        "text": "Local development:"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm install axios"
+      },
+      {
+        "type": "paragraph",
+        "text": "Commit:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "package.json\npackage-lock.json"
+      },
+      {
+        "type": "paragraph",
+        "text": "CI:"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm ci"
+      },
+      {
+        "type": "paragraph",
+        "text": "This helps keep the dependency tree reproducible between machines."
+      },
+      {
+        "type": "bold",
+        "text": "Interview Line"
+      },
+      {
+        "type": "info",
+        "content": [
+          {
+            "type": "text",
+            "value": "Use "
+          },
+          {
+            "type": "badge",
+            "value": "npm install"
+          },
+          {
+            "type": "text",
+            "value": " for local dependency management and "
+          },
+          {
+            "type": "badge",
+            "value": "npm ci"
+          },
+          {
+            "type": "text",
+            "value": " for clean, deterministic installations in CI/CD and deployment environments."
+          }
         ]
       }
     ]

@@ -29,7 +29,7 @@ Example
 </html>
 ```
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 HTML is a markup language used to structure content on the web using elements and tags.
 
@@ -60,7 +60,7 @@ Key Difference
 | Meaning          | Markup syntax | Complete structure |
 | Includes content | ❌ No         | ✅ Yes             |
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 A tag is the syntax, while an element includes the tag along with its content.
 
@@ -100,7 +100,7 @@ Summary
 | Attribute | Extra info inside tag |
 | Element   | Tag + content         |
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Tags define structure, attributes add extra information, and elements represent the complete unit.
 
@@ -120,7 +120,7 @@ Purpose
 
 Ensures browser uses standards mode
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 `<!DOCTYPE html>` is a declaration, not an HTML tag, and it tells the browser to use HTML5 standards.
 
@@ -145,7 +145,7 @@ Key Points
 - Cannot have content inside
 - Self-closing by nature
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Void elements are HTML elements that do not require closing tags and cannot contain content.
 
@@ -170,7 +170,7 @@ Key Difference
 | Closing Tag | ❌ No          | ✅ Yes             |
 | Content     | ❌ Not allowed | ❌ Currently empty |
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Empty elements have no content but may have closing tags, whereas void elements never have closing tags.
 
@@ -206,7 +206,7 @@ Rule
 
 👉 Always properly nest tags
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Overlapping tags break proper nesting, leading to unpredictable rendering and potential layout issues.
 
@@ -255,7 +255,7 @@ Common Attributes
 | `id`      | Unique identifier |
 | `class`   | Styling/grouping  |
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 HTML attributes provide additional information about elements and are defined inside opening tags.
 
@@ -296,7 +296,7 @@ Key Insight
 - Some attributes are restricted
 - Some are flexible
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Attribute values depend on the attribute type—some accept predefined values, while others allow custom values.
 
@@ -325,7 +325,7 @@ Key Point
 
 Placed inside `<head>`
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 The `<meta>` tag provides metadata like character encoding, viewport settings, and SEO information.
 
@@ -346,7 +346,7 @@ Why Important
 - Ensures correct display of text
 - Supports multiple languages
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 The character set is defined using `<meta charset="UTF-8">` to ensure proper text rendering.
 
@@ -377,7 +377,7 @@ Original: hello world
 Encoded: hello%20world
 ```
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 URLs are encoded to ensure special characters are safely transmitted over the internet.
 
@@ -412,7 +412,7 @@ Key Points
 - Also called percent encoding
 - Used in query strings and URLs
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 URL encoding converts special characters into a safe format using percent encoding for reliable transmission.
 
@@ -454,7 +454,7 @@ Why Important
 - Improved accessibility ✅
 - Cleaner, readable code ✅
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Semantic HTML uses meaningful tags to describe content structure, improving SEO and accessibility.
 
@@ -485,7 +485,7 @@ Non-Semantic Elements
 
 👉 Do not convey meaning
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Semantic elements describe the role of content, unlike non-semantic elements like div and span.
 
@@ -517,7 +517,7 @@ Key Difference
 | SEO           | ❌ Not helpful | ✅ Helpful   |
 | Accessibility | ❌ Poor        | ✅ Better    |
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 Physical tags control appearance, while logical tags convey meaning and improve accessibility.
 
@@ -559,7 +559,7 @@ Key Insight
 
 👉 But semantics matter for SEO & screen readers
 
-🔥 Interview Line
+**🔥 Interview Line**
 
 `<strong>` and `<em>` add semantic meaning, while `<b>` and `<i>` only affect appearance.
 

@@ -2160,6 +2160,69 @@ Multi-line ellipsis:
 
 ### Q. Explain clamp() function
 
+**Answer:**
+
+CSS `clamp()` lets you define a responsive value with a minimum, preferred, and maximum limit.
+
+**Syntax:**
+
+```css
+clamp(minimum, preferred, maximum)
+```
+
+The browser tries to use the preferred value, but it never goes below the minimum or above the maximum.
+
+**Example:**
+
+```css
+.title {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+```
+
+Here:
+
+- Minimum font size = `1.5rem`
+- Preferred size = `4vw`
+- Maximum font size = `3rem`
+
+So the font size grows with the viewport, but stays within the defined limits.
+
+Conceptually:
+
+```txt
+Small screen
+→ 1.5rem minimum
+
+Medium screen
+→ 4vw
+
+Large screen
+→ 3rem maximum
+```
+
+It is commonly used for:
+
+- Responsive font sizes
+- Padding
+- Margins
+- Widths
+- Gaps
+
+**Example:**
+
+```css
+.container {
+  padding: clamp(1rem, 3vw, 4rem);
+}
+```
+
+This often reduces the need for multiple media queries.
+
+**Interview Line**
+
+clamp() creates responsive CSS values by restricting a preferred value between a defined minimum and maximum.
+
 ## Transforms, Transitions & Animations
 
 ### Q. Transform property (2D & 3D)
@@ -2455,7 +2518,7 @@ Example:
 1200px → Desktop Layout
 ```
 
-Differences
+#### Differences
 
 | Feature        | Responsive | Adaptive             |
 | -------------- | ---------- | -------------------- |
@@ -2488,7 +2551,7 @@ width: 960px;
 
 Layout switches between predefined versions.
 
-Differences
+#### Differences
 
 | Feature     | Fluid              | Adaptive         |
 | ----------- | ------------------ | ---------------- |
@@ -2580,7 +2643,7 @@ Alternative
 visibility: hidden;
 ```
 
-Difference:
+#### Difference:
 
 | Property          | Space Reserved? |
 | ----------------- | --------------- |
@@ -2898,7 +2961,7 @@ p::after {
 }
 ```
 
-Differences
+#### Differences
 
 | Feature | Pseudo-class | Pseudo-element  |
 | ------- | ------------ | --------------- |
@@ -2930,7 +2993,7 @@ input:focus {
 }
 ```
 
-Differences
+#### Differences
 
 | Feature          | :hover | :focus |
 | ---------------- | ------ | ------ |
@@ -3009,7 +3072,7 @@ li:first-child {
 }
 ```
 
-Differences
+#### Differences
 
 | Selector         | Purpose             |
 | ---------------- | ------------------- |
@@ -3105,7 +3168,7 @@ Normalize CSS
 
 Keeps useful defaults while normalizing differences.
 
-Differences
+#### Differences
 
 | Feature            | Reset | Normalize |
 | ------------------ | ----- | --------- |

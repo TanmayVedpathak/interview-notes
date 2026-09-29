@@ -24,22 +24,22 @@
     "alt": "javascript"
   },
   {
-    "title": "React",
+    "title": "TypeScript",
+    "slug": "typescript",
+    "icon": "/img/typescript.png",
+    "alt": "typescript"
+  },
+  {
+    "title": "React Js",
     "slug": "reactjs",
     "icon": "/img/react.png",
     "alt": "react-js"
   },
   {
-    "title": "Next",
+    "title": "Next Js",
     "slug": "nextjs",
     "icon": "/img/nextjs.png",
     "alt": "next-js"
-  },
-  {
-    "title": "TypeScript",
-    "slug": "typescript",
-    "icon": "/img/typescript.png",
-    "alt": "typescript"
   },
   {
     "title": "Node Js",

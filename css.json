@@ -5616,6 +5616,168 @@
   {
     "id": "css-065",
     "topic": "CSS (Cascading Style Sheets)",
+    "subTopic": "Typography",
+    "difficulty": "Beginner",
+    "question": "Explain clamp() function",
+    "answer": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "value": "CSS "
+          },
+          {
+            "type": "badge",
+            "value": "clamp()"
+          },
+          {
+            "type": "text",
+            "value": " lets you define a responsive value with a minimum, preferred, and maximum limit."
+          }
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Syntax:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "clamp(minimum, preferred, maximum)\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "The browser tries to use the preferred value, but it never goes below the minimum or above the maximum."
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".title {\r\n  font-size: clamp(1.5rem, 4vw, 3rem);\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Minimum font size = "
+            },
+            {
+              "type": "badge",
+              "value": "1.5rem"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Preferred size = "
+            },
+            {
+              "type": "badge",
+              "value": "4vw"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Maximum font size = "
+            },
+            {
+              "type": "badge",
+              "value": "3rem"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So the font size grows with the viewport, but stays within the defined limits."
+      },
+      {
+        "type": "paragraph",
+        "text": "Conceptually:"
+      },
+      {
+        "type": "code",
+        "language": "txt",
+        "code": "Small screen\r\n→ 1.5rem minimum\r\n\r\nMedium screen\r\n→ 4vw\r\n\r\nLarge screen\r\n→ 3rem maximum\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "It is commonly used for:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          [
+            {
+              "type": "text",
+              "value": "Responsive font sizes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Padding"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Margins"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Widths"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Gaps"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "bold",
+        "text": "Example:"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": ".container {\r\n  padding: clamp(1rem, 3vw, 4rem);\r\n}\r"
+      },
+      {
+        "type": "paragraph",
+        "text": "This often reduces the need for multiple media queries."
+      },
+      {
+        "type": "bold",
+        "text": "Interview Line"
+      },
+      {
+        "type": "info",
+        "text": "clamp() creates responsive CSS values by restricting a preferred value between a defined minimum and maximum."
+      }
+    ]
+  },
+  {
+    "id": "css-066",
+    "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Transforms, Transitions & Animations",
     "difficulty": "Beginner",
     "question": "Translate vs absolute positioning",
@@ -5673,7 +5835,7 @@
     ]
   },
   {
-    "id": "css-066",
+    "id": "css-067",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Transforms, Transitions & Animations",
     "difficulty": "Beginner",
@@ -5737,7 +5899,7 @@
     ]
   },
   {
-    "id": "css-067",
+    "id": "css-068",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Transforms, Transitions & Animations",
     "difficulty": "Beginner",
@@ -5782,7 +5944,7 @@
     ]
   },
   {
-    "id": "css-068",
+    "id": "css-069",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Transforms, Transitions & Animations",
     "difficulty": "Beginner",
@@ -5860,7 +6022,7 @@
     ]
   },
   {
-    "id": "css-069",
+    "id": "css-070",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Transforms, Transitions & Animations",
     "difficulty": "Beginner",
@@ -5956,7 +6118,7 @@
     ]
   },
   {
-    "id": "css-070",
+    "id": "css-071",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Transforms, Transitions & Animations",
     "difficulty": "Beginner",
@@ -6013,7 +6175,7 @@
     ]
   },
   {
-    "id": "css-071",
+    "id": "css-072",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Responsive Design",
     "difficulty": "Beginner",
@@ -6104,7 +6266,7 @@
         "code": "320px → Mobile Layout\r\n768px → Tablet Layout\r\n1200px → Desktop Layout\r"
       },
       {
-        "type": "bold",
+        "type": "h4",
         "text": "Differences"
       },
       {
@@ -6120,7 +6282,7 @@
     ]
   },
   {
-    "id": "css-072",
+    "id": "css-073",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Responsive Design",
     "difficulty": "Beginner",
@@ -6161,7 +6323,7 @@
         "text": "Layout switches between predefined versions."
       },
       {
-        "type": "bold",
+        "type": "h4",
         "text": "Differences"
       },
       {
@@ -6176,7 +6338,7 @@
     ]
   },
   {
-    "id": "css-073",
+    "id": "css-074",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Responsive Design",
     "difficulty": "Beginner",
@@ -6283,7 +6445,7 @@
     ]
   },
   {
-    "id": "css-074",
+    "id": "css-075",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Responsive Design",
     "difficulty": "Beginner",
@@ -6335,7 +6497,7 @@
     ]
   },
   {
-    "id": "css-075",
+    "id": "css-076",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Responsive Design",
     "difficulty": "Beginner",
@@ -6410,7 +6572,7 @@
     ]
   },
   {
-    "id": "css-076",
+    "id": "css-077",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6478,7 +6640,7 @@
     ]
   },
   {
-    "id": "css-077",
+    "id": "css-078",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6537,7 +6699,7 @@
     ]
   },
   {
-    "id": "css-078",
+    "id": "css-079",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6582,7 +6744,7 @@
     ]
   },
   {
-    "id": "css-079",
+    "id": "css-080",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6644,7 +6806,7 @@
     ]
   },
   {
-    "id": "css-080",
+    "id": "css-081",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6718,7 +6880,7 @@
     ]
   },
   {
-    "id": "css-081",
+    "id": "css-082",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6808,7 +6970,7 @@
     ]
   },
   {
-    "id": "css-082",
+    "id": "css-083",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Advanced Features",
     "difficulty": "Beginner",
@@ -6889,7 +7051,7 @@
     ]
   },
   {
-    "id": "css-083",
+    "id": "css-084",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Pseudo Classes & Elements",
     "difficulty": "Beginner",
@@ -6960,7 +7122,7 @@
         "code": "p::first-letter {\r\n}\r\np::before {\r\n}\r\np::after {\r\n}\r"
       },
       {
-        "type": "bold",
+        "type": "h4",
         "text": "Differences"
       },
       {
@@ -7011,7 +7173,7 @@
     ]
   },
   {
-    "id": "css-084",
+    "id": "css-085",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Pseudo Classes & Elements",
     "difficulty": "Beginner",
@@ -7054,7 +7216,7 @@
         "code": "input:focus {\r\n  border-color: blue;\r\n}\r"
       },
       {
-        "type": "bold",
+        "type": "h4",
         "text": "Differences"
       },
       {
@@ -7090,7 +7252,7 @@
     ]
   },
   {
-    "id": "css-085",
+    "id": "css-086",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Pseudo Classes & Elements",
     "difficulty": "Beginner",
@@ -7164,7 +7326,7 @@
     ]
   },
   {
-    "id": "css-086",
+    "id": "css-087",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Pseudo Classes & Elements",
     "difficulty": "Beginner",
@@ -7225,7 +7387,7 @@
         "code": "li:first-child {\r\n  color: red;\r\n}\r"
       },
       {
-        "type": "bold",
+        "type": "h4",
         "text": "Differences"
       },
       {
@@ -7270,7 +7432,7 @@
     ]
   },
   {
-    "id": "css-087",
+    "id": "css-088",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -7320,7 +7482,7 @@
     ]
   },
   {
-    "id": "css-088",
+    "id": "css-089",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -7370,7 +7532,7 @@
     ]
   },
   {
-    "id": "css-089",
+    "id": "css-090",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -7409,7 +7571,7 @@
     ]
   },
   {
-    "id": "css-090",
+    "id": "css-091",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Performance & Optimization",
     "difficulty": "Beginner",
@@ -7441,7 +7603,7 @@
         "text": "Keeps useful defaults while normalizing differences."
       },
       {
-        "type": "bold",
+        "type": "h4",
         "text": "Differences"
       },
       {
@@ -7456,7 +7618,7 @@
     ]
   },
   {
-    "id": "css-091",
+    "id": "css-092",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Preprocessors & Architecture",
     "difficulty": "Beginner",
@@ -7540,7 +7702,7 @@
     ]
   },
   {
-    "id": "css-092",
+    "id": "css-093",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Preprocessors & Architecture",
     "difficulty": "Beginner",
@@ -7593,7 +7755,7 @@
     ]
   },
   {
-    "id": "css-093",
+    "id": "css-094",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Preprocessors & Architecture",
     "difficulty": "Beginner",
@@ -7637,7 +7799,7 @@
     ]
   },
   {
-    "id": "css-094",
+    "id": "css-095",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Preprocessors & Architecture",
     "difficulty": "Beginner",
@@ -7673,7 +7835,7 @@
     ]
   },
   {
-    "id": "css-095",
+    "id": "css-096",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7735,7 +7897,7 @@
     ]
   },
   {
-    "id": "css-096",
+    "id": "css-097",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7807,7 +7969,7 @@
     ]
   },
   {
-    "id": "css-097",
+    "id": "css-098",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7838,7 +8000,7 @@
     ]
   },
   {
-    "id": "css-098",
+    "id": "css-099",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7861,7 +8023,7 @@
     ]
   },
   {
-    "id": "css-099",
+    "id": "css-100",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7905,7 +8067,7 @@
     ]
   },
   {
-    "id": "css-100",
+    "id": "css-101",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7932,7 +8094,7 @@
     ]
   },
   {
-    "id": "css-101",
+    "id": "css-102",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
@@ -7990,7 +8152,7 @@
     ]
   },
   {
-    "id": "css-102",
+    "id": "css-103",
     "topic": "CSS (Cascading Style Sheets)",
     "subTopic": "Miscellaneous",
     "difficulty": "Beginner",
